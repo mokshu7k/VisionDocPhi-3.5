@@ -59,6 +59,13 @@ The notebook has been updated to work with GitHub. No further setup needed!
    - Installs FlashAttention2 for GPU optimization (optional)
    - Takes ~3-5 minutes
 
+🆕 3️⃣.5️⃣  Step 3.5: Download Dataset (Optional)
+   - Shows 3 options to get dataset images
+   - Images NOT on GitHub (too large - see DATASET_GUIDE.md)
+   - Only needed for Step 10 (full evaluation)
+   - Quick test (Step 9) doesn't need images
+   - Takes 5-20 minutes if downloading
+
 4️⃣  Step 4: Verify Project Setup
    - Checks all directories and files
    - Verifies CUDA/GPU availability
@@ -86,9 +93,11 @@ The notebook has been updated to work with GitHub. No further setup needed!
    - Tests inference on 5 samples
    - Takes ~2-5 minutes
    - Shows predictions vs ground truth
+   - ✅ WORKS WITHOUT DATASET
 
 🔟 Step 10: Full Evaluation Pipeline
    - Runs complete evaluation on all samples
+   - Requires dataset from Step 3.5
    - Takes time depending on dataset size
    - Saves results to `data/outputs/`
 
@@ -109,13 +118,16 @@ The notebook has been updated to work with GitHub. No further setup needed!
 |------|------|
 | Clone & Setup | 20 sec |
 | Install Dependencies | 3-5 min |
+| **Download Dataset** | **5-20 min*** |
 | Verify Setup | 30 sec |
 | Load Model | 1-3 min |
 | Quick Test (5 samples) | 2-5 min |
-| Full Evaluation (all samples) | 5-30 min* |
-| **Total** | **~12-45 min** |
+| Full Evaluation (all samples) | 5-30 min** |
+| **Total (with dataset)** | **~17-65 min** |
+| **Total (model test only)** | **~12-15 min** |
 
-*Depends on dataset size
+*Only needed for full evaluation; download in step 3.5  
+**Depends on number of samples
 
 ---
 
@@ -230,12 +242,25 @@ Takes ~5-10 minutes
 ### Issue: "Dataset files not found"
 
 **The dataset is only needed if you run Steps 7-10.**
-- If you just want to test the model, skip those steps
-- To use the full pipeline, download the dataset first:
-  ```
-  - Download from: https://rrc.cvc.uab.es/?ch=17
-  - Extract to: data/raw/
-  ```
+
+**Important:** Images are NOT on GitHub (too large). Download them in Colab:
+
+**See: [DATASET_GUIDE.md](DATASET_GUIDE.md) for detailed instructions**
+
+Quick options:
+```python
+# Option 1: If images are on Google Drive
+!pip install -q gdown
+!gdown YOUR_FILE_ID -O data/raw/images.zip
+!cd data/raw && unzip -q images.zip
+
+# Option 2: Manual upload
+from google.colab import files
+files.upload()  # Select images.zip
+```
+
+- If you just want to test the model (Quick Test), skip the dataset
+- For full evaluation, follow [DATASET_GUIDE.md](DATASET_GUIDE.md)
 
 ### Issue: Changes not appearing in Colab
 
