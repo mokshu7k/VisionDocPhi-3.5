@@ -45,21 +45,32 @@ class DocVQAInference:
         
         # Load model with appropriate dtype
         torch_dtype = torch.float16 if self.device == "cuda" else torch.float32
-        attn_impl = "flash_attention_2" if self.device == "cuda" else "eager"
         
-        # Try to load with flash_attention_2, fall back to eager if not available
-        try:
-            self.model = AutoModelForCausalLM.from_pretrained(
-                model_name,
-                trust_remote_code=True,
-                torch_dtype=torch_dtype,
-                attn_implementation=attn_impl,
-                device_map="auto" if self.device == "cuda" else None
-            )
-        except ImportError as e:
-            if "flash_attn" in str(e).lower():
-                print(f"⚠️  Flash Attention 2 not available: {e}")
-                print("💡 Falling back to eager attention (slower but compatible)\n")
+        # Try multiple loading strategies
+        self.model = None
+        
+        # Strategy 1: Try with flash_attention_2 (fastest, if available)
+        if self.device == "cuda":
+            try:
+                print("Attempting to load with FlashAttention2...")
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    model_name,
+                    trust_remote_code=True,
+                    torch_dtype=torch_dtype,
+                    attn_implementation="flash_attention_2",
+                    device_map="auto"
+                )
+                print("✅ Loaded with FlashAttention2\n")
+            except (ImportError, RuntimeError) as e:
+                if "flash_attn" in str(e).lower() or "Flash" in str(e):
+                    print(f"⚠️  FlashAttention2 not available, trying eager attention...\n")
+                    self.model = None
+                else:
+                    raise
+        
+        # Strategy 2: Try with eager attention
+        if self.model is None:
+            try:
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     trust_remote_code=True,
@@ -67,8 +78,17 @@ class DocVQAInference:
                     attn_implementation="eager",
                     device_map="auto" if self.device == "cuda" else None
                 )
-            else:
-                raise
+                print("✅ Loaded with eager attention (slower but compatible)\n")
+            except Exception as e:
+                # Strategy 3: Try without specifying attn_implementation
+                print(f"⚠️  Eager attention failed, trying default...\n")
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    model_name,
+                    trust_remote_code=True,
+                    torch_dtype=torch_dtype,
+                    device_map="auto" if self.device == "cuda" else None
+                )
+                print("✅ Loaded with default attention mechanism\n")
         
         # Move to device (skip if device_map was used)
         if self.device != "cuda" or not hasattr(self.model, 'device_map'):
