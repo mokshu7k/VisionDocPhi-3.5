@@ -11,7 +11,7 @@ from pathlib import Path
 from PIL import Image
 from tqdm import tqdm
 
-from transformers import AutoModelForCausalLM, AutoProcessor
+from transformers import AutoModelForCausalLM, AutoProcessor, AutoConfig
 
 from config.settings import (
     MODEL_NAME, DEVICE, TORCH_DTYPE, ATTN_IMPLEMENTATION, 
@@ -46,49 +46,76 @@ class DocVQAInference:
         # Load model with appropriate dtype
         torch_dtype = torch.float16 if self.device == "cuda" else torch.float32
         
-        # Try multiple loading strategies
         self.model = None
         
-        # Strategy 1: Try with flash_attention_2 (fastest, if available)
+        # Load and modify config to disable FlashAttention2 requirement
+        print("Loading model configuration...")
+        config = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+        
+        # Strategy 1: Try with FlashAttention2 first (fastest on CUDA)
         if self.device == "cuda":
             try:
-                print("Attempting to load with FlashAttention2...")
+                print("Strategy 1: Attempting to load with FlashAttention2...")
+                # Create a copy of config for this attempt
+                config_fa2 = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     trust_remote_code=True,
                     torch_dtype=torch_dtype,
+                    config=config_fa2,
                     attn_implementation="flash_attention_2",
                     device_map="auto"
                 )
-                print("✅ Loaded with FlashAttention2\n")
+                print("✅ Strategy 1: Loaded with FlashAttention2\n")
             except (ImportError, RuntimeError) as e:
                 if "flash_attn" in str(e).lower() or "Flash" in str(e):
-                    print(f"⚠️  FlashAttention2 not available, trying eager attention...\n")
+                    print(f"⚠️  Strategy 1 failed: FlashAttention2 not available\n")
                     self.model = None
                 else:
                     raise
         
-        # Strategy 2: Try with eager attention
+        # Strategy 2: Force eager attention by modifying config
         if self.model is None:
             try:
+                print("Strategy 2: Loading with eager attention (modifying config)...")
+                # Load fresh config and disable FlashAttention2
+                config_eager = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+                # Override attention implementation in config to prevent FA2 validation
+                config_eager._attn_implementation = "eager"
+                
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     trust_remote_code=True,
                     torch_dtype=torch_dtype,
-                    attn_implementation="eager",
+                    config=config_eager,
                     device_map="auto" if self.device == "cuda" else None
                 )
-                print("✅ Loaded with eager attention (slower but compatible)\n")
+                print("✅ Strategy 2: Loaded with eager attention\n")
             except Exception as e:
-                # Strategy 3: Try without specifying attn_implementation
-                print(f"⚠️  Eager attention failed, trying default...\n")
+                print(f"⚠️  Strategy 2 failed: {str(e)[:100]}...\n")
+                self.model = None
+        
+        # Strategy 3: Load with default config (no attn override)
+        if self.model is None:
+            try:
+                print("Strategy 3: Loading with default attention mechanism...")
+                # Load fresh config without any attention override
+                config_default = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+                # Remove the attn implementation requirement from config
+                if hasattr(config_default, '_attn_implementation'):
+                    config_default._attn_implementation = None
+                
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     trust_remote_code=True,
                     torch_dtype=torch_dtype,
+                    config=config_default,
                     device_map="auto" if self.device == "cuda" else None
                 )
-                print("✅ Loaded with default attention mechanism\n")
+                print("✅ Strategy 3: Loaded with default attention mechanism\n")
+            except Exception as e:
+                print(f"❌ All strategies failed. Last error: {str(e)[:150]}\n")
+                raise
         
         # Move to device (skip if device_map was used)
         if self.device != "cuda" or not hasattr(self.model, 'device_map'):
