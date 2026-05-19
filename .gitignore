@@ -34,6 +34,6 @@ Thumbs.db
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Models (cache large transformer models)
-models/
+# Models (cache large transformer models - only root level)
+/models/
 .cache/
