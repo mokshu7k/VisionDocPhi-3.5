@@ -135,7 +135,7 @@ os.chdir('/content/drive/MyDrive/VisionDocPhi-3.5')
 
 **Install packages:**
 ```python
-!pip install -q torch torchvision transformers pillow numpy tqdm
+!pip install -q torch torchvision "transformers>=4.43.0" pillow numpy tqdm
 ```
 
 **Import project:**
