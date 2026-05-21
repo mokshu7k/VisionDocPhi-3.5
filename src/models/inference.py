@@ -70,74 +70,25 @@ class DocVQAInference:
         print("Loading model...")
         torch_dtype = torch.float16 if self.device == "cuda" else torch.float32
         
-        self.model = None
+        # Direct model loading - simple and reliable
+        self.model = AutoModelForCausalLM.from_pretrained(
+            model_name,
+            trust_remote_code=True,
+            torch_dtype=torch_dtype,
+            device_map="auto" if self.device == "cuda" else None,
+            attn_implementation="eager"
+        )
         
-        # Strategy 1: Try loading with eager attention
-        try:
-            print("Strategy 1: Attempting to load with eager attention...")
-            config = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
-            config._attn_implementation = "eager"
-            
-            self.model = AutoModelForCausalLM.from_pretrained(
-                model_name,
-                trust_remote_code=True,
-                torch_dtype=torch_dtype,
-                config=config,
-                device_map="auto" if self.device == "cuda" else None
-            )
-            print("✅ Strategy 1: Loaded with eager attention!\n")
-        except Exception as e:
-            print(f"⚠️  Strategy 1 failed: {str(e)[:100]}...\n")
-            self.model = None
-        
-        # Strategy 2: Try loading on CPU without specifying attention
-        if self.model is None:
-            try:
-                print("Strategy 2: Loading on CPU (no attention override)...")
-                self.model = AutoModelForCausalLM.from_pretrained(
-                    model_name,
-                    trust_remote_code=True,
-                    torch_dtype=torch_dtype,
-                    device_map="cpu"
-                )
-                # Move to target device
-                if self.device == "cuda":
-                    self.model = self.model.to(self.device)
-                print("✅ Strategy 2: Loaded on CPU and moved to device!\n")
-            except Exception as e:
-                print(f"⚠️  Strategy 2 failed: {str(e)[:100]}...\n")
-                self.model = None
-        
-        # Strategy 3: Try with attn_implementation parameter directly
-        if self.model is None:
-            try:
-                print("Strategy 3: Loading with attn_implementation='eager' parameter...")
-                self.model = AutoModelForCausalLM.from_pretrained(
-                    model_name,
-                    trust_remote_code=True,
-                    torch_dtype=torch_dtype,
-                    attn_implementation="eager",
-                    device_map="cpu"
-                )
-                if self.device == "cuda":
-                    self.model = self.model.to(self.device)
-                print("✅ Strategy 3: Loaded with parameter!\n")
-            except Exception as e:
-                print(f"⚠️  Strategy 3 failed: {str(e)[:100]}...\n")
-                self.model = None
-        
-        # If all strategies fail, raise error
-        if self.model is None:
-            print("❌ All loading strategies failed!")
+        # Verify model loaded correctly
+        if not hasattr(self.model, 'generate'):
             raise RuntimeError(
-                "Could not load model. Please ensure you have:\n"
-                "1. Sufficient GPU memory (8GB+)\n"
-                "2. Latest transformers library (pip install --upgrade transformers)\n"
-                "3. Valid HuggingFace model access"
+                f"Model loaded but missing 'generate' method!\n"
+                f"Model type: {type(self.model)}\n"
+                f"This may indicate a model loading or version issue."
             )
         
         self.model.eval()
-        print("✅ Model initialized and ready for inference!\n")
+        print("✅ Model loaded successfully and ready for inference!\n")
     
     def generate_answer(self, image: Image.Image, question: str, max_length: int = None) -> str:
         """
