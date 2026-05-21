@@ -2,7 +2,9 @@ torch>=2.0.0
 torchvision>=0.15.0
 transformers>=4.43.0
 pillow>=9.0.0
-numpy>=1.23.0
+numpy<2.0.0
+scipy>=1.13.0
+scikit-learn>=1.4.2
 tqdm>=4.60.0
 # Optional: Install for improved GPU performance (may fail to build in Colab)
 # flash-attn>=2.0.0  # Uncomment for CUDA-enabled environments with build tools
