@@ -70,9 +70,26 @@ class DocVQAInference:
         print("Loading model...")
         torch_dtype = torch.float16 if self.device == "cuda" else torch.float32
         
-        # Direct model loading - simple and reliable
+        # Use snapshot_download to cache model locally first.
+        # This avoids the huggingface_hub strict repo ID validation bug
+        # that breaks trust_remote_code loading for phi-3.5-vision-instruct
+        # when a newer huggingface_hub version is installed.
+        try:
+            from huggingface_hub import snapshot_download
+            print("📥 Downloading model snapshot to local cache...")
+            local_model_path = snapshot_download(
+                repo_id=model_name,
+                ignore_patterns=["*.msgpack", "flax_model*", "tf_model*", "*.ot"]
+            )
+            print(f"✅ Model cached at: {local_model_path}")
+            load_path = local_model_path
+        except Exception as snap_err:
+            print(f"⚠️  snapshot_download failed ({snap_err}), falling back to direct load...")
+            load_path = model_name
+
+        # Load from the local path (or remote if fallback)
         self.model = AutoModelForCausalLM.from_pretrained(
-            model_name,
+            load_path,
             trust_remote_code=True,
             torch_dtype=torch_dtype,
             device_map="auto" if self.device == "cuda" else None,
