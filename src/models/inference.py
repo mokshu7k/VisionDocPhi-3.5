@@ -202,19 +202,33 @@ class DocVQAInference:
             
             # Step 4: Decode output
             try:
-                response = self.processor.decode(
-                    output_ids[0],
+                # Clean up output_ids to remove any invalid tokens
+                # Ensure we're working with the right data type
+                output_tokens = output_ids[0].cpu().numpy()
+                
+                # Filter out tokens that might cause decode errors
+                valid_tokens = [t for t in output_tokens if 0 <= t < self.processor.tokenizer.vocab_size]
+                
+                if not valid_tokens:
+                    print(f"❌ All output tokens are invalid")
+                    return ""
+                
+                # Decode using tokenizer directly (more reliable than processor.decode)
+                response = self.processor.tokenizer.decode(
+                    valid_tokens,
                     skip_special_tokens=True
                 )
             except Exception as decode_error:
-                print(f"❌ Decode error: {decode_error}")
-                # Try alternative decode
+                print(f"❌ Decode error (attempt 1): {decode_error}")
+                # Try alternative: use processor.decode without filtering
                 try:
-                    response = self.processor.tokenizer.decode(
+                    response = self.processor.decode(
                         output_ids[0],
                         skip_special_tokens=True
                     )
-                except:
+                except Exception as decode_error2:
+                    print(f"❌ Decode error (attempt 2): {decode_error2}")
+                    # Last resort: just return empty string
                     return ""
             
             # Step 5: Extract answer
