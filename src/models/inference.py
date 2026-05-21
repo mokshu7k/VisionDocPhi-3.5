@@ -13,16 +13,26 @@ from tqdm import tqdm
 
 from transformers import AutoModelForCausalLM, AutoProcessor, AutoConfig
 
-# Monkey-patch to disable FlashAttention2 validation if flash_attn is not installed
-# This allows the model to load without requiring the flash-attn package
-import transformers.modeling_utils
-original_flash_attn_check = transformers.modeling_utils._flash_attn_2_can_dispatch
-
-def patched_flash_attn_check(self, is_init_check=False):
-    """Patched version that always returns False to skip FA2 validation"""
-    return False
-
-transformers.modeling_utils._flash_attn_2_can_dispatch = patched_flash_attn_check
+# Attempt to disable FlashAttention2 validation check
+# Different transformers versions have different internal function names
+try:
+    import transformers.modeling_utils as modeling_utils
+    
+    # Try to find and patch the FlashAttention2 check function
+    if hasattr(modeling_utils, '_flash_attn_2_can_dispatch'):
+        original_check = modeling_utils._flash_attn_2_can_dispatch
+        modeling_utils._flash_attn_2_can_dispatch = lambda self, is_init_check=False: False
+    elif hasattr(modeling_utils, 'is_flash_attn_2_available'):
+        original_check = modeling_utils.is_flash_attn_2_available
+        modeling_utils.is_flash_attn_2_available = lambda: False
+    
+    # Also try to patch at the generation_utils level
+    import transformers.generation.utils as gen_utils
+    if hasattr(gen_utils, '_flash_attn_2_can_dispatch'):
+        gen_utils._flash_attn_2_can_dispatch = lambda self, is_init_check=False: False
+except Exception as patch_error:
+    # If patching fails, that's okay - we'll handle it in model loading
+    print(f"⚠️  Warning: Could not patch FlashAttention2 check: {patch_error}")
 
 from config.settings import (
     MODEL_NAME, DEVICE, TORCH_DTYPE, ATTN_IMPLEMENTATION, 
@@ -57,13 +67,17 @@ class DocVQAInference:
             trust_remote_code=True
         )
         
-        print("Loading model with eager attention...")
-        # Load config and set to eager attention
-        config = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
-        config._attn_implementation = "eager"
+        print("Loading model...")
+        torch_dtype = torch.float16 if self.device == "cuda" else torch.float32
         
-        # Load model - validation is disabled by monkey-patch above
+        self.model = None
+        
+        # Strategy 1: Try loading with eager attention
         try:
+            print("Strategy 1: Attempting to load with eager attention...")
+            config = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+            config._attn_implementation = "eager"
+            
             self.model = AutoModelForCausalLM.from_pretrained(
                 model_name,
                 trust_remote_code=True,
@@ -71,10 +85,56 @@ class DocVQAInference:
                 config=config,
                 device_map="auto" if self.device == "cuda" else None
             )
-            print("✅ Model loaded successfully with eager attention!\n")
+            print("✅ Strategy 1: Loaded with eager attention!\n")
         except Exception as e:
-            print(f"❌ Failed to load model: {str(e)[:200]}\n")
-            raise
+            print(f"⚠️  Strategy 1 failed: {str(e)[:100]}...\n")
+            self.model = None
+        
+        # Strategy 2: Try loading on CPU without specifying attention
+        if self.model is None:
+            try:
+                print("Strategy 2: Loading on CPU (no attention override)...")
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    model_name,
+                    trust_remote_code=True,
+                    torch_dtype=torch_dtype,
+                    device_map="cpu"
+                )
+                # Move to target device
+                if self.device == "cuda":
+                    self.model = self.model.to(self.device)
+                print("✅ Strategy 2: Loaded on CPU and moved to device!\n")
+            except Exception as e:
+                print(f"⚠️  Strategy 2 failed: {str(e)[:100]}...\n")
+                self.model = None
+        
+        # Strategy 3: Try with attn_implementation parameter directly
+        if self.model is None:
+            try:
+                print("Strategy 3: Loading with attn_implementation='eager' parameter...")
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    model_name,
+                    trust_remote_code=True,
+                    torch_dtype=torch_dtype,
+                    attn_implementation="eager",
+                    device_map="cpu"
+                )
+                if self.device == "cuda":
+                    self.model = self.model.to(self.device)
+                print("✅ Strategy 3: Loaded with parameter!\n")
+            except Exception as e:
+                print(f"⚠️  Strategy 3 failed: {str(e)[:100]}...\n")
+                self.model = None
+        
+        # If all strategies fail, raise error
+        if self.model is None:
+            print("❌ All loading strategies failed!")
+            raise RuntimeError(
+                "Could not load model. Please ensure you have:\n"
+                "1. Sufficient GPU memory (8GB+)\n"
+                "2. Latest transformers library (pip install --upgrade transformers)\n"
+                "3. Valid HuggingFace model access"
+            )
         
         self.model.eval()
         print("✅ Model initialized and ready for inference!\n")
