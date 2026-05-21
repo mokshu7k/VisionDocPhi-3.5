@@ -165,13 +165,13 @@ class DocVQAInference:
                 return_tensors="pt"
             ).to(self.device)
             
-            # Generate
+            # Generate with compatibility fixes for different transformers versions
             with torch.no_grad():
                 output_ids = self.model.generate(
                     **inputs,
                     max_new_tokens=max_length,
                     do_sample=False,
-                    temperature=TEMPERATURE,
+                    use_cache=False,  # Disable cache to avoid DynamicCache compatibility issues
                 )
             
             # Decode
