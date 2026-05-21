@@ -4,6 +4,8 @@ data/outputs/
 *.pth
 *.safetensors
 
+ERROR_FIXES_REPORT.md
+
 # Python cache
 __pycache__/
 *.pyc
