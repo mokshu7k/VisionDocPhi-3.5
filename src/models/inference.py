@@ -11,7 +11,7 @@ from pathlib import Path
 from PIL import Image
 from tqdm import tqdm
 
-from transformers import AutoModelForCausalLM, AutoProcessor
+from transformers import AutoModelForCausalLM, AutoProcessor, AutoConfig
 
 from config.settings import (
     MODEL_NAME, DEVICE, TORCH_DTYPE, ATTN_IMPLEMENTATION, 
@@ -48,15 +48,29 @@ class DocVQAInference:
         
         self.model = None
         
+        # CRITICAL: Load and modify config to remove FlashAttention2 requirement
+        # The model config has FA2 hardcoded, so we must override it
+        print("Loading model config...")
+        config = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+        
+        # Remove the FlashAttention2 requirement from config by setting to eager
+        original_attn = getattr(config, '_attn_implementation', None)
+        config._attn_implementation = "eager"
+        
+        print(f"Original attn implementation: {original_attn}")
+        print(f"Overriding to: {config._attn_implementation}\n")
+        
         # Strategy 1: Try with FlashAttention2 first (fastest on CUDA if available)
         if self.device == "cuda":
             try:
                 print("Strategy 1: Attempting to load with FlashAttention2...")
+                config1 = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+                config1._attn_implementation = "flash_attention_2"
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     trust_remote_code=True,
                     torch_dtype=torch_dtype,
-                    attn_implementation="flash_attention_2",
+                    config=config1,
                     device_map="auto"
                 )
                 print("✅ Strategy 1: Loaded with FlashAttention2\n")
@@ -67,59 +81,63 @@ class DocVQAInference:
                 else:
                     raise
         
-        # Strategy 2: Load on CPU first with eager attention, then move to GPU
-        # This bypasses FlashAttention2 validation during loading
+        # Strategy 2: Load on CPU with eager attention (config already set), then move to device
         if self.model is None:
             try:
-                print("Strategy 2: Loading on CPU with eager attention, then moving to device...")
+                print("Strategy 2: Loading with eager attention on CPU, then moving to device...")
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     trust_remote_code=True,
                     torch_dtype=torch_dtype,
-                    device_map="cpu",  # Load on CPU to avoid FA2 validation on GPU
-                    attn_implementation="eager"
+                    config=config,  # Use modified config with eager attention
+                    device_map="cpu"  # Load on CPU to be safe
                 )
                 # Now move to target device
                 if self.device == "cuda":
+                    print("Moving model to CUDA...")
                     self.model = self.model.to(self.device)
-                print("✅ Strategy 2: Loaded on CPU and moved to device\n")
+                print("✅ Strategy 2: Loaded with eager attention\n")
             except Exception as e:
                 print(f"⚠️  Strategy 2 failed: {str(e)[:80]}...\n")
                 self.model = None
         
-        # Strategy 3: Load on CPU with sdpa attention
+        # Strategy 3: Try sdpa on CPU
         if self.model is None:
             try:
-                print("Strategy 3: Loading on CPU with sdpa attention...")
+                print("Strategy 3: Loading with sdpa attention on CPU...")
+                config3 = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+                config3._attn_implementation = "sdpa"
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     trust_remote_code=True,
                     torch_dtype=torch_dtype,
-                    device_map="cpu",
-                    attn_implementation="sdpa"
+                    config=config3,
+                    device_map="cpu"
                 )
-                # Move to target device
                 if self.device == "cuda":
                     self.model = self.model.to(self.device)
-                print("✅ Strategy 3: Loaded with sdpa on CPU and moved to device\n")
+                print("✅ Strategy 3: Loaded with sdpa attention\n")
             except Exception as e:
                 print(f"⚠️  Strategy 3 failed: {str(e)[:80]}...\n")
                 self.model = None
         
-        # Strategy 4: Load on CPU with default attention
+        # Strategy 4: Load with default attention (no override)
         if self.model is None:
             try:
-                print("Strategy 4: Loading on CPU with default attention...")
+                print("Strategy 4: Loading with default attention on CPU...")
+                config4 = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+                # Set to None to use PyTorch's default
+                config4._attn_implementation = None
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     trust_remote_code=True,
                     torch_dtype=torch_dtype,
+                    config=config4,
                     device_map="cpu"
                 )
-                # Move to target device
                 if self.device == "cuda":
                     self.model = self.model.to(self.device)
-                print("✅ Strategy 4: Loaded with default attention on CPU and moved to device\n")
+                print("✅ Strategy 4: Loaded with default attention\n")
             except Exception as e:
                 print(f"❌ All strategies failed. Last error:\n{str(e)[:200]}\n")
                 raise
