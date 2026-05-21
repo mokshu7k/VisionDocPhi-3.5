@@ -165,14 +165,30 @@ class DocVQAInference:
                 return_tensors="pt"
             ).to(self.device)
             
-            # Generate with compatibility fixes for different transformers versions
-            with torch.no_grad():
-                output_ids = self.model.generate(
-                    **inputs,
-                    max_new_tokens=max_length,
-                    do_sample=False,
-                    use_cache=False,  # Disable cache to avoid DynamicCache compatibility issues
-                )
+            # Try generating with multiple fallback strategies
+            output_ids = None
+            
+            # Strategy 1: Try with use_cache=False
+            try:
+                with torch.no_grad():
+                    output_ids = self.model.generate(
+                        **inputs,
+                        max_new_tokens=max_length,
+                        do_sample=False,
+                        use_cache=False,
+                    )
+            except Exception as cache_error:
+                # Strategy 2: Try without any cache-related parameters
+                if "DynamicCache" in str(cache_error) or "from_legacy_cache" in str(cache_error):
+                    print(f"⚠️  Cache error detected, retrying without cache settings...")
+                    with torch.no_grad():
+                        output_ids = self.model.generate(
+                            **inputs,
+                            max_new_tokens=max_length,
+                            do_sample=False,
+                        )
+                else:
+                    raise
             
             # Decode
             response = self.processor.decode(
