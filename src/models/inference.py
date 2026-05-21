@@ -76,7 +76,8 @@ class DocVQAInference:
             trust_remote_code=True,
             torch_dtype=torch_dtype,
             device_map="auto" if self.device == "cuda" else None,
-            attn_implementation="eager"
+            attn_implementation="eager",
+            _attn_implementation="eager"
         )
         
         # Verify model loaded correctly
