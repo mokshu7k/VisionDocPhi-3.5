@@ -158,17 +158,25 @@ class DocVQAInference:
         prompt = f"<|user|>\n<|image_1|>\n{question}<|end|>\n<|assistant|>\n"
         
         try:
-            # Prepare inputs
-            inputs = self.processor(
-                text=prompt,
-                images=image,
-                return_tensors="pt"
-            ).to(self.device)
+            # Step 1: Process inputs
+            try:
+                inputs = self.processor(
+                    text=prompt,
+                    images=image,
+                    return_tensors="pt"
+                )
+            except Exception as proc_error:
+                print(f"❌ Processor error: {proc_error}")
+                return ""
             
-            # Try generating with multiple fallback strategies
-            output_ids = None
+            # Step 2: Move to device
+            try:
+                inputs = inputs.to(self.device)
+            except Exception as device_error:
+                print(f"❌ Device move error: {device_error}")
+                return ""
             
-            # Strategy 1: Try with use_cache=False
+            # Step 3: Generate tokens
             try:
                 with torch.no_grad():
                     output_ids = self.model.generate(
@@ -176,27 +184,40 @@ class DocVQAInference:
                         max_new_tokens=max_length,
                         do_sample=False,
                         use_cache=False,
+                        pad_token_id=self.processor.tokenizer.eos_token_id,
                     )
-            except Exception as cache_error:
-                # Strategy 2: Try without any cache-related parameters
-                if "DynamicCache" in str(cache_error) or "from_legacy_cache" in str(cache_error):
-                    print(f"⚠️  Cache error detected, retrying without cache settings...")
+            except Exception as gen_error:
+                print(f"❌ Generation error: {gen_error}")
+                # Try alternative without explicit pad token
+                try:
                     with torch.no_grad():
                         output_ids = self.model.generate(
                             **inputs,
                             max_new_tokens=max_length,
                             do_sample=False,
                         )
-                else:
-                    raise
+                except Exception as gen_error2:
+                    print(f"❌ Generation retry failed: {gen_error2}")
+                    return ""
             
-            # Decode
-            response = self.processor.decode(
-                output_ids[0],
-                skip_special_tokens=True
-            )
+            # Step 4: Decode output
+            try:
+                response = self.processor.decode(
+                    output_ids[0],
+                    skip_special_tokens=True
+                )
+            except Exception as decode_error:
+                print(f"❌ Decode error: {decode_error}")
+                # Try alternative decode
+                try:
+                    response = self.processor.tokenizer.decode(
+                        output_ids[0],
+                        skip_special_tokens=True
+                    )
+                except:
+                    return ""
             
-            # Extract answer (after "assistant" token)
+            # Step 5: Extract answer
             if "<|assistant|>" in response:
                 answer = response.split("<|assistant|>")[-1].strip()
             else:
@@ -205,7 +226,7 @@ class DocVQAInference:
             return answer
         
         except Exception as e:
-            print(f"❌ Error generating answer: {e}")
+            print(f"❌ Unexpected error in generate_answer: {e}")
             return ""
     
     def evaluate(self, dataloader, num_samples: int = None) -> Dict[str, Any]:
