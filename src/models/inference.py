@@ -67,49 +67,59 @@ class DocVQAInference:
                 else:
                     raise
         
-        # Strategy 2: Try with sdpa (PyTorch built-in, works on CPU and GPU)
+        # Strategy 2: Load on CPU first with eager attention, then move to GPU
+        # This bypasses FlashAttention2 validation during loading
         if self.model is None:
             try:
-                print("Strategy 2: Loading with sdpa attention (PyTorch built-in)...")
+                print("Strategy 2: Loading on CPU with eager attention, then moving to device...")
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     trust_remote_code=True,
                     torch_dtype=torch_dtype,
-                    attn_implementation="sdpa",
-                    device_map="auto" if self.device == "cuda" else None
+                    device_map="cpu",  # Load on CPU to avoid FA2 validation on GPU
+                    attn_implementation="eager"
                 )
-                print("✅ Strategy 2: Loaded with sdpa attention\n")
+                # Now move to target device
+                if self.device == "cuda":
+                    self.model = self.model.to(self.device)
+                print("✅ Strategy 2: Loaded on CPU and moved to device\n")
             except Exception as e:
                 print(f"⚠️  Strategy 2 failed: {str(e)[:80]}...\n")
                 self.model = None
         
-        # Strategy 3: Try with eager attention
+        # Strategy 3: Load on CPU with sdpa attention
         if self.model is None:
             try:
-                print("Strategy 3: Loading with eager attention...")
+                print("Strategy 3: Loading on CPU with sdpa attention...")
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     trust_remote_code=True,
                     torch_dtype=torch_dtype,
-                    attn_implementation="eager",
-                    device_map="auto" if self.device == "cuda" else None
+                    device_map="cpu",
+                    attn_implementation="sdpa"
                 )
-                print("✅ Strategy 3: Loaded with eager attention\n")
+                # Move to target device
+                if self.device == "cuda":
+                    self.model = self.model.to(self.device)
+                print("✅ Strategy 3: Loaded with sdpa on CPU and moved to device\n")
             except Exception as e:
                 print(f"⚠️  Strategy 3 failed: {str(e)[:80]}...\n")
                 self.model = None
         
-        # Strategy 4: Load with no attention override (use model default)
+        # Strategy 4: Load on CPU with default attention
         if self.model is None:
             try:
-                print("Strategy 4: Loading with default attention mechanism...")
+                print("Strategy 4: Loading on CPU with default attention...")
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     trust_remote_code=True,
                     torch_dtype=torch_dtype,
-                    device_map="auto" if self.device == "cuda" else None
+                    device_map="cpu"
                 )
-                print("✅ Strategy 4: Loaded with default attention\n")
+                # Move to target device
+                if self.device == "cuda":
+                    self.model = self.model.to(self.device)
+                print("✅ Strategy 4: Loaded with default attention on CPU and moved to device\n")
             except Exception as e:
                 print(f"❌ All strategies failed. Last error:\n{str(e)[:200]}\n")
                 raise
