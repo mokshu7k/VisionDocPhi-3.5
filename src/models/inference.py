@@ -36,7 +36,8 @@ except Exception as patch_error:
 
 from config.settings import (
     MODEL_NAME, DEVICE, TORCH_DTYPE, ATTN_IMPLEMENTATION, 
-    MAX_NEW_TOKENS, TEMPERATURE
+    MAX_NEW_TOKENS, TEMPERATURE, USE_8BIT_QUANTIZATION,
+    USE_GRADIENT_CHECKPOINTING, LOW_CPU_MEM_USAGE, MEMORY_CLEANUP_INTERVAL
 )
 from src.utils.metrics import calculate_metrics, anls_score
 
@@ -94,8 +95,15 @@ class DocVQAInference:
             torch_dtype=torch_dtype,
             device_map="auto" if self.device == "cuda" else None,
             attn_implementation="eager",
-            _attn_implementation="eager"
+            _attn_implementation="eager",
+            load_in_8bit=USE_8BIT_QUANTIZATION if self.device == "cuda" else False,
+            low_cpu_mem_usage=LOW_CPU_MEM_USAGE,
         )
+        
+        # Enable gradient checkpointing to save memory
+        if USE_GRADIENT_CHECKPOINTING and hasattr(self.model, 'gradient_checkpointing_enable'):
+            self.model.gradient_checkpointing_enable()
+            print("✅ Gradient checkpointing enabled")
         
         # Verify model loaded correctly
         if not hasattr(self.model, 'generate'):
@@ -212,6 +220,12 @@ class DocVQAInference:
             print(f"❌ Unexpected error in generate_answer: {e}")
             return ""
     
+    def cleanup_memory(self):
+        """Clear GPU memory cache"""
+        if self.device == "cuda":
+            torch.cuda.empty_cache()
+            torch.cuda.synchronize()
+    
     def evaluate(self, dataloader, num_samples: int = None) -> Dict[str, Any]:
         """
         Evaluate on a dataset
@@ -262,6 +276,10 @@ class DocVQAInference:
                     
                     predictions.append(predicted_answer)
                     ground_truths.append(ground_truth_answers)
+                
+                # Periodic memory cleanup
+                if (batch_idx + 1) % MEMORY_CLEANUP_INTERVAL == 0:
+                    self.cleanup_memory()
         
         # Calculate metrics
         metrics = calculate_metrics(predictions, ground_truths)

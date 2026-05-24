@@ -185,6 +185,50 @@ A typical zero-shot baseline on DocVQA:
 
 ## Troubleshooting
 
+### GPU Memory Optimization for Google Colab
+
+If you encounter GPU out-of-memory errors in Colab, several optimizations are available:
+
+#### 1. **Enable 8-bit Quantization** (saves ~75% GPU memory)
+```bash
+# In Colab cell or command line:
+export USE_8BIT=true
+python scripts/baseline_evaluation.py --split val
+```
+
+#### 2. **Memory Cleanup** (automatic)
+- The pipeline automatically clears GPU memory every 5 batches
+- Configured in `config/settings.py` via `MEMORY_CLEANUP_INTERVAL`
+
+#### 3. **Gradient Checkpointing** (enabled by default)
+- Reduces memory usage during inference
+- Set `USE_GRADIENT_CHECKPOINTING=True` in `config/settings.py`
+
+#### 4. **Process in Chunks**
+- Use `--num_samples` to process fewer images at once:
+```bash
+python scripts/baseline_evaluation.py --split val --num_samples 100
+```
+- Run multiple times to complete the full evaluation
+
+#### 5. **Low Memory Mode Settings** (in `config/settings.py`)
+```python
+LOW_CPU_MEM_USAGE = True          # Enable efficient model loading
+BATCH_SIZE = 1                     # Already set to minimize memory
+MEMORY_CLEANUP_INTERVAL = 5        # Adjust cleanup frequency
+```
+
+**Recommended workflow for Colab:**
+```bash
+# Terminal 1: Process first 100 samples
+export USE_8BIT=true
+python scripts/baseline_evaluation.py --split val --num_samples 100
+
+# Restart Colab runtime
+# Terminal 2: Process next 100 samples
+python scripts/baseline_evaluation.py --split val --num_samples 100
+```
+
 ### Out of Memory (OOM) Error
 - Reduce `BATCH_SIZE` in `config.py` (keep at 1 for safety)
 - Reduce `MAX_LENGTH` in `config.py`

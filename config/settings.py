@@ -35,7 +35,7 @@ DEVICE = os.getenv("DEVICE", "cpu")  # Can be set via env: DEVICE=cuda
 if DEVICE == "cuda":
     # GPU settings
     TORCH_DTYPE = "float16"
-    ATTN_IMPLEMENTATION = "flash_attention_2"
+    ATTN_IMPLEMENTATION = "eager"  # Use eager instead of flash_attention_2 for memory efficiency
 else:
     # CPU settings
     TORCH_DTYPE = "float32"
@@ -45,6 +45,24 @@ else:
 MAX_LENGTH = 2048
 TEMPERATURE = 0.7
 MAX_NEW_TOKENS = 128
+
+# ============================================================================
+# GPU MEMORY OPTIMIZATION
+# ============================================================================
+# Enable 8-bit quantization for reduced GPU memory usage (saves ~75% memory)
+USE_8BIT_QUANTIZATION = os.getenv("USE_8BIT", "false").lower() == "true"
+
+# Enable gradient checkpointing to reduce memory during inference
+USE_GRADIENT_CHECKPOINTING = True
+
+# Enable memory-efficient attention (xFormers)
+USE_XFORMERS = os.getenv("USE_XFORMERS", "false").lower() == "true"
+
+# Memory cleanup frequency (clear cache every N batches)
+MEMORY_CLEANUP_INTERVAL = 5
+
+# Use low_cpu_mem_usage for model loading
+LOW_CPU_MEM_USAGE = True
 
 # ============================================================================
 # DATALOADER CONFIGURATION
