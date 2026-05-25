@@ -87,6 +87,14 @@ PREDICTIONS_FILE = OUTPUT_DIR / "predictions_zeroshot.json"
 RESULTS_FILE = OUTPUT_DIR / "results_zeroshot.json"
 
 # ============================================================================
+# CHUNKED PROCESSING CONFIGURATION
+# ============================================================================
+# For processing large datasets with limited GPU memory
+CHUNK_SIZE = 200  # Process 200 samples at a time
+ENABLE_CHUNKED_MODE = False  # Set to True to use chunked processing
+RESUME_FROM_CHECKPOINT = True  # Resume from last completed chunk if interrupted
+
+# ============================================================================
 # LOGGING CONFIGURATION
 # ============================================================================
 LOG_LEVEL = "INFO"
