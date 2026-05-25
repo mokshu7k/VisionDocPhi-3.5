@@ -189,45 +189,45 @@ A typical zero-shot baseline on DocVQA:
 
 If you encounter GPU out-of-memory errors in Colab, several optimizations are available:
 
-#### 1. **Enable 8-bit Quantization** (saves ~75% GPU memory)
-```bash
-# In Colab cell or command line:
-export USE_8BIT=true
-python scripts/baseline_evaluation.py --split val
-```
+#### 1. **Gradient Checkpointing** (enabled by default)
+- Reduces peak memory usage during inference
+- Trades compute for memory
+- Automatically enabled in `config/settings.py` via `USE_GRADIENT_CHECKPOINTING=True`
 
 #### 2. **Memory Cleanup** (automatic)
 - The pipeline automatically clears GPU memory every 5 batches
 - Configured in `config/settings.py` via `MEMORY_CLEANUP_INTERVAL`
 
-#### 3. **Gradient Checkpointing** (enabled by default)
-- Reduces memory usage during inference
-- Set `USE_GRADIENT_CHECKPOINTING=True` in `config/settings.py`
+#### 3. **Eager Attention** (default)
+- Uses eager attention instead of flash_attention_2 for better Colab compatibility
+- More memory efficient for inference workloads
 
-#### 4. **Process in Chunks**
+#### 4. **Process in Chunks** (recommended for large datasets)
 - Use `--num_samples` to process fewer images at once:
 ```bash
 python scripts/baseline_evaluation.py --split val --num_samples 100
 ```
 - Run multiple times to complete the full evaluation
+- This is the **most effective approach** for very large datasets
 
-#### 5. **Low Memory Mode Settings** (in `config/settings.py`)
+#### 5. **Low Memory Model Loading** (enabled by default)
 ```python
-LOW_CPU_MEM_USAGE = True          # Enable efficient model loading
-BATCH_SIZE = 1                     # Already set to minimize memory
-MEMORY_CLEANUP_INTERVAL = 5        # Adjust cleanup frequency
+LOW_CPU_MEM_USAGE = True    # Efficient model loading
+BATCH_SIZE = 1              # Already set to minimize memory
+MEMORY_CLEANUP_INTERVAL = 5 # Adjust cleanup frequency if needed
 ```
 
-**Recommended workflow for Colab:**
+**Recommended workflow for Colab with many images:**
 ```bash
-# Terminal 1: Process first 100 samples
-export USE_8BIT=true
-python scripts/baseline_evaluation.py --split val --num_samples 100
+# Terminal 1: Process first batch
+python scripts/baseline_evaluation.py --split val --num_samples 200
 
 # Restart Colab runtime
-# Terminal 2: Process next 100 samples
-python scripts/baseline_evaluation.py --split val --num_samples 100
+# Terminal 2: Process next batch
+python scripts/baseline_evaluation.py --split val --num_samples 200
 ```
+
+**Note on 8-bit Quantization:** Phi-3.5 Vision model does not support 8-bit quantization via `load_in_8bit` parameter. The primary memory optimizations are gradient checkpointing, eager attention, and chunked processing.
 
 ### Out of Memory (OOM) Error
 - Reduce `BATCH_SIZE` in `config.py` (keep at 1 for safety)

@@ -49,14 +49,11 @@ MAX_NEW_TOKENS = 128
 # ============================================================================
 # GPU MEMORY OPTIMIZATION
 # ============================================================================
-# Enable 8-bit quantization for reduced GPU memory usage (saves ~75% memory)
-USE_8BIT_QUANTIZATION = os.getenv("USE_8BIT", "false").lower() == "true"
+# Note: Phi-3.5 Vision model does not support load_in_8bit parameter
+# Instead, we use gradient checkpointing, eager attention, and chunked processing
 
 # Enable gradient checkpointing to reduce memory during inference
 USE_GRADIENT_CHECKPOINTING = True
-
-# Enable memory-efficient attention (xFormers)
-USE_XFORMERS = os.getenv("USE_XFORMERS", "false").lower() == "true"
 
 # Memory cleanup frequency (clear cache every N batches)
 MEMORY_CLEANUP_INTERVAL = 5

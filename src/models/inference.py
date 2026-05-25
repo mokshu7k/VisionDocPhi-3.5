@@ -36,7 +36,7 @@ except Exception as patch_error:
 
 from config.settings import (
     MODEL_NAME, DEVICE, TORCH_DTYPE, ATTN_IMPLEMENTATION, 
-    MAX_NEW_TOKENS, TEMPERATURE, USE_8BIT_QUANTIZATION,
+    MAX_NEW_TOKENS, TEMPERATURE,
     USE_GRADIENT_CHECKPOINTING, LOW_CPU_MEM_USAGE, MEMORY_CLEANUP_INTERVAL
 )
 from src.utils.metrics import calculate_metrics, anls_score
@@ -89,6 +89,8 @@ class DocVQAInference:
             load_path = model_name
 
         # Load from the local path (or remote if fallback)
+        # Note: Phi-3.5 Vision doesn't support load_in_8bit parameter
+        # 8-bit quantization would require bitsandbytes library with different setup
         self.model = AutoModelForCausalLM.from_pretrained(
             load_path,
             trust_remote_code=True,
@@ -96,14 +98,13 @@ class DocVQAInference:
             device_map="auto" if self.device == "cuda" else None,
             attn_implementation="eager",
             _attn_implementation="eager",
-            load_in_8bit=USE_8BIT_QUANTIZATION if self.device == "cuda" else False,
             low_cpu_mem_usage=LOW_CPU_MEM_USAGE,
         )
         
         # Enable gradient checkpointing to save memory
         if USE_GRADIENT_CHECKPOINTING and hasattr(self.model, 'gradient_checkpointing_enable'):
             self.model.gradient_checkpointing_enable()
-            print("✅ Gradient checkpointing enabled")
+            print("✅ Gradient checkpointing enabled for memory efficiency")
         
         # Verify model loaded correctly
         if not hasattr(self.model, 'generate'):
