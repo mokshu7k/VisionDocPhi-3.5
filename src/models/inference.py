@@ -133,7 +133,7 @@ class DocVQAInference:
             max_length = MAX_NEW_TOKENS
         
         # Create prompt in Phi-3.5 Vision format
-        prompt = f"<|user|>\n<|image_1|>\n{question}<|end|>\n<|assistant|>\n"
+        prompt = f"<|user|>\n<|image_1|>\nAnswer briefly with only the exact value or phrase from the document. Do not use full sentences.\nQuestion: {question}<|end|>\n<|assistant|>\n"
         
         try:
             # Step 1: Process inputs
@@ -180,9 +180,9 @@ class DocVQAInference:
             
             # Step 4: Decode output
             try:
-                # Clean up output_ids to remove any invalid tokens
-                # Ensure we're working with the right data type
-                output_tokens = output_ids[0].cpu().numpy()
+                # Get only the new tokens (excluding input tokens)
+                input_len = inputs["input_ids"].shape[1]
+                output_tokens = output_ids[0][input_len:].cpu().numpy()
                 
                 # Filter out tokens that might cause decode errors
                 valid_tokens = [t for t in output_tokens if 0 <= t < self.processor.tokenizer.vocab_size]
@@ -201,7 +201,7 @@ class DocVQAInference:
                 # Try alternative: use processor.decode without filtering
                 try:
                     response = self.processor.decode(
-                        output_ids[0],
+                        output_ids[0][input_len:],
                         skip_special_tokens=True
                     )
                 except Exception as decode_error2:
@@ -209,11 +209,50 @@ class DocVQAInference:
                     # Last resort: just return empty string
                     return ""
             
-            # Step 5: Extract answer
-            if "<|assistant|>" in response:
-                answer = response.split("<|assistant|>")[-1].strip()
-            else:
-                answer = response.strip()
+            # Step 5: Extract and clean answer
+            # The model sometimes repeats the question or includes it in the response
+            # We need to extract just the core answer
+            answer = response.strip()
+            
+            # Remove question repetition if present
+            # The question often appears at the start of the response
+            if "?" in answer:
+                # Find where the question ends (last '?')
+                question_end = answer.rfind("?")
+                # Take everything after the question
+                answer_candidate = answer[question_end + 1:].strip()
+                # If there's substantial content after the question, use it
+                if len(answer_candidate) > 5:
+                    answer = answer_candidate
+            
+            # Extract answer from common patterns
+            # "The answer is X" or "is X" or "The X is Y" patterns
+            answer_patterns = [
+                ("The answer is", "the answer is"),
+                ("is approximately", "approximately"),
+                ("is", "is"),
+            ]
+            
+            for pattern_lower in answer_patterns:
+                if pattern_lower[0] in answer.lower():
+                    # Find and extract after this pattern
+                    idx = answer.lower().find(pattern_lower[0])
+                    if idx != -1:
+                        potential_answer = answer[idx + len(pattern_lower[0]):].strip()
+                        # If it's a reasonable length and not too long, use it
+                        if 2 < len(potential_answer) < 500:
+                            answer = potential_answer
+                            break
+            
+            # Final cleanup: remove trailing explanations
+            # Often the model adds explanatory text - keep only first sentence/phrase
+            # Split by common delimiters and take the first meaningful part
+            sentences = answer.split(".")
+            if len(sentences) > 1 and len(sentences[0]) > 2:
+                # Take first sentence, but check if it's substantial
+                first_sent = sentences[0].strip()
+                if len(first_sent) > 2:
+                    answer = first_sent
             
             return answer
         
