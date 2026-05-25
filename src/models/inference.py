@@ -211,48 +211,53 @@ class DocVQAInference:
             
             # Step 5: Extract and clean answer
             # The model sometimes repeats the question or includes it in the response
-            # We need to extract just the core answer
+            # We need to extract just the core answer without being too aggressive
             answer = response.strip()
             
-            # Remove question repetition if present
-            # The question often appears at the start of the response
+            # ONLY apply aggressive cleaning if we detect the question is repeated
+            question_repeated = False
             if "?" in answer:
-                # Find where the question ends (last '?')
-                question_end = answer.rfind("?")
-                # Take everything after the question
-                answer_candidate = answer[question_end + 1:].strip()
-                # If there's substantial content after the question, use it
-                if len(answer_candidate) > 5:
-                    answer = answer_candidate
+                # Check if question appears multiple times or early in response
+                question_count = answer.count("?")
+                first_question_pos = answer.find("?")
+                
+                # If question appears multiple times or there's substantial text after it
+                if question_count >= 1:
+                    content_after_question = answer[first_question_pos + 1:].strip()
+                    # If there's meaningful content after the question, use it
+                    if len(content_after_question) > 3 and "\n" not in content_after_question[:50]:
+                        answer = content_after_question
+                        question_repeated = True
             
-            # Extract answer from common patterns
-            # "The answer is X" or "is X" or "The X is Y" patterns
-            answer_patterns = [
-                ("The answer is", "the answer is"),
-                ("is approximately", "approximately"),
-                ("is", "is"),
+            # Clean up excessive whitespace and newlines
+            # But preserve the core answer structure
+            answer = " ".join(answer.split())
+            
+            # Only apply aggressive sentence splitting if output is very long
+            # AND it looks like it has multiple sentences
+            if len(answer) > 300 and ("." in answer or "\n" in answer):
+                # Find first sentence that's substantial
+                sentences = answer.split(".")
+                for sent in sentences:
+                    sent_clean = sent.strip()
+                    if len(sent_clean) > 5:  # Only if it's not just a few chars
+                        answer = sent_clean
+                        break
+            
+            # Remove common filler phrases if they dominate the start
+            filler_phrases = [
+                "the answer is ",
+                "based on the image, ",
+                "according to the document, ",
+                "looking at ",
+                "from the document, ",
             ]
             
-            for pattern_lower in answer_patterns:
-                if pattern_lower[0] in answer.lower():
-                    # Find and extract after this pattern
-                    idx = answer.lower().find(pattern_lower[0])
-                    if idx != -1:
-                        potential_answer = answer[idx + len(pattern_lower[0]):].strip()
-                        # If it's a reasonable length and not too long, use it
-                        if 2 < len(potential_answer) < 500:
-                            answer = potential_answer
-                            break
-            
-            # Final cleanup: remove trailing explanations
-            # Often the model adds explanatory text - keep only first sentence/phrase
-            # Split by common delimiters and take the first meaningful part
-            sentences = answer.split(".")
-            if len(sentences) > 1 and len(sentences[0]) > 2:
-                # Take first sentence, but check if it's substantial
-                first_sent = sentences[0].strip()
-                if len(first_sent) > 2:
-                    answer = first_sent
+            answer_lower = answer.lower()
+            for filler in filler_phrases:
+                if answer_lower.startswith(filler):
+                    answer = answer[len(filler):].strip()
+                    break
             
             return answer
         
