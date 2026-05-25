@@ -214,35 +214,16 @@ class DocVQAInference:
             # We need to extract just the core answer without being too aggressive
             answer = response.strip()
             
-            # ONLY apply aggressive cleaning if we detect the question is repeated
-            question_repeated = False
-            if "?" in answer:
-                # Check if question appears multiple times or early in response
-                question_count = answer.count("?")
-                first_question_pos = answer.find("?")
+            # Since the model sometimes hallucinates extra text (like "Here is an article...", "Instruction 1:"),
+            # we should take the first non-empty line as our answer, because we asked for a brief exact value.
+            response_lines = [line.strip() for line in response.split('\n') if line.strip()]
+            if response_lines:
+                answer = response_lines[0]
                 
-                # If question appears multiple times or there's substantial text after it
-                if question_count >= 1:
-                    content_after_question = answer[first_question_pos + 1:].strip()
-                    # If there's meaningful content after the question, use it
-                    if len(content_after_question) > 3 and "\n" not in content_after_question[:50]:
-                        answer = content_after_question
-                        question_repeated = True
-            
-            # Clean up excessive whitespace and newlines
-            # But preserve the core answer structure
-            answer = " ".join(answer.split())
-            
-            # Only apply aggressive sentence splitting if output is very long
-            # AND it looks like it has multiple sentences
-            if len(answer) > 300 and ("." in answer or "\n" in answer):
-                # Find first sentence that's substantial
-                sentences = answer.split(".")
-                for sent in sentences:
-                    sent_clean = sent.strip()
-                    if len(sent_clean) > 5:  # Only if it's not just a few chars
-                        answer = sent_clean
-                        break
+            # If the model hallucinates "Here is..." or "Instruction..." on the same line, try to split by those markers
+            for marker in [" Here is ", " Instruction ", " Article:", " Summary:", " Here is a task"]:
+                if marker in answer:
+                    answer = answer.split(marker)[0].strip()
             
             # Remove common filler phrases if they dominate the start
             filler_phrases = [
