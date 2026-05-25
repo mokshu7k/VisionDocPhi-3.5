@@ -4,7 +4,7 @@ data/outputs/
 *.pth
 *.safetensors
 
-ERROR_FIXES_REPORT.md
+files
 
 # Python cache
 __pycache__/
