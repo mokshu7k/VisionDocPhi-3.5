@@ -49,8 +49,9 @@ MAX_NEW_TOKENS = 128
 # ============================================================================
 # GPU MEMORY OPTIMIZATION
 # ============================================================================
-# Note: Phi-3.5 Vision model does not support load_in_8bit parameter
-# Instead, we use gradient checkpointing, eager attention, and chunked processing
+# Note: Phi-3.5 Vision requires bitsandbytes for 8-bit quantization
+# Instead of `load_in_8bit=True` directly, it needs BitsAndBytesConfig
+USE_8BIT_QUANTIZATION = True
 
 # Enable gradient checkpointing to reduce memory during inference
 USE_GRADIENT_CHECKPOINTING = True

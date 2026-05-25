@@ -37,7 +37,8 @@ except Exception as patch_error:
 from config.settings import (
     MODEL_NAME, DEVICE, TORCH_DTYPE, ATTN_IMPLEMENTATION, 
     MAX_NEW_TOKENS, TEMPERATURE,
-    USE_GRADIENT_CHECKPOINTING, LOW_CPU_MEM_USAGE, MEMORY_CLEANUP_INTERVAL
+    USE_GRADIENT_CHECKPOINTING, LOW_CPU_MEM_USAGE, MEMORY_CLEANUP_INTERVAL,
+    USE_8BIT_QUANTIZATION
 )
 from src.utils.metrics import calculate_metrics, anls_score
 
@@ -89,16 +90,30 @@ class DocVQAInference:
             load_path = model_name
 
         # Load from the local path (or remote if fallback)
-        # Note: Phi-3.5 Vision doesn't support load_in_8bit parameter
-        # 8-bit quantization would require bitsandbytes library with different setup
+        # Note: Phi-3.5 Vision requires BitsAndBytesConfig for quantization
+        model_kwargs = {
+            "trust_remote_code": True,
+            "device_map": "auto" if self.device == "cuda" else None,
+            "attn_implementation": "eager",
+            "_attn_implementation": "eager",
+            "low_cpu_mem_usage": LOW_CPU_MEM_USAGE,
+        }
+        
+        if USE_8BIT_QUANTIZATION and self.device == "cuda":
+            print("⚙️  Using 8-bit quantization via bitsandbytes...")
+            from transformers import BitsAndBytesConfig
+            quantization_config = BitsAndBytesConfig(
+                load_in_8bit=True,
+            )
+            model_kwargs["quantization_config"] = quantization_config
+            # torch_dtype is typically determined by quantization, but we can still set it
+            model_kwargs["torch_dtype"] = torch_dtype
+        else:
+            model_kwargs["torch_dtype"] = torch_dtype
+
         self.model = AutoModelForCausalLM.from_pretrained(
             load_path,
-            trust_remote_code=True,
-            torch_dtype=torch_dtype,
-            device_map="auto" if self.device == "cuda" else None,
-            attn_implementation="eager",
-            _attn_implementation="eager",
-            low_cpu_mem_usage=LOW_CPU_MEM_USAGE,
+            **model_kwargs
         )
         
         # Enable gradient checkpointing to save memory

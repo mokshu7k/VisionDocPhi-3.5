@@ -13,5 +13,6 @@ diffusers==0.38.0
 peft==0.19.1
 datasets==4.8.5
 accelerate==1.13.0
+bitsandbytes>=0.43.0
 
 # flash-attn>=2.0.0  # Uncomment for CUDA-enabled environments with build tools
