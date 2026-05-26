@@ -51,7 +51,9 @@ MAX_NEW_TOKENS = 128
 # ============================================================================
 # Note: Phi-3.5 Vision requires bitsandbytes for 8-bit quantization
 # Instead of `load_in_8bit=True` directly, it needs BitsAndBytesConfig
-USE_8BIT_QUANTIZATION = True
+# TEMP FIX: Disabled due to transformers/bitsandbytes compatibility issue
+# Re-enable after updating dependencies
+USE_8BIT_QUANTIZATION = False
 
 # Enable gradient checkpointing to reduce memory during inference
 USE_GRADIENT_CHECKPOINTING = True

@@ -76,20 +76,23 @@ class DocVQAInference:
         # This avoids the huggingface_hub strict repo ID validation bug
         # that breaks trust_remote_code loading for phi-3.5-vision-instruct
         # when a newer huggingface_hub version is installed.
-        try:
-            from huggingface_hub import snapshot_download
-            print("📥 Downloading model snapshot to local cache...")
-            local_model_path = snapshot_download(
-                repo_id=model_name,
-                ignore_patterns=["*.msgpack", "flax_model*", "tf_model*", "*.ot"]
-            )
-            print(f"✅ Model cached at: {local_model_path}")
-            load_path = local_model_path
-        except Exception as snap_err:
-            print(f"⚠️  snapshot_download failed ({snap_err}), falling back to direct load...")
-            load_path = model_name
+        # NOTE: Skip snapshot_download if using quantization (compatibility issue)
+        load_path = model_name
+        if not (USE_8BIT_QUANTIZATION and self.device == "cuda"):
+            try:
+                from huggingface_hub import snapshot_download
+                print("📥 Downloading model snapshot to local cache...")
+                local_model_path = snapshot_download(
+                    repo_id=model_name,
+                    ignore_patterns=["*.msgpack", "flax_model*", "tf_model*", "*.ot"]
+                )
+                print(f"✅ Model cached at: {local_model_path}")
+                load_path = local_model_path
+            except Exception as snap_err:
+                print(f"⚠️  snapshot_download failed ({snap_err}), falling back to direct load...")
+                load_path = model_name
 
-        # Load from the local path (or remote if fallback)
+        # Load from the model path
         # Note: Phi-3.5 Vision requires BitsAndBytesConfig for quantization
         model_kwargs = {
             "trust_remote_code": True,
@@ -101,20 +104,36 @@ class DocVQAInference:
         
         if USE_8BIT_QUANTIZATION and self.device == "cuda":
             print("⚙️  Using 8-bit quantization via bitsandbytes...")
-            from transformers import BitsAndBytesConfig
-            quantization_config = BitsAndBytesConfig(
-                load_in_8bit=True,
-            )
-            model_kwargs["quantization_config"] = quantization_config
-            # torch_dtype is typically determined by quantization, but we can still set it
-            model_kwargs["torch_dtype"] = torch_dtype
+            try:
+                from transformers import BitsAndBytesConfig
+                quantization_config = BitsAndBytesConfig(
+                    load_in_8bit=True,
+                )
+                model_kwargs["quantization_config"] = quantization_config
+                # torch_dtype is typically determined by quantization, but we can still set it
+                model_kwargs["torch_dtype"] = torch_dtype
+            except Exception as quant_err:
+                print(f"⚠️  Quantization config failed: {quant_err}")
+                print("   Falling back to full precision (float16)...")
+                model_kwargs["torch_dtype"] = torch_dtype
         else:
             model_kwargs["torch_dtype"] = torch_dtype
 
-        self.model = AutoModelForCausalLM.from_pretrained(
-            load_path,
-            **model_kwargs
-        )
+        try:
+            self.model = AutoModelForCausalLM.from_pretrained(
+                load_path,
+                **model_kwargs
+            )
+        except Exception as load_err:
+            print(f"❌ Model loading failed: {load_err}")
+            print("   Retrying without quantization...")
+            # Remove quantization config if present
+            if "quantization_config" in model_kwargs:
+                del model_kwargs["quantization_config"]
+            self.model = AutoModelForCausalLM.from_pretrained(
+                load_path,
+                **model_kwargs
+            )
         
         # Enable gradient checkpointing to save memory
         if USE_GRADIENT_CHECKPOINTING and hasattr(self.model, 'gradient_checkpointing_enable'):
