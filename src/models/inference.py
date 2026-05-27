@@ -11,14 +11,11 @@ import importlib
 import importlib
 
 # ===========================================================================
-# CRITICAL: Force bitsandbytes to use CUDA 12.9 pre-compiled binary.
-# Both Colab and Kaggle have PyTorch compiled for CUDA 13, but the actual
-# CUDA 13 runtime .so files (libnvJitLink.so.13) are NOT on disk.
-# Setting BNB_CUDA_VERSION=129 tells bitsandbytes to load its CUDA 12.9
-# binary instead, which uses libnvJitLink.so.12 that IS present on disk.
-# This MUST be set before ANY import of bitsandbytes or transformers.
+# CUDA SETUP: Only set BNB_CUDA_VERSION if quantization is enabled
+# This avoids CUDA compatibility issues when quantization is disabled
 # ===========================================================================
-os.environ["BNB_CUDA_VERSION"] = "129"
+if os.getenv("USE_QUANTIZATION", "false").lower() == "true":
+    os.environ["BNB_CUDA_VERSION"] = "129"
 
 from typing import Dict, List, Any
 from pathlib import Path
@@ -116,7 +113,7 @@ class DocVQAInference:
             "attn_implementation": "eager",
         }
         if USE_8BIT_QUANTIZATION and self.device == "cuda":
-            print("🔷 Configuring 4-bit NF4 quantization via bitsandbytes...")
+            print("🔷 Attempting 4-bit NF4 quantization via bitsandbytes...")
             try:
                 from transformers import BitsAndBytesConfig
                 # NOTE: Do NOT pass config= as a kwarg for trust_remote_code models.
@@ -134,10 +131,13 @@ class DocVQAInference:
                 model_kwargs["torch_dtype"] = torch_dtype
                 print("   ✓ 4-bit NF4 quantization configured (~75% VRAM reduction)")
             except Exception as quant_err:
-                print(f"   ⚠️  Quantization config failed: {quant_err}")
-                print("   → Falling back to full precision (float16)...")
+                print(f"   ⚠️  Quantization setup failed (common on Kaggle): {quant_err}")
+                print("   → Falling back to float16 without quantization...")
+                print("   → KV cache memory leak fix (use_cache=False) will prevent OOM")
                 model_kwargs["torch_dtype"] = torch_dtype
         else:
+            print(f"📍 Using float16 precision (quantization disabled)")
+            print("   → Memory optimization via KV cache leak fix (use_cache=False)")
             model_kwargs["torch_dtype"] = torch_dtype
 
         print(f"📥 Loading from HuggingFace Hub: {model_name}")

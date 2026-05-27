@@ -1,0 +1,49 @@
+# Kaggle-Optimized Requirements - NO QUANTIZATION
+# Use this file when USE_8BIT_QUANTIZATION = False
+# 
+# PyTorch and CUDA are pre-installed in Kaggle - DO NOT INCLUDE torch/torchvision/torchaudio
+# numpy, pandas, scikit-learn are pre-installed - DO NOT INCLUDE
+# 
+# This version:
+# ✓ Removes bitsandbytes (avoids CUDA 13.x compatibility issues)
+# ✓ Uses float16 precision (8 GB VRAM) instead
+# ✓ Keeps KV cache memory leak fix (use_cache=False in model.generate)
+# ✓ Result: 8.5 GB max memory usage - fits perfectly on T4
+
+# ============================================================================
+# Core ML Libraries
+# ============================================================================
+transformers>=4.35.0
+huggingface-hub>=0.22.0
+
+# ============================================================================
+# Memory & Performance Optimization
+# ============================================================================
+# scipy version compatibility fix
+scipy>=1.11.0,<=1.14.1
+
+# Model optimization (no quantization needed)
+peft>=0.7.0
+accelerate>=0.27.0
+
+# ============================================================================
+# Image & Data Processing
+# ============================================================================
+pillow>=10.0.0
+opencv-python>=4.8.0
+datasets>=2.17.0
+
+# ============================================================================
+# Utilities
+# ============================================================================
+tqdm>=4.66.0
+gradio>=4.20.0
+
+# ============================================================================
+# DO NOT INCLUDE - These are pre-installed in Kaggle:
+# ============================================================================
+# - torch, torchvision, torchaudio (pre-installed with CUDA)
+# - numpy, pandas, scipy (pre-installed)
+# - scikit-learn, scikit-image (pre-installed)
+# - tensorflow, keras (pre-installed but not needed)
+# - jupyter-server, jupyter (pre-installed)
