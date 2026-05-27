@@ -89,25 +89,11 @@ class DocVQAInference:
         
         if USE_8BIT_QUANTIZATION and self.device == "cuda":
             print("🔷 Configuring 8-bit quantization via bitsandbytes...")
-            # Colab specific fix for bitsandbytes CUDA 12/13 environment
+            # Colab specific fix: Force bitsandbytes to use CUDA 12 backend
+            # to prevent it from erroneously seeking CUDA 13 libraries on Colab
             import os
-            import ctypes
-            import glob
+            os.environ["BNB_CUDA_VERSION"] = "121"
             
-            # Find all libnvJitLink.so files in Python's dist-packages
-            lib_paths = glob.glob("/usr/local/lib/python3.*/dist-packages/nvidia/nvjitlink/lib/libnvJitLink.so.*")
-            for path in lib_paths:
-                try:
-                    # Pre-load the library into memory so bitsandbytes finds it instantly
-                    ctypes.CDLL(path)
-                    print(f"   ✓ Pre-loaded CUDA library: {os.path.basename(path)}")
-                    # Also add the directory to LD_LIBRARY_PATH as a backup
-                    lib_dir = os.path.dirname(path)
-                    if lib_dir not in os.environ.get("LD_LIBRARY_PATH", ""):
-                        os.environ["LD_LIBRARY_PATH"] = f"{lib_dir}:{os.environ.get('LD_LIBRARY_PATH', '')}"
-                except Exception as e:
-                    pass
-                    
             try:
                 from transformers import BitsAndBytesConfig
                 quantization_config = BitsAndBytesConfig(
