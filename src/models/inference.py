@@ -120,8 +120,12 @@ class DocVQAInference:
                 # Explicitly passing the pre-loaded config bypasses this bug.
                 try:
                     explicit_config = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+                    # Forcing eager attention directly into the config prevents transformers
+                    # from trying to auto-enable FlashAttention and avoids the kwargs TypeError
+                    explicit_config._attn_implementation = "eager"
+                    explicit_config.attn_implementation = "eager"
                     model_kwargs["config"] = explicit_config
-                    print("   ✓ Explicit AutoConfig loaded to bypass HFValidationError")
+                    print("   ✓ Explicit AutoConfig loaded with eager attention")
                 except Exception:
                     pass
 
