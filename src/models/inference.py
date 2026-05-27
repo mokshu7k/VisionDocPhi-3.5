@@ -152,6 +152,15 @@ class DocVQAInference:
             if "quantization_config" in model_kwargs:
                 print("   → Retrying without quantization...")
                 del model_kwargs["quantization_config"]
+                
+                # CRITICAL: If the first load failed mid-way, PyTorch will still hold the 
+                # partially-allocated tensors in GPU memory. We MUST empty the cache before 
+                # retrying, otherwise the fallback will instantly throw an OutOfMemoryError.
+                import gc
+                gc.collect()
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+                    
                 self.model = AutoModelForCausalLM.from_pretrained(
                     model_name,
                     **model_kwargs
