@@ -84,34 +84,23 @@ class DocVQAInference:
             "attn_implementation": "eager",
         }
         if USE_8BIT_QUANTIZATION and self.device == "cuda":
-            print("🔷 Configuring 8-bit quantization via bitsandbytes...")
-            
+            print("🔷 Configuring 4-bit NF4 quantization via bitsandbytes...")
             try:
-                from transformers import BitsAndBytesConfig, AutoConfig
-                # The HFValidationError string bug happens because accelerate's memory
-                # checker overwrites the model_id with the config string.
-                # Explicitly passing the pre-loaded config bypasses this bug.
-                try:
-                    explicit_config = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
-                    # Forcing eager attention directly into the config prevents transformers
-                    # from trying to auto-enable FlashAttention and avoids the kwargs TypeError
-                    explicit_config._attn_implementation = "eager"
-                    explicit_config.attn_implementation = "eager"
-                    model_kwargs["config"] = explicit_config
-                    print("   ✓ Explicit AutoConfig loaded with eager attention")
-                except Exception:
-                    pass
-
-                # Using 4-bit quantization (nf4) is vastly more stable for Phi-3 on T4 GPUs
+                from transformers import BitsAndBytesConfig
+                # NOTE: Do NOT pass config= as a kwarg for trust_remote_code models.
+                # It causes HFValidationError because the config object gets serialised
+                # as a string and used as the model ID. The FlashAttention2 patch at
+                # the top of this file (PreTrainedModel classmethod patch) handles
+                # eager attention without needing to inject a config object here.
                 quantization_config = BitsAndBytesConfig(
                     load_in_4bit=True,
                     bnb_4bit_compute_dtype=torch_dtype,
                     bnb_4bit_quant_type="nf4",
-                    bnb_4bit_use_double_quant=True
+                    bnb_4bit_use_double_quant=True,
                 )
                 model_kwargs["quantization_config"] = quantization_config
                 model_kwargs["torch_dtype"] = torch_dtype
-                print("   ✓ 4-bit (NF4) Quantization config created")
+                print("   ✓ 4-bit NF4 quantization configured (~75% VRAM reduction)")
             except Exception as quant_err:
                 print(f"   ⚠️  Quantization config failed: {quant_err}")
                 print("   → Falling back to full precision (float16)...")
@@ -125,7 +114,7 @@ class DocVQAInference:
                 model_name,
                 **model_kwargs
             )
-            print("✅ Model loaded successfully in 4-bit!")
+            print("✅ Model loaded successfully!")
         except Exception as load_err:
             print(f"❌ Model loading failed with current config: {load_err}")
             if "quantization_config" in model_kwargs:

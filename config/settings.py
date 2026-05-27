@@ -49,9 +49,13 @@ MAX_NEW_TOKENS = 128
 # ============================================================================
 # GPU MEMORY OPTIMIZATION
 # ============================================================================
-# We disable 8-bit quantization because Colab PyTorch 2.5 + bitsandbytes is currently broken,
-# and the model (8GB) natively fits inside Colab T4 (15GB) anyway without it!
-USE_8BIT_QUANTIZATION = False
+# Quantization memory estimates:
+#   float16 (no quant) : ~8.0 GB  — fits on T4 (15GB)
+#   4-bit NF4 quant    : ~2.5 GB  — fits on P100/T4 with huge headroom
+# Set to True to use 4-bit NF4 quantization (recommended for Kaggle)
+# Re-enabled: Kaggle uses PyTorch 2.1.x where triton.ops still exists,
+# so bitsandbytes==0.43.1 works perfectly on Kaggle T4/P100 GPUs.
+USE_8BIT_QUANTIZATION = True
 
 # Enable gradient checkpointing to reduce memory during inference
 USE_GRADIENT_CHECKPOINTING = True
