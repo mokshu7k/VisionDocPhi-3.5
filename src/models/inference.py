@@ -108,14 +108,27 @@ class DocVQAInference:
                             pass
             
             try:
-                from transformers import BitsAndBytesConfig
+                from transformers import BitsAndBytesConfig, AutoConfig
+                # The HFValidationError string bug happens because accelerate's memory
+                # checker overwrites the model_id with the config string.
+                # Explicitly passing the pre-loaded config bypasses this bug.
+                try:
+                    explicit_config = AutoConfig.from_pretrained(model_name, trust_remote_code=True)
+                    model_kwargs["config"] = explicit_config
+                    print("   ✓ Explicit AutoConfig loaded to bypass HFValidationError")
+                except Exception:
+                    pass
+
+                # Using 4-bit quantization (nf4) is vastly more stable for Phi-3 on T4 GPUs
                 quantization_config = BitsAndBytesConfig(
-                    load_in_8bit=True,
-                    llm_int8_enable_fp32_cpu_offload=False,
+                    load_in_4bit=True,
+                    bnb_4bit_compute_dtype=torch_dtype,
+                    bnb_4bit_quant_type="nf4",
+                    bnb_4bit_use_double_quant=True
                 )
                 model_kwargs["quantization_config"] = quantization_config
                 model_kwargs["torch_dtype"] = torch_dtype
-                print("   ✓ Quantization config created")
+                print("   ✓ 4-bit (NF4) Quantization config created")
             except Exception as quant_err:
                 print(f"   ⚠️  Quantization config failed: {quant_err}")
                 print("   → Falling back to full precision (float16)...")
