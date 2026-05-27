@@ -4,14 +4,27 @@ Zero-Shot VQA Inference using Phi-3.5 Vision
 This module implements a zero-shot Document VQA system using Phi-3.5 Vision model.
 No OCR data or training is used - pure vision-language inference.
 """
-import torch
+import os
 import sys
 import types
 import importlib
+import importlib
+
+# ===========================================================================
+# CRITICAL: Force bitsandbytes to use CUDA 12.9 pre-compiled binary.
+# Both Colab and Kaggle have PyTorch compiled for CUDA 13, but the actual
+# CUDA 13 runtime .so files (libnvJitLink.so.13) are NOT on disk.
+# Setting BNB_CUDA_VERSION=129 tells bitsandbytes to load its CUDA 12.9
+# binary instead, which uses libnvJitLink.so.12 that IS present on disk.
+# This MUST be set before ANY import of bitsandbytes or transformers.
+# ===========================================================================
+os.environ["BNB_CUDA_VERSION"] = "129"
+
 from typing import Dict, List, Any
 from pathlib import Path
 from PIL import Image
 from tqdm import tqdm
+import torch
 
 # ===========================================================================
 # FIX 1: triton.ops mock — bitsandbytes imports triton.ops.matmul_perf_model
