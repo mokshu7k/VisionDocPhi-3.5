@@ -43,6 +43,9 @@ print("📦 Installing Kaggle-optimized dependencies...\n")
 print("🔧 Installing from requirements_kaggle.txt (with --no-build-isolation)...")
 !pip install -q -r requirements_kaggle.txt --no-build-isolation 2>&1 | grep -E "Successfully|error|ERROR" | head -20
 
+# If you get dependency conflicts, try with --upgrade flag
+# !pip install -q -r requirements_kaggle.txt --no-build-isolation --upgrade
+
 print("\n✅ Dependencies installed!")
 ```
 
@@ -72,9 +75,24 @@ print("\n✅ Conflict resolution complete!")
 
 This is the most common issue. The `--no-build-isolation` flag tells pip to use pre-built wheels instead of trying to compile packages from source.
 
-#### Issue 2: scipy version conflict
-**Cause**: ydata-profiling requires `scipy<1.17`, but newer versions installed
-**Solution**: Already handled in `requirements_kaggle.txt` (scipy constraint included)
+#### Issue 2: Dependency resolution conflicts (ResolutionImpossible)
+**Cause**: Package version constraints are incompatible with pre-installed Kaggle packages
+**Solution**: Try these options in order:
+```python
+# Option A: Use --upgrade to resolve conflicts
+!pip install -q -r requirements_kaggle.txt --no-build-isolation --upgrade
+
+# Option B: If that fails, upgrade pip first
+!pip install --upgrade pip
+!pip install -q -r requirements_kaggle.txt --no-build-isolation --upgrade
+
+# Option C: Install packages individually to see which one conflicts
+!pip install transformers huggingface-hub pillow opencv-python --no-build-isolation --upgrade
+!pip install numpy scipy scikit-learn tqdm --no-build-isolation --upgrade
+!pip install peft datasets accelerate gradio diffusers --no-build-isolation --upgrade
+```
+
+The requirements use flexible version constraints (>=) to adapt to Kaggle's pre-installed packages.
 
 #### Issue 3: gym version conflict
 **Cause**: dopamine-rl requires `gym<=0.25.2`, but Kaggle has newer

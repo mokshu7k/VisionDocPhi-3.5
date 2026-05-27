@@ -5,9 +5,9 @@
 # ============================================================================
 # Core ML & Vision Libraries (Pre-built wheels only)
 # ============================================================================
-transformers==4.40.0
-huggingface-hub==0.19.0
-pillow==10.1.0
+transformers>=4.35.0
+huggingface-hub>=0.22.0
+pillow>=10.1.0
 opencv-python>=4.8.0
 
 # ============================================================================
@@ -22,7 +22,7 @@ tqdm>=4.66.0
 # Model Optimization & Quantization
 # ============================================================================
 # PEFT for parameter-efficient fine-tuning
-peft>=0.7.1
+peft>=0.7.0
 
 # Bitsandbytes for 8-bit quantization (optional - will attempt, but code handles failure)
 # For Kaggle, use: pip install bitsandbytes-cuda12x if this fails
@@ -38,7 +38,7 @@ accelerate>=0.27.0
 # Inference & Serving
 # ============================================================================
 gradio>=4.20.0
-diffusers>=0.25.0
+diffusers>=0.24.0
 
 # ============================================================================
 # Additional Utilities
