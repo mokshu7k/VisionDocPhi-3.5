@@ -4,11 +4,6 @@ Zero-Shot VQA Inference using Phi-3.5 Vision
 This module implements a zero-shot Document VQA system using Phi-3.5 Vision model.
 No OCR data or training is used - pure vision-language inference.
 """
-import os
-# CRITICAL: Force bitsandbytes to use CUDA 12 on Colab. 
-# Must be set before any other imports!
-os.environ["BNB_CUDA_VERSION"] = "121"
-
 import torch
 from typing import Dict, List, Any
 from pathlib import Path
@@ -95,23 +90,6 @@ class DocVQAInference:
         
         if USE_8BIT_QUANTIZATION and self.device == "cuda":
             print("🔷 Configuring 8-bit quantization via bitsandbytes...")
-            # Colab specific fix: bitsandbytes demands libnvJitLink.so.13 but Colab only has .12
-            # We will find the .12 file and symlink it to .13 to fool bitsandbytes
-            import os
-            import glob
-            
-            lib_paths = glob.glob("/usr/local/lib/python3.*/dist-packages/nvidia/nvjitlink/lib/libnvJitLink.so.*")
-            target_symlink = "/usr/lib/libnvJitLink.so.13"
-            
-            if not os.path.exists(target_symlink):
-                for path in lib_paths:
-                    if path != target_symlink:
-                        try:
-                            os.symlink(path, target_symlink)
-                            print(f"   ✓ Fooled bitsandbytes: linked {os.path.basename(path)} as .13")
-                            break
-                        except Exception:
-                            pass
             
             try:
                 from transformers import BitsAndBytesConfig, AutoConfig
