@@ -38,9 +38,10 @@ os.chdir('/kaggle/working/VisionDocPhi-3.5')
 
 print("📦 Installing Kaggle-optimized dependencies...\n")
 
-# Install from Kaggle-specific requirements
-print("🔧 Installing from requirements_kaggle.txt...")
-!pip install -q -r requirements_kaggle.txt --no-deps 2>&1 | tail -20
+# Install from Kaggle-specific requirements with --no-build-isolation
+# This is CRITICAL to avoid "subprocess-exited-with-error" when building wheels
+print("🔧 Installing from requirements_kaggle.txt (with --no-build-isolation)...")
+!pip install -q -r requirements_kaggle.txt --no-build-isolation 2>&1 | grep -E "Successfully|error|ERROR" | head -20
 
 print("\n✅ Dependencies installed!")
 ```
@@ -59,12 +60,17 @@ print("\n✅ Conflict resolution complete!")
 ### ⚠️ Common Issues & Solutions
 
 #### Issue 1: "subprocess-exited-with-error" when installing
-**Cause**: Package build failures or conflicts
-**Solution**:
+**Cause**: Pip is trying to build wheels from source code, but Kaggle's build environment is incompatible
+**Solution**: Use the `--no-build-isolation` flag to skip building from source:
 ```python
-# Use --no-build-isolation to skip building from source
+# CORRECT - This should work:
 !pip install -q -r requirements_kaggle.txt --no-build-isolation
+
+# WRONG - This will fail with subprocess-exited-with-error:
+!pip install -q -r requirements_kaggle.txt
 ```
+
+This is the most common issue. The `--no-build-isolation` flag tells pip to use pre-built wheels instead of trying to compile packages from source.
 
 #### Issue 2: scipy version conflict
 **Cause**: ydata-profiling requires `scipy<1.17`, but newer versions installed
@@ -120,13 +126,17 @@ if not os.path.exists(project_path):
 os.chdir(project_path)
 print(f"\n✅ Working directory: {os.getcwd()}\n")
 
-# Step 2: Install dependencies with conflict resolution
+# Step 2: Install dependencies with --no-build-isolation (CRITICAL for Kaggle)
 print("📦 Installing dependencies (this may take 2-3 minutes)...\n")
 
-# Install with no-deps first to avoid build errors
-!pip install -q -r requirements_kaggle.txt --no-build-isolation 2>&1 | grep -E "(Successfully|error|ERROR|WARNING)" | head -20
+# Install with --no-build-isolation to avoid subprocess-exited-with-error
+!pip install -q -r requirements_kaggle.txt --no-build-isolation 2>&1 | grep -E "Successfully|error|ERROR" | head -20
 
-# Step 3: Verify critical packages
+# Step 3: If bitsandbytes fails, try the CUDA-specific version
+print("\n🔷 Attempting to ensure bitsandbytes is available...")
+!pip install -q bitsandbytes-cuda12x --no-build-isolation 2>&1 | grep -E "Successfully|already" || echo "⚠️  Continuing with fallback to float16"
+
+# Step 4: Verify critical packages
 print("\n🔍 Verifying critical packages...\n")
 
 required_packages = ['transformers', 'huggingface_hub', 'torch', 'PIL', 'scipy']
@@ -137,7 +147,7 @@ for package in required_packages:
     except ImportError as e:
         print(f"⚠️  {package}: {str(e)}")
 
-# Step 4: Display configuration
+# Step 5: Display configuration
 print("\n" + "=" * 70)
 print("📊 Environment Configuration")
 print("=" * 70)

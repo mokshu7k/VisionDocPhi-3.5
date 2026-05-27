@@ -1,28 +1,61 @@
-# Kaggle Optimized Requirements  
-# Kaggle has fewer pre-installed packages, so we can use newer compatible versions
+# Kaggle-Optimized Requirements
+# PyTorch and CUDA are pre-installed in Kaggle - DO NOT INCLUDE torch/torchvision/torchaudio
+# Use --no-build-isolation flag when installing: pip install -q -r requirements_kaggle.txt --no-build-isolation
 
-torch==2.2.0
-torchvision==0.17.0
-torchaudio==2.2.0
+# ============================================================================
+# Core ML & Vision Libraries (Pre-built wheels only)
+# ============================================================================
 transformers==4.40.0
-huggingface_hub==0.19.0
+huggingface-hub==0.19.0
 pillow==10.1.0
+opencv-python>=4.8.0
 
-# Numerical/ML packages (newer versions work fine on Kaggle)
-numpy==1.24.3
-scipy==1.11.4
-scikit-learn==1.3.2
-tqdm==4.66.1
+# ============================================================================
+# Numerical/ML Packages (Compatible versions with pre-built wheels)
+# ============================================================================
+numpy>=1.24.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+tqdm>=4.66.0
 
-# ML packages
-gradio==4.26.0
-diffusers==0.25.1
-peft==0.7.1
-datasets==2.17.0
-accelerate==0.27.1
+# ============================================================================
+# Model Optimization & Quantization
+# ============================================================================
+# PEFT for parameter-efficient fine-tuning
+peft>=0.7.1
 
-# Quantization
+# Bitsandbytes for 8-bit quantization (optional - will attempt, but code handles failure)
+# For Kaggle, use: pip install bitsandbytes-cuda12x if this fails
 bitsandbytes>=0.41.0
 
-# Optional: Uncomment for GPU optimization
-# flash-attn>=2.0.0
+# ============================================================================
+# Data & Training Utilities
+# ============================================================================
+datasets>=2.17.0
+accelerate>=0.27.0
+
+# ============================================================================
+# Inference & Serving
+# ============================================================================
+gradio>=4.20.0
+diffusers>=0.25.0
+
+# ============================================================================
+# Additional Utilities
+# ============================================================================
+scikit-image>=0.22.0
+jsonlines>=4.0.0
+
+# ============================================================================
+# INSTALLATION NOTES FOR KAGGLE
+# ============================================================================
+# IMPORTANT: Install with this command:
+#   !pip install -q -r requirements_kaggle.txt --no-build-isolation
+#
+# If bitsandbytes fails, use one of these alternatives:
+#   !pip install bitsandbytes-cuda12x --no-build-isolation
+#   OR skip it and the code will use float16 fallback:
+#   !pip install -q --no-build-isolation -r requirements_kaggle.txt; true
+#
+# DO NOT include torch/torchvision/torchaudio - they're pre-installed in Kaggle
+# DO NOT try to install flash-attn in Kaggle - use eager attention mode instead
