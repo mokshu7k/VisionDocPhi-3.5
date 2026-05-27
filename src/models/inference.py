@@ -127,13 +127,30 @@ class DocVQAInference:
             self.model.gradient_checkpointing_enable()
             print("✅ Gradient checkpointing enabled for memory efficiency")
         
-        # Verify model loaded correctly
+        # Verify model loaded correctly - patch if missing generate method
         if not hasattr(self.model, 'generate'):
-            raise RuntimeError(
-                f"Model loaded but missing 'generate' method!\n"
-                f"Model type: {type(self.model)}\n"
-                f"This may indicate a model loading or version issue."
-            )
+            print("⚠️  Model missing 'generate' method - attempting to patch...")
+            try:
+                # Try to explicitly inherit from GenerationMixin
+                from transformers import GenerationMixin
+                # Add GenerationMixin methods to the model
+                for attr in dir(GenerationMixin):
+                    if not attr.startswith('_') and callable(getattr(GenerationMixin, attr)):
+                        if not hasattr(self.model, attr):
+                            setattr(self.model, attr, getattr(GenerationMixin, attr).__get__(self.model, type(self.model)))
+                
+                # Specifically ensure generate is available
+                if not hasattr(self.model, 'generate'):
+                    raise RuntimeError("Failed to patch generate method")
+                print("✅ Successfully patched generate method!")
+            except Exception as patch_err:
+                raise RuntimeError(
+                    f"Model loaded but missing 'generate' method!\n"
+                    f"Model type: {type(self.model)}\n"
+                    f"Attempted patch failed: {patch_err}\n"
+                    f"This may indicate a model loading or transformers version issue.\n"
+                    f"Suggestion: Try downgrading transformers to 4.40.0"
+                )
         
         self.model.eval()
         print("✅ Model loaded successfully and ready for inference!\n")
