@@ -53,10 +53,10 @@ MAX_NEW_TOKENS = 128
 #   float16 (no quant) : ~8.0 GB  — fits on T4 (15GB)
 #   4-bit NF4 quant    : ~2.5 GB  — fits on P100/T4 with huge headroom
 # Set to True to use 4-bit NF4 quantization (recommended for Kaggle)
-# Disabled: bitsandbytes environment issues on Kaggle cause loading to fail mid-way,
-# which leaks VRAM and causes the float16 fallback to OOM. 
-# We don't need quantization anyway since the KV cache leak is fixed!
-USE_8BIT_QUANTIZATION = False
+# Enabled: Without quantization, loading the 8.3GB model in float16 causes a massive
+# VRAM spike up to 14.4 GB during weight casting, instantly crashing the T4 GPU.
+# 4-bit quantization fixes this by loading directly into a 2.5GB quantized state.
+USE_8BIT_QUANTIZATION = True
 
 # Enable gradient checkpointing to reduce memory during inference
 USE_GRADIENT_CHECKPOINTING = True
