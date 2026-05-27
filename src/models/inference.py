@@ -5,6 +5,17 @@ This module implements a zero-shot Document VQA system using Phi-3.5 Vision mode
 No OCR data or training is used - pure vision-language inference.
 """
 import torch
+import sys
+import types
+
+# CRITICAL HACK: Modern PyTorch (2.3+) removed triton.ops, which crashes bitsandbytes.
+# By mocking the module here, we trick bitsandbytes into importing it successfully!
+try:
+    import triton
+    if "triton.ops" not in sys.modules:
+        sys.modules["triton.ops"] = types.ModuleType("triton.ops")
+except ImportError:
+    pass
 from typing import Dict, List, Any
 from pathlib import Path
 from PIL import Image
