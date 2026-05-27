@@ -83,13 +83,15 @@ class DocVQAInference:
         # Configure model loading parameters
         # Note: Phi-3.5 Vision requires BitsAndBytesConfig for quantization
         model_kwargs = {
-            "trust_remote_code": True,
             "device_map": "auto" if self.device == "cuda" else None,
             "max_memory": {0: "15GB", "cpu": "30GB"} if self.device == "cuda" else None,
-            "attn_implementation": "eager",
-            "_attn_implementation": "eager",
             "low_cpu_mem_usage": LOW_CPU_MEM_USAGE,
+            "trust_remote_code": True,
         }
+        
+        # We don't pass attn_implementation explicitly because the remote code's
+        # __init__ method doesn't accept the standardized _attn_implementation kwarg
+        # that transformers 4.46.3 automatically injects.
         
         if USE_8BIT_QUANTIZATION and self.device == "cuda":
             print("🔷 Configuring 8-bit quantization via bitsandbytes...")
