@@ -75,24 +75,36 @@ print("\n✅ Conflict resolution complete!")
 
 This is the most common issue. The `--no-build-isolation` flag tells pip to use pre-built wheels instead of trying to compile packages from source.
 
-#### Issue 2: Dependency resolution conflicts (ResolutionImpossible)
-**Cause**: Package version constraints are incompatible with pre-installed Kaggle packages
-**Solution**: Try these options in order:
+#### Issue 2: Dependency resolution conflicts (ResolutionImpossible or warnings about incompatible packages)
+**Cause**: Kaggle has many pre-installed packages (ydata-profiling, tensorflow, numba, etc.) that have conflicting dependencies. These are NOT needed for DocVQA.
+
+**Why warnings/conflicts appear:**
+- ydata-profiling requires numpy<2.4 but Kaggle has numpy 2.4.6
+- google-colab requires pandas==2.2.2 but Kaggle has 2.3.3
+- tensorflow requires numpy<2.2.0 but Kaggle has 2.4.6
+- etc.
+
+**Solution**: These warnings are **safe to ignore**. The requirements_kaggle.txt is intentionally minimal and only includes what's needed for DocVQA:
 ```python
-# Option A: Use --upgrade to resolve conflicts
-!pip install -q -r requirements_kaggle.txt --no-build-isolation --upgrade
+# This is fine to run - warnings about unrelated packages can be ignored:
+!pip install -q -r requirements_kaggle.txt --no-build-isolation
 
-# Option B: If that fails, upgrade pip first
-!pip install --upgrade pip
-!pip install -q -r requirements_kaggle.txt --no-build-isolation --upgrade
-
-# Option C: Install packages individually to see which one conflicts
-!pip install transformers huggingface-hub pillow opencv-python --no-build-isolation --upgrade
-!pip install numpy scipy scikit-learn tqdm --no-build-isolation --upgrade
-!pip install peft datasets accelerate gradio diffusers --no-build-isolation --upgrade
+# The minimal requirements include ONLY:
+# - transformers, huggingface-hub (model loading)
+# - peft, accelerate (model optimization)
+# - bitsandbytes (quantization)
+# - pillow, opencv (image processing)
+# - tqdm, datasets, gradio (utilities)
+#
+# Pre-installed Kaggle packages like numpy, scipy, tensorflow, ydata-profiling
+# are NOT in the requirements and their conflicts are irrelevant to DocVQA
 ```
 
-The requirements use flexible version constraints (>=) to adapt to Kaggle's pre-installed packages.
+**Why fixed versions (==) don't work on Kaggle:**
+- Kaggle pre-installs specific versions of many packages
+- If requirements.txt has `huggingface-hub==0.19.0` but Kaggle has 0.22.0, pip fails
+- Flexible constraints (>=) allow pip to work with Kaggle's versions
+- But warnings appear because Kaggle's other pre-installed packages have conflicts with each other (not with our code)
 
 #### Issue 3: gym version conflict
 **Cause**: dopamine-rl requires `gym<=0.25.2`, but Kaggle has newer
@@ -144,28 +156,31 @@ if not os.path.exists(project_path):
 os.chdir(project_path)
 print(f"\n✅ Working directory: {os.getcwd()}\n")
 
-# Step 2: Install dependencies with --no-build-isolation (CRITICAL for Kaggle)
-print("📦 Installing dependencies (this may take 2-3 minutes)...\n")
+# Step 2: Install minimal dependencies (warnings about unrelated packages are safe to ignore)
+print("📦 Installing dependencies (this may take 1-2 minutes)...\n")
+print("⚠️  Note: You may see warnings about unrelated Kaggle packages - these are safe to ignore!\n")
 
-# Install with --no-build-isolation to avoid subprocess-exited-with-error
-!pip install -q -r requirements_kaggle.txt --no-build-isolation 2>&1 | grep -E "Successfully|error|ERROR" | head -20
+# Install with --no-build-isolation
+!pip install -q -r requirements_kaggle.txt --no-build-isolation 2>&1 | grep -E "Successfully|Collecting|Installing" | head -20
 
-# Step 3: If bitsandbytes fails, try the CUDA-specific version
-print("\n🔷 Attempting to ensure bitsandbytes is available...")
-!pip install -q bitsandbytes-cuda12x --no-build-isolation 2>&1 | grep -E "Successfully|already" || echo "⚠️  Continuing with fallback to float16"
-
-# Step 4: Verify critical packages
+# Step 3: Verify critical packages for DocVQA
 print("\n🔍 Verifying critical packages...\n")
 
-required_packages = ['transformers', 'huggingface_hub', 'torch', 'PIL', 'scipy']
-for package in required_packages:
+critical_packages = ['transformers', 'huggingface_hub', 'torch', 'PIL', 'peft', 'accelerate']
+all_good = True
+for package in critical_packages:
     try:
         __import__(package)
         print(f"✅ {package}")
     except ImportError as e:
-        print(f"⚠️  {package}: {str(e)}")
+        print(f"❌ {package}: {str(e)}")
+        all_good = False
 
-# Step 5: Display configuration
+if not all_good:
+    print("\n⚠️  Some packages failed. Trying with --upgrade...")
+    !pip install -q -r requirements_kaggle.txt --no-build-isolation --upgrade
+
+# Step 4: Display configuration
 print("\n" + "=" * 70)
 print("📊 Environment Configuration")
 print("=" * 70)
@@ -178,6 +193,7 @@ if torch.cuda.is_available():
     print(f"GPU(s): {torch.cuda.device_count()}")
     
 print("\n✅ Setup complete! You're ready to run VisionDocPhi-3.5!")
+print("✅ Note: Dependency warnings about google-adk, ydata-profiling, tensorflow, etc. are OK")
 ```
 
 ---

@@ -1,61 +1,52 @@
-# Kaggle-Optimized Requirements
+# Kaggle-Optimized Requirements - MINIMAL VERSION
 # PyTorch and CUDA are pre-installed in Kaggle - DO NOT INCLUDE torch/torchvision/torchaudio
+# numpy, pandas, scipy, scikit-learn are pre-installed - DO NOT INCLUDE
 # Use --no-build-isolation flag when installing: pip install -q -r requirements_kaggle.txt --no-build-isolation
 
 # ============================================================================
-# Core ML & Vision Libraries (Pre-built wheels only)
+# ONLY the packages needed for VisionDocPhi-3.5 DocVQA
 # ============================================================================
+
+# Transformers and HuggingFace (core ML library)
 transformers>=4.35.0
 huggingface-hub>=0.22.0
-pillow>=10.1.0
+
+# Image processing (may already be installed, but ensure compatible versions)
+pillow>=10.0.0
 opencv-python>=4.8.0
 
-# ============================================================================
-# Numerical/ML Packages (Compatible versions with pre-built wheels)
-# ============================================================================
-numpy>=1.24.0
-scipy>=1.11.0
-scikit-learn>=1.3.0
-tqdm>=4.66.0
-
-# ============================================================================
-# Model Optimization & Quantization
-# ============================================================================
-# PEFT for parameter-efficient fine-tuning
+# Model optimization
 peft>=0.7.0
-
-# Bitsandbytes for 8-bit quantization (optional - will attempt, but code handles failure)
-# For Kaggle, use: pip install bitsandbytes-cuda12x if this fails
-bitsandbytes>=0.41.0
-
-# ============================================================================
-# Data & Training Utilities
-# ============================================================================
-datasets>=2.17.0
 accelerate>=0.27.0
 
-# ============================================================================
-# Inference & Serving
-# ============================================================================
+# Quantization support (optional - code handles if unavailable)
+bitsandbytes>=0.41.0
+
+# Progress bars
+tqdm>=4.66.0
+
+# Optional: For data handling if needed
+datasets>=2.17.0
+
+# Optional: For creating interfaces
 gradio>=4.20.0
-diffusers>=0.24.0
 
 # ============================================================================
-# Additional Utilities
+# DO NOT INCLUDE - These are pre-installed in Kaggle:
 # ============================================================================
-scikit-image>=0.22.0
-jsonlines>=4.0.0
+# - torch, torchvision, torchaudio (pre-installed)
+# - numpy, pandas, scipy (pre-installed)
+# - scikit-learn, scikit-image (pre-installed)
+# - tensorflow, keras (pre-installed but not needed)
+# - jupyter-server, jupyter (pre-installed)
+# - google-colab (pre-installed)
+#
+# These cause conflicts if included and are not needed for DocVQA
 
 # ============================================================================
-# INSTALLATION NOTES FOR KAGGLE
+# INSTALLATION COMMAND FOR KAGGLE:
 # ============================================================================
-# IMPORTANT: Install with this command:
-#   !pip install -q -r requirements_kaggle.txt --no-build-isolation
-#
-# If bitsandbytes fails, use one of these alternatives:
-#   !pip install bitsandbytes-cuda12x --no-build-isolation
-#   OR skip it and the code will use float16 fallback:
-#   !pip install -q --no-build-isolation -r requirements_kaggle.txt; true
-#
-# DO NOT include torch/torchvision/torchaudio - they're pre-installed in Kaggle
-# DO NOT try to install flash-attn in Kaggle - use eager attention mode instead
+# !pip install -q -r requirements_kaggle.txt --no-build-isolation
+# 
+# If dependency conflicts appear, they are likely from Kaggle's pre-installed
+# packages and can usually be safely ignored for this project.
