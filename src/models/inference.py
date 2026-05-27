@@ -80,7 +80,8 @@ class DocVQAInference:
         # Note: Phi-3.5 Vision requires BitsAndBytesConfig for quantization
         model_kwargs = {
             "trust_remote_code": True,
-            "device_map": "cuda" if self.device == "cuda" else None,
+            "device_map": "auto" if self.device == "cuda" else None,
+            "max_memory": {0: "15GB", "cpu": "30GB"} if self.device == "cuda" else None,
             "attn_implementation": "eager",
             "_attn_implementation": "eager",
             "low_cpu_mem_usage": LOW_CPU_MEM_USAGE,
@@ -88,6 +89,15 @@ class DocVQAInference:
         
         if USE_8BIT_QUANTIZATION and self.device == "cuda":
             print("🔷 Configuring 8-bit quantization via bitsandbytes...")
+            # Colab specific fix for bitsandbytes CUDA 13.0 environment
+            import os
+            if os.path.exists("/usr/local/lib/python3.12/dist-packages/nvidia/nvjitlink/lib/libnvJitLink.so.13"):
+                if not os.path.exists("/usr/lib/libnvJitLink.so.13"):
+                    try:
+                        os.symlink("/usr/local/lib/python3.12/dist-packages/nvidia/nvjitlink/lib/libnvJitLink.so.13", "/usr/lib/libnvJitLink.so.13")
+                        print("   ✓ Applied Colab libnvJitLink symlink fix")
+                    except Exception as e:
+                        print(f"   ⚠️ Could not apply libnvJitLink fix: {e}")
             try:
                 from transformers import BitsAndBytesConfig
                 quantization_config = BitsAndBytesConfig(

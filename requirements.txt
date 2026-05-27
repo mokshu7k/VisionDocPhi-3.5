@@ -1,7 +1,7 @@
 torch==2.12.0
 torchvision==0.27.0
 torchaudio==2.11.0
-transformers==4.43.0
+transformers==4.44.2
 huggingface_hub==0.36.2
 pillow==11.1.0
 numpy==2.0.2
@@ -13,6 +13,6 @@ diffusers==0.38.0
 peft==0.19.1
 datasets==4.8.5
 accelerate==1.13.0
-bitsandbytes>=0.43.0
+bitsandbytes==0.43.3
 
 # flash-attn>=2.0.0  # Uncomment for CUDA-enabled environments with build tools
