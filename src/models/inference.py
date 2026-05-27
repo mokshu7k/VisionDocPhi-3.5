@@ -136,12 +136,21 @@ class DocVQAInference:
         else:
             model_kwargs["torch_dtype"] = torch_dtype
 
-        print(f"📥 Loading from HuggingFace Hub: {model_name}")
+        print(f"📥 Downloading and caching model from HuggingFace Hub: {model_name}")
         try:
+            from huggingface_hub import snapshot_download
+            import os
+            
+            # By downloading the model first and passing the absolute local path to from_pretrained,
+            # we completely bypass the HFValidationError string bug triggered by accelerate in older transformers.
+            local_model_path = snapshot_download(repo_id=model_name)
+            print(f"   ✓ Model downloaded to local cache: {local_model_path}")
+            
             self.model = AutoModelForCausalLM.from_pretrained(
-                model_name,
+                local_model_path,
                 **model_kwargs
             )
+            print("✅ Model loaded successfully in 4-bit!")
         except Exception as load_err:
             print(f"❌ Model loading failed with current config: {load_err}")
             if "quantization_config" in model_kwargs:
