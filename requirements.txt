@@ -13,6 +13,6 @@ diffusers==0.38.0
 peft==0.19.1
 datasets==4.8.5
 accelerate==1.13.0
-bitsandbytes==0.47.0   # Kaggle has CUDA 13 — this version supports it and has triton.ops fixes
+bitsandbytes==0.48.0   # Kaggle CUDA 13.0 — first version with CUDA 13 pre-compiled binary
 
 # flash-attn>=2.0.0  # Uncomment for CUDA-enabled environments with build tools
