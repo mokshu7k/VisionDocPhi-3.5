@@ -24,7 +24,9 @@ from transformers import PreTrainedModel
 
 @classmethod
 def _disabled_flash_attn_check(cls, config, *args, **kwargs):
-    """No-op replacement: never enable FlashAttention2, never crash."""
+    """Force eager attention. Never enable FlashAttention2 — flash_attn is not installed."""
+    if hasattr(config, '_attn_implementation'):
+        config._attn_implementation = 'eager'
     return config
 
 PreTrainedModel._check_and_enable_flash_attn_2 = _disabled_flash_attn_check
@@ -131,6 +133,20 @@ class DocVQAInference:
         if USE_GRADIENT_CHECKPOINTING and hasattr(self.model, 'gradient_checkpointing_enable'):
             self.model.gradient_checkpointing_enable()
             print("✅ Gradient checkpointing enabled for memory efficiency")
+
+        # CRITICAL: Force eager attention on the loaded model.
+        # Even though we patched the load-time check, the model config may still
+        # have _attn_implementation='flash_attention_2' baked in from HuggingFace,
+        # which causes `flash_attn_func is not defined` during generate().
+        # We must overwrite it on the config AND on every attention sub-module.
+        self.model.config._attn_implementation = 'eager'
+        for module in self.model.modules():
+            if hasattr(module, 'config') and hasattr(module.config, '_attn_implementation'):
+                module.config._attn_implementation = 'eager'
+            # Some layers store it directly as an attribute
+            if hasattr(module, '_attn_implementation'):
+                module._attn_implementation = 'eager'
+        print("✅ Attention mode forced to: eager (flash_attn disabled)")
         
         # Verify model loaded correctly - patch if missing generate method
         if not hasattr(self.model, 'generate'):
