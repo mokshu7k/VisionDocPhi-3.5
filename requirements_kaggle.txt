@@ -1,6 +1,7 @@
 # Kaggle-Optimized Requirements - MINIMAL VERSION
 # PyTorch and CUDA are pre-installed in Kaggle - DO NOT INCLUDE torch/torchvision/torchaudio
-# numpy, pandas, scipy, scikit-learn are pre-installed - DO NOT INCLUDE
+# numpy, pandas, scikit-learn are pre-installed - DO NOT INCLUDE
+# CRITICAL: scipy version MUST be specified to ensure compatibility with numpy
 # Use --no-build-isolation flag when installing: pip install -q -r requirements_kaggle.txt --no-build-isolation
 
 # ============================================================================
@@ -10,6 +11,11 @@
 # Transformers and HuggingFace (core ML library)
 transformers>=4.35.0
 huggingface-hub>=0.22.0
+
+# CRITICAL: scipy version compatibility fix
+# scipy 1.17+ has compatibility issues with numpy 2.4.6 in Kaggle
+# Use scipy 1.14.x which is stable and compatible across numpy versions
+scipy>=1.11.0,<=1.14.1
 
 # Image processing (may already be installed, but ensure compatible versions)
 pillow>=10.0.0

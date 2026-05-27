@@ -75,6 +75,16 @@ print("\n✅ Conflict resolution complete!")
 
 This is the most common issue. The `--no-build-isolation` flag tells pip to use pre-built wheels instead of trying to compile packages from source.
 
+#### Issue 1b: "cannot import name '_center' from 'numpy._core.umath'"
+**Cause**: scipy 1.17+ is incompatible with Kaggle's numpy 2.4.6. This causes import errors when transformers tries to load.
+**Solution**: The requirements_kaggle.txt now specifies `scipy>=1.11.0,<=1.14.1` which is compatible. 
+
+**If you already have the old scipy installed**, clear it:
+```python
+!pip uninstall scipy -y
+!pip install -q -r requirements_kaggle.txt --no-build-isolation
+```
+
 #### Issue 2: Dependency resolution conflicts (ResolutionImpossible or warnings about incompatible packages)
 **Cause**: Kaggle has many pre-installed packages (ydata-profiling, tensorflow, numba, etc.) that have conflicting dependencies. These are NOT needed for DocVQA.
 
@@ -156,17 +166,22 @@ if not os.path.exists(project_path):
 os.chdir(project_path)
 print(f"\n✅ Working directory: {os.getcwd()}\n")
 
-# Step 2: Install minimal dependencies (warnings about unrelated packages are safe to ignore)
-print("📦 Installing dependencies (this may take 1-2 minutes)...\n")
+# Step 2: CRITICAL - Fix scipy compatibility issue with numpy 2.4.6
+print("🔧 Fixing numpy-scipy compatibility...\n")
+print("  Removing incompatible scipy 1.17+ from Kaggle...")
+!pip uninstall scipy -y -q 2>/dev/null || echo "  (scipy not pre-installed or already removed)"
+
+# Step 3: Install minimal dependencies with correct scipy version
+print("\n📦 Installing dependencies (this may take 1-2 minutes)...\n")
 print("⚠️  Note: You may see warnings about unrelated Kaggle packages - these are safe to ignore!\n")
 
 # Install with --no-build-isolation
 !pip install -q -r requirements_kaggle.txt --no-build-isolation 2>&1 | grep -E "Successfully|Collecting|Installing" | head -20
 
-# Step 3: Verify critical packages for DocVQA
+# Step 4: Verify critical packages for DocVQA
 print("\n🔍 Verifying critical packages...\n")
 
-critical_packages = ['transformers', 'huggingface_hub', 'torch', 'PIL', 'peft', 'accelerate']
+critical_packages = ['transformers', 'huggingface_hub', 'torch', 'PIL', 'peft', 'accelerate', 'scipy']
 all_good = True
 for package in critical_packages:
     try:
@@ -180,7 +195,17 @@ if not all_good:
     print("\n⚠️  Some packages failed. Trying with --upgrade...")
     !pip install -q -r requirements_kaggle.txt --no-build-isolation --upgrade
 
-# Step 4: Display configuration
+# Step 5: Test that imports work
+print("\n🧪 Testing imports...\n")
+try:
+    from transformers import AutoModelForCausalLM, AutoProcessor
+    from src.models.inference import DocVQAInference
+    print("✅ All critical imports working!")
+except ImportError as e:
+    print(f"❌ Import error: {e}")
+    print("   Try restarting the kernel and running this cell again")
+
+# Step 6: Display configuration
 print("\n" + "=" * 70)
 print("📊 Environment Configuration")
 print("=" * 70)
@@ -193,7 +218,6 @@ if torch.cuda.is_available():
     print(f"GPU(s): {torch.cuda.device_count()}")
     
 print("\n✅ Setup complete! You're ready to run VisionDocPhi-3.5!")
-print("✅ Note: Dependency warnings about google-adk, ydata-profiling, tensorflow, etc. are OK")
 ```
 
 ---
