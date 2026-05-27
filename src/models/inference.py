@@ -7,41 +7,40 @@ No OCR data or training is used - pure vision-language inference.
 import torch
 import sys
 import types
-
-# CRITICAL HACK: Modern PyTorch (2.3+) removed triton.ops, which crashes bitsandbytes.
-# By mocking the module here, we trick bitsandbytes into importing it successfully!
-try:
-    import triton
-    if "triton.ops" not in sys.modules:
-        sys.modules["triton.ops"] = types.ModuleType("triton.ops")
-except ImportError:
-    pass
+import importlib
 from typing import Dict, List, Any
 from pathlib import Path
 from PIL import Image
 from tqdm import tqdm
 
-from transformers import AutoModelForCausalLM, AutoProcessor, AutoConfig
+# ===========================================================================
+# CRITICAL: Patch FlashAttention check BEFORE importing transformers classes.
+# The Phi-3.5 Vision remote code triggers this check during class loading.
+# We must intercept it at the module level so it never raises ImportError.
+# ===========================================================================
+import transformers.modeling_utils as _mu
 
-# Attempt to disable FlashAttention2 validation check
-# Different transformers versions have different internal function names
+def _no_op_flash_attn_check(cls, config, *args, **kwargs):
+    """Completely disable FlashAttention2 auto-enabling. Force eager mode."""
+    # Clear any flash attention flags that may have been set on the config
+    if hasattr(config, '_attn_implementation'):
+        if config._attn_implementation == 'flash_attention_2':
+            config._attn_implementation = 'eager'
+    return config
+
+if hasattr(_mu, '_check_and_enable_flash_attn_2'):
+    _mu._check_and_enable_flash_attn_2 = _no_op_flash_attn_check
+
+# Also disable the is_flash_attn_2_available function so nothing can re-enable it
 try:
-    import transformers.modeling_utils as modeling_utils
-    
-    # Patch for transformers 4.46.3 to prevent auto-enabling FlashAttention
-    if hasattr(modeling_utils, '_check_and_enable_flash_attn_2'):
-        original_check = modeling_utils._check_and_enable_flash_attn_2
-        # Just return the config untouched to bypass the check entirely
-        modeling_utils._check_and_enable_flash_attn_2 = lambda cls, config, *args, **kwargs: config
-    
-    # Legacy patches for other versions
-    if hasattr(modeling_utils, '_flash_attn_2_can_dispatch'):
-        modeling_utils._flash_attn_2_can_dispatch = lambda self, is_init_check=False: False
-    elif hasattr(modeling_utils, 'is_flash_attn_2_available'):
-        modeling_utils.is_flash_attn_2_available = lambda: False
-        
-except Exception as patch_error:
-    print(f"⚠️  Warning: Could not patch FlashAttention2 check: {patch_error}")
+    import transformers.utils as _tu
+    if hasattr(_tu, 'is_flash_attn_2_available'):
+        _tu.is_flash_attn_2_available = lambda: False
+except Exception:
+    pass
+
+# Now it is safe to import the transformers classes
+from transformers import AutoModelForCausalLM, AutoProcessor, AutoConfig
 
 from config.settings import (
     MODEL_NAME, DEVICE, TORCH_DTYPE, ATTN_IMPLEMENTATION, 
