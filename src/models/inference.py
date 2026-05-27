@@ -28,20 +28,19 @@ from transformers import AutoModelForCausalLM, AutoProcessor, AutoConfig
 try:
     import transformers.modeling_utils as modeling_utils
     
-    # Try to find and patch the FlashAttention2 check function
+    # Patch for transformers 4.46.3 to prevent auto-enabling FlashAttention
+    if hasattr(modeling_utils, '_check_and_enable_flash_attn_2'):
+        original_check = modeling_utils._check_and_enable_flash_attn_2
+        # Just return the config untouched to bypass the check entirely
+        modeling_utils._check_and_enable_flash_attn_2 = lambda cls, config, *args, **kwargs: config
+    
+    # Legacy patches for other versions
     if hasattr(modeling_utils, '_flash_attn_2_can_dispatch'):
-        original_check = modeling_utils._flash_attn_2_can_dispatch
         modeling_utils._flash_attn_2_can_dispatch = lambda self, is_init_check=False: False
     elif hasattr(modeling_utils, 'is_flash_attn_2_available'):
-        original_check = modeling_utils.is_flash_attn_2_available
         modeling_utils.is_flash_attn_2_available = lambda: False
-    
-    # Also try to patch at the generation_utils level
-    import transformers.generation.utils as gen_utils
-    if hasattr(gen_utils, '_flash_attn_2_can_dispatch'):
-        gen_utils._flash_attn_2_can_dispatch = lambda self, is_init_check=False: False
+        
 except Exception as patch_error:
-    # If patching fails, that's okay - we'll handle it in model loading
     print(f"⚠️  Warning: Could not patch FlashAttention2 check: {patch_error}")
 
 from config.settings import (
@@ -93,12 +92,8 @@ class DocVQAInference:
             "max_memory": {0: "15GB", "cpu": "30GB"} if self.device == "cuda" else None,
             "low_cpu_mem_usage": LOW_CPU_MEM_USAGE,
             "trust_remote_code": True,
+            "attn_implementation": "eager",
         }
-        
-        # We don't pass attn_implementation explicitly because the remote code's
-        # __init__ method doesn't accept the standardized _attn_implementation kwarg
-        # that transformers 4.46.3 automatically injects.
-        
         if USE_8BIT_QUANTIZATION and self.device == "cuda":
             print("🔷 Configuring 8-bit quantization via bitsandbytes...")
             
