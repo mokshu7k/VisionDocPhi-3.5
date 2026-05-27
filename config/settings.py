@@ -49,9 +49,9 @@ MAX_NEW_TOKENS = 128
 # ============================================================================
 # GPU MEMORY OPTIMIZATION
 # ============================================================================
-# Note: Phi-3.5 Vision requires bitsandbytes for 8-bit quantization
-# Instead of `load_in_8bit=True` directly, it needs BitsAndBytesConfig
-USE_8BIT_QUANTIZATION = True
+# We disable 8-bit quantization because Colab PyTorch 2.5 + bitsandbytes is currently broken,
+# and the model (8GB) natively fits inside Colab T4 (15GB) anyway without it!
+USE_8BIT_QUANTIZATION = False
 
 # Enable gradient checkpointing to reduce memory during inference
 USE_GRADIENT_CHECKPOINTING = True
