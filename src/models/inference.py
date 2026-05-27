@@ -14,6 +14,23 @@ from PIL import Image
 from tqdm import tqdm
 
 # ===========================================================================
+# FIX 1: triton.ops mock — bitsandbytes imports triton.ops.matmul_perf_model
+# which was removed in modern PyTorch/triton. We create a fake package with
+# __path__ set (required for sub-module imports to work without crashing).
+# ===========================================================================
+try:
+    import triton as _triton
+    _ops = types.ModuleType('triton.ops')
+    _ops.__path__ = []          # CRITICAL: makes it a package, not just a module
+    _ops.__package__ = 'triton.ops'
+    _ops.__spec__ = importlib.util.spec_from_loader('triton.ops', loader=None)
+    sys.modules['triton.ops'] = _ops
+    sys.modules.setdefault('triton.ops.matmul_perf_model',
+                           types.ModuleType('triton.ops.matmul_perf_model'))
+except ImportError:
+    pass
+
+# ===========================================================================
 # CRITICAL: Patch _check_and_enable_flash_attn_2 on PreTrainedModel itself.
 # This is a classmethod — patching the module does NOT work because Python
 # resolves `cls._check_and_enable_flash_attn_2()` via the class MRO, not 
