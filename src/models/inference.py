@@ -14,32 +14,22 @@ from PIL import Image
 from tqdm import tqdm
 
 # ===========================================================================
-# CRITICAL: Patch FlashAttention check BEFORE importing transformers classes.
-# The Phi-3.5 Vision remote code triggers this check during class loading.
-# We must intercept it at the module level so it never raises ImportError.
+# CRITICAL: Patch _check_and_enable_flash_attn_2 on PreTrainedModel itself.
+# This is a classmethod — patching the module does NOT work because Python
+# resolves `cls._check_and_enable_flash_attn_2()` via the class MRO, not 
+# the module namespace. We must patch the class directly, and do it BEFORE
+# any model class is imported or used.
 # ===========================================================================
-import transformers.modeling_utils as _mu
+from transformers import PreTrainedModel
 
-def _no_op_flash_attn_check(cls, config, *args, **kwargs):
-    """Completely disable FlashAttention2 auto-enabling. Force eager mode."""
-    # Clear any flash attention flags that may have been set on the config
-    if hasattr(config, '_attn_implementation'):
-        if config._attn_implementation == 'flash_attention_2':
-            config._attn_implementation = 'eager'
+@classmethod
+def _disabled_flash_attn_check(cls, config, *args, **kwargs):
+    """No-op replacement: never enable FlashAttention2, never crash."""
     return config
 
-if hasattr(_mu, '_check_and_enable_flash_attn_2'):
-    _mu._check_and_enable_flash_attn_2 = _no_op_flash_attn_check
+PreTrainedModel._check_and_enable_flash_attn_2 = _disabled_flash_attn_check
 
-# Also disable the is_flash_attn_2_available function so nothing can re-enable it
-try:
-    import transformers.utils as _tu
-    if hasattr(_tu, 'is_flash_attn_2_available'):
-        _tu.is_flash_attn_2_available = lambda: False
-except Exception:
-    pass
-
-# Now it is safe to import the transformers classes
+# Now it is safe to import the model classes
 from transformers import AutoModelForCausalLM, AutoProcessor, AutoConfig
 
 from config.settings import (
