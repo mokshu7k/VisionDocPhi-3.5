@@ -80,7 +80,7 @@ class DocVQAInference:
         # Note: Phi-3.5 Vision requires BitsAndBytesConfig for quantization
         model_kwargs = {
             "trust_remote_code": True,
-            "device_map": "auto" if self.device == "cuda" else None,
+            "device_map": {"": 0} if self.device == "cuda" else None,
             "attn_implementation": "eager",
             "_attn_implementation": "eager",
             "low_cpu_mem_usage": LOW_CPU_MEM_USAGE,
