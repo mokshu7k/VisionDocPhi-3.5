@@ -13,6 +13,7 @@ diffusers==0.38.0
 peft==0.19.1
 datasets==4.8.5
 accelerate==1.13.0
-bitsandbytes==0.48.0   # Kaggle CUDA 13.0 — first version with CUDA 13 pre-compiled binary
+bitsandbytes==0.48.0   # Tier 1 quantization — needs CUDA 13 binary (may fail on Kaggle)
+quanto                 # Tier 2 quantization — pure Python fallback, no CUDA binary needed
 
 # flash-attn>=2.0.0  # Uncomment for CUDA-enabled environments with build tools

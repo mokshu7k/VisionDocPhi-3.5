@@ -121,14 +121,9 @@ class DocVQAInference:
             "attn_implementation": "eager",
         }
         if USE_8BIT_QUANTIZATION and self.device == "cuda":
-            print("🔷 Attempting 4-bit NF4 quantization via bitsandbytes...")
+            # --- TIER 1: bitsandbytes (fastest, but requires matching CUDA binary) ---
             try:
                 from transformers import BitsAndBytesConfig
-                # NOTE: Do NOT pass config= as a kwarg for trust_remote_code models.
-                # It causes HFValidationError because the config object gets serialised
-                # as a string and used as the model ID. The FlashAttention2 patch at
-                # the top of this file (PreTrainedModel classmethod patch) handles
-                # eager attention without needing to inject a config object here.
                 quantization_config = BitsAndBytesConfig(
                     load_in_4bit=True,
                     bnb_4bit_compute_dtype=torch_dtype,
@@ -137,12 +132,18 @@ class DocVQAInference:
                 )
                 model_kwargs["quantization_config"] = quantization_config
                 model_kwargs["torch_dtype"] = torch_dtype
-                print("   ✓ 4-bit NF4 quantization configured (~75% VRAM reduction)")
-            except Exception as quant_err:
-                print(f"   ⚠️  Quantization setup failed (common on Kaggle): {quant_err}")
-                print("   → Falling back to float16 without quantization...")
-                print("   → KV cache memory leak fix (use_cache=False) will prevent OOM")
-                model_kwargs["torch_dtype"] = torch_dtype
+                print("🔷 Tier 1: bitsandbytes 4-bit NF4 quantization configured")
+            except Exception:
+                # --- TIER 2: quanto (pure Python, no CUDA binary needed — works on Kaggle!) ---
+                try:
+                    from transformers import QuantoConfig
+                    model_kwargs["quantization_config"] = QuantoConfig(weights="int4")
+                    model_kwargs["torch_dtype"] = torch_dtype
+                    print("🔶 Tier 2: quanto int4 quantization configured (no CUDA binary needed)")
+                except ImportError:
+                    # --- TIER 3: plain float16, no quantization ---
+                    print("⬜ Tier 3: No quantization available — using plain float16")
+                    model_kwargs["torch_dtype"] = torch_dtype
         else:
             print(f"📍 Using float16 precision (quantization disabled)")
             print("   → Memory optimization via KV cache leak fix (use_cache=False)")
