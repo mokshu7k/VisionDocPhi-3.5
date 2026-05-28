@@ -58,7 +58,7 @@ MAX_NEW_TOKENS = 128
 # 
 # MEMORY LEAK FIX: use_cache=False in generate() prevents KV cache accumulation
 # With the leak fixed, float16 alone (8 GB) fits comfortably on Kaggle's 15GB T4
-USE_8BIT_QUANTIZATION = False
+USE_8BIT_QUANTIZATION = True
 
 # Enable gradient checkpointing to reduce memory during inference
 USE_GRADIENT_CHECKPOINTING = True
