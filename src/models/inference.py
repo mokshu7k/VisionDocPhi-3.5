@@ -6,6 +6,7 @@ No OCR data or training is used - pure vision-language inference.
 """
 import os
 import sys
+import gc
 import types
 import importlib
 import importlib
@@ -83,6 +84,13 @@ class DocVQAInference:
         """
         self.device = device or DEVICE
         self.model_name = model_name
+        
+        # 🧹 CRITICAL: Clear CUDA memory before loading model to prevent fragmentation
+        if torch.cuda.is_available():
+            import gc
+            torch.cuda.empty_cache()
+            torch.cuda.reset_peak_memory_stats()
+            gc.collect()
         
         print(f"🚀 Loading model: {model_name}")
         print(f"📍 Device: {self.device}")
