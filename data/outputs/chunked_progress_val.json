@@ -1,0 +1,12 @@
+{
+  "split": "val",
+  "chunk_size": 50,
+  "total_samples": 5349,
+  "completed_chunks": [
+    0,
+    1
+  ],
+  "all_predictions": [],
+  "all_results": [],
+  "merged_metrics": null
+}
