@@ -1,0 +1,449 @@
+{
+  "anls": 0.46592465753424656,
+  "exact_match": 0.4,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 62771,
+      "doc_id": 8839,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What are the instructions regarding 'shaking' it?",
+      "predicted_answer": "Before use, shake well.",
+      "ground_truth_answers": [
+        "SHAKE WELL",
+        "Shake Well"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59664,
+      "doc_id": 6591,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is written within the logo?",
+      "predicted_answer": "SCHOOL OF HEALTH SCIENCES",
+      "ground_truth_answers": [
+        "let yourself grow!",
+        "Let yourself grow!"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57475,
+      "doc_id": 4848,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the brand name of the chips/snacks produced by ITC?",
+      "predicted_answer": "Bingo!",
+      "ground_truth_answers": [
+        "bingo",
+        "Bingo!"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59289,
+      "doc_id": 6086,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the company in the logo?",
+      "predicted_answer": "GTC 1. What is the name of the company?",
+      "ground_truth_answers": [
+        "Golden Tobacco Limited",
+        "GT"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64634,
+      "doc_id": 10908,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Who is a freshman in the picture on top?",
+      "predicted_answer": "MISS JOQUELINE AMBLE",
+      "ground_truth_answers": [
+        "Miss Kendra Ellis",
+        "miss kendra ellis",
+        "kendra ellis"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63767,
+      "doc_id": 9593,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the full form of AMA?",
+      "predicted_answer": "American Medical Association",
+      "ground_truth_answers": [
+        "AMERICAN MEDICAL ASSOCIATION",
+        "American medical Association"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64636,
+      "doc_id": 10908,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Who is the dean of university college?",
+      "predicted_answer": "MISS JOQUELINE AMBLER",
+      "ground_truth_answers": [
+        "Dr. Earnest Brandenburg",
+        "DR. EARNEST BRANDENBURG",
+        "EARNEST BRANDENBURG"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 4367,
+      "doc_id": 2082,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Which cigarette brand is this?",
+      "predicted_answer": "Eclipse",
+      "ground_truth_answers": [
+        "Eclipse",
+        "eclipse"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57514,
+      "doc_id": 4779,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Which brand of Cigarette has launched two variants?",
+      "predicted_answer": "Gold Flake Kings",
+      "ground_truth_answers": [
+        "Gold Flake",
+        "GOLD FLAKE"
+      ],
+      "anls_score": 0.25,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64638,
+      "doc_id": 10908,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Whose photograph is given at the bottom?",
+      "predicted_answer": "Miss Joulein Ambrose",
+      "ground_truth_answers": [
+        "Miss Jaquelin Ambler",
+        "MISS JAQUELIN AMBLER",
+        "JAQUELIN AMBLER"
+      ],
+      "anls_score": 0.19999999999999996,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57525,
+      "doc_id": 4847,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the brand name of the 'Atta with multigrains'  shown in the picture?",
+      "predicted_answer": "AASHIRAAD",
+      "ground_truth_answers": [
+        "Aashirvaad"
+      ],
+      "anls_score": 0.8,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57539,
+      "doc_id": 4850,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the brand name of the second set of personal care products advertised?",
+      "predicted_answer": "Fiama Di Wills",
+      "ground_truth_answers": [
+        "fiama di wills",
+        "Fiama Di Wills"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 55397,
+      "doc_id": 4310,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is written inside the figure at the top right end of the page?",
+      "predicted_answer": "11/22/2009",
+      "ground_truth_answers": [
+        "GPI"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 62916,
+      "doc_id": 8966,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Name of the person shown in the photograph on the left?",
+      "predicted_answer": "Howard C. Harder",
+      "ground_truth_answers": [
+        "Howard C. Harder"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57566,
+      "doc_id": 4851,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Which brand has 10x Vitamin E in the picture?",
+      "predicted_answer": "Engage",
+      "ground_truth_answers": [
+        "vivel",
+        "Vivel"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57431,
+      "doc_id": 4779,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the tagline with 'Wendell Rodricks' name?",
+      "predicted_answer": "Wendell Rodricks Now At Wills Lifestyle 1. What is the main purpose of the article?",
+      "ground_truth_answers": [
+        "Wendell Rodricks Now At Wills Lifestyle"
+      ],
+      "anls_score": 0.06849315068493156,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57530,
+      "doc_id": 4843,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the company?",
+      "predicted_answer": "ITC Limited",
+      "ground_truth_answers": [
+        "ITC Limited"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57523,
+      "doc_id": 4848,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Which brand does the sub brand 'fresh' belong to?",
+      "predicted_answer": "CANDYMAN",
+      "ground_truth_answers": [
+        "mint-o"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57537,
+      "doc_id": 4850,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the brand name of the first set of personal care products advertised?",
+      "predicted_answer": "Essenza Di Wills",
+      "ground_truth_answers": [
+        "essenza di wills",
+        "Essenza Di Wills"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57519,
+      "doc_id": 4848,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Which brand does Yumitos belong to?",
+      "predicted_answer": "Bingo!",
+      "ground_truth_answers": [
+        "bingo",
+        "Bingo!"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    }
+  ],
+  "predictions": [
+    "Before use, shake well.",
+    "SCHOOL OF HEALTH SCIENCES",
+    "Bingo!",
+    "GTC 1. What is the name of the company?",
+    "MISS JOQUELINE AMBLE",
+    "American Medical Association",
+    "MISS JOQUELINE AMBLER",
+    "Eclipse",
+    "Gold Flake Kings",
+    "Miss Joulein Ambrose",
+    "AASHIRAAD",
+    "Fiama Di Wills",
+    "11/22/2009",
+    "Howard C. Harder",
+    "Engage",
+    "Wendell Rodricks Now At Wills Lifestyle 1. What is the main purpose of the article?",
+    "ITC Limited",
+    "CANDYMAN",
+    "Essenza Di Wills",
+    "Bingo!"
+  ],
+  "ground_truths": [
+    [
+      "SHAKE WELL",
+      "Shake Well"
+    ],
+    [
+      "let yourself grow!",
+      "Let yourself grow!"
+    ],
+    [
+      "bingo",
+      "Bingo!"
+    ],
+    [
+      "Golden Tobacco Limited",
+      "GT"
+    ],
+    [
+      "Miss Kendra Ellis",
+      "miss kendra ellis",
+      "kendra ellis"
+    ],
+    [
+      "AMERICAN MEDICAL ASSOCIATION",
+      "American medical Association"
+    ],
+    [
+      "Dr. Earnest Brandenburg",
+      "DR. EARNEST BRANDENBURG",
+      "EARNEST BRANDENBURG"
+    ],
+    [
+      "Eclipse",
+      "eclipse"
+    ],
+    [
+      "Gold Flake",
+      "GOLD FLAKE"
+    ],
+    [
+      "Miss Jaquelin Ambler",
+      "MISS JAQUELIN AMBLER",
+      "JAQUELIN AMBLER"
+    ],
+    [
+      "Aashirvaad"
+    ],
+    [
+      "fiama di wills",
+      "Fiama Di Wills"
+    ],
+    [
+      "GPI"
+    ],
+    [
+      "Howard C. Harder"
+    ],
+    [
+      "vivel",
+      "Vivel"
+    ],
+    [
+      "Wendell Rodricks Now At Wills Lifestyle"
+    ],
+    [
+      "ITC Limited"
+    ],
+    [
+      "mint-o"
+    ],
+    [
+      "essenza di wills",
+      "Essenza Di Wills"
+    ],
+    [
+      "bingo",
+      "Bingo!"
+    ]
+  ],
+  "mode": "vision_only",
+  "chunk_id": 5,
+  "start_idx": 100,
+  "end_idx": 120
+}

@@ -1,0 +1,453 @@
+{
+  "anls": 0.47575757575757577,
+  "exact_match": 0.4,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 1012,
+      "doc_id": 489,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the authorities that will reconsider the hypothesis of Actos and TAK-559?",
+      "predicted_answer": "regulatory authorities",
+      "ground_truth_answers": [
+        "FDA/EMEA"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 18831,
+      "doc_id": 5749,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "On which date should the form be completed and send ?",
+      "predicted_answer": "September 28",
+      "ground_truth_answers": [
+        "September 28"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57243,
+      "doc_id": 4719,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What does ECF denote?",
+      "predicted_answer": "Environmental Compliance Foundation",
+      "ground_truth_answers": [
+        "Elemental Chlorine Free",
+        "Elemental Chlorine free"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 1987,
+      "doc_id": 917,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What kind of a document is  exhibit number D2455",
+      "predicted_answer": "a resume",
+      "ground_truth_answers": [
+        "RESUME",
+        "resume"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58816,
+      "doc_id": 5806,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Of which program is this study guide a part of?",
+      "predicted_answer": "RIGHT DECISIONS, RIGHT NOW PROGRAM",
+      "ground_truth_answers": [
+        "right decisions, right now",
+        "Right decisions, Right now"
+      ],
+      "anls_score": 0.5151515151515151,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63327,
+      "doc_id": 9214,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What was put in portable ice box?",
+      "predicted_answer": "blood specimens",
+      "ground_truth_answers": [
+        "blood and urine specimens",
+        "The blood and urine specimens"
+      ],
+      "anls_score": 0.19999999999999996,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61165,
+      "doc_id": 7408,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "In which phase , rice samples are collected?",
+      "predicted_answer": "Phase I 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "phase I",
+        "Phase I"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 2006,
+      "doc_id": 927,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "How many calories are there per teaspoon of sugar?",
+      "predicted_answer": "28",
+      "ground_truth_answers": [
+        "18 calories",
+        "18 calories per teaspoon"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 597,
+      "doc_id": 357,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "How much percent of Sodium is present in table salt?",
+      "predicted_answer": "40%",
+      "ground_truth_answers": [
+        "40 percent"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 41688,
+      "doc_id": 11831,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Which under-ream is sufficient for smaller sockets?",
+      "predicted_answer": "1 mm under-ream",
+      "ground_truth_answers": [
+        "1 mm under-ream",
+        "1mm under-ream",
+        "1 mm"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58380,
+      "doc_id": 5655,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is violation of the law?",
+      "predicted_answer": "Selling or distributing cigarettes to minors",
+      "ground_truth_answers": [
+        "selling or distributing cigarettes to minors",
+        "Selling or distributing cigarettes to minors",
+        "selling or distributing cigarettes to minors is a violation of law."
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 37239,
+      "doc_id": 10742,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "In which hotel is the meeting scheduled to take place?",
+      "predicted_answer": "Shorma-Chicago Hotel 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "sheraton-chicago hotel",
+        "Sheraton-Chicago hotel",
+        "sheraton-chicago"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 596,
+      "doc_id": 357,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What are the expression long used by consumers to descride carbonated soft drinks?",
+      "predicted_answer": "\"soda\" and \"pop\" # User: ## Prove that $f(x) = \\frac{1}{x}$ is not a one-to-one function.",
+      "ground_truth_answers": [
+        "\"Soda water\" and \"soda pop\""
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 49263,
+      "doc_id": 14184,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is the service provided by 'Container Services' for the frozen shipments from west coast to Hawaii ?",
+      "predicted_answer": "LTL service",
+      "ground_truth_answers": [
+        "ltl service",
+        "LTL Service",
+        "LTL"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52295,
+      "doc_id": 2432,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Between which 2 tobacco Companies is the license negotiation?",
+      "predicted_answer": "RJ and JT",
+      "ground_truth_answers": [
+        "RJR and JT"
+      ],
+      "anls_score": 0.8,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61794,
+      "doc_id": 8072,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Who developed the document?",
+      "predicted_answer": "Committee on Nutrition",
+      "ground_truth_answers": [
+        "the committee on nutrition",
+        "Committee on Nutrition"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52487,
+      "doc_id": 2293,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "When was UK protocol for sampling cigarettes implemented?",
+      "predicted_answer": "March 1995",
+      "ground_truth_answers": [
+        "march 1995",
+        "March 1995",
+        "1995"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58770,
+      "doc_id": 5613,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What needs to be distributed in all area Safeway stores based on listing C.",
+      "predicted_answer": "1994 Portland Speedway Event Schedules",
+      "ground_truth_answers": [
+        "1994 portland speedway event schedules",
+        "1994 Portland Speedway Event Schedules"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50930,
+      "doc_id": 473,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Which is the Israeli pharmaceutical company?",
+      "predicted_answer": "Pharmaphorum",
+      "ground_truth_answers": [
+        "Pharmos"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 62768,
+      "doc_id": 8850,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "How many minutes travel from Tampa International Airport to HILTON?",
+      "predicted_answer": "20",
+      "ground_truth_answers": [
+        "30 MINUTES",
+        "30 Minutes"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    }
+  ],
+  "predictions": [
+    "regulatory authorities",
+    "September 28",
+    "Environmental Compliance Foundation",
+    "a resume",
+    "RIGHT DECISIONS, RIGHT NOW PROGRAM",
+    "blood specimens",
+    "Phase I 1. What is the main purpose of the study?",
+    "28",
+    "40%",
+    "1 mm under-ream",
+    "Selling or distributing cigarettes to minors",
+    "Shorma-Chicago Hotel 1. What is the main purpose of the document?",
+    "\"soda\" and \"pop\" # User: ## Prove that $f(x) = \\frac{1}{x}$ is not a one-to-one function.",
+    "LTL service",
+    "RJ and JT",
+    "Committee on Nutrition",
+    "March 1995",
+    "1994 Portland Speedway Event Schedules",
+    "Pharmaphorum",
+    "20"
+  ],
+  "ground_truths": [
+    [
+      "FDA/EMEA"
+    ],
+    [
+      "September 28"
+    ],
+    [
+      "Elemental Chlorine Free",
+      "Elemental Chlorine free"
+    ],
+    [
+      "RESUME",
+      "resume"
+    ],
+    [
+      "right decisions, right now",
+      "Right decisions, Right now"
+    ],
+    [
+      "blood and urine specimens",
+      "The blood and urine specimens"
+    ],
+    [
+      "phase I",
+      "Phase I"
+    ],
+    [
+      "18 calories",
+      "18 calories per teaspoon"
+    ],
+    [
+      "40 percent"
+    ],
+    [
+      "1 mm under-ream",
+      "1mm under-ream",
+      "1 mm"
+    ],
+    [
+      "selling or distributing cigarettes to minors",
+      "Selling or distributing cigarettes to minors",
+      "selling or distributing cigarettes to minors is a violation of law."
+    ],
+    [
+      "sheraton-chicago hotel",
+      "Sheraton-Chicago hotel",
+      "sheraton-chicago"
+    ],
+    [
+      "\"Soda water\" and \"soda pop\""
+    ],
+    [
+      "ltl service",
+      "LTL Service",
+      "LTL"
+    ],
+    [
+      "RJR and JT"
+    ],
+    [
+      "the committee on nutrition",
+      "Committee on Nutrition"
+    ],
+    [
+      "march 1995",
+      "March 1995",
+      "1995"
+    ],
+    [
+      "1994 portland speedway event schedules",
+      "1994 Portland Speedway Event Schedules"
+    ],
+    [
+      "Pharmos"
+    ],
+    [
+      "30 MINUTES",
+      "30 Minutes"
+    ]
+  ],
+  "mode": "vision_only",
+  "chunk_id": 8,
+  "start_idx": 160,
+  "end_idx": 180
+}

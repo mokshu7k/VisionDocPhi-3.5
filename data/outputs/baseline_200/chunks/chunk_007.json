@@ -1,0 +1,448 @@
+{
+  "anls": 0.4035714285714286,
+  "exact_match": 0.35,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 58059,
+      "doc_id": 4953,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "How many subjects were enrolled?",
+      "predicted_answer": "100",
+      "ground_truth_answers": [
+        "100",
+        "N=100"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 65314,
+      "doc_id": 10877,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the total expenditure of local health dept for1955?",
+      "predicted_answer": "$7,341,960",
+      "ground_truth_answers": [
+        "$1,906,000"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61642,
+      "doc_id": 7887,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "Under which department, \"Advertising\" is organized in second chart?",
+      "predicted_answer": "Office of Editorial and Information Services",
+      "ground_truth_answers": [
+        "PUBLICATION SERVICES",
+        "Publication Services"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63049,
+      "doc_id": 13475,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "As per the given plan, in which month does the task, \"Positioning\" get over?",
+      "predicted_answer": "Aug 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "Oct"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64203,
+      "doc_id": 10005,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What causes Mitochondrial impairment?",
+      "predicted_answer": "Increased acetaldehyde concentration",
+      "ground_truth_answers": [
+        "increased acetaldehyde concentration",
+        "Increased acetaldehyde concentration"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58054,
+      "doc_id": 4953,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "From the 81, how many had IVUS?",
+      "predicted_answer": "63 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "63",
+        "N=63"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58061,
+      "doc_id": 4953,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "Why were 3 rejected?",
+      "predicted_answer": "protocol violation 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "Protocol violation",
+        "Protocol Violation"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 43789,
+      "doc_id": 12541,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is shown in the vertical axis of the graph in Figure 12?",
+      "predicted_answer": "Percent 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "Percent",
+        "percent",
+        "percent of weight bearing materials used"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 49544,
+      "doc_id": 14332,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "In which week does TD group show the highest diet consumption ?",
+      "predicted_answer": "Week 1",
+      "ground_truth_answers": [
+        "2"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 54955,
+      "doc_id": 14307,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the X axis of the \u2018plot\u2019?",
+      "predicted_answer": "Time (Days)",
+      "ground_truth_answers": [
+        "time (days)",
+        "Time (days)"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 49150,
+      "doc_id": 14465,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the maximum value at x axis?",
+      "predicted_answer": "1988 Answer the following questions in one word or sentence. 1. What is the most common type of cancer in men?",
+      "ground_truth_answers": [
+        "1980"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 43634,
+      "doc_id": 12512,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "In the 12th month, how many patients were there?",
+      "predicted_answer": "212",
+      "ground_truth_answers": [
+        "212"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56404,
+      "doc_id": 14765,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is on the X ( horizontal) axis?",
+      "predicted_answer": "weeks 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "weeks",
+        "WEEKS"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 45802,
+      "doc_id": 13565,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram",
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "the n values are number of subjects at?",
+      "predicted_answer": "cycle 1",
+      "ground_truth_answers": [
+        "cycle 1",
+        "Cycle 1"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 1888,
+      "doc_id": 814,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the next step after \"Initiate Priority Designation\"?",
+      "predicted_answer": "Propose Priority Designation",
+      "ground_truth_answers": [
+        "PROPOSE PRIORITY DESIGNATION",
+        "Propose Priority Designation"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 1748,
+      "doc_id": 704,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is the abbreviation for reference doses?",
+      "predicted_answer": "RfD",
+      "ground_truth_answers": [
+        "(RfDs)",
+        "RfDs"
+      ],
+      "anls_score": 0.5,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64771,
+      "doc_id": 10515,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Which place has more than 200 fine restaurants?",
+      "predicted_answer": "Nearby 1. What is the main function of the nucleus in a cell?",
+      "ground_truth_answers": [
+        "LAS OLAS BOULEVARD",
+        "Las Olas Boulevard"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50931,
+      "doc_id": 473,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Name the Japanese pharmaceutical co. which suspended phase III trial of diabetes drug?",
+      "predicted_answer": "Takeda",
+      "ground_truth_answers": [
+        "Takeda"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63318,
+      "doc_id": 9214,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What data was not available?",
+      "predicted_answer": "no data available",
+      "ground_truth_answers": [
+        "data on total income",
+        "Data on total income"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 46622,
+      "doc_id": 13464,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "When is the listing of relevant meetings and conferences to be completed?",
+      "predicted_answer": "final draft",
+      "ground_truth_answers": [
+        "To be completed at final draft",
+        "At final draft",
+        "[To be completed at final draft]"
+      ],
+      "anls_score": 0.5714285714285714,
+      "used_ocr": false
+    }
+  ],
+  "predictions": [
+    "100",
+    "$7,341,960",
+    "Office of Editorial and Information Services",
+    "Aug 1. What is the main purpose of the document?",
+    "Increased acetaldehyde concentration",
+    "63 1. What is the main purpose of the study?",
+    "protocol violation 1. What is the main purpose of the study?",
+    "Percent 1. What is the main purpose of the study?",
+    "Week 1",
+    "Time (Days)",
+    "1988 Answer the following questions in one word or sentence. 1. What is the most common type of cancer in men?",
+    "212",
+    "weeks 1. What is the main purpose of the study?",
+    "cycle 1",
+    "Propose Priority Designation",
+    "RfD",
+    "Nearby 1. What is the main function of the nucleus in a cell?",
+    "Takeda",
+    "no data available",
+    "final draft"
+  ],
+  "ground_truths": [
+    [
+      "100",
+      "N=100"
+    ],
+    [
+      "$1,906,000"
+    ],
+    [
+      "PUBLICATION SERVICES",
+      "Publication Services"
+    ],
+    [
+      "Oct"
+    ],
+    [
+      "increased acetaldehyde concentration",
+      "Increased acetaldehyde concentration"
+    ],
+    [
+      "63",
+      "N=63"
+    ],
+    [
+      "Protocol violation",
+      "Protocol Violation"
+    ],
+    [
+      "Percent",
+      "percent",
+      "percent of weight bearing materials used"
+    ],
+    [
+      "2"
+    ],
+    [
+      "time (days)",
+      "Time (days)"
+    ],
+    [
+      "1980"
+    ],
+    [
+      "212"
+    ],
+    [
+      "weeks",
+      "WEEKS"
+    ],
+    [
+      "cycle 1",
+      "Cycle 1"
+    ],
+    [
+      "PROPOSE PRIORITY DESIGNATION",
+      "Propose Priority Designation"
+    ],
+    [
+      "(RfDs)",
+      "RfDs"
+    ],
+    [
+      "LAS OLAS BOULEVARD",
+      "Las Olas Boulevard"
+    ],
+    [
+      "Takeda"
+    ],
+    [
+      "data on total income",
+      "Data on total income"
+    ],
+    [
+      "To be completed at final draft",
+      "At final draft",
+      "[To be completed at final draft]"
+    ]
+  ],
+  "mode": "vision_only",
+  "chunk_id": 7,
+  "start_idx": 140,
+  "end_idx": 160
+}

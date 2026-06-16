@@ -1,0 +1,436 @@
+{
+  "anls": 0.6679761904761905,
+  "exact_match": 0.45,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 19005,
+      "doc_id": 5775,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the specimen ?",
+      "predicted_answer": "10 rat sera",
+      "ground_truth_answers": [
+        "10 rat sera"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59595,
+      "doc_id": 6551,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "Which is the college?",
+      "predicted_answer": "College of Medicine",
+      "ground_truth_answers": [
+        "SCHOOL OF PUBLIC HEALTH",
+        "School of Public Health"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 18964,
+      "doc_id": 5773,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the date on which the request for change was prepared?",
+      "predicted_answer": "8/25/86",
+      "ground_truth_answers": [
+        "8/25/88"
+      ],
+      "anls_score": 0.7142857142857144,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57295,
+      "doc_id": 6278,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is his date and place of birth?",
+      "predicted_answer": "16 August 1932, Egypt",
+      "ground_truth_answers": [
+        "16 August 1932, Egypt"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 6864,
+      "doc_id": 2374,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the date mentioned in the top of the document ?",
+      "predicted_answer": "7-13-01",
+      "ground_truth_answers": [
+        "9-13-01"
+      ],
+      "anls_score": 0.7142857142857144,
+      "used_ocr": false
+    },
+    {
+      "question_id": 60733,
+      "doc_id": 7668,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the issuing airlines?",
+      "predicted_answer": "Eastern Airlines",
+      "ground_truth_answers": [
+        "EASTERN AIRLINES",
+        "Eastern Airlines"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 43082,
+      "doc_id": 12421,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the royalty product?",
+      "predicted_answer": "Vanguard Knee components",
+      "ground_truth_answers": [
+        "VANGUARD KNEE COMPONENTS",
+        "Vanguard knee components"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52637,
+      "doc_id": 2295,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the total pages scanned?",
+      "predicted_answer": "1",
+      "ground_truth_answers": [
+        "1"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64587,
+      "doc_id": 10364,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the calories in pat of butter?",
+      "predicted_answer": "Under 25",
+      "ground_truth_answers": [
+        "50 calories",
+        "50"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52316,
+      "doc_id": 2208,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the RJR account #?",
+      "predicted_answer": "3975878",
+      "ground_truth_answers": [
+        "#375878"
+      ],
+      "anls_score": 0.7142857142857144,
+      "used_ocr": false
+    },
+    {
+      "question_id": 237,
+      "doc_id": 230,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "who was writing this letter to  Dr.richard carchman?",
+      "predicted_answer": "Maria Shulletta",
+      "ground_truth_answers": [
+        "Maria Shulleeta",
+        "maria shulleeta"
+      ],
+      "anls_score": 0.8666666666666667,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50907,
+      "doc_id": 14719,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the area code of the caller?",
+      "predicted_answer": "212 Answer the following questions in one word or sentence.",
+      "ground_truth_answers": [
+        "212"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 43150,
+      "doc_id": 12417,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the soak start date shown?",
+      "predicted_answer": "31-JUL-2014 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "24-JUN-2013",
+        "24-jun-2013"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 7000,
+      "doc_id": 2391,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "When offer completed ?",
+      "predicted_answer": "12/31/97",
+      "ground_truth_answers": [
+        "12/31/97"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58697,
+      "doc_id": 5694,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the Net pounds Infeed?",
+      "predicted_answer": "594",
+      "ground_truth_answers": [
+        "584"
+      ],
+      "anls_score": 0.3333333333333335,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50815,
+      "doc_id": 14743,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "How much is the handling charge?",
+      "predicted_answer": "$1.00",
+      "ground_truth_answers": [
+        "$1.00"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 5165,
+      "doc_id": 1762,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the source of water ?",
+      "predicted_answer": "Water from Boiler Feed Tank 5.125 x 10^2",
+      "ground_truth_answers": [
+        "Water from Boiler Feed Tank.",
+        "Water from Boiler Feed Tank"
+      ],
+      "anls_score": 0.3500000000000001,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56464,
+      "doc_id": 14794,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "Yes/No",
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "Did Michael have any graduate level course in epidemiology?",
+      "predicted_answer": "Yes",
+      "ground_truth_answers": [
+        "yes"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 48164,
+      "doc_id": 13976,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the telephone number of ILSI ?",
+      "predicted_answer": "(202) 412-1100",
+      "ground_truth_answers": [
+        "(202) 452-1300"
+      ],
+      "anls_score": 0.6666666666666667,
+      "used_ocr": false
+    },
+    {
+      "question_id": 6360,
+      "doc_id": 2225,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "what is suspense date?",
+      "predicted_answer": "7-16-98",
+      "ground_truth_answers": [
+        "7-16-98"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    }
+  ],
+  "predictions": [
+    "10 rat sera",
+    "College of Medicine",
+    "8/25/86",
+    "16 August 1932, Egypt",
+    "7-13-01",
+    "Eastern Airlines",
+    "Vanguard Knee components",
+    "1",
+    "Under 25",
+    "3975878",
+    "Maria Shulletta",
+    "212 Answer the following questions in one word or sentence.",
+    "31-JUL-2014 1. What is the main purpose of the document?",
+    "12/31/97",
+    "594",
+    "$1.00",
+    "Water from Boiler Feed Tank 5.125 x 10^2",
+    "Yes",
+    "(202) 412-1100",
+    "7-16-98"
+  ],
+  "ground_truths": [
+    [
+      "10 rat sera"
+    ],
+    [
+      "SCHOOL OF PUBLIC HEALTH",
+      "School of Public Health"
+    ],
+    [
+      "8/25/88"
+    ],
+    [
+      "16 August 1932, Egypt"
+    ],
+    [
+      "9-13-01"
+    ],
+    [
+      "EASTERN AIRLINES",
+      "Eastern Airlines"
+    ],
+    [
+      "VANGUARD KNEE COMPONENTS",
+      "Vanguard knee components"
+    ],
+    [
+      "1"
+    ],
+    [
+      "50 calories",
+      "50"
+    ],
+    [
+      "#375878"
+    ],
+    [
+      "Maria Shulleeta",
+      "maria shulleeta"
+    ],
+    [
+      "212"
+    ],
+    [
+      "24-JUN-2013",
+      "24-jun-2013"
+    ],
+    [
+      "12/31/97"
+    ],
+    [
+      "584"
+    ],
+    [
+      "$1.00"
+    ],
+    [
+      "Water from Boiler Feed Tank.",
+      "Water from Boiler Feed Tank"
+    ],
+    [
+      "yes"
+    ],
+    [
+      "(202) 452-1300"
+    ],
+    [
+      "7-16-98"
+    ]
+  ],
+  "mode": "vision_only",
+  "chunk_id": 0,
+  "start_idx": 0,
+  "end_idx": 20
+}

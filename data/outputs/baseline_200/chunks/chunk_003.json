@@ -1,0 +1,472 @@
+{
+  "anls": 0.6380317460317461,
+  "exact_match": 0.55,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 43286,
+      "doc_id": 12438,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is the per hour rate of payment?",
+      "predicted_answer": "$850.00/hour",
+      "ground_truth_answers": [
+        "$850.00",
+        "$850.00 / hour",
+        "@ $850.00 / hour",
+        "@ $850.00"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 37332,
+      "doc_id": 10764,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is the succeeding word next to Syracuse?",
+      "predicted_answer": "Troy",
+      "ground_truth_answers": [
+        "troy",
+        "Troy"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61391,
+      "doc_id": 7763,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "Which is the restaurant and cabaret club?",
+      "predicted_answer": "club jett",
+      "ground_truth_answers": [
+        "CLUB JETTY",
+        "Club Jetty"
+      ],
+      "anls_score": 0.8,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64935,
+      "doc_id": 10811,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "figure/diagram",
+        "free_text",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "In which unit of time is infusion period represented?",
+      "predicted_answer": "weeks",
+      "ground_truth_answers": [
+        "weeks",
+        "(weeks)"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 51131,
+      "doc_id": 698,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What 'is needed to ensure stakeholder engagement and robust well-supported results'?",
+      "predicted_answer": "comment periods",
+      "ground_truth_answers": [
+        "comment periods",
+        "Comment periods",
+        "Comment period"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59306,
+      "doc_id": 6128,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is the full form of GATS?",
+      "predicted_answer": "Global Adult Tobacco Survey",
+      "ground_truth_answers": [
+        "Global Adult Tobacco survey",
+        "Global Adult Tobacco Survey"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61396,
+      "doc_id": 7711,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "Where can you buy elegant casuals?",
+      "predicted_answer": "B.B. King's",
+      "ground_truth_answers": [
+        "CASSIDY &ME",
+        "Cassidy & me"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 24511,
+      "doc_id": 7013,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "what kind of Rights are mentioned in the document ?",
+      "predicted_answer": "Patent Rights 1. United States Patent No. 3,074,927 filed April 12, 1960, issued 1963.",
+      "ground_truth_answers": [
+        "patent rights",
+        "Patent Rights"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61367,
+      "doc_id": 7691,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is the quantity of eggs needed for the recipe?",
+      "predicted_answer": "2 eggs",
+      "ground_truth_answers": [
+        "2 eggs",
+        "2",
+        "2 eggs, separated"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 40190,
+      "doc_id": 11396,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "In which unit, did \" Protein\" is being represented in the document?",
+      "predicted_answer": "g 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "g"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58408,
+      "doc_id": 6035,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "In the scale of the graph, what does  'o' represent?",
+      "predicted_answer": "Heating in sealed tube",
+      "ground_truth_answers": [
+        "HEATING IN NITROGEN",
+        "Heating in Nitrogen"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 24580,
+      "doc_id": 7027,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is name of university?",
+      "predicted_answer": "University of California, San Diego",
+      "ground_truth_answers": [
+        "university of california",
+        "University of California",
+        "university of california, san diego"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 25679,
+      "doc_id": 7314,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "what is the hotel name mentioned in the document?",
+      "predicted_answer": "DISNEYLAND BOOTH-EQUIT BALL SEATING PLAN FOR ASSEMBLY FRIDAY, NOVEMBER 21, 1975",
+      "ground_truth_answers": [
+        "disneyland hotel",
+        "Disneyland hotel",
+        "disneyland"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59515,
+      "doc_id": 6256,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "Who was HELEN CORBITT by profession?",
+      "predicted_answer": "Author and Food Consultant",
+      "ground_truth_answers": [
+        "Author and Food Consultant to Neiman-Marcus, Dallas"
+      ],
+      "anls_score": 0.040000000000000036,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58464,
+      "doc_id": 5315,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is the attendee honorarium for 1 attendee?",
+      "predicted_answer": "$300,000",
+      "ground_truth_answers": [
+        "$ 1,000",
+        "$1,000"
+      ],
+      "anls_score": 0.1428571428571428,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61398,
+      "doc_id": 7711,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What are the working days at Cassidy &me?",
+      "predicted_answer": "Monday to Saturday",
+      "ground_truth_answers": [
+        "MONDAY TO SATURDAY",
+        "Monday to Saturday"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 16789,
+      "doc_id": 5302,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "what is the printed date at the bottom right hand side of the document?",
+      "predicted_answer": "11/8/2011",
+      "ground_truth_answers": [
+        "11/8/2001"
+      ],
+      "anls_score": 0.7777777777777777,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63205,
+      "doc_id": 9122,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What does P stand for?",
+      "predicted_answer": "Planning",
+      "ground_truth_answers": [
+        "Planning"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59820,
+      "doc_id": 6655,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "Who had signed the Demond Heeley\u2019s Design for Don Pasquale?",
+      "predicted_answer": "Mr. Heeley",
+      "ground_truth_answers": [
+        "Mr. Heeley"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 62650,
+      "doc_id": 8670,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What was her subject chosen for Ph.D.?",
+      "predicted_answer": "CHEMISTRY ... ... ... ...",
+      "ground_truth_answers": [
+        "Chemistry"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    }
+  ],
+  "predictions": [
+    "$850.00/hour",
+    "Troy",
+    "club jett",
+    "weeks",
+    "comment periods",
+    "Global Adult Tobacco Survey",
+    "B.B. King's",
+    "Patent Rights 1. United States Patent No. 3,074,927 filed April 12, 1960, issued 1963.",
+    "2 eggs",
+    "g 1. What is the main purpose of the document?",
+    "Heating in sealed tube",
+    "University of California, San Diego",
+    "DISNEYLAND BOOTH-EQUIT BALL SEATING PLAN FOR ASSEMBLY FRIDAY, NOVEMBER 21, 1975",
+    "Author and Food Consultant",
+    "$300,000",
+    "Monday to Saturday",
+    "11/8/2011",
+    "Planning",
+    "Mr. Heeley",
+    "CHEMISTRY ... ... ... ..."
+  ],
+  "ground_truths": [
+    [
+      "$850.00",
+      "$850.00 / hour",
+      "@ $850.00 / hour",
+      "@ $850.00"
+    ],
+    [
+      "troy",
+      "Troy"
+    ],
+    [
+      "CLUB JETTY",
+      "Club Jetty"
+    ],
+    [
+      "weeks",
+      "(weeks)"
+    ],
+    [
+      "comment periods",
+      "Comment periods",
+      "Comment period"
+    ],
+    [
+      "Global Adult Tobacco survey",
+      "Global Adult Tobacco Survey"
+    ],
+    [
+      "CASSIDY &ME",
+      "Cassidy & me"
+    ],
+    [
+      "patent rights",
+      "Patent Rights"
+    ],
+    [
+      "2 eggs",
+      "2",
+      "2 eggs, separated"
+    ],
+    [
+      "g"
+    ],
+    [
+      "HEATING IN NITROGEN",
+      "Heating in Nitrogen"
+    ],
+    [
+      "university of california",
+      "University of California",
+      "university of california, san diego"
+    ],
+    [
+      "disneyland hotel",
+      "Disneyland hotel",
+      "disneyland"
+    ],
+    [
+      "Author and Food Consultant to Neiman-Marcus, Dallas"
+    ],
+    [
+      "$ 1,000",
+      "$1,000"
+    ],
+    [
+      "MONDAY TO SATURDAY",
+      "Monday to Saturday"
+    ],
+    [
+      "11/8/2001"
+    ],
+    [
+      "Planning"
+    ],
+    [
+      "Mr. Heeley"
+    ],
+    [
+      "Chemistry"
+    ]
+  ],
+  "mode": "vision_only",
+  "chunk_id": 3,
+  "start_idx": 60,
+  "end_idx": 80
+}

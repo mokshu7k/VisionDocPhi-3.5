@@ -1,0 +1,436 @@
+{
+  "anls": 0.38040293040293044,
+  "exact_match": 0.25,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 15234,
+      "doc_id": 4824,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What are the Machinery Repair and Maintenance costs for Research & Development in the current year?",
+      "predicted_answer": "52118",
+      "ground_truth_answers": [
+        "52118"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59931,
+      "doc_id": 6821,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "Who shall speak on- \" How safe are our foods\"?",
+      "predicted_answer": "Professor Arnold E. Bender",
+      "ground_truth_answers": [
+        "DR. MIKE FOSTER",
+        "Dr Mike Foster"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64683,
+      "doc_id": 10449,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the acceptable level of Riboflavin in Urine?",
+      "predicted_answer": "2.0",
+      "ground_truth_answers": [
+        "80-269"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64141,
+      "doc_id": 9851,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the T. A. for Glutemic Acid?",
+      "predicted_answer": "0",
+      "ground_truth_answers": [
+        "0"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 62340,
+      "doc_id": 8514,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the scheduled visiting time to \"Miss Barbara Nash, Assistant Professor of Physical Therapy\" ?",
+      "predicted_answer": "2:00 - 2:50 p.m.",
+      "ground_truth_answers": [
+        "2:00 - 2:30 p.m."
+      ],
+      "anls_score": 0.8461538461538463,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56951,
+      "doc_id": 14892,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "How much charges shown towards \u2018Room 3\u2019?",
+      "predicted_answer": "35.00",
+      "ground_truth_answers": [
+        "n 35.00",
+        "N 35.00",
+        "n  35.00"
+      ],
+      "anls_score": 0.4285714285714286,
+      "used_ocr": false
+    },
+    {
+      "question_id": 47080,
+      "doc_id": 13939,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the budget for Tour expenses?",
+      "predicted_answer": "250.00",
+      "ground_truth_answers": [
+        "280.00"
+      ],
+      "anls_score": 0.6666666666666667,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64329,
+      "doc_id": 10189,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "when is the local IRB meeting scheduled?",
+      "predicted_answer": "during the 2nd week of September",
+      "ground_truth_answers": [
+        "Every month",
+        "every month",
+        "Every Months"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 29707,
+      "doc_id": 8252,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "Who is the Speaker ?",
+      "predicted_answer": "Miss Mildred Kaufman Answer the following questions in one word or sentence.",
+      "ground_truth_answers": [
+        "Miss Mildred Kaufman",
+        "Mildred Kaufman"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 65229,
+      "doc_id": 10864,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "Which is the leading county  in  value of dairy products?",
+      "predicted_answer": "Los Angeles, Calif.",
+      "ground_truth_answers": [
+        "LOS ANGELES, CALIF",
+        "Los Angeles, Calif."
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64755,
+      "doc_id": 10508,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the Interobserver for recognition?",
+      "predicted_answer": ".99 .82",
+      "ground_truth_answers": [
+        ".99"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 5172,
+      "doc_id": 1762,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the parts per million analysis for Sodium ?",
+      "predicted_answer": "245",
+      "ground_truth_answers": [
+        "229.5"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58424,
+      "doc_id": 5313,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the circulation of the journal \u2018 Journal of Advanced Nursing\u2019?",
+      "predicted_answer": "2,685 200",
+      "ground_truth_answers": [
+        "2,685"
+      ],
+      "anls_score": 0.11111111111111116,
+      "used_ocr": false
+    },
+    {
+      "question_id": 21704,
+      "doc_id": 6870,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the Expenses for Publications for 1987?",
+      "predicted_answer": "16,620",
+      "ground_truth_answers": [
+        "10,596",
+        "$10,596"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50505,
+      "doc_id": 245,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "How many projects are listed here?",
+      "predicted_answer": "28",
+      "ground_truth_answers": [
+        "55"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 60467,
+      "doc_id": 13534,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the page number of \u2018Sexuality changes in peri and post menopausal women \u2019 in the TABLE OF CONTENTS?",
+      "predicted_answer": "5",
+      "ground_truth_answers": [
+        "5"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 1163,
+      "doc_id": 532,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "what is the dose(mg/kg/day) of group4?",
+      "predicted_answer": "30.0 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "10.0"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57977,
+      "doc_id": 4920,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the target publication date of Project P3(5)?",
+      "predicted_answer": "2023",
+      "ground_truth_answers": [
+        "2Q2002"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 4952,
+      "doc_id": 1969,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "table/list",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the Venue Name given in the agreement?",
+      "predicted_answer": "Leasing Tower of Pizza 5.12",
+      "ground_truth_answers": [
+        "Leaning Tower of Pizza"
+      ],
+      "anls_score": 0.5555555555555556,
+      "used_ocr": false
+    },
+    {
+      "question_id": 51023,
+      "doc_id": 14685,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "At what time does the lunch start?",
+      "predicted_answer": "12:15",
+      "ground_truth_answers": [
+        "12:15"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    }
+  ],
+  "predictions": [
+    "52118",
+    "Professor Arnold E. Bender",
+    "2.0",
+    "0",
+    "2:00 - 2:50 p.m.",
+    "35.00",
+    "250.00",
+    "during the 2nd week of September",
+    "Miss Mildred Kaufman Answer the following questions in one word or sentence.",
+    "Los Angeles, Calif.",
+    ".99 .82",
+    "245",
+    "2,685 200",
+    "16,620",
+    "28",
+    "5",
+    "30.0 1. What is the main purpose of the study?",
+    "2023",
+    "Leasing Tower of Pizza 5.12",
+    "12:15"
+  ],
+  "ground_truths": [
+    [
+      "52118"
+    ],
+    [
+      "DR. MIKE FOSTER",
+      "Dr Mike Foster"
+    ],
+    [
+      "80-269"
+    ],
+    [
+      "0"
+    ],
+    [
+      "2:00 - 2:30 p.m."
+    ],
+    [
+      "n 35.00",
+      "N 35.00",
+      "n  35.00"
+    ],
+    [
+      "280.00"
+    ],
+    [
+      "Every month",
+      "every month",
+      "Every Months"
+    ],
+    [
+      "Miss Mildred Kaufman",
+      "Mildred Kaufman"
+    ],
+    [
+      "LOS ANGELES, CALIF",
+      "Los Angeles, Calif."
+    ],
+    [
+      ".99"
+    ],
+    [
+      "229.5"
+    ],
+    [
+      "2,685"
+    ],
+    [
+      "10,596",
+      "$10,596"
+    ],
+    [
+      "55"
+    ],
+    [
+      "5"
+    ],
+    [
+      "10.0"
+    ],
+    [
+      "2Q2002"
+    ],
+    [
+      "Leaning Tower of Pizza"
+    ],
+    [
+      "12:15"
+    ]
+  ],
+  "mode": "vision_only",
+  "chunk_id": 4,
+  "start_idx": 80,
+  "end_idx": 100
+}

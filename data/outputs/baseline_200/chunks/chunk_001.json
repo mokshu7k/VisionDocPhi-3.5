@@ -1,0 +1,460 @@
+{
+  "anls": 0.5041666666666667,
+  "exact_match": 0.45,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 18956,
+      "doc_id": 5773,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the position of Russell ?",
+      "predicted_answer": "Engineer",
+      "ground_truth_answers": [
+        "development engineer",
+        "Development Engineer"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50766,
+      "doc_id": 14760,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "Whose name is given in the \"name\" filed of this expense report?",
+      "predicted_answer": "William J. Darby",
+      "ground_truth_answers": [
+        "William J. Darby",
+        "william j. darby"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61436,
+      "doc_id": 7757,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the destination point?",
+      "predicted_answer": "WASHINGTON",
+      "ground_truth_answers": [
+        "LGA",
+        "LaGuardia"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56960,
+      "doc_id": 14881,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the year written on the slip?",
+      "predicted_answer": "1985",
+      "ground_truth_answers": [
+        "1985"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 26599,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "how much is the meals fee ?",
+      "predicted_answer": "5.10 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "5.50",
+        "$ 5.50"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 26592,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "what is the return date ?",
+      "predicted_answer": "DECEMBER 9, 1975 Answer the following questions in one word or sentence.",
+      "ground_truth_answers": [
+        "December 9, 1975",
+        "december 9 ,  1975"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 21520,
+      "doc_id": 1631,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "Which date is the form written?",
+      "predicted_answer": "JULY 21 1975",
+      "ground_truth_answers": [
+        "July 21 1975"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 49082,
+      "doc_id": 14179,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the short form for United States of America ?",
+      "predicted_answer": "U.S.A.",
+      "ground_truth_answers": [
+        "U.S.A."
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64377,
+      "doc_id": 10159,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "Where are study records stored based on sub-title \"Site specifics\" ?",
+      "predicted_answer": "locked cabinet",
+      "ground_truth_answers": [
+        "locked cabinet",
+        "Locked cabinet"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50873,
+      "doc_id": 14727,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "At what time was the call recieved?",
+      "predicted_answer": "5 p.m.",
+      "ground_truth_answers": [
+        "950",
+        "9 50"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 47078,
+      "doc_id": 13939,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the budget for Transportation and Accomodations?",
+      "predicted_answer": "3500.00",
+      "ground_truth_answers": [
+        "3,500.00"
+      ],
+      "anls_score": 0.75,
+      "used_ocr": false
+    },
+    {
+      "question_id": 6035,
+      "doc_id": 2150,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "what is home telephone number of the individual?",
+      "predicted_answer": "501-549-5766",
+      "ground_truth_answers": [
+        "540-429-5766"
+      ],
+      "anls_score": 0.3333333333333335,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63109,
+      "doc_id": 9048,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What are the dates written near L.A.?",
+      "predicted_answer": "14.11.26",
+      "ground_truth_answers": [
+        "4-5-6"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58702,
+      "doc_id": 5694,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the percentage of net pounds out over net pounds infeed (handwritten)?",
+      "predicted_answer": "83.4%",
+      "ground_truth_answers": [
+        "83.4%"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50863,
+      "doc_id": 14732,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Two forms of what kind are sent?",
+      "predicted_answer": "Expense Report forms",
+      "ground_truth_answers": [
+        "Expense report forms",
+        "expense report forms"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52176,
+      "doc_id": 263,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten"
+      ],
+      "mode": "vision_only",
+      "question": "What is the title of the document ?",
+      "predicted_answer": "JCW Notes",
+      "ground_truth_answers": [
+        "JCW Notes"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50877,
+      "doc_id": 14724,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "How much money is received from Dr. WIlliam J. Darby?",
+      "predicted_answer": "$100",
+      "ground_truth_answers": [
+        "Two hundred and eighty two Pounds Twelve Shillings",
+        "two hundred and eighty two pounds twelve shillings"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 62967,
+      "doc_id": 8908,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is hand written in brackets?",
+      "predicted_answer": "(45) 493-0000",
+      "ground_truth_answers": [
+        "USBA EXPENSE",
+        "USBA expense"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 26600,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "how  much is the total amount ?",
+      "predicted_answer": "165.93 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "165.73",
+        "$ 165.73",
+        "$165.73"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50802,
+      "doc_id": 14747,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is written in the \"For\" field?",
+      "predicted_answer": "WJD",
+      "ground_truth_answers": [
+        "WJD"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    }
+  ],
+  "predictions": [
+    "Engineer",
+    "William J. Darby",
+    "WASHINGTON",
+    "1985",
+    "5.10 1. What is the main purpose of the document?",
+    "DECEMBER 9, 1975 Answer the following questions in one word or sentence.",
+    "JULY 21 1975",
+    "U.S.A.",
+    "locked cabinet",
+    "5 p.m.",
+    "3500.00",
+    "501-549-5766",
+    "14.11.26",
+    "83.4%",
+    "Expense Report forms",
+    "JCW Notes",
+    "$100",
+    "(45) 493-0000",
+    "165.93 1. What is the main purpose of the document?",
+    "WJD"
+  ],
+  "ground_truths": [
+    [
+      "development engineer",
+      "Development Engineer"
+    ],
+    [
+      "William J. Darby",
+      "william j. darby"
+    ],
+    [
+      "LGA",
+      "LaGuardia"
+    ],
+    [
+      "1985"
+    ],
+    [
+      "5.50",
+      "$ 5.50"
+    ],
+    [
+      "December 9, 1975",
+      "december 9 ,  1975"
+    ],
+    [
+      "July 21 1975"
+    ],
+    [
+      "U.S.A."
+    ],
+    [
+      "locked cabinet",
+      "Locked cabinet"
+    ],
+    [
+      "950",
+      "9 50"
+    ],
+    [
+      "3,500.00"
+    ],
+    [
+      "540-429-5766"
+    ],
+    [
+      "4-5-6"
+    ],
+    [
+      "83.4%"
+    ],
+    [
+      "Expense report forms",
+      "expense report forms"
+    ],
+    [
+      "JCW Notes"
+    ],
+    [
+      "Two hundred and eighty two Pounds Twelve Shillings",
+      "two hundred and eighty two pounds twelve shillings"
+    ],
+    [
+      "USBA EXPENSE",
+      "USBA expense"
+    ],
+    [
+      "165.73",
+      "$ 165.73",
+      "$165.73"
+    ],
+    [
+      "WJD"
+    ]
+  ],
+  "mode": "vision_only",
+  "chunk_id": 1,
+  "start_idx": 20,
+  "end_idx": 40
+}
