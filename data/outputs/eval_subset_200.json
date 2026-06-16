@@ -1,0 +1,2080 @@
+{
+  "created_at": "2026-06-16T12:31:36.695334+00:00",
+  "seed": 42,
+  "total": 200,
+  "by_cohort": {
+    "layout_heavy": 100,
+    "visual_heavy": 100
+  },
+  "by_type": {
+    "form": 38,
+    "handwritten": 25,
+    "layout": 36,
+    "Yes/No": 6,
+    "table/list": 26,
+    "free_text": 48,
+    "others": 21,
+    "figure/diagram": 31,
+    "Image/Photo": 25
+  },
+  "question_ids": [
+    19005,
+    59595,
+    18964,
+    57295,
+    6864,
+    60733,
+    43082,
+    52637,
+    64587,
+    52316,
+    237,
+    50907,
+    43150,
+    7000,
+    58697,
+    50815,
+    5165,
+    56464,
+    48164,
+    6360,
+    18956,
+    50766,
+    61436,
+    56960,
+    26599,
+    26592,
+    21520,
+    49082,
+    64377,
+    50873,
+    47078,
+    6035,
+    63109,
+    58702,
+    50863,
+    52176,
+    50877,
+    62967,
+    26600,
+    50802,
+    46375,
+    49569,
+    46327,
+    57134,
+    22304,
+    46555,
+    63769,
+    51161,
+    63518,
+    56553,
+    43130,
+    61224,
+    55447,
+    19216,
+    59802,
+    39212,
+    59624,
+    32348,
+    63200,
+    64831,
+    43286,
+    37332,
+    61391,
+    64935,
+    51131,
+    59306,
+    61396,
+    24511,
+    61367,
+    40190,
+    58408,
+    24580,
+    25679,
+    59515,
+    58464,
+    61398,
+    16789,
+    63205,
+    59820,
+    62650,
+    15234,
+    59931,
+    64683,
+    64141,
+    62340,
+    56951,
+    47080,
+    64329,
+    29707,
+    65229,
+    64755,
+    5172,
+    58424,
+    21704,
+    50505,
+    60467,
+    1163,
+    57977,
+    4952,
+    51023,
+    62771,
+    59664,
+    57475,
+    59289,
+    64634,
+    63767,
+    64636,
+    4367,
+    57514,
+    64638,
+    57525,
+    57539,
+    55397,
+    62916,
+    57566,
+    57431,
+    57530,
+    57523,
+    57537,
+    57519,
+    57440,
+    52481,
+    57366,
+    56296,
+    57531,
+    6974,
+    6969,
+    50761,
+    50758,
+    39139,
+    47825,
+    57784,
+    64553,
+    56364,
+    65057,
+    47003,
+    36692,
+    56373,
+    64760,
+    50800,
+    58059,
+    65314,
+    61642,
+    63049,
+    64203,
+    58054,
+    58061,
+    43789,
+    49544,
+    54955,
+    49150,
+    43634,
+    56404,
+    45802,
+    1888,
+    1748,
+    64771,
+    50931,
+    63318,
+    46622,
+    1012,
+    18831,
+    57243,
+    1987,
+    58816,
+    63327,
+    61165,
+    2006,
+    597,
+    41688,
+    58380,
+    37239,
+    596,
+    49263,
+    52295,
+    61794,
+    52487,
+    58770,
+    50930,
+    62768,
+    5199,
+    15325,
+    55468,
+    826,
+    65118,
+    52186,
+    65373,
+    45805,
+    599,
+    61135,
+    41686,
+    47823,
+    55190,
+    43728,
+    63199,
+    59603,
+    64934,
+    55084,
+    58528,
+    48161
+  ],
+  "entries": [
+    {
+      "question_id": 19005,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "pzyy0078",
+      "ucsf_document_page_no": "8"
+    },
+    {
+      "question_id": 59595,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "rmnp0227",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 18964,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "npbb0079",
+      "ucsf_document_page_no": "10"
+    },
+    {
+      "question_id": 57295,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "zmcj0227",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 6864,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "qkyl0006",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 60733,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "ucsf_document_id": "kldv0228",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 43082,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "qjgn0226",
+      "ucsf_document_page_no": "102"
+    },
+    {
+      "question_id": 52637,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "fglc0003",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 64587,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "ucsf_document_id": "lpdl0226",
+      "ucsf_document_page_no": "13"
+    },
+    {
+      "question_id": 52316,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "jtpy0000",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 237,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "ljxj0037",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 50907,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "lsww0228",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 43150,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "kmxn0226",
+      "ucsf_document_page_no": "6"
+    },
+    {
+      "question_id": 7000,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "tybf0004",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 58697,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "fgbd0079",
+      "ucsf_document_page_no": "7"
+    },
+    {
+      "question_id": 50815,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "ucsf_document_id": "mskw0228",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 5165,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "gzyh0227",
+      "ucsf_document_page_no": "9"
+    },
+    {
+      "question_id": 56464,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "Yes/No",
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "gnnp0227",
+      "ucsf_document_page_no": "4"
+    },
+    {
+      "question_id": 48164,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "ucsf_document_id": "zqhm0227",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 6360,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "gmhp0000",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 18956,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form",
+        "layout"
+      ],
+      "ucsf_document_id": "npbb0079",
+      "ucsf_document_page_no": "10"
+    },
+    {
+      "question_id": 50766,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "zpgw0228",
+      "ucsf_document_page_no": "4"
+    },
+    {
+      "question_id": 61436,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "ymkp0227",
+      "ucsf_document_page_no": "13"
+    },
+    {
+      "question_id": 56960,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "ucsf_document_id": "yrjw0228",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 26599,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "nfxd0227",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 26592,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "nfxd0227",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 21520,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "npjk0226",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 49082,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "ucsf_document_id": "nrxb0228",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 64377,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "handwritten",
+        "table/list"
+      ],
+      "ucsf_document_id": "gxyd0217",
+      "ucsf_document_page_no": "10"
+    },
+    {
+      "question_id": 50873,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "lsww0228",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 47078,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "ucsf_document_id": "pnfm0227",
+      "ucsf_document_page_no": "7"
+    },
+    {
+      "question_id": 6035,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "fgvc0225",
+      "ucsf_document_page_no": "9"
+    },
+    {
+      "question_id": 63109,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "ucsf_document_id": "xlwc0228",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 58702,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "ucsf_document_id": "fgbd0079",
+      "ucsf_document_page_no": "7"
+    },
+    {
+      "question_id": 50863,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "free_text"
+      ],
+      "ucsf_document_id": "zpgw0228",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 52176,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten"
+      ],
+      "ucsf_document_id": "kscl0037",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 50877,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "ghlw0228",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 62967,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "others"
+      ],
+      "ucsf_document_id": "zmkp0227",
+      "ucsf_document_page_no": "4"
+    },
+    {
+      "question_id": 26600,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "nfxd0227",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 50802,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "ucsf_document_id": "nzfv0228",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 46375,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "yscw0217",
+      "ucsf_document_page_no": "208"
+    },
+    {
+      "question_id": 49569,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "fygb0228",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 46327,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "zzcw0217",
+      "ucsf_document_page_no": "6"
+    },
+    {
+      "question_id": 57134,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "nnbx0223",
+      "ucsf_document_page_no": "150"
+    },
+    {
+      "question_id": 22304,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "mzgx0227",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 46555,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "kgjl0226",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 63769,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "qpbf0227",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 51161,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "jzbn0226",
+      "ucsf_document_page_no": "24"
+    },
+    {
+      "question_id": 63518,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "ucsf_document_id": "hqlf0227",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 56553,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "ucsf_document_id": "nynn0081",
+      "ucsf_document_page_no": "8"
+    },
+    {
+      "question_id": 43130,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "figure/diagram",
+        "layout"
+      ],
+      "ucsf_document_id": "yjxn0226",
+      "ucsf_document_page_no": "439"
+    },
+    {
+      "question_id": 61224,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list",
+        "layout"
+      ],
+      "ucsf_document_id": "ngxh0227",
+      "ucsf_document_page_no": "40"
+    },
+    {
+      "question_id": 55447,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "gsgj0223",
+      "ucsf_document_page_no": "68"
+    },
+    {
+      "question_id": 19216,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "lzbn0226",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 59802,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "xkxb0228",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 39212,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "kpnf0227",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 59624,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "yjgx0227",
+      "ucsf_document_page_no": "5"
+    },
+    {
+      "question_id": 32348,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "ucsf_document_id": "fthw0228",
+      "ucsf_document_page_no": "9"
+    },
+    {
+      "question_id": 63200,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "lfvh0227",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 64831,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "ucsf_document_id": "qnyg0227",
+      "ucsf_document_page_no": "5"
+    },
+    {
+      "question_id": 43286,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "ucsf_document_id": "pjgn0226",
+      "ucsf_document_page_no": "8"
+    },
+    {
+      "question_id": 37332,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "ucsf_document_id": "kzng0227",
+      "ucsf_document_page_no": "63"
+    },
+    {
+      "question_id": 61391,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "ucsf_document_id": "krcy0227",
+      "ucsf_document_page_no": "36"
+    },
+    {
+      "question_id": 64935,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "figure/diagram",
+        "free_text",
+        "others"
+      ],
+      "ucsf_document_id": "ylwg0227",
+      "ucsf_document_page_no": "15"
+    },
+    {
+      "question_id": 51131,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "ucsf_document_id": "kzbn0226",
+      "ucsf_document_page_no": "31"
+    },
+    {
+      "question_id": 59306,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "others"
+      ],
+      "ucsf_document_id": "rnbx0223",
+      "ucsf_document_page_no": "53"
+    },
+    {
+      "question_id": 61396,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "ucsf_document_id": "krcy0227",
+      "ucsf_document_page_no": "40"
+    },
+    {
+      "question_id": 24511,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "ucsf_document_id": "ztnk0226",
+      "ucsf_document_page_no": "11"
+    },
+    {
+      "question_id": 61367,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "others"
+      ],
+      "ucsf_document_id": "krcy0227",
+      "ucsf_document_page_no": "19"
+    },
+    {
+      "question_id": 40190,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list",
+        "others"
+      ],
+      "ucsf_document_id": "mslw0227",
+      "ucsf_document_page_no": "49"
+    },
+    {
+      "question_id": 58408,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "others"
+      ],
+      "ucsf_document_id": "lybx0227",
+      "ucsf_document_page_no": "19"
+    },
+    {
+      "question_id": 24580,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "ucsf_document_id": "nkbl0226",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 25679,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "layout",
+        "others"
+      ],
+      "ucsf_document_id": "jzhd0227",
+      "ucsf_document_page_no": "86"
+    },
+    {
+      "question_id": 59515,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "ucsf_document_id": "xhcc0228",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 58464,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list",
+        "others"
+      ],
+      "ucsf_document_id": "mlbw0217",
+      "ucsf_document_page_no": "6"
+    },
+    {
+      "question_id": 61398,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "ucsf_document_id": "krcy0227",
+      "ucsf_document_page_no": "40"
+    },
+    {
+      "question_id": 16789,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "ucsf_document_id": "khbw0217",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 63205,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "ucsf_document_id": "qfkw0227",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 59820,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "others"
+      ],
+      "ucsf_document_id": "njnp0227",
+      "ucsf_document_page_no": "5"
+    },
+    {
+      "question_id": 62650,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "ucsf_document_id": "ztwd0227",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 15234,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "ysgj0223",
+      "ucsf_document_page_no": "81"
+    },
+    {
+      "question_id": 59931,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "gmgv0228",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 64683,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "gfyc0227",
+      "ucsf_document_page_no": "144"
+    },
+    {
+      "question_id": 64141,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "xglg0227",
+      "ucsf_document_page_no": "9"
+    },
+    {
+      "question_id": 62340,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "nrjw0227",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 56951,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "jrcy0227",
+      "ucsf_document_page_no": "55"
+    },
+    {
+      "question_id": 47080,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "ucsf_document_id": "pnfm0227",
+      "ucsf_document_page_no": "7"
+    },
+    {
+      "question_id": 64329,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "handwritten",
+        "table/list"
+      ],
+      "ucsf_document_id": "gxyd0217",
+      "ucsf_document_page_no": "8"
+    },
+    {
+      "question_id": 29707,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "gjgx0227",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 65229,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "tjpg0227",
+      "ucsf_document_page_no": "6"
+    },
+    {
+      "question_id": 64755,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "yyhd0227",
+      "ucsf_document_page_no": "51"
+    },
+    {
+      "question_id": 5172,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "gzyh0227",
+      "ucsf_document_page_no": "9"
+    },
+    {
+      "question_id": 58424,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "jmcw0217",
+      "ucsf_document_page_no": "4"
+    },
+    {
+      "question_id": 21704,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "ffjw0228",
+      "ucsf_document_page_no": "11"
+    },
+    {
+      "question_id": 50505,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "nrcj0037",
+      "ucsf_document_page_no": "8"
+    },
+    {
+      "question_id": 60467,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "rrcw0217",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 1163,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "hmjf0226",
+      "ucsf_document_page_no": "9"
+    },
+    {
+      "question_id": 57977,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "lkvw0217",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 4952,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "table/list",
+        "layout"
+      ],
+      "ucsf_document_id": "qymj0226",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 51023,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "ucsf_document_id": "fqpb0228",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 62771,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "kjnw0228",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 59664,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "hnnp0227",
+      "ucsf_document_page_no": "51"
+    },
+    {
+      "question_id": 57475,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "9"
+    },
+    {
+      "question_id": 59289,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "lsgj0223",
+      "ucsf_document_page_no": "67"
+    },
+    {
+      "question_id": 64634,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "yrpf0227",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 63767,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "qpbf0227",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 64636,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "yrpf0227",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 4367,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "ggpk0225",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 57514,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "rnbx0223",
+      "ucsf_document_page_no": "208"
+    },
+    {
+      "question_id": 64638,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "yrpf0227",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 57525,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "15"
+    },
+    {
+      "question_id": 57539,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "10"
+    },
+    {
+      "question_id": 55397,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "jybx0223",
+      "ucsf_document_page_no": "49"
+    },
+    {
+      "question_id": 62916,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "qycc0228",
+      "ucsf_document_page_no": "4"
+    },
+    {
+      "question_id": 57566,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "21"
+    },
+    {
+      "question_id": 57431,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "rnbx0223",
+      "ucsf_document_page_no": "208"
+    },
+    {
+      "question_id": 57530,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "7"
+    },
+    {
+      "question_id": 57523,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "9"
+    },
+    {
+      "question_id": 57537,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "10"
+    },
+    {
+      "question_id": 57519,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "9"
+    },
+    {
+      "question_id": 57440,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "rnbx0223",
+      "ucsf_document_page_no": "208"
+    },
+    {
+      "question_id": 52481,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "yqjv0001",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 57366,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "22"
+    },
+    {
+      "question_id": 56296,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "mtjm0081",
+      "ucsf_document_page_no": "16"
+    },
+    {
+      "question_id": 57531,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "7"
+    },
+    {
+      "question_id": 6974,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "ucsf_document_id": "pslm0006",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 6969,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "ucsf_document_id": "pslm0006",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 50761,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "ucsf_document_id": "lxpj0226",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 50758,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "ucsf_document_id": "lxpj0226",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 39139,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "ucsf_document_id": "mhvd0227",
+      "ucsf_document_page_no": "7"
+    },
+    {
+      "question_id": 47825,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "sphv0228",
+      "ucsf_document_page_no": "21"
+    },
+    {
+      "question_id": 57784,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "ynbx0223",
+      "ucsf_document_page_no": "45"
+    },
+    {
+      "question_id": 64553,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "tlyl0226",
+      "ucsf_document_page_no": "15"
+    },
+    {
+      "question_id": 56364,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "jxbb0228",
+      "ucsf_document_page_no": "10"
+    },
+    {
+      "question_id": 65057,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "lglg0227",
+      "ucsf_document_page_no": "30"
+    },
+    {
+      "question_id": 47003,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "pyyc0227",
+      "ucsf_document_page_no": "52"
+    },
+    {
+      "question_id": 36692,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "xhfg0227",
+      "ucsf_document_page_no": "47"
+    },
+    {
+      "question_id": 56373,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "skgb0228",
+      "ucsf_document_page_no": "43"
+    },
+    {
+      "question_id": 64760,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "spnf0227",
+      "ucsf_document_page_no": "5"
+    },
+    {
+      "question_id": 50800,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "ylvd0228",
+      "ucsf_document_page_no": "47"
+    },
+    {
+      "question_id": 58059,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "npvw0217",
+      "ucsf_document_page_no": "6"
+    },
+    {
+      "question_id": 65314,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "xhfg0227",
+      "ucsf_document_page_no": "41"
+    },
+    {
+      "question_id": 61642,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "gtjc0228",
+      "ucsf_document_page_no": "4"
+    },
+    {
+      "question_id": 63049,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "ytbw0217",
+      "ucsf_document_page_no": "9"
+    },
+    {
+      "question_id": 64203,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "pxhd0227",
+      "ucsf_document_page_no": "10"
+    },
+    {
+      "question_id": 58054,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "npvw0217",
+      "ucsf_document_page_no": "6"
+    },
+    {
+      "question_id": 58061,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "npvw0217",
+      "ucsf_document_page_no": "6"
+    },
+    {
+      "question_id": 43789,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "qxxn0226",
+      "ucsf_document_page_no": "10"
+    },
+    {
+      "question_id": 49544,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "mybv0228",
+      "ucsf_document_page_no": "13"
+    },
+    {
+      "question_id": 54955,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "sspp0227",
+      "ucsf_document_page_no": "30"
+    },
+    {
+      "question_id": 49150,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "pybv0228",
+      "ucsf_document_page_no": "81"
+    },
+    {
+      "question_id": 43634,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "lngn0226",
+      "ucsf_document_page_no": "5"
+    },
+    {
+      "question_id": 56404,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "xkwc0228",
+      "ucsf_document_page_no": "25"
+    },
+    {
+      "question_id": 45802,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram",
+        "free_text"
+      ],
+      "ucsf_document_id": "yhdw0217",
+      "ucsf_document_page_no": "15"
+    },
+    {
+      "question_id": 1888,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "jzbn0226",
+      "ucsf_document_page_no": "41"
+    },
+    {
+      "question_id": 1748,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "jzbn0226",
+      "ucsf_document_page_no": "14"
+    },
+    {
+      "question_id": 64771,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "lmmf0227",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 50931,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "ptjf0226",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 63318,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "pyyc0227",
+      "ucsf_document_page_no": "10"
+    },
+    {
+      "question_id": 46622,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "tqbw0217",
+      "ucsf_document_page_no": "30"
+    },
+    {
+      "question_id": 1012,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "zyjf0226",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 18831,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "jhfd0079",
+      "ucsf_document_page_no": "9"
+    },
+    {
+      "question_id": 57243,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "221"
+    },
+    {
+      "question_id": 1987,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "jqbn0226",
+      "ucsf_document_page_no": "4"
+    },
+    {
+      "question_id": 58816,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "kmvj0078",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 63327,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "pyyc0227",
+      "ucsf_document_page_no": "10"
+    },
+    {
+      "question_id": 61165,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "jldg0227",
+      "ucsf_document_page_no": "7"
+    },
+    {
+      "question_id": 2006,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "qqyv0228",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 597,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "mtyj0226",
+      "ucsf_document_page_no": "15"
+    },
+    {
+      "question_id": 41688,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "kmwn0226",
+      "ucsf_document_page_no": "18"
+    },
+    {
+      "question_id": 58380,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "hkyh0078",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 37239,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "nkcd0227",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 596,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "mtyj0226",
+      "ucsf_document_page_no": "15"
+    },
+    {
+      "question_id": 49263,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "flpp0227",
+      "ucsf_document_page_no": "16"
+    },
+    {
+      "question_id": 52295,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "mfnf0004",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 61794,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "hfmf0227",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 52487,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "yqjv0001",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 58770,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "lrwp0078",
+      "ucsf_document_page_no": "5"
+    },
+    {
+      "question_id": 50930,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "ptjf0226",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 62768,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "xjfd0228",
+      "ucsf_document_page_no": "8"
+    },
+    {
+      "question_id": 5199,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "nxkh0227",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 15325,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "snbx0223",
+      "ucsf_document_page_no": "5"
+    },
+    {
+      "question_id": 55468,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "qhym0081",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 826,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "hjpj0226",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 65118,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "lmmf0227",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 52186,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "pgfl0228",
+      "ucsf_document_page_no": "6"
+    },
+    {
+      "question_id": 65373,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "nkcd0227",
+      "ucsf_document_page_no": "3"
+    },
+    {
+      "question_id": 45805,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "xkbw0217",
+      "ucsf_document_page_no": "45"
+    },
+    {
+      "question_id": 599,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "mtyj0226",
+      "ucsf_document_page_no": "15"
+    },
+    {
+      "question_id": 61135,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "fhnw0228",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 41686,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "kmwn0226",
+      "ucsf_document_page_no": "18"
+    },
+    {
+      "question_id": 47823,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "sphv0228",
+      "ucsf_document_page_no": "21"
+    },
+    {
+      "question_id": 55190,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "yqxv0228",
+      "ucsf_document_page_no": "11"
+    },
+    {
+      "question_id": 43728,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "jkhn0226",
+      "ucsf_document_page_no": "1"
+    },
+    {
+      "question_id": 63199,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "pfkw0227",
+      "ucsf_document_page_no": "2"
+    },
+    {
+      "question_id": 59603,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "tzgv0228",
+      "ucsf_document_page_no": "7"
+    },
+    {
+      "question_id": 64934,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "ucsf_document_id": "ylwg0227",
+      "ucsf_document_page_no": "15"
+    },
+    {
+      "question_id": 55084,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "flmh0077",
+      "ucsf_document_page_no": "12"
+    },
+    {
+      "question_id": 58528,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "rnbx0223",
+      "ucsf_document_page_no": "7"
+    },
+    {
+      "question_id": 48161,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "ucsf_document_id": "zqhm0227",
+      "ucsf_document_page_no": "1"
+    }
+  ]
+}
