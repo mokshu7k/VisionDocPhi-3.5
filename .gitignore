@@ -1,5 +1,6 @@
 # Data files (large)
 data/raw/spdocvqa_images/
+data/raw/spdocvqa_ocr/
 *.pth
 *.safetensors
 
