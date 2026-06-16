@@ -6,10 +6,10 @@ and batch processing.
 """
 import json
 from pathlib import Path
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any, Optional, Set
 from PIL import Image
 import torch
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset, DataLoader, Subset
 
 
 class DocVQADataset(Dataset):
@@ -19,16 +19,26 @@ class DocVQADataset(Dataset):
     Loads document images and their corresponding VQA annotations.
     """
     
-    def __init__(self, annotations_file: str, image_dir: str, split: str = "train"):
+    def __init__(
+        self,
+        annotations_file: str,
+        image_dir: str,
+        split: str = "train",
+        question_ids: Optional[List[int]] = None,
+        cohort_map: Optional[Dict[int, str]] = None,
+    ):
         """
         Args:
             annotations_file: Path to JSON annotation file
             image_dir: Path to directory containing document images
             split: Dataset split (train, val, test)
+            question_ids: Optional ordered list of questionId to include
+            cohort_map: Optional mapping question_id -> cohort label
         """
         self.annotations_file = Path(annotations_file)
         self.image_dir = Path(image_dir)
         self.split = split
+        self.cohort_map = cohort_map or {}
         
         if not self.annotations_file.exists():
             raise FileNotFoundError(f"Annotations file not found: {self.annotations_file}")
@@ -40,9 +50,19 @@ class DocVQADataset(Dataset):
         with open(self.annotations_file, 'r') as f:
             data = json.load(f)
         
-        # Extract data samples from nested or flat structure
-        self.samples = self._extract_samples(data)
-        
+        all_samples = self._extract_samples(data)
+
+        if question_ids is not None:
+            id_to_sample = {s["questionId"]: s for s in all_samples}
+            self.samples = []
+            for qid in question_ids:
+                if qid in id_to_sample:
+                    self.samples.append(id_to_sample[qid])
+                else:
+                    print(f"⚠️  question_id {qid} not found in annotations")
+        else:
+            self.samples = all_samples
+
         print(f"✓ Loaded {len(self.samples)} samples from '{split}' split")
     
     def _extract_samples(self, data: Dict) -> List[Dict]:
@@ -96,15 +116,28 @@ class DocVQADataset(Dataset):
             # Create dummy image on error
             image = Image.new('RGB', (224, 224), color='white')
         
+        qid = sample['questionId']
         return {
             'image': image,
             'question': sample['question'],
             'answers': sample['answers'],
             'question_types': sample.get('question_types', []),
             'image_path': str(sample['image']),
-            'question_id': sample['questionId'],
+            'question_id': qid,
             'doc_id': sample['docId'],
+            'ucsf_document_id': sample.get('ucsf_document_id', ''),
+            'ucsf_document_page_no': sample.get('ucsf_document_page_no', ''),
+            'cohort': self.cohort_map.get(qid, ''),
         }
+
+
+def load_subset_metadata(subset_file: str) -> tuple:
+    """Load question_ids and cohort_map from eval subset JSON."""
+    with open(subset_file, "r") as f:
+        data = json.load(f)
+    cohort_map = {e["question_id"]: e["cohort"] for e in data.get("entries", [])}
+    question_ids = data.get("question_ids", [])
+    return question_ids, cohort_map
 
 
 def create_dataloader(
@@ -113,7 +146,9 @@ def create_dataloader(
     split: str = "train",
     batch_size: int = 1,
     num_workers: int = 0,
-    shuffle: bool = False
+    shuffle: bool = False,
+    question_ids: Optional[List[int]] = None,
+    cohort_map: Optional[Dict[int, str]] = None,
 ) -> DataLoader:
     """
     Create a DataLoader for DocVQA dataset
@@ -129,8 +164,14 @@ def create_dataloader(
     Returns:
         DataLoader instance
     """
-    dataset = DocVQADataset(annotations_file, image_dir, split=split)
-    
+    dataset = DocVQADataset(
+        annotations_file,
+        image_dir,
+        split=split,
+        question_ids=question_ids,
+        cohort_map=cohort_map,
+    )
+
     def collate_fn(batch):
         """Custom collate function to handle PIL images"""
         return batch
@@ -144,6 +185,28 @@ def create_dataloader(
     )
     
     return dataloader
+
+
+def create_subset_dataloader(
+    dataset: DocVQADataset,
+    start_idx: int,
+    end_idx: int,
+    batch_size: int = 1,
+    num_workers: int = 0,
+) -> DataLoader:
+    """Create a DataLoader over a slice of an existing dataset."""
+    subset = Subset(dataset, range(start_idx, end_idx))
+
+    def collate_fn(batch):
+        return batch
+
+    return DataLoader(
+        subset,
+        batch_size=batch_size,
+        num_workers=num_workers,
+        shuffle=False,
+        collate_fn=collate_fn,
+    )
 
 
 def get_dataset_stats(annotations_file: str) -> Dict[str, Any]:

@@ -58,7 +58,8 @@ MAX_NEW_TOKENS = 128
 # 
 # MEMORY LEAK FIX: use_cache=False in generate() prevents KV cache accumulation
 # With the leak fixed, float16 alone (8 GB) fits comfortably on Kaggle's 15GB T4
-USE_8BIT_QUANTIZATION = True
+# Kaggle: set USE_8BIT_QUANTIZATION=false (env) to avoid bitsandbytes CUDA issues
+USE_8BIT_QUANTIZATION = os.getenv("USE_8BIT_QUANTIZATION", "false").lower() in ("true", "1", "yes")
 
 # Enable gradient checkpointing to reduce memory during inference
 USE_GRADIENT_CHECKPOINTING = True
@@ -95,12 +96,59 @@ PREDICTIONS_FILE = OUTPUT_DIR / "predictions_zeroshot.json"
 RESULTS_FILE = OUTPUT_DIR / "results_zeroshot.json"
 
 # ============================================================================
+# OCR & AGENTIC PIPELINE CONFIGURATION
+# ============================================================================
+OCR_DIR = RAW_DATA_DIR / "spdocvqa_ocr"
+OCR_CACHE_DIR = DATA_DIR / "cache" / "ocr_embeddings"
+OCR_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+EVAL_SUBSET_SIZE = 200
+EVAL_SUBSET_FILE = OUTPUT_DIR / "eval_subset_200.json"
+LAYOUT_HEAVY_COUNT = 100
+VISUAL_HEAVY_COUNT = 100
+EVAL_SUBSET_SEED = 42
+
+LAYOUT_HEAVY_TYPES = frozenset({
+    "layout", "table/list", "form", "handwritten", "others",
+})
+VISUAL_HEAVY_TYPES = frozenset({
+    "figure/diagram", "Image/Photo", "Yes/No", "free_text",
+})
+
+OCR_MAX_CHARS = 1200
+OCR_MAX_LINES = 25
+OCR_MIN_SCORE = 0.20
+OCR_TOP_K = 40
+HYBRID_ALPHA = 0.7
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+
+DENSITY_EDGE_THRESHOLD = 0.12
+DENSITY_EDGE_MID = 0.08
+DENSITY_RESOLUTION_THRESHOLD = 2000
+DENSITY_CONTRAST_THRESHOLD = 35.0
+DENSITY_ANALYSIS_MAX_DIM = 1024
+
+LAYOUT_KEYWORDS = frozenset({
+    "row", "column", "table", "total", "amount", "sum",
+    "left", "right", "above", "below", "header", "footer", "field", "box",
+})
+
+# ============================================================================
 # CHUNKED PROCESSING CONFIGURATION
 # ============================================================================
-# For processing large datasets with limited GPU memory
-CHUNK_SIZE = 200  # Process 200 samples at a time
-ENABLE_CHUNKED_MODE = False  # Set to True to use chunked processing
-RESUME_FROM_CHECKPOINT = True  # Resume from last completed chunk if interrupted
+CHUNK_SIZE = 20  # 10 chunks × 20 = 200 eval subset
+ENABLE_CHUNKED_MODE = False
+RESUME_FROM_CHECKPOINT = True
+
+
+def get_mode_output_dir(mode: str) -> Path:
+    """Return output directory for baseline or ocr_adaptive evaluation."""
+    mode_key = mode.replace("vision_only", "baseline")
+    if mode_key == "baseline":
+        return OUTPUT_DIR / "baseline_200"
+    if mode_key in ("ocr_adaptive", "adaptive"):
+        return OUTPUT_DIR / "ocr_adaptive_200"
+    return OUTPUT_DIR / f"{mode_key}_200"
 
 # ============================================================================
 # LOGGING CONFIGURATION

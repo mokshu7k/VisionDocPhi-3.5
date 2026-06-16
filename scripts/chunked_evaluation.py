@@ -1,94 +1,81 @@
 #!/usr/bin/env python
 """
-Script to run chunked evaluation on DocVQA dataset
+Run chunked evaluation on the 200-sample eval subset.
 
 Usage:
-    python scripts/chunked_evaluation.py --split val --chunk_size 200 --resume
+    python scripts/chunked_evaluation.py --mode baseline --resume
+    python scripts/chunked_evaluation.py --mode ocr_adaptive --resume
 """
 
 import argparse
 import sys
 from pathlib import Path
 
-# Add project root to path
 PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
+from config.settings import EVAL_SUBSET_FILE, CHUNK_SIZE
 from src.pipelines.chunked_evaluation import run_chunked_evaluation
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Run chunked evaluation on DocVQA dataset for memory efficiency"
+    parser = argparse.ArgumentParser(description="Chunked DocVQA evaluation (baseline vs ocr_adaptive)")
+
+    parser.add_argument(
+        "--mode",
+        type=str,
+        choices=["baseline", "vision_only", "ocr_adaptive", "adaptive"],
+        default="baseline",
+        help="Evaluation mode",
     )
-    
+    parser.add_argument(
+        "--subset",
+        type=str,
+        default=str(EVAL_SUBSET_FILE),
+        help="Path to eval subset JSON",
+    )
+    parser.add_argument(
+        "--chunk-size",
+        type=int,
+        default=CHUNK_SIZE,
+        help="Samples per chunk",
+    )
     parser.add_argument(
         "--split",
         type=str,
         choices=["val", "test"],
         default="val",
-        help="Dataset split to evaluate"
     )
-    
-    parser.add_argument(
-        "--chunk_size",
-        type=int,
-        default=200,
-        help="Number of samples to process per chunk (default: 200)"
-    )
-    
-    parser.add_argument(
-        "--resume",
-        action="store_true",
-        default=True,
-        help="Resume from checkpoint if available (default: True)"
-    )
-    
-    parser.add_argument(
-        "--no-resume",
-        action="store_true",
-        help="Start fresh evaluation (don't resume from checkpoint)"
-    )
-    
+    parser.add_argument("--resume", action="store_true", default=True)
+    parser.add_argument("--no-resume", action="store_true")
+
     args = parser.parse_args()
-    
-    # Handle resume flag
     resume = not args.no_resume
-    
+
     print(f"""
 ╔════════════════════════════════════════════════════════════════════╗
-║           CHUNKED DOCVQA EVALUATION - GPU OPTIMIZED               ║
+║        CHUNKED DOCVQA EVALUATION — Phase B Agentic Pipeline        ║
 ╚════════════════════════════════════════════════════════════════════╝
 
-Configuration:
-  • Split: {args.split.upper()}
-  • Chunk Size: {args.chunk_size} samples
-  • Resume: {'Yes' if resume else 'No'}
-
-This approach:
-  ✅ Processes data in manageable chunks
-  ✅ Saves progress after each chunk
-  ✅ Can be interrupted and resumed
-  ✅ Works well with Colab's runtime limits
-  ✅ Merges final results automatically
+  Mode:       {args.mode}
+  Subset:     {args.subset}
+  Chunk size: {args.chunk_size}
+  Resume:     {resume}
     """)
-    
-    # Run chunked evaluation
+
     results = run_chunked_evaluation(
-        split=args.split,
+        mode=args.mode,
+        subset_file=args.subset,
         chunk_size=args.chunk_size,
-        resume=resume
+        split=args.split,
+        resume=resume,
     )
-    
+
     if results:
-        print("\n" + "="*70)
-        print("✅ CHUNKED EVALUATION COMPLETE!")
-        print("="*70)
-        print("\nFinal Metrics:")
+        print("\n✅ CHUNKED EVALUATION COMPLETE!")
         for key, value in results.items():
-            if key != 'results' and isinstance(value, (int, float)):
+            if key not in ("results", "predictions", "ground_truths") and isinstance(value, (int, float)):
                 print(f"  {key}: {value:.4f}" if isinstance(value, float) else f"  {key}: {value}")
-        print()
     else:
         print("\n❌ Evaluation failed!")
         sys.exit(1)

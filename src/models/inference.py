@@ -69,19 +69,37 @@ from config.settings import (
     USE_8BIT_QUANTIZATION
 )
 from src.utils.metrics import calculate_metrics, anls_score
+from src.agents.pipeline import AgenticDocVQAPipeline
+
+
+class InferenceMode:
+    VISION_ONLY = "vision_only"
+    OCR_ADAPTIVE = "ocr_adaptive"
+    BASELINE = "baseline"  # alias for vision_only
+
+
+MODE_ALIASES = {
+    "baseline": InferenceMode.VISION_ONLY,
+    "vision_only": InferenceMode.VISION_ONLY,
+    "ocr_adaptive": InferenceMode.OCR_ADAPTIVE,
+    "adaptive": InferenceMode.OCR_ADAPTIVE,
+}
 
 
 class DocVQAInference:
     """Zero-shot VQA inference using Phi-3.5 Vision"""
     
-    def __init__(self, model_name: str = MODEL_NAME, device: str = None):
+    def __init__(self, model_name: str = MODEL_NAME, device: str = None, mode: str = InferenceMode.VISION_ONLY):
         """
         Initialize the model and processor
         
         Args:
             model_name: HuggingFace model identifier
             device: Device to run inference on (cuda/cpu). If None, uses config DEVICE
+            mode: Inference mode — vision_only/baseline or ocr_adaptive
         """
+        self.mode = MODE_ALIASES.get(mode, mode)
+        self.agent_pipeline = AgenticDocVQAPipeline() if self.mode == InferenceMode.OCR_ADAPTIVE else None
         self.device = device or DEVICE
         self.model_name = model_name
         
@@ -224,7 +242,26 @@ class DocVQAInference:
         self.model.eval()
         print("✅ Model loaded successfully and ready for inference!\n")
     
-    def generate_answer(self, image: Image.Image, question: str, max_length: int = None) -> str:
+    def _build_prompt(self, question: str, ocr_snippets: str = None) -> str:
+        ocr_block = ""
+        if ocr_snippets:
+            ocr_block = f"{ocr_snippets}\n"
+        return (
+            f"<|user|>\n<|image_1|>\n"
+            f"Answer briefly with only the exact value or phrase from the document. "
+            f"Do not use full sentences.\n"
+            f"{ocr_block}"
+            f"Question: {question}<|end|>\n<|assistant|>\n"
+        )
+
+    def generate_answer(
+        self,
+        image: Image.Image,
+        question: str,
+        max_length: int = None,
+        ocr_snippets: str = None,
+        mode: str = None,
+    ) -> str:
         """
         Generate answer for a given image and question
         
@@ -239,8 +276,11 @@ class DocVQAInference:
         if max_length is None:
             max_length = MAX_NEW_TOKENS
         
-        # Create prompt in Phi-3.5 Vision format
-        prompt = f"<|user|>\n<|image_1|>\nAnswer briefly with only the exact value or phrase from the document. Do not use full sentences.\nQuestion: {question}<|end|>\n<|assistant|>\n"
+        effective_mode = MODE_ALIASES.get(mode or self.mode, mode or self.mode)
+        prompt = self._build_prompt(
+            question,
+            ocr_snippets if effective_mode != InferenceMode.VISION_ONLY else None,
+        )
         
         try:
             # Step 1: Process inputs
@@ -359,64 +399,97 @@ class DocVQAInference:
             torch.cuda.empty_cache()
             torch.cuda.synchronize()
     
-    def evaluate(self, dataloader, num_samples: int = None) -> Dict[str, Any]:
+    def evaluate(self, dataloader, num_samples: int = None, mode: str = None) -> Dict[str, Any]:
         """
         Evaluate on a dataset
         
         Args:
-            dataloader: DataLoader for the dataset
-            num_samples: Number of samples to evaluate (None = all)
+            dataloader: DataLoader for the dataset (may be a Subset slice)
+            num_samples: Number of samples to evaluate (None = all in dataloader)
+            mode: Override inference mode for this evaluation run
         
         Returns:
             Dictionary with results and metrics
         """
+        effective_mode = MODE_ALIASES.get(mode or self.mode, mode or self.mode)
         results = []
         predictions = []
         ground_truths = []
         
         total_samples = len(dataloader) if num_samples is None else min(num_samples, len(dataloader))
         
-        print(f"\n📊 Running inference on {total_samples} samples...")
+        print(f"\n📊 Running inference on {total_samples} samples (mode={effective_mode})...")
         
         with torch.no_grad():
             for batch_idx, batch in enumerate(tqdm(dataloader, total=total_samples, desc="Evaluating")):
                 if num_samples and batch_idx >= num_samples:
                     break
                 
-                # Batch contains list of samples
                 for sample in batch:
                     image = sample['image']
                     question = sample['question']
                     ground_truth_answers = sample['answers']
                     question_id = sample['question_id']
                     doc_id = sample['doc_id']
-                    
-                    # Generate answer
-                    predicted_answer = self.generate_answer(image, question)
-                    
-                    # Calculate ANLS score
+
+                    ocr_snippet = None
+                    pipeline_result = None
+                    used_ocr = False
+
+                    if effective_mode == InferenceMode.OCR_ADAPTIVE and self.agent_pipeline:
+                        pipeline_result = self.agent_pipeline.prepare(
+                            image=image,
+                            question=question,
+                            question_types=sample.get('question_types', []),
+                            ucsf_id=sample.get('ucsf_document_id', ''),
+                            page_no=str(sample.get('ucsf_document_page_no', '')),
+                        )
+                        used_ocr = pipeline_result.used_ocr
+                        ocr_snippet = pipeline_result.ocr_snippet
+
+                    predicted_answer = self.generate_answer(
+                        image,
+                        question,
+                        ocr_snippets=ocr_snippet,
+                        mode=effective_mode,
+                    )
+
                     anls = anls_score([predicted_answer], ground_truth_answers)
-                    
-                    # Store results
-                    results.append({
+
+                    result_row = {
                         'question_id': question_id,
                         'doc_id': doc_id,
+                        'cohort': sample.get('cohort', ''),
+                        'question_types': sample.get('question_types', []),
+                        'mode': effective_mode,
                         'question': question,
                         'predicted_answer': predicted_answer,
                         'ground_truth_answers': ground_truth_answers,
                         'anls_score': anls,
-                    })
-                    
+                        'used_ocr': used_ocr,
+                    }
+
+                    if pipeline_result:
+                        audit = pipeline_result.to_audit_dict()
+                        if audit.get('routing'):
+                            result_row['routing'] = audit['routing']
+                        if audit.get('retrieval'):
+                            result_row['retrieval'] = audit['retrieval']
+                        if audit.get('formatting'):
+                            result_row['formatting'] = audit['formatting']
+
+                    results.append(result_row)
                     predictions.append(predicted_answer)
                     ground_truths.append(ground_truth_answers)
                 
-                # Periodic memory cleanup
                 if (batch_idx + 1) % MEMORY_CLEANUP_INTERVAL == 0:
                     self.cleanup_memory()
         
-        # Calculate metrics
         metrics = calculate_metrics(predictions, ground_truths)
         metrics['results'] = results
+        metrics['predictions'] = predictions
+        metrics['ground_truths'] = ground_truths
+        metrics['mode'] = effective_mode
         
         return metrics
 
