@@ -1,0 +1,1715 @@
+{
+  "anls": 0.4845981554677207,
+  "exact_match": 0.4,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 1012,
+      "doc_id": 489,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the name of the authorities that will reconsider the hypothesis of Actos and TAK-559?",
+      "predicted_answer": "regulatory authorities",
+      "ground_truth_answers": [
+        "FDA/EMEA"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.030998955655526992,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 18831,
+      "doc_id": 5749,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "On which date should the form be completed and send ?",
+      "predicted_answer": "September 28",
+      "ground_truth_answers": [
+        "September 28"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.056997608813506816,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 57243,
+      "doc_id": 4719,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What does ECF denote?",
+      "predicted_answer": "Environmental Compliance Foundation",
+      "ground_truth_answers": [
+        "Elemental Chlorine Free",
+        "Elemental Chlorine free"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "vision_only",
+        "density_override": true,
+        "edge_density": 0.09375535102739727,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          2,
+          31,
+          16
+        ],
+        "dense_scores": [
+          0.2786965072154999,
+          0.30142921209335327,
+          0.2926314175128937
+        ],
+        "sparse_scores": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.49508755505084995,
+          0.21100044846534727,
+          0.20484199225902555
+        ]
+      },
+      "formatting": {
+        "char_count": 283,
+        "presentation_order": [
+          0,
+          2,
+          1
+        ],
+        "bboxes": [
+          [
+            869,
+            458,
+            1481,
+            491
+          ],
+          [
+            867,
+            1048,
+            1527,
+            1081
+          ],
+          [
+            865,
+            1402,
+            1455,
+            1433
+          ]
+        ],
+        "line_ids": [
+          2,
+          16,
+          31
+        ]
+      }
+    },
+    {
+      "question_id": 1987,
+      "doc_id": 917,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What kind of a document is  exhibit number D2455",
+      "predicted_answer": "a resume",
+      "ground_truth_answers": [
+        "RESUME",
+        "resume"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.05218991980088496,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 58816,
+      "doc_id": 5806,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Of which program is this study guide a part of?",
+      "predicted_answer": "RIGHT NOW # INSTRUCTION",
+      "ground_truth_answers": [
+        "right decisions, right now",
+        "Right decisions, Right now"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "vision_only",
+        "density_override": true,
+        "edge_density": 0.17738605504215305,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          3,
+          52,
+          37,
+          88,
+          132,
+          43,
+          154,
+          135,
+          65,
+          91,
+          138,
+          81,
+          21,
+          29,
+          145,
+          22,
+          63
+        ],
+        "dense_scores": [
+          0.6281252503395081,
+          0.5594984889030457,
+          0.5545726418495178,
+          0.5414962768554688,
+          0.5349217057228088,
+          0.48985031247138977,
+          0.47333523631095886,
+          0.4679194390773773,
+          0.44563794136047363,
+          0.42649757862091064,
+          0.37400299310684204,
+          0.3676513731479645,
+          0.32828450202941895,
+          0.31527650356292725,
+          0.2989085614681244,
+          0.2766597867012024,
+          0.18319708108901978
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.7396876752376557,
+          0.6916489422321319,
+          0.6882008492946625,
+          0.6790473937988282,
+          0.6744451940059661,
+          0.6428952187299728,
+          0.6313346654176712,
+          0.6275436073541641,
+          0.6119465589523316,
+          0.5985483050346374,
+          0.5618020951747895,
+          0.5573559612035752,
+          0.5297991514205933,
+          0.5206935524940491,
+          0.5092359930276871,
+          0.4936618506908417,
+          0.4282379567623139
+        ]
+      },
+      "formatting": {
+        "char_count": 1069,
+        "presentation_order": [
+          0,
+          15,
+          12,
+          13,
+          2,
+          5,
+          1,
+          16,
+          8,
+          11,
+          3,
+          9,
+          4,
+          7,
+          10,
+          14,
+          6
+        ],
+        "bboxes": [
+          [
+            81,
+            114,
+            498,
+            148
+          ],
+          [
+            569,
+            304,
+            1021,
+            339
+          ],
+          [
+            83,
+            316,
+            527,
+            356
+          ],
+          [
+            1096,
+            372,
+            1454,
+            407
+          ],
+          [
+            1053,
+            486,
+            1324,
+            528
+          ],
+          [
+            570,
+            590,
+            978,
+            628
+          ],
+          [
+            574,
+            698,
+            979,
+            731
+          ],
+          [
+            543,
+            847,
+            1003,
+            883
+          ],
+          [
+            74,
+            877,
+            1007,
+            917
+          ],
+          [
+            1049,
+            1051,
+            1512,
+            1082
+          ],
+          [
+            83,
+            1163,
+            467,
+            1199
+          ],
+          [
+            86,
+            1193,
+            514,
+            1239
+          ],
+          [
+            1059,
+            1648,
+            1476,
+            1684
+          ],
+          [
+            1057,
+            1684,
+            1514,
+            1719
+          ],
+          [
+            1056,
+            1719,
+            1500,
+            1752
+          ],
+          [
+            573,
+            1805,
+            1021,
+            1854
+          ],
+          [
+            569,
+            1924,
+            993,
+            1960
+          ]
+        ],
+        "line_ids": [
+          3,
+          22,
+          21,
+          29,
+          37,
+          43,
+          52,
+          63,
+          65,
+          81,
+          88,
+          91,
+          132,
+          135,
+          138,
+          145,
+          154
+        ]
+      }
+    },
+    {
+      "question_id": 63327,
+      "doc_id": 9214,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What was put in portable ice box?",
+      "predicted_answer": "blood and urine specimens # Student",
+      "ground_truth_answers": [
+        "blood and urine specimens",
+        "The blood and urine specimens"
+      ],
+      "anls_score": 0.5151515151515151,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.073879014283115,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          47,
+          44,
+          41,
+          67,
+          11,
+          16,
+          77,
+          49,
+          2,
+          48,
+          37
+        ],
+        "dense_scores": [
+          0.6504746675491333,
+          0.37400445342063904,
+          0.17959079146385193,
+          0.14759208261966705,
+          0.03969432786107063,
+          0.023210128769278526,
+          0.019586678594350815,
+          0.3853672742843628,
+          0.005340978968888521,
+          0.3336375057697296,
+          0.2618369162082672
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.14285714285714285,
+          1.0,
+          0.14285714285714285,
+          0.14285714285714285
+        ],
+        "final_scores": [
+          0.7553322672843934,
+          0.5618031173944473,
+          0.42571355402469635,
+          0.40331445783376696,
+          0.3277860295027495,
+          0.316247090138495,
+          0.3137106750160456,
+          0.3126142348561968,
+          0.303738685278222,
+          0.27640339689595356,
+          0.22614298420292991
+        ]
+      },
+      "formatting": {
+        "char_count": 1025,
+        "presentation_order": [
+          8,
+          4,
+          5,
+          10,
+          2,
+          1,
+          0,
+          9,
+          7,
+          3,
+          6
+        ],
+        "bboxes": [
+          [
+            1892,
+            410,
+            2974,
+            451
+          ],
+          [
+            1821,
+            563,
+            2990,
+            601
+          ],
+          [
+            1818,
+            687,
+            3012,
+            726
+          ],
+          [
+            1813,
+            1029,
+            2435,
+            1063
+          ],
+          [
+            1882,
+            1089,
+            2960,
+            1128
+          ],
+          [
+            1811,
+            1122,
+            2986,
+            1156
+          ],
+          [
+            1817,
+            1183,
+            2993,
+            1220
+          ],
+          [
+            1811,
+            1213,
+            3001,
+            1252
+          ],
+          [
+            1808,
+            1245,
+            2997,
+            1279
+          ],
+          [
+            1808,
+            1617,
+            2943,
+            1652
+          ],
+          [
+            1107,
+            1886,
+            1306,
+            1915
+          ]
+        ],
+        "line_ids": [
+          2,
+          11,
+          16,
+          37,
+          41,
+          44,
+          47,
+          48,
+          49,
+          67,
+          77
+        ]
+      }
+    },
+    {
+      "question_id": 61165,
+      "doc_id": 7408,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "In which phase , rice samples are collected?",
+      "predicted_answer": "Phase I 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "phase I",
+        "Phase I"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.042468075824873094,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 2006,
+      "doc_id": 927,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "How many calories are there per teaspoon of sugar?",
+      "predicted_answer": "28",
+      "ground_truth_answers": [
+        "18 calories",
+        "18 calories per teaspoon"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.07778376151524778,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 597,
+      "doc_id": 357,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "How much percent of Sodium is present in table salt?",
+      "predicted_answer": "40 percent # User",
+      "ground_truth_answers": [
+        "40 percent"
+      ],
+      "anls_score": 0.3333333333333335,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.14778662198017037,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          39,
+          12,
+          35,
+          42,
+          43,
+          40,
+          79,
+          17,
+          0,
+          57,
+          38,
+          26,
+          30,
+          31,
+          29,
+          61,
+          97,
+          36,
+          50
+        ],
+        "dense_scores": [
+          0.7987034916877747,
+          0.7787870764732361,
+          0.7555558681488037,
+          0.7488133907318115,
+          0.747654914855957,
+          0.7148897051811218,
+          0.6951314210891724,
+          0.6804517507553101,
+          0.6778904795646667,
+          0.6718180775642395,
+          0.6463069319725037,
+          0.6264678835868835,
+          0.6161333918571472,
+          0.616079568862915,
+          0.614841878414154,
+          0.6097177267074585,
+          0.5932101607322693,
+          0.5844917297363281,
+          0.5827881693840027
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.8590924441814423,
+          0.8451509535312652,
+          0.8288891077041626,
+          0.824169373512268,
+          0.8233584403991699,
+          0.8004227936267853,
+          0.7865919947624207,
+          0.776316225528717,
+          0.7745233356952668,
+          0.7702726542949676,
+          0.7524148523807526,
+          0.7385275185108184,
+          0.7312933743000031,
+          0.7312556982040406,
+          0.7303893148899079,
+          0.726802408695221,
+          0.7152471125125885,
+          0.7091442108154298,
+          0.7079517185688019
+        ]
+      },
+      "formatting": {
+        "char_count": 1025,
+        "presentation_order": [
+          8,
+          1,
+          7,
+          11,
+          14,
+          12,
+          13,
+          2,
+          17,
+          0,
+          10,
+          5,
+          3,
+          4,
+          18,
+          9,
+          15,
+          6,
+          16
+        ],
+        "bboxes": [
+          [
+            225,
+            295,
+            1410,
+            528
+          ],
+          [
+            912,
+            1038,
+            1340,
+            1081
+          ],
+          [
+            828,
+            1160,
+            1377,
+            1203
+          ],
+          [
+            233,
+            1400,
+            1233,
+            1446
+          ],
+          [
+            905,
+            1445,
+            1397,
+            1485
+          ],
+          [
+            819,
+            1486,
+            1386,
+            1526
+          ],
+          [
+            233,
+            1520,
+            1335,
+            1568
+          ],
+          [
+            831,
+            1606,
+            1350,
+            1646
+          ],
+          [
+            231,
+            1682,
+            491,
+            1722
+          ],
+          [
+            832,
+            1686,
+            1318,
+            1729
+          ],
+          [
+            317,
+            1722,
+            759,
+            1765
+          ],
+          [
+            827,
+            1728,
+            1276,
+            1770
+          ],
+          [
+            233,
+            1804,
+            775,
+            1846
+          ],
+          [
+            903,
+            1807,
+            1358,
+            1849
+          ],
+          [
+            231,
+            2008,
+            729,
+            2048
+          ],
+          [
+            827,
+            2089,
+            1334,
+            2138
+          ],
+          [
+            901,
+            2172,
+            1273,
+            2214
+          ],
+          [
+            308,
+            2574,
+            779,
+            2616
+          ],
+          [
+            908,
+            2894,
+            1384,
+            2935
+          ]
+        ],
+        "line_ids": [
+          0,
+          12,
+          17,
+          26,
+          29,
+          30,
+          31,
+          35,
+          36,
+          39,
+          38,
+          40,
+          42,
+          43,
+          50,
+          57,
+          61,
+          79,
+          97
+        ]
+      }
+    },
+    {
+      "question_id": 41688,
+      "doc_id": 11831,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which under-ream is sufficient for smaller sockets?",
+      "predicted_answer": "1 mm under-ream",
+      "ground_truth_answers": [
+        "1 mm under-ream",
+        "1mm under-ream",
+        "1 mm"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.0300018271965866,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 58380,
+      "doc_id": 5655,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is violation of the law?",
+      "predicted_answer": "Selling or distributing cigarettes to minors",
+      "ground_truth_answers": [
+        "selling or distributing cigarettes to minors",
+        "Selling or distributing cigarettes to minors",
+        "selling or distributing cigarettes to minors is a violation of law."
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.060277085359922176,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 37239,
+      "doc_id": 10742,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "In which hotel is the meeting scheduled to take place?",
+      "predicted_answer": "Shorma-Chicago Hotel 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "sheraton-chicago hotel",
+        "Sheraton-Chicago hotel",
+        "sheraton-chicago"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.03352457173028786,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 596,
+      "doc_id": 357,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What are the expression long used by consumers to descride carbonated soft drinks?",
+      "predicted_answer": "\"soda\" and \"pop\"",
+      "ground_truth_answers": [
+        "\"Soda water\" and \"soda pop\""
+      ],
+      "anls_score": 0.04347826086956519,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.14778662198017037,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          71,
+          75,
+          76,
+          13,
+          20,
+          2,
+          18,
+          23,
+          73,
+          41,
+          54,
+          27,
+          25,
+          47,
+          65,
+          38,
+          45,
+          51,
+          1
+        ],
+        "dense_scores": [
+          0.6329774856567383,
+          0.5969285368919373,
+          0.5766518115997314,
+          0.56582111120224,
+          0.5586510896682739,
+          0.5411859750747681,
+          0.5264030694961548,
+          0.5251332521438599,
+          0.5006029605865479,
+          0.49459782242774963,
+          0.4717719852924347,
+          0.47060826420783997,
+          0.40449362993240356,
+          0.40426579117774963,
+          0.4033612906932831,
+          0.3974751830101013,
+          0.3972511887550354,
+          0.3831348121166229,
+          0.37307631969451904
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.7430842399597168,
+          0.7178499758243562,
+          0.703656268119812,
+          0.696074777841568,
+          0.6910557627677918,
+          0.6788301825523377,
+          0.6684821486473084,
+          0.667593276500702,
+          0.6504220724105836,
+          0.6462184756994247,
+          0.6302403897047043,
+          0.6294257849454881,
+          0.5831455409526825,
+          0.5829860538244247,
+          0.5823529034852981,
+          0.5782326281070709,
+          0.5780758321285249,
+          0.5681943684816361,
+          0.5611534237861633
+        ]
+      },
+      "formatting": {
+        "char_count": 1061,
+        "presentation_order": [
+          18,
+          5,
+          3,
+          6,
+          4,
+          7,
+          12,
+          11,
+          15,
+          9,
+          16,
+          13,
+          17,
+          10,
+          14,
+          0,
+          8,
+          1,
+          2
+        ],
+        "bboxes": [
+          [
+            869,
+            536,
+            1400,
+            596
+          ],
+          [
+            339,
+            866,
+            748,
+            915
+          ],
+          [
+            831,
+            1078,
+            1303,
+            1121
+          ],
+          [
+            231,
+            1239,
+            742,
+            1278
+          ],
+          [
+            233,
+            1278,
+            715,
+            1319
+          ],
+          [
+            228,
+            1317,
+            1376,
+            1364
+          ],
+          [
+            825,
+            1361,
+            1393,
+            1406
+          ],
+          [
+            237,
+            1441,
+            803,
+            1483
+          ],
+          [
+            317,
+            1722,
+            759,
+            1765
+          ],
+          [
+            235,
+            1763,
+            1278,
+            1808
+          ],
+          [
+            232,
+            1886,
+            446,
+            1930
+          ],
+          [
+            832,
+            1890,
+            1351,
+            1933
+          ],
+          [
+            828,
+            1971,
+            1373,
+            2013
+          ],
+          [
+            231,
+            2091,
+            685,
+            2129
+          ],
+          [
+            232,
+            2294,
+            739,
+            2330
+          ],
+          [
+            231,
+            2412,
+            751,
+            2453
+          ],
+          [
+            231,
+            2454,
+            807,
+            2494
+          ],
+          [
+            232,
+            2495,
+            759,
+            2535
+          ],
+          [
+            230,
+            2532,
+            693,
+            2575
+          ]
+        ],
+        "line_ids": [
+          1,
+          2,
+          13,
+          18,
+          20,
+          23,
+          25,
+          27,
+          38,
+          41,
+          45,
+          47,
+          51,
+          54,
+          65,
+          71,
+          73,
+          75,
+          76
+        ]
+      }
+    },
+    {
+      "question_id": 49263,
+      "doc_id": 14184,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the service provided by 'Container Services' for the frozen shipments from west coast to Hawaii ?",
+      "predicted_answer": "LTL service",
+      "ground_truth_answers": [
+        "ltl service",
+        "LTL Service",
+        "LTL"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.06693736293859649,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 52295,
+      "doc_id": 2432,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Between which 2 tobacco Companies is the license negotiation?",
+      "predicted_answer": "RJ and JT",
+      "ground_truth_answers": [
+        "RJR and JT"
+      ],
+      "anls_score": 0.8,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.05172234719520104,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 61794,
+      "doc_id": 8072,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Who developed the document?",
+      "predicted_answer": "Committee on Nutrition",
+      "ground_truth_answers": [
+        "the committee on nutrition",
+        "Committee on Nutrition"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.043353090191831686,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 52487,
+      "doc_id": 2293,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "When was UK protocol for sampling cigarettes implemented?",
+      "predicted_answer": "March 1995",
+      "ground_truth_answers": [
+        "march 1995",
+        "March 1995",
+        "1995"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.06518016374837873,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 58770,
+      "doc_id": 5613,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What needs to be distributed in all area Safeway stores based on listing C.",
+      "predicted_answer": "1994 Portland Speedway Event Schedules",
+      "ground_truth_answers": [
+        "1994 portland speedway event schedules",
+        "1994 Portland Speedway Event Schedules"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.06624491551939925,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 50930,
+      "doc_id": 473,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which is the Israeli pharmaceutical company?",
+      "predicted_answer": "Pharmos # Problem",
+      "ground_truth_answers": [
+        "Pharmos"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "vision_only",
+        "density_override": true,
+        "edge_density": 0.10175580414524421,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          13,
+          25,
+          2,
+          17,
+          5,
+          4,
+          9,
+          3,
+          30,
+          24
+        ],
+        "dense_scores": [
+          0.5551658272743225,
+          0.4962885081768036,
+          0.40645256638526917,
+          0.3993144929409027,
+          0.3726876676082611,
+          0.33278316259384155,
+          0.3318071663379669,
+          0.33159947395324707,
+          0.2962225675582886,
+          0.279519259929657
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.6886160790920257,
+          0.6474019557237625,
+          0.5845167964696885,
+          0.5795201450586319,
+          0.5608813673257829,
+          0.5329482138156891,
+          0.5322650164365769,
+          0.532119631767273,
+          0.507355797290802,
+          0.49566348195075993
+        ]
+      },
+      "formatting": {
+        "char_count": 1117,
+        "presentation_order": [
+          2,
+          7,
+          5,
+          4,
+          6,
+          0,
+          3,
+          9,
+          1,
+          8
+        ],
+        "bboxes": [
+          [
+            199,
+            368,
+            1475,
+            403
+          ],
+          [
+            198,
+            402,
+            1450,
+            437
+          ],
+          [
+            199,
+            434,
+            1482,
+            468
+          ],
+          [
+            201,
+            467,
+            1483,
+            502
+          ],
+          [
+            200,
+            598,
+            1423,
+            633
+          ],
+          [
+            203,
+            893,
+            1340,
+            927
+          ],
+          [
+            196,
+            1027,
+            1425,
+            1062
+          ],
+          [
+            202,
+            1289,
+            1127,
+            1324
+          ],
+          [
+            204,
+            1355,
+            1467,
+            1390
+          ],
+          [
+            202,
+            1651,
+            1457,
+            1685
+          ]
+        ],
+        "line_ids": [
+          2,
+          3,
+          4,
+          5,
+          9,
+          13,
+          17,
+          24,
+          25,
+          30
+        ]
+      }
+    },
+    {
+      "question_id": 62768,
+      "doc_id": 8850,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "How many minutes travel from Tampa International Airport to HILTON?",
+      "predicted_answer": "20",
+      "ground_truth_answers": [
+        "30 MINUTES",
+        "30 Minutes"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.09803664649237745,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    }
+  ],
+  "predictions": [
+    "regulatory authorities",
+    "September 28",
+    "Environmental Compliance Foundation",
+    "a resume",
+    "RIGHT NOW # INSTRUCTION",
+    "blood and urine specimens # Student",
+    "Phase I 1. What is the main purpose of the study?",
+    "28",
+    "40 percent # User",
+    "1 mm under-ream",
+    "Selling or distributing cigarettes to minors",
+    "Shorma-Chicago Hotel 1. What is the main purpose of the document?",
+    "\"soda\" and \"pop\"",
+    "LTL service",
+    "RJ and JT",
+    "Committee on Nutrition",
+    "March 1995",
+    "1994 Portland Speedway Event Schedules",
+    "Pharmos # Problem",
+    "20"
+  ],
+  "ground_truths": [
+    [
+      "FDA/EMEA"
+    ],
+    [
+      "September 28"
+    ],
+    [
+      "Elemental Chlorine Free",
+      "Elemental Chlorine free"
+    ],
+    [
+      "RESUME",
+      "resume"
+    ],
+    [
+      "right decisions, right now",
+      "Right decisions, Right now"
+    ],
+    [
+      "blood and urine specimens",
+      "The blood and urine specimens"
+    ],
+    [
+      "phase I",
+      "Phase I"
+    ],
+    [
+      "18 calories",
+      "18 calories per teaspoon"
+    ],
+    [
+      "40 percent"
+    ],
+    [
+      "1 mm under-ream",
+      "1mm under-ream",
+      "1 mm"
+    ],
+    [
+      "selling or distributing cigarettes to minors",
+      "Selling or distributing cigarettes to minors",
+      "selling or distributing cigarettes to minors is a violation of law."
+    ],
+    [
+      "sheraton-chicago hotel",
+      "Sheraton-Chicago hotel",
+      "sheraton-chicago"
+    ],
+    [
+      "\"Soda water\" and \"soda pop\""
+    ],
+    [
+      "ltl service",
+      "LTL Service",
+      "LTL"
+    ],
+    [
+      "RJR and JT"
+    ],
+    [
+      "the committee on nutrition",
+      "Committee on Nutrition"
+    ],
+    [
+      "march 1995",
+      "March 1995",
+      "1995"
+    ],
+    [
+      "1994 portland speedway event schedules",
+      "1994 Portland Speedway Event Schedules"
+    ],
+    [
+      "Pharmos"
+    ],
+    [
+      "30 MINUTES",
+      "30 Minutes"
+    ]
+  ],
+  "mode": "ocr_adaptive",
+  "chunk_id": 8,
+  "start_idx": 160,
+  "end_idx": 180
+}

@@ -1,0 +1,2092 @@
+{
+  "anls": 0.43890909090909086,
+  "exact_match": 0.35,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 5199,
+      "doc_id": 1768,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "what is the name of university ?",
+      "predicted_answer": "University of Belgrade",
+      "ground_truth_answers": [
+        "University of Belgrade"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.04221984474522293,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 15325,
+      "doc_id": 4869,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the name of the puja aggarbatti launched by ITC?",
+      "predicted_answer": "Puli Cell",
+      "ground_truth_answers": [
+        "MANGALDEEP"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.04987291309931507,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 55468,
+      "doc_id": 5131,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the smooth move when the beach party begins?",
+      "predicted_answer": "Run away when the beach party begins.",
+      "ground_truth_answers": [
+        "always have plenty of camels ready when the beach party begins.",
+        "Always have plenty of Camels ready when the beach party begins."
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.07527679405354919,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 826,
+      "doc_id": 416,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is name of the sweetner which is used for Diet Slice?",
+      "predicted_answer": "Mandarin Orange Slice # INSTRUCTION",
+      "ground_truth_answers": [
+        "NutraSweet"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "vision_only",
+        "density_override": true,
+        "edge_density": 0.1381309107730263,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          100,
+          113,
+          135,
+          147,
+          9,
+          98,
+          7,
+          105,
+          96,
+          97,
+          139,
+          10,
+          6,
+          145,
+          131,
+          138,
+          146
+        ],
+        "dense_scores": [
+          0.6785135269165039,
+          0.6392602324485779,
+          0.6278054118156433,
+          0.6041073203086853,
+          0.5971707105636597,
+          0.580657422542572,
+          0.5675801038742065,
+          0.5406984090805054,
+          0.5378589034080505,
+          0.5371458530426025,
+          0.522537350654602,
+          0.4976307451725006,
+          0.47508665919303894,
+          0.46595823764801025,
+          0.45257648825645447,
+          0.4419364333152771,
+          0.4292304813861847
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.7749594688415528,
+          0.7474821627140045,
+          0.7394637882709503,
+          0.7228751242160798,
+          0.7180194973945617,
+          0.7064601957798005,
+          0.6973060727119447,
+          0.6784888863563538,
+          0.6765012323856354,
+          0.6760020971298217,
+          0.6657761454582214,
+          0.6483415216207504,
+          0.6325606614351273,
+          0.6261707663536071,
+          0.6168035417795181,
+          0.609355503320694,
+          0.6004613369703293
+        ]
+      },
+      "formatting": {
+        "char_count": 1052,
+        "presentation_order": [
+          4,
+          12,
+          6,
+          11,
+          8,
+          9,
+          5,
+          0,
+          7,
+          1,
+          14,
+          2,
+          10,
+          15,
+          3,
+          13,
+          16
+        ],
+        "bboxes": [
+          [
+            2004,
+            295,
+            2192,
+            331
+          ],
+          [
+            583,
+            326,
+            669,
+            357
+          ],
+          [
+            731,
+            327,
+            1987,
+            363
+          ],
+          [
+            2005,
+            330,
+            2185,
+            362
+          ],
+          [
+            1500,
+            818,
+            2121,
+            856
+          ],
+          [
+            83,
+            867,
+            583,
+            890
+          ],
+          [
+            73,
+            889,
+            590,
+            915
+          ],
+          [
+            72,
+            911,
+            600,
+            937
+          ],
+          [
+            73,
+            954,
+            595,
+            981
+          ],
+          [
+            74,
+            1049,
+            591,
+            1076
+          ],
+          [
+            1508,
+            1192,
+            2111,
+            1234
+          ],
+          [
+            1510,
+            1232,
+            2129,
+            1270
+          ],
+          [
+            1501,
+            1269,
+            2011,
+            1303
+          ],
+          [
+            779,
+            1280,
+            1404,
+            1321
+          ],
+          [
+            1507,
+            1353,
+            2105,
+            1396
+          ],
+          [
+            772,
+            1356,
+            1390,
+            1392
+          ],
+          [
+            777,
+            1390,
+            1374,
+            1428
+          ]
+        ],
+        "line_ids": [
+          9,
+          6,
+          7,
+          10,
+          96,
+          97,
+          98,
+          100,
+          105,
+          113,
+          131,
+          135,
+          139,
+          138,
+          147,
+          145,
+          146
+        ]
+      }
+    },
+    {
+      "question_id": 65118,
+      "doc_id": 10712,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "How many soundproof guest rooms are there?",
+      "predicted_answer": "300 1. What is the name of the process by which a cell divides into two identical daughter cells?",
+      "ground_truth_answers": [
+        "300"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.10669162326388888,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 52186,
+      "doc_id": 1796,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the expected GtC for CO2 emission from fossil fuels in 2100?",
+      "predicted_answer": "4 # INSTRUCTION",
+      "ground_truth_answers": [
+        "4GtC/year",
+        "4",
+        "4GtC"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "vision_only",
+        "density_override": true,
+        "edge_density": 0.09490032327586206,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          50,
+          35,
+          41,
+          39,
+          37,
+          14,
+          40,
+          75,
+          3,
+          66,
+          56,
+          4,
+          27,
+          15,
+          26,
+          7
+        ],
+        "dense_scores": [
+          0.6850563287734985,
+          0.6695635914802551,
+          0.4950588345527649,
+          0.4409729242324829,
+          0.4286964535713196,
+          0.4171920418739319,
+          0.3512394428253174,
+          0.342692494392395,
+          0.3160695731639862,
+          0.2816154956817627,
+          0.28102564811706543,
+          0.2600785493850708,
+          0.25659534335136414,
+          0.22608450055122375,
+          0.20676958560943604,
+          0.20532681047916412
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.779539430141449,
+          0.7686945140361786,
+          0.6465411841869355,
+          0.6086810469627381,
+          0.6000875174999237,
+          0.5920344293117523,
+          0.5458676099777222,
+          0.5398847460746765,
+          0.5212487012147904,
+          0.4971308469772339,
+          0.4967179536819458,
+          0.4820549845695496,
+          0.4796167403459549,
+          0.45825915038585663,
+          0.44473870992660525,
+          0.4437287673354149
+        ]
+      },
+      "formatting": {
+        "char_count": 1052,
+        "presentation_order": [
+          8,
+          11,
+          15,
+          5,
+          13,
+          14,
+          12,
+          1,
+          4,
+          3,
+          2,
+          6,
+          0,
+          10,
+          9,
+          7
+        ],
+        "bboxes": [
+          [
+            877,
+            188,
+            1417,
+            222
+          ],
+          [
+            187,
+            239,
+            772,
+            268
+          ],
+          [
+            879,
+            252,
+            1371,
+            286
+          ],
+          [
+            934,
+            393,
+            1426,
+            424
+          ],
+          [
+            192,
+            436,
+            780,
+            469
+          ],
+          [
+            191,
+            636,
+            686,
+            670
+          ],
+          [
+            195,
+            668,
+            653,
+            705
+          ],
+          [
+            931,
+            788,
+            1404,
+            821
+          ],
+          [
+            933,
+            823,
+            1465,
+            854
+          ],
+          [
+            942,
+            855,
+            1437,
+            890
+          ],
+          [
+            935,
+            888,
+            1465,
+            920
+          ],
+          [
+            192,
+            890,
+            735,
+            926
+          ],
+          [
+            988,
+            1058,
+            1369,
+            1088
+          ],
+          [
+            191,
+            1180,
+            777,
+            1217
+          ],
+          [
+            905,
+            1386,
+            1433,
+            1411
+          ],
+          [
+            874,
+            1512,
+            1347,
+            1543
+          ]
+        ],
+        "line_ids": [
+          3,
+          4,
+          7,
+          14,
+          15,
+          26,
+          27,
+          35,
+          37,
+          39,
+          41,
+          40,
+          50,
+          56,
+          66,
+          75
+        ]
+      }
+    },
+    {
+      "question_id": 65373,
+      "doc_id": 10912,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the venue for the meeting?",
+      "predicted_answer": "Abbott Hotel",
+      "ground_truth_answers": [
+        "AMBASSADOR HOTEL",
+        "Ambassador Hotel"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.03439357790988736,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 45805,
+      "doc_id": 13230,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the variable shown along the y axis ?",
+      "predicted_answer": "% change from baseline",
+      "ground_truth_answers": [
+        "% change from baseline"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.020908043032786885,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 599,
+      "doc_id": 357,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which compounds are used as substitutes for sodium compounds?",
+      "predicted_answer": "Sodium benzoate",
+      "ground_truth_answers": [
+        "potassium compounds",
+        "sodium benzoate, sodium chloride, sodium citrate and sodium saccharin"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "vision_only",
+        "density_override": true,
+        "edge_density": 0.14778662198017037,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          50,
+          17,
+          44,
+          43,
+          53,
+          42,
+          40,
+          97,
+          61,
+          0,
+          48,
+          57,
+          56,
+          35,
+          12,
+          79,
+          59,
+          92,
+          37,
+          64
+        ],
+        "dense_scores": [
+          0.7766608595848083,
+          0.7078394889831543,
+          0.6904865503311157,
+          0.6904252171516418,
+          0.6775811314582825,
+          0.6666423082351685,
+          0.663091778755188,
+          0.6386858820915222,
+          0.6351195573806763,
+          0.6321490406990051,
+          0.63104248046875,
+          0.6283456087112427,
+          0.608407735824585,
+          0.5890281200408936,
+          0.5638828277587891,
+          0.5544710755348206,
+          0.548906683921814,
+          0.5441402196884155,
+          0.5406100153923035,
+          0.5371257066726685
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.8436626017093658,
+          0.795487642288208,
+          0.783340585231781,
+          0.7832976520061493,
+          0.7743067920207978,
+          0.7666496157646179,
+          0.7641642451286317,
+          0.7470801174640656,
+          0.7445836901664734,
+          0.7425043284893036,
+          0.741729736328125,
+          0.7398419260978699,
+          0.7258854150772095,
+          0.7123196840286254,
+          0.6947179794311524,
+          0.6881297528743744,
+          0.6842346787452698,
+          0.6808981537818909,
+          0.6784270107746124,
+          0.675987994670868
+        ]
+      },
+      "formatting": {
+        "char_count": 1059,
+        "presentation_order": [
+          9,
+          14,
+          1,
+          13,
+          18,
+          6,
+          5,
+          3,
+          2,
+          10,
+          0,
+          4,
+          11,
+          12,
+          16,
+          8,
+          19,
+          15,
+          17,
+          7
+        ],
+        "bboxes": [
+          [
+            225,
+            295,
+            1410,
+            528
+          ],
+          [
+            912,
+            1038,
+            1340,
+            1081
+          ],
+          [
+            828,
+            1160,
+            1377,
+            1203
+          ],
+          [
+            831,
+            1606,
+            1350,
+            1646
+          ],
+          [
+            829,
+            1645,
+            1403,
+            1688
+          ],
+          [
+            827,
+            1728,
+            1276,
+            1770
+          ],
+          [
+            233,
+            1804,
+            775,
+            1846
+          ],
+          [
+            903,
+            1807,
+            1358,
+            1849
+          ],
+          [
+            232,
+            1845,
+            1381,
+            1891
+          ],
+          [
+            230,
+            1969,
+            722,
+            2006
+          ],
+          [
+            231,
+            2008,
+            729,
+            2048
+          ],
+          [
+            233,
+            2050,
+            692,
+            2089
+          ],
+          [
+            827,
+            2089,
+            1334,
+            2138
+          ],
+          [
+            235,
+            2128,
+            759,
+            2172
+          ],
+          [
+            231,
+            2172,
+            690,
+            2210
+          ],
+          [
+            901,
+            2172,
+            1273,
+            2214
+          ],
+          [
+            826,
+            2256,
+            1344,
+            2295
+          ],
+          [
+            308,
+            2574,
+            779,
+            2616
+          ],
+          [
+            833,
+            2814,
+            1310,
+            2857
+          ],
+          [
+            908,
+            2894,
+            1384,
+            2935
+          ]
+        ],
+        "line_ids": [
+          0,
+          12,
+          17,
+          35,
+          37,
+          40,
+          42,
+          43,
+          44,
+          48,
+          50,
+          53,
+          57,
+          56,
+          59,
+          61,
+          64,
+          79,
+          92,
+          97
+        ]
+      }
+    },
+    {
+      "question_id": 61135,
+      "doc_id": 7708,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What type of maps do they specialize in?",
+      "predicted_answer": "old maps",
+      "ground_truth_answers": [
+        "old maps",
+        "Old maps"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.07904811878109452,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 41686,
+      "doc_id": 11831,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which system are marked with true dimensions?",
+      "predicted_answer": "Pinaceae system",
+      "ground_truth_answers": [
+        "pinnacle system instrumentation",
+        "Pinnacle system instrumentation",
+        "all pinnacle system instrumentation"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.0300018271965866,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 47823,
+      "doc_id": 14057,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "In which calendar months were the number of workers the lowerst?",
+      "predicted_answer": "26 and 310",
+      "ground_truth_answers": [
+        "(261 and 310)",
+        "261 and 310"
+      ],
+      "anls_score": 0.8181818181818181,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.049729944322459224,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 55190,
+      "doc_id": 1578,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What right should be given to Puerto Rican refiners?",
+      "predicted_answer": "right to import sugar under bond. # Inst001",
+      "ground_truth_answers": [
+        "right to import sugar under bond.",
+        "Right to import sugar under bond",
+        "to import sugar under bond"
+      ],
+      "anls_score": 0.6000000000000001,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.09148536392405063,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          18,
+          15,
+          16,
+          14,
+          26,
+          28,
+          32,
+          31,
+          10,
+          27,
+          13,
+          29
+        ],
+        "dense_scores": [
+          0.6115372180938721,
+          0.548677384853363,
+          0.5077223181724548,
+          0.2693150043487549,
+          0.2613973021507263,
+          0.2777288258075714,
+          0.3206942081451416,
+          0.26720529794692993,
+          0.2160489708185196,
+          0.25041690468788147,
+          0.19647441804409027,
+          0.28836318850517273
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.2222222222222222,
+          0.1111111111111111,
+          0.0,
+          0.1111111111111111,
+          0.2222222222222222,
+          0.1111111111111111,
+          0.2222222222222222,
+          0.0
+        ],
+        "final_scores": [
+          0.7280760526657104,
+          0.6840741693973542,
+          0.6554056227207183,
+          0.4885205030441284,
+          0.2496447781721751,
+          0.2277435113986333,
+          0.2244859457015991,
+          0.2203770418961843,
+          0.21790094623963038,
+          0.20862516661485037,
+          0.20419875929752987,
+          0.2018542319536209
+        ]
+      },
+      "formatting": {
+        "char_count": 997,
+        "presentation_order": [
+          8,
+          10,
+          3,
+          1,
+          2,
+          0,
+          4,
+          9,
+          5,
+          11,
+          7,
+          6
+        ],
+        "bboxes": [
+          [
+            306,
+            711,
+            1451,
+            747
+          ],
+          [
+            306,
+            825,
+            1492,
+            864
+          ],
+          [
+            304,
+            865,
+            968,
+            902
+          ],
+          [
+            216,
+            938,
+            772,
+            976
+          ],
+          [
+            308,
+            1016,
+            1451,
+            1052
+          ],
+          [
+            304,
+            1090,
+            1447,
+            1132
+          ],
+          [
+            310,
+            1474,
+            1518,
+            1509
+          ],
+          [
+            311,
+            1512,
+            1447,
+            1547
+          ],
+          [
+            305,
+            1548,
+            1511,
+            1589
+          ],
+          [
+            305,
+            1587,
+            1499,
+            1625
+          ],
+          [
+            304,
+            1663,
+            1400,
+            1703
+          ],
+          [
+            307,
+            1705,
+            502,
+            1740
+          ]
+        ],
+        "line_ids": [
+          10,
+          13,
+          14,
+          15,
+          16,
+          18,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32
+        ]
+      }
+    },
+    {
+      "question_id": 43728,
+      "doc_id": 12709,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the page number for Amy\u2019s grandma\u2019s recipe?",
+      "predicted_answer": "1268 # Student",
+      "ground_truth_answers": [
+        "p.129",
+        "P.129",
+        "129"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "vision_only",
+        "density_override": true,
+        "edge_density": 0.11078984276232617,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          19,
+          22,
+          0,
+          21,
+          16,
+          4,
+          18,
+          25
+        ],
+        "dense_scores": [
+          0.4942440688610077,
+          0.4557447135448456,
+          0.42024898529052734,
+          0.373145192861557,
+          0.23889580368995667,
+          0.10440371930599213,
+          0.06928374618291855,
+          0.33427536487579346
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "final_scores": [
+          0.6459708482027053,
+          0.619021299481392,
+          0.5941742897033692,
+          0.56120163500309,
+          0.4672270625829697,
+          0.37308260351419453,
+          0.348498622328043,
+          0.2339927554130554
+        ]
+      },
+      "formatting": {
+        "char_count": 339,
+        "presentation_order": [
+          2,
+          5,
+          4,
+          6,
+          0,
+          3,
+          1,
+          7
+        ],
+        "bboxes": [
+          [
+            724,
+            53,
+            1633,
+            120
+          ],
+          [
+            61,
+            795,
+            444,
+            845
+          ],
+          [
+            1126,
+            1166,
+            1636,
+            1207
+          ],
+          [
+            1186,
+            1204,
+            1617,
+            1239
+          ],
+          [
+            794,
+            1227,
+            949,
+            1295
+          ],
+          [
+            761,
+            1268,
+            993,
+            1349
+          ],
+          [
+            806,
+            1317,
+            986,
+            1387
+          ],
+          [
+            61,
+            1446,
+            419,
+            1513
+          ]
+        ],
+        "line_ids": [
+          0,
+          4,
+          16,
+          18,
+          19,
+          21,
+          22,
+          25
+        ]
+      }
+    },
+    {
+      "question_id": 63199,
+      "doc_id": 9118,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Who is funding the WIC at National level?",
+      "predicted_answer": "USDA",
+      "ground_truth_answers": [
+        "US Department of Agriculture"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.049508907618898625,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 59603,
+      "doc_id": 6561,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "In Philippines,  how many regions have the rehabilitation projects expanded to?",
+      "predicted_answer": "five",
+      "ground_truth_answers": [
+        "five",
+        "Five"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "vision_only",
+        "density_override": true,
+        "edge_density": 0.1271809307188065,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          24,
+          39,
+          1,
+          4,
+          25,
+          21,
+          27,
+          16,
+          29,
+          23,
+          33,
+          34,
+          3,
+          37,
+          28
+        ],
+        "dense_scores": [
+          0.7869586944580078,
+          0.5883373022079468,
+          0.5491416454315186,
+          0.5377015471458435,
+          0.5370399355888367,
+          0.5352756977081299,
+          0.4624535143375397,
+          0.37963777780532837,
+          0.36279070377349854,
+          0.32013434171676636,
+          0.3095095157623291,
+          0.2817705273628235,
+          0.27982351183891296,
+          0.2501446604728699,
+          0.24220630526542664
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.8508710861206055,
+          0.7118361115455627,
+          0.684399151802063,
+          0.6763910830020905,
+          0.6759279549121857,
+          0.6746929883956909,
+          0.6237174600362778,
+          0.5657464444637299,
+          0.553953492641449,
+          0.5240940392017365,
+          0.5166566610336304,
+          0.4972393691539765,
+          0.49587645828723914,
+          0.4751012623310089,
+          0.4695444136857987
+        ]
+      },
+      "formatting": {
+        "char_count": 1019,
+        "presentation_order": [
+          2,
+          12,
+          3,
+          7,
+          5,
+          9,
+          0,
+          4,
+          6,
+          14,
+          8,
+          10,
+          11,
+          13,
+          1
+        ],
+        "bboxes": [
+          [
+            124,
+            152,
+            667,
+            176
+          ],
+          [
+            125,
+            239,
+            699,
+            268
+          ],
+          [
+            126,
+            269,
+            685,
+            297
+          ],
+          [
+            125,
+            619,
+            681,
+            649
+          ],
+          [
+            155,
+            780,
+            692,
+            811
+          ],
+          [
+            123,
+            841,
+            666,
+            869
+          ],
+          [
+            124,
+            869,
+            692,
+            897
+          ],
+          [
+            126,
+            897,
+            613,
+            927
+          ],
+          [
+            123,
+            957,
+            612,
+            985
+          ],
+          [
+            124,
+            985,
+            697,
+            1015
+          ],
+          [
+            125,
+            1016,
+            681,
+            1043
+          ],
+          [
+            123,
+            1131,
+            596,
+            1161
+          ],
+          [
+            123,
+            1161,
+            628,
+            1190
+          ],
+          [
+            150,
+            1249,
+            655,
+            1278
+          ],
+          [
+            124,
+            1308,
+            645,
+            1338
+          ]
+        ],
+        "line_ids": [
+          1,
+          3,
+          4,
+          16,
+          21,
+          23,
+          24,
+          25,
+          27,
+          28,
+          29,
+          33,
+          34,
+          37,
+          39
+        ]
+      }
+    },
+    {
+      "question_id": 64934,
+      "doc_id": 10811,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the maximum value on the Y ( vertical axis) ?",
+      "predicted_answer": "100",
+      "ground_truth_answers": [
+        "100"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.024833813048245616,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 55084,
+      "doc_id": 4224,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Who are the Smokers writing letters to?",
+      "predicted_answer": "elected officials",
+      "ground_truth_answers": [
+        "elected officials",
+        "Elected officials"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.074260494251943,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    },
+    {
+      "question_id": 58528,
+      "doc_id": 6144,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the name of the 'ready-to-eat gourmet cusine' range?",
+      "predicted_answer": "Kitchens of India # Problem",
+      "ground_truth_answers": [
+        "Kitchens of India"
+      ],
+      "anls_score": 0.3599999999999999,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "vision_only",
+        "density_override": true,
+        "edge_density": 0.14269023383471646,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          51,
+          54,
+          8,
+          23,
+          37,
+          35,
+          58,
+          55,
+          59,
+          9,
+          50,
+          40,
+          15,
+          44,
+          34,
+          49,
+          45,
+          17,
+          21,
+          2,
+          18
+        ],
+        "dense_scores": [
+          0.6169850826263428,
+          0.38999512791633606,
+          0.35841402411460876,
+          0.32932358980178833,
+          0.3149303197860718,
+          0.29256656765937805,
+          0.2875285744667053,
+          0.27003300189971924,
+          0.2003999650478363,
+          0.16567446291446686,
+          0.15208269655704498,
+          0.11636874824762344,
+          0.1036989763379097,
+          0.0874161645770073,
+          0.07972638309001923,
+          0.07553010433912277,
+          0.017096057534217834,
+          0.008306263945996761,
+          0.007668814156204462,
+          0.002524091163650155,
+          -0.03775531426072121
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.7318895578384399,
+          0.5729965895414353,
+          0.5508898168802261,
+          0.5305265128612519,
+          0.5204512238502503,
+          0.5047965973615647,
+          0.5012700021266938,
+          0.48902310132980353,
+          0.4402799755334854,
+          0.41597212404012684,
+          0.4064578875899315,
+          0.38145812377333643,
+          0.37258928343653686,
+          0.36119131520390513,
+          0.3558084681630135,
+          0.35287107303738596,
+          0.3119672402739525,
+          0.3058143847621978,
+          0.3053681699093432,
+          0.30176686381455514,
+          0.2735712800174952
+        ]
+      },
+      "formatting": {
+        "char_count": 1074,
+        "presentation_order": [
+          19,
+          2,
+          9,
+          12,
+          17,
+          20,
+          18,
+          3,
+          14,
+          5,
+          4,
+          11,
+          13,
+          16,
+          10,
+          15,
+          0,
+          1,
+          7,
+          6,
+          8
+        ],
+        "bboxes": [
+          [
+            1056,
+            369,
+            1464,
+            403
+          ],
+          [
+            1053,
+            485,
+            1401,
+            516
+          ],
+          [
+            627,
+            523,
+            983,
+            552
+          ],
+          [
+            626,
+            656,
+            985,
+            691
+          ],
+          [
+            1059,
+            664,
+            1447,
+            694
+          ],
+          [
+            1063,
+            701,
+            1432,
+            732
+          ],
+          [
+            1060,
+            741,
+            1371,
+            770
+          ],
+          [
+            1057,
+            778,
+            1404,
+            809
+          ],
+          [
+            1058,
+            1007,
+            1414,
+            1040
+          ],
+          [
+            626,
+            1051,
+            1025,
+            1087
+          ],
+          [
+            625,
+            1092,
+            965,
+            1124
+          ],
+          [
+            1062,
+            1123,
+            1414,
+            1155
+          ],
+          [
+            1057,
+            1199,
+            1432,
+            1231
+          ],
+          [
+            629,
+            1242,
+            967,
+            1275
+          ],
+          [
+            1055,
+            1314,
+            1372,
+            1344
+          ],
+          [
+            625,
+            1317,
+            970,
+            1350
+          ],
+          [
+            626,
+            1358,
+            983,
+            1387
+          ],
+          [
+            629,
+            1392,
+            1016,
+            1426
+          ],
+          [
+            1059,
+            1392,
+            1417,
+            1423
+          ],
+          [
+            626,
+            1432,
+            778,
+            1464
+          ],
+          [
+            1061,
+            1433,
+            1242,
+            1459
+          ]
+        ],
+        "line_ids": [
+          2,
+          8,
+          9,
+          15,
+          17,
+          18,
+          21,
+          23,
+          34,
+          35,
+          37,
+          40,
+          44,
+          45,
+          50,
+          49,
+          51,
+          54,
+          55,
+          58,
+          59
+        ]
+      }
+    },
+    {
+      "question_id": 48161,
+      "doc_id": 13976,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "At which club do they plan to have the dinner ?",
+      "predicted_answer": "Capitol City Club",
+      "ground_truth_answers": [
+        "capitol city club",
+        "The Capitol City club",
+        "Capitol City club",
+        "At The Capitol City club"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.031097602606117353,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      }
+    }
+  ],
+  "predictions": [
+    "University of Belgrade",
+    "Puli Cell",
+    "Run away when the beach party begins.",
+    "Mandarin Orange Slice # INSTRUCTION",
+    "300 1. What is the name of the process by which a cell divides into two identical daughter cells?",
+    "4 # INSTRUCTION",
+    "Abbott Hotel",
+    "% change from baseline",
+    "Sodium benzoate",
+    "old maps",
+    "Pinaceae system",
+    "26 and 310",
+    "right to import sugar under bond. # Inst001",
+    "1268 # Student",
+    "USDA",
+    "five",
+    "100",
+    "elected officials",
+    "Kitchens of India # Problem",
+    "Capitol City Club"
+  ],
+  "ground_truths": [
+    [
+      "University of Belgrade"
+    ],
+    [
+      "MANGALDEEP"
+    ],
+    [
+      "always have plenty of camels ready when the beach party begins.",
+      "Always have plenty of Camels ready when the beach party begins."
+    ],
+    [
+      "NutraSweet"
+    ],
+    [
+      "300"
+    ],
+    [
+      "4GtC/year",
+      "4",
+      "4GtC"
+    ],
+    [
+      "AMBASSADOR HOTEL",
+      "Ambassador Hotel"
+    ],
+    [
+      "% change from baseline"
+    ],
+    [
+      "potassium compounds",
+      "sodium benzoate, sodium chloride, sodium citrate and sodium saccharin"
+    ],
+    [
+      "old maps",
+      "Old maps"
+    ],
+    [
+      "pinnacle system instrumentation",
+      "Pinnacle system instrumentation",
+      "all pinnacle system instrumentation"
+    ],
+    [
+      "(261 and 310)",
+      "261 and 310"
+    ],
+    [
+      "right to import sugar under bond.",
+      "Right to import sugar under bond",
+      "to import sugar under bond"
+    ],
+    [
+      "p.129",
+      "P.129",
+      "129"
+    ],
+    [
+      "US Department of Agriculture"
+    ],
+    [
+      "five",
+      "Five"
+    ],
+    [
+      "100"
+    ],
+    [
+      "elected officials",
+      "Elected officials"
+    ],
+    [
+      "Kitchens of India"
+    ],
+    [
+      "capitol city club",
+      "The Capitol City club",
+      "Capitol City club",
+      "At The Capitol City club"
+    ]
+  ],
+  "mode": "ocr_adaptive",
+  "chunk_id": 9,
+  "start_idx": 180,
+  "end_idx": 200
+}

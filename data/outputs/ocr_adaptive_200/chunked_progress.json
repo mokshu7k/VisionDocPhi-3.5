@@ -1,0 +1,18 @@
+{
+  "mode": "ocr_adaptive",
+  "subset_file": "data/outputs/eval_subset_200.json",
+  "chunk_size": 20,
+  "total_samples": 200,
+  "completed_chunks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

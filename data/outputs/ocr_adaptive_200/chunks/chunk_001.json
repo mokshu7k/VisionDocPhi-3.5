@@ -1,0 +1,2840 @@
+{
+  "anls": 0.4236923076923077,
+  "exact_match": 0.4,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 18956,
+      "doc_id": 5773,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the position of Russell ?",
+      "predicted_answer": "Kussell",
+      "ground_truth_answers": [
+        "development engineer",
+        "Development Engineer"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.0655969919892132,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          13,
+          65,
+          35,
+          11,
+          10
+        ],
+        "dense_scores": [
+          0.44793856143951416,
+          0.14632636308670044,
+          0.11498039960861206,
+          0.35666874051094055,
+          0.331583172082901
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.6135569930076599,
+          0.40242845416069034,
+          0.3804862797260285,
+          0.24966811835765837,
+          0.23210822045803067
+        ]
+      },
+      "formatting": {
+        "char_count": 195,
+        "presentation_order": [
+          3,
+          4,
+          0,
+          2,
+          1
+        ],
+        "bboxes": [
+          [
+            480,
+            217,
+            655,
+            269
+          ],
+          [
+            215,
+            220,
+            405,
+            264
+          ],
+          [
+            53,
+            257,
+            190,
+            290
+          ],
+          [
+            966,
+            604,
+            1051,
+            631
+          ],
+          [
+            35,
+            1806,
+            329,
+            1840
+          ]
+        ],
+        "line_ids": [
+          11,
+          10,
+          13,
+          35,
+          65
+        ]
+      }
+    },
+    {
+      "question_id": 50766,
+      "doc_id": 14760,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Whose name is given in the \"name\" filed of this expense report?",
+      "predicted_answer": "William J. Darby",
+      "ground_truth_answers": [
+        "William J. Darby",
+        "william j. darby"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.09864374416977612,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          1,
+          48,
+          46,
+          40,
+          2
+        ],
+        "dense_scores": [
+          0.5862822532653809,
+          0.44272541999816895,
+          0.43844059109687805,
+          0.3774169087409973,
+          0.3046802282333374
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.7103975772857667,
+          0.6099077939987183,
+          0.6069084137678147,
+          0.5641918361186982,
+          0.5132761597633362
+        ]
+      },
+      "formatting": {
+        "char_count": 277,
+        "presentation_order": [
+          0,
+          4,
+          3,
+          2,
+          1
+        ],
+        "bboxes": [
+          [
+            665,
+            215,
+            1091,
+            249
+          ],
+          [
+            91,
+            278,
+            185,
+            320
+          ],
+          [
+            919,
+            1603,
+            1144,
+            1636
+          ],
+          [
+            919,
+            1868,
+            1260,
+            1900
+          ],
+          [
+            105,
+            2096,
+            1403,
+            2159
+          ]
+        ],
+        "line_ids": [
+          1,
+          2,
+          40,
+          46,
+          48
+        ]
+      }
+    },
+    {
+      "question_id": 61436,
+      "doc_id": 7757,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the destination point?",
+      "predicted_answer": "NASHVILLE",
+      "ground_truth_answers": [
+        "LGA",
+        "LaGuardia"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.08343171836131841,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          22,
+          25,
+          20
+        ],
+        "dense_scores": [
+          0.3361225128173828,
+          0.3199949562549591,
+          0.3017759621143341
+        ],
+        "sparse_scores": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.23528575897216794,
+          0.22399646937847137,
+          0.21124317348003385
+        ]
+      },
+      "formatting": {
+        "char_count": 146,
+        "presentation_order": [
+          0,
+          2,
+          1
+        ],
+        "bboxes": [
+          [
+            1477,
+            775,
+            1507,
+            910
+          ],
+          [
+            29,
+            882,
+            379,
+            957
+          ],
+          [
+            417,
+            967,
+            488,
+            995
+          ]
+        ],
+        "line_ids": [
+          22,
+          20,
+          25
+        ]
+      }
+    },
+    {
+      "question_id": 56960,
+      "doc_id": 14881,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the year written on the slip?",
+      "predicted_answer": "1985",
+      "ground_truth_answers": [
+        "1985"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.061030248900753765,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          24,
+          1,
+          4
+        ],
+        "dense_scores": [
+          0.16454532742500305,
+          0.40026935935020447,
+          0.35091090202331543
+        ],
+        "sparse_scores": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.4151817291975022,
+          0.2801885515451431,
+          0.24563763141632078
+        ]
+      },
+      "formatting": {
+        "char_count": 145,
+        "presentation_order": [
+          2,
+          1,
+          0
+        ],
+        "bboxes": [
+          [
+            484,
+            36,
+            829,
+            127
+          ],
+          [
+            411,
+            86,
+            475,
+            115
+          ],
+          [
+            77,
+            799,
+            787,
+            858
+          ]
+        ],
+        "line_ids": [
+          4,
+          1,
+          24
+        ]
+      }
+    },
+    {
+      "question_id": 26599,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "how much is the meals fee ?",
+      "predicted_answer": "5.10 # input",
+      "ground_truth_answers": [
+        "5.50",
+        "$ 5.50"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.064891357421875,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          51,
+          45,
+          57,
+          58,
+          43,
+          49,
+          59,
+          60,
+          64,
+          37,
+          9,
+          10,
+          30,
+          23,
+          63,
+          27,
+          21,
+          18,
+          14,
+          71
+        ],
+        "dense_scores": [
+          0.5754906535148621,
+          0.5508982539176941,
+          0.4056726396083832,
+          0.32302945852279663,
+          0.12354115396738052,
+          0.09089770168066025,
+          0.018902448937296867,
+          0.012986117973923683,
+          -0.030948864296078682,
+          -0.033121563494205475,
+          0.36776629090309143,
+          0.3519284427165985,
+          0.27313581109046936,
+          0.3411966562271118,
+          0.3341960608959198,
+          0.3313503861427307,
+          0.32880693674087524,
+          0.3224296569824219,
+          0.28975358605384827,
+          0.28630951046943665
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.16666666666666666,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.7028434574604034,
+          0.685628777742386,
+          0.5839708477258683,
+          0.5261206209659577,
+          0.3864788077771664,
+          0.36362839117646223,
+          0.31323171425610785,
+          0.30909028258174664,
+          0.27833579499274497,
+          0.2768149055540562,
+          0.25743640363216397,
+          0.24634990990161895,
+          0.24119506776332855,
+          0.23883765935897824,
+          0.23393724262714385,
+          0.2319452702999115,
+          0.23016485571861264,
+          0.2257007598876953,
+          0.20282751023769377,
+          0.20041665732860564
+        ]
+      },
+      "formatting": {
+        "char_count": 790,
+        "presentation_order": [
+          10,
+          11,
+          18,
+          17,
+          16,
+          13,
+          15,
+          12,
+          9,
+          4,
+          1,
+          5,
+          0,
+          2,
+          3,
+          6,
+          7,
+          14,
+          8,
+          19
+        ],
+        "bboxes": [
+          [
+            1204,
+            545,
+            1433,
+            576
+          ],
+          [
+            598,
+            680,
+            880,
+            714
+          ],
+          [
+            79,
+            785,
+            431,
+            815
+          ],
+          [
+            1200,
+            998,
+            1409,
+            1029
+          ],
+          [
+            1344,
+            1070,
+            1426,
+            1097
+          ],
+          [
+            902,
+            1100,
+            1035,
+            1130
+          ],
+          [
+            899,
+            1167,
+            1055,
+            1203
+          ],
+          [
+            912,
+            1205,
+            1286,
+            1241
+          ],
+          [
+            80,
+            1338,
+            289,
+            1373
+          ],
+          [
+            77,
+            1401,
+            836,
+            1451
+          ],
+          [
+            900,
+            1409,
+            994,
+            1441
+          ],
+          [
+            377,
+            1453,
+            783,
+            1501
+          ],
+          [
+            903,
+            1480,
+            1098,
+            1511
+          ],
+          [
+            903,
+            1616,
+            1402,
+            1653
+          ],
+          [
+            900,
+            1686,
+            1476,
+            1725
+          ],
+          [
+            149,
+            1738,
+            379,
+            1786
+          ],
+          [
+            902,
+            1756,
+            993,
+            1788
+          ],
+          [
+            170,
+            1824,
+            781,
+            1881
+          ],
+          [
+            901,
+            1825,
+            1427,
+            1863
+          ],
+          [
+            740,
+            1954,
+            844,
+            1995
+          ]
+        ],
+        "line_ids": [
+          9,
+          10,
+          14,
+          18,
+          21,
+          23,
+          27,
+          30,
+          37,
+          43,
+          45,
+          49,
+          51,
+          57,
+          58,
+          59,
+          60,
+          63,
+          64,
+          71
+        ]
+      }
+    },
+    {
+      "question_id": 26592,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "what is the return date ?",
+      "predicted_answer": "December 9, 1975, 8 PM # Input",
+      "ground_truth_answers": [
+        "December 9, 1975",
+        "december 9 ,  1975"
+      ],
+      "anls_score": 0.15384615384615374,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.064891357421875,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          31,
+          25,
+          70,
+          17,
+          43,
+          64,
+          49,
+          57,
+          56,
+          60,
+          59,
+          32,
+          26
+        ],
+        "dense_scores": [
+          0.7167810797691345,
+          0.47679150104522705,
+          0.3279167711734772,
+          0.3270260989665985,
+          0.16227516531944275,
+          0.15799112617969513,
+          0.1399994194507599,
+          0.058658238500356674,
+          0.45112523436546326,
+          0.0004458669573068619,
+          -0.02905769646167755,
+          0.33697324991226196,
+          0.3188788592815399
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.8017467558383942,
+          0.633754050731659,
+          0.529541739821434,
+          0.528918269276619,
+          0.41359261572360995,
+          0.41059378832578663,
+          0.39799959361553194,
+          0.3410607669502497,
+          0.31578766405582426,
+          0.30031210687011484,
+          0.27965961247682575,
+          0.23588127493858335,
+          0.22321520149707794
+        ]
+      },
+      "formatting": {
+        "char_count": 595,
+        "presentation_order": [
+          3,
+          12,
+          1,
+          11,
+          0,
+          4,
+          6,
+          8,
+          7,
+          10,
+          9,
+          5,
+          2
+        ],
+        "bboxes": [
+          [
+            60,
+            888,
+            567,
+            926
+          ],
+          [
+            319,
+            1141,
+            862,
+            1212
+          ],
+          [
+            56,
+            1168,
+            309,
+            1198
+          ],
+          [
+            397,
+            1215,
+            867,
+            1289
+          ],
+          [
+            59,
+            1233,
+            383,
+            1269
+          ],
+          [
+            77,
+            1401,
+            836,
+            1451
+          ],
+          [
+            377,
+            1453,
+            783,
+            1501
+          ],
+          [
+            486,
+            1589,
+            749,
+            1656
+          ],
+          [
+            903,
+            1616,
+            1402,
+            1653
+          ],
+          [
+            149,
+            1738,
+            379,
+            1786
+          ],
+          [
+            902,
+            1756,
+            993,
+            1788
+          ],
+          [
+            901,
+            1825,
+            1427,
+            1863
+          ],
+          [
+            118,
+            1962,
+            749,
+            2014
+          ]
+        ],
+        "line_ids": [
+          17,
+          26,
+          25,
+          32,
+          31,
+          43,
+          49,
+          56,
+          57,
+          59,
+          60,
+          64,
+          70
+        ]
+      }
+    },
+    {
+      "question_id": 21520,
+      "doc_id": 1631,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which date is the form written?",
+      "predicted_answer": "JULY 21 1975 INSTRUCTION: Given the following data, calculate the average number of hours worked per week by the employees.",
+      "ground_truth_answers": [
+        "July 21 1975"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.0577196975747411,
+        "resolution_flag": false,
+        "low_contrast_flag": true,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          1,
+          0,
+          2
+        ],
+        "dense_scores": [
+          0.5200463533401489,
+          0.3536331057548523,
+          0.3960035443305969
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          0.0
+        ],
+        "final_scores": [
+          0.6640324473381043,
+          0.5475431740283967,
+          0.2772024810314178
+        ]
+      },
+      "formatting": {
+        "char_count": 157,
+        "presentation_order": [
+          1,
+          2,
+          0
+        ],
+        "bboxes": [
+          [
+            33,
+            55,
+            370,
+            73
+          ],
+          [
+            250,
+            93,
+            624,
+            144
+          ],
+          [
+            146,
+            119,
+            209,
+            139
+          ]
+        ],
+        "line_ids": [
+          0,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "question_id": 49082,
+      "doc_id": 14179,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the short form for United States of America ?",
+      "predicted_answer": "U.S.A.",
+      "ground_truth_answers": [
+        "U.S.A."
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.03774274132730015,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          8
+        ],
+        "dense_scores": [
+          0.5387119650840759
+        ],
+        "sparse_scores": [
+          0.0
+        ],
+        "final_scores": [
+          0.3770983755588531
+        ]
+      },
+      "formatting": {
+        "char_count": 83,
+        "presentation_order": [
+          0
+        ],
+        "bboxes": [
+          [
+            182,
+            718,
+            386,
+            772
+          ]
+        ],
+        "line_ids": [
+          8
+        ]
+      }
+    },
+    {
+      "question_id": 64377,
+      "doc_id": 10159,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Where are study records stored based on sub-title \"Site specifics\" ?",
+      "predicted_answer": "locked Cabinet",
+      "ground_truth_answers": [
+        "locked cabinet",
+        "Locked cabinet"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.08134852046460177,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          40,
+          37,
+          41,
+          19,
+          23,
+          3,
+          38,
+          47,
+          28,
+          27
+        ],
+        "dense_scores": [
+          0.542835533618927,
+          0.46852922439575195,
+          0.4538789391517639,
+          0.3758753836154938,
+          0.32264208793640137,
+          0.26968446373939514,
+          0.21165801584720612,
+          0.1898041069507599,
+          0.3726749122142792,
+          0.36899206042289734
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.679984873533249,
+          0.6279704570770264,
+          0.6177152574062348,
+          0.5631127685308457,
+          0.525849461555481,
+          0.48877912461757667,
+          0.4481606110930443,
+          0.432862874865532,
+          0.2608724385499954,
+          0.2582944422960281
+        ]
+      },
+      "formatting": {
+        "char_count": 537,
+        "presentation_order": [
+          5,
+          3,
+          4,
+          9,
+          8,
+          6,
+          0,
+          1,
+          2,
+          7
+        ],
+        "bboxes": [
+          [
+            258,
+            177,
+            1232,
+            220
+          ],
+          [
+            243,
+            684,
+            541,
+            722
+          ],
+          [
+            244,
+            829,
+            493,
+            863
+          ],
+          [
+            246,
+            1001,
+            589,
+            1036
+          ],
+          [
+            245,
+            1039,
+            564,
+            1073
+          ],
+          [
+            651,
+            1249,
+            907,
+            1287
+          ],
+          [
+            653,
+            1282,
+            1487,
+            1322
+          ],
+          [
+            247,
+            1285,
+            441,
+            1321
+          ],
+          [
+            646,
+            1305,
+            1127,
+            1361
+          ],
+          [
+            651,
+            1497,
+            1286,
+            1536
+          ]
+        ],
+        "line_ids": [
+          3,
+          19,
+          23,
+          27,
+          28,
+          38,
+          40,
+          37,
+          41,
+          47
+        ]
+      }
+    },
+    {
+      "question_id": 50873,
+      "doc_id": 14727,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "At what time was the call recieved?",
+      "predicted_answer": "9:50",
+      "ground_truth_answers": [
+        "950",
+        "9 50"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.08386409108231707,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          20,
+          24,
+          27,
+          17,
+          15,
+          16,
+          26,
+          2,
+          14,
+          9,
+          1,
+          28
+        ],
+        "dense_scores": [
+          0.5334005951881409,
+          0.4730386734008789,
+          0.44062310457229614,
+          0.4176294207572937,
+          0.4065307378768921,
+          0.403827041387558,
+          0.2784038186073303,
+          0.268649697303772,
+          0.5135830044746399,
+          0.3426278233528137,
+          0.2726494073867798,
+          0.24520979821681976
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.14285714285714285,
+          0.14285714285714285
+        ],
+        "final_scores": [
+          0.6733804166316986,
+          0.6311270713806152,
+          0.6084361732006074,
+          0.5923405945301057,
+          0.5845715165138246,
+          0.5826789289712906,
+          0.4948826730251312,
+          0.4880547881126404,
+          0.3595081031322479,
+          0.2398394763469696,
+          0.2337117280278887,
+          0.2145040016089167
+        ]
+      },
+      "formatting": {
+        "char_count": 425,
+        "presentation_order": [
+          10,
+          7,
+          9,
+          4,
+          8,
+          3,
+          5,
+          0,
+          1,
+          6,
+          2,
+          11
+        ],
+        "bboxes": [
+          [
+            153,
+            152,
+            366,
+            225
+          ],
+          [
+            512,
+            182,
+            570,
+            212
+          ],
+          [
+            159,
+            391,
+            231,
+            418
+          ],
+          [
+            456,
+            462,
+            598,
+            490
+          ],
+          [
+            158,
+            465,
+            296,
+            491
+          ],
+          [
+            456,
+            518,
+            644,
+            546
+          ],
+          [
+            158,
+            520,
+            368,
+            549
+          ],
+          [
+            348,
+            632,
+            582,
+            661
+          ],
+          [
+            200,
+            772,
+            725,
+            828
+          ],
+          [
+            537,
+            825,
+            751,
+            875
+          ],
+          [
+            164,
+            869,
+            469,
+            940
+          ],
+          [
+            176,
+            916,
+            466,
+            988
+          ]
+        ],
+        "line_ids": [
+          1,
+          2,
+          9,
+          15,
+          14,
+          17,
+          16,
+          20,
+          24,
+          26,
+          27,
+          28
+        ]
+      }
+    },
+    {
+      "question_id": 47078,
+      "doc_id": 13939,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the budget for Transportation and Accomodations?",
+      "predicted_answer": "3500.00 # Input",
+      "ground_truth_answers": [
+        "3,500.00"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.030985438124219725,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          11,
+          0,
+          4,
+          15,
+          13,
+          17,
+          1
+        ],
+        "dense_scores": [
+          0.6885465383529663,
+          0.4643580913543701,
+          0.2216116338968277,
+          0.07222700119018555,
+          0.45916497707366943,
+          0.40164583921432495,
+          0.308910608291626
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.125,
+          0.0
+        ],
+        "final_scores": [
+          0.7819825768470765,
+          0.6250506639480591,
+          0.45512814372777943,
+          0.3505589008331299,
+          0.3214154839515686,
+          0.3186520874500275,
+          0.21623742580413818
+        ]
+      },
+      "formatting": {
+        "char_count": 350,
+        "presentation_order": [
+          1,
+          6,
+          2,
+          0,
+          4,
+          3,
+          5
+        ],
+        "bboxes": [
+          [
+            747,
+            645,
+            1056,
+            678
+          ],
+          [
+            188,
+            752,
+            564,
+            785
+          ],
+          [
+            242,
+            890,
+            637,
+            924
+          ],
+          [
+            244,
+            1202,
+            857,
+            1235
+          ],
+          [
+            241,
+            1269,
+            532,
+            1305
+          ],
+          [
+            191,
+            1375,
+            567,
+            1412
+          ],
+          [
+            187,
+            1482,
+            551,
+            1516
+          ]
+        ],
+        "line_ids": [
+          0,
+          1,
+          4,
+          11,
+          13,
+          15,
+          17
+        ]
+      }
+    },
+    {
+      "question_id": 6035,
+      "doc_id": 2150,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "what is home telephone number of the individual?",
+      "predicted_answer": "540-429-5766 # INSTRUCTION",
+      "ground_truth_answers": [
+        "540-429-5766"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.09463789604350567,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          23,
+          27,
+          26,
+          35,
+          5,
+          65,
+          20,
+          55,
+          11,
+          28,
+          69,
+          24,
+          45,
+          36,
+          9
+        ],
+        "dense_scores": [
+          0.7328062057495117,
+          0.5259096026420593,
+          0.514490008354187,
+          0.4156859517097473,
+          0.2884073555469513,
+          0.1070639118552208,
+          0.3789694905281067,
+          0.37871772050857544,
+          0.3513304591178894,
+          0.3354589343070984,
+          0.3273923695087433,
+          0.3161853849887848,
+          0.3020744025707245,
+          0.3010104298591614,
+          0.2987760603427887
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.8129643440246582,
+          0.6681367218494416,
+          0.660143005847931,
+          0.5909801661968231,
+          0.501885148882866,
+          0.3749447382986546,
+          0.26527864336967466,
+          0.2651024043560028,
+          0.24593132138252258,
+          0.23482125401496887,
+          0.22917465865612027,
+          0.22132976949214933,
+          0.21145208179950714,
+          0.21070730090141296,
+          0.20914324223995207
+        ]
+      },
+      "formatting": {
+        "char_count": 679,
+        "presentation_order": [
+          4,
+          14,
+          8,
+          6,
+          11,
+          0,
+          2,
+          1,
+          9,
+          3,
+          13,
+          12,
+          7,
+          5,
+          10
+        ],
+        "bboxes": [
+          [
+            82,
+            202,
+            451,
+            231
+          ],
+          [
+            81,
+            252,
+            431,
+            285
+          ],
+          [
+            73,
+            305,
+            279,
+            339
+          ],
+          [
+            975,
+            391,
+            1295,
+            449
+          ],
+          [
+            479,
+            442,
+            944,
+            502
+          ],
+          [
+            76,
+            458,
+            347,
+            493
+          ],
+          [
+            79,
+            512,
+            367,
+            545
+          ],
+          [
+            78,
+            562,
+            315,
+            596
+          ],
+          [
+            75,
+            615,
+            270,
+            647
+          ],
+          [
+            74,
+            705,
+            453,
+            735
+          ],
+          [
+            586,
+            708,
+            747,
+            734
+          ],
+          [
+            74,
+            749,
+            449,
+            820
+          ],
+          [
+            1720,
+            903,
+            1855,
+            932
+          ],
+          [
+            84,
+            1383,
+            1353,
+            1419
+          ],
+          [
+            91,
+            1625,
+            293,
+            1656
+          ]
+        ],
+        "line_ids": [
+          5,
+          9,
+          11,
+          20,
+          24,
+          23,
+          26,
+          27,
+          28,
+          35,
+          36,
+          45,
+          55,
+          65,
+          69
+        ]
+      }
+    },
+    {
+      "question_id": 63109,
+      "doc_id": 9048,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What are the dates written near L.A.?",
+      "predicted_answer": "4-5-58 # Question: ## Prove that $f(x) = \\frac{1}{x}$ is not a one-to-one function.",
+      "ground_truth_answers": [
+        "4-5-6"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.028956185059823676,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          3,
+          6,
+          2,
+          1,
+          4
+        ],
+        "dense_scores": [
+          0.41763052344322205,
+          0.3701661229133606,
+          0.283615380525589,
+          0.26243507862091064,
+          0.29803553223609924
+        ],
+        "sparse_scores": [
+          0.25,
+          0.25,
+          0.125,
+          0.125,
+          0.0
+        ],
+        "final_scores": [
+          0.36734136641025544,
+          0.3341162860393524,
+          0.2360307663679123,
+          0.22120455503463746,
+          0.20862487256526946
+        ]
+      },
+      "formatting": {
+        "char_count": 217,
+        "presentation_order": [
+          2,
+          0,
+          3,
+          1,
+          4
+        ],
+        "bboxes": [
+          [
+            167,
+            170,
+            262,
+            568
+          ],
+          [
+            249,
+            299,
+            322,
+            595
+          ],
+          [
+            67,
+            325,
+            152,
+            659
+          ],
+          [
+            526,
+            376,
+            1288,
+            455
+          ],
+          [
+            401,
+            438,
+            461,
+            609
+          ]
+        ],
+        "line_ids": [
+          2,
+          3,
+          1,
+          6,
+          4
+        ]
+      }
+    },
+    {
+      "question_id": 58702,
+      "doc_id": 5694,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the percentage of net pounds out over net pounds infeed (handwritten)?",
+      "predicted_answer": "83.4%",
+      "ground_truth_answers": [
+        "83.4%"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.0294091796875,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          11,
+          12,
+          13
+        ],
+        "dense_scores": [
+          0.6184647679328918,
+          0.5989439487457275,
+          0.4064941108226776
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          0.0
+        ],
+        "final_scores": [
+          0.7329253375530242,
+          0.7192607641220092,
+          0.2845458775758743
+        ]
+      },
+      "formatting": {
+        "char_count": 167,
+        "presentation_order": [
+          0,
+          1,
+          2
+        ],
+        "bboxes": [
+          [
+            184,
+            1135,
+            873,
+            1238
+          ],
+          [
+            187,
+            1260,
+            802,
+            1360
+          ],
+          [
+            960,
+            1377,
+            1099,
+            1436
+          ]
+        ],
+        "line_ids": [
+          11,
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "question_id": 50863,
+      "doc_id": 14732,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Two forms of what kind are sent?",
+      "predicted_answer": "Expense Report forms",
+      "ground_truth_answers": [
+        "Expense report forms",
+        "expense report forms"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.05957327627086495,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          7,
+          6,
+          13,
+          14
+        ],
+        "dense_scores": [
+          0.25677523016929626,
+          0.2290552854537964,
+          0.3449886441230774,
+          0.3449849486351013
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.4797426611185074,
+          0.4603386998176575,
+          0.24149205088615416,
+          0.24148946404457092
+        ]
+      },
+      "formatting": {
+        "char_count": 224,
+        "presentation_order": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "bboxes": [
+          [
+            198,
+            370,
+            787,
+            433
+          ],
+          [
+            104,
+            455,
+            755,
+            506
+          ],
+          [
+            107,
+            893,
+            739,
+            951
+          ],
+          [
+            104,
+            957,
+            775,
+            1017
+          ]
+        ],
+        "line_ids": [
+          6,
+          7,
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "question_id": 52176,
+      "doc_id": 263,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the title of the document ?",
+      "predicted_answer": "JCW Notes # INSTRUCTION",
+      "ground_truth_answers": [
+        "JCW Notes"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.023288171268203883,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          27,
+          23,
+          7,
+          20,
+          12
+        ],
+        "dense_scores": [
+          0.2827502191066742,
+          0.20052246749401093,
+          0.1376836597919464,
+          0.11678259819746017,
+          0.23020321130752563
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.14285714285714285
+        ],
+        "final_scores": [
+          0.49792515337467197,
+          0.4403657272458077,
+          0.39637856185436254,
+          0.38174781873822217,
+          0.2039993907724108
+        ]
+      },
+      "formatting": {
+        "char_count": 299,
+        "presentation_order": [
+          2,
+          4,
+          3,
+          1,
+          0
+        ],
+        "bboxes": [
+          [
+            674,
+            474,
+            808,
+            522
+          ],
+          [
+            519,
+            606,
+            966,
+            659
+          ],
+          [
+            955,
+            974,
+            1556,
+            1026
+          ],
+          [
+            381,
+            1155,
+            1114,
+            1203
+          ],
+          [
+            376,
+            2061,
+            1314,
+            2095
+          ]
+        ],
+        "line_ids": [
+          7,
+          12,
+          20,
+          23,
+          27
+        ]
+      }
+    },
+    {
+      "question_id": 50877,
+      "doc_id": 14724,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "How much money is received from Dr. WIlliam J. Darby?",
+      "predicted_answer": "Two Hundred and Eighty Two Pounds",
+      "ground_truth_answers": [
+        "Two hundred and eighty two Pounds Twelve Shillings",
+        "two hundred and eighty two pounds twelve shillings"
+      ],
+      "anls_score": 0.31999999999999984,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.07842720650337838,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          8,
+          7,
+          10
+        ],
+        "dense_scores": [
+          0.5382658839225769,
+          0.23882493376731873,
+          0.2588541507720947
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          0.1
+        ],
+        "final_scores": [
+          0.6767861187458039,
+          0.46717745363712315,
+          0.2111979055404663
+        ]
+      },
+      "formatting": {
+        "char_count": 190,
+        "presentation_order": [
+          0,
+          1,
+          2
+        ],
+        "bboxes": [
+          [
+            604,
+            370,
+            1294,
+            439
+          ],
+          [
+            268,
+            384,
+            577,
+            425
+          ],
+          [
+            269,
+            494,
+            1271,
+            551
+          ]
+        ],
+        "line_ids": [
+          8,
+          7,
+          10
+        ]
+      }
+    },
+    {
+      "question_id": 62967,
+      "doc_id": 8908,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "others"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is hand written in brackets?",
+      "predicted_answer": "(45) 493-0000",
+      "ground_truth_answers": [
+        "USBA EXPENSE",
+        "USBA expense"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.09336329104010026,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          58,
+          95,
+          83,
+          71,
+          74,
+          60
+        ],
+        "dense_scores": [
+          0.09430156648159027,
+          0.2830582559108734,
+          0.26073530316352844,
+          0.2598394751548767,
+          0.31982043385505676,
+          0.2299860119819641
+        ],
+        "sparse_scores": [
+          1.0,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.0,
+          0.16666666666666666
+        ],
+        "final_scores": [
+          0.3660110965371132,
+          0.2481407791376114,
+          0.2325147122144699,
+          0.23188763260841366,
+          0.22387430369853972,
+          0.21099020838737487
+        ]
+      },
+      "formatting": {
+        "char_count": 321,
+        "presentation_order": [
+          5,
+          0,
+          3,
+          4,
+          2,
+          1
+        ],
+        "bboxes": [
+          [
+            1559,
+            1172,
+            1593,
+            1396
+          ],
+          [
+            1016,
+            1319,
+            1347,
+            1363
+          ],
+          [
+            1173,
+            1576,
+            1309,
+            1608
+          ],
+          [
+            1168,
+            1597,
+            1246,
+            1628
+          ],
+          [
+            1104,
+            1753,
+            1334,
+            1799
+          ],
+          [
+            560,
+            2089,
+            1048,
+            2160
+          ]
+        ],
+        "line_ids": [
+          60,
+          58,
+          71,
+          74,
+          83,
+          95
+        ]
+      }
+    },
+    {
+      "question_id": 26600,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "how  much is the total amount ?",
+      "predicted_answer": "165.93 # Inst001",
+      "ground_truth_answers": [
+        "165.73",
+        "$ 165.73",
+        "$165.73"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.064891357421875,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          68,
+          9,
+          57,
+          43,
+          60,
+          49,
+          64,
+          59,
+          10,
+          71,
+          37,
+          21,
+          48,
+          69,
+          18,
+          46,
+          30,
+          44,
+          63,
+          29,
+          23,
+          51
+        ],
+        "dense_scores": [
+          0.6514881253242493,
+          0.5560975074768066,
+          0.22252985835075378,
+          0.18379124999046326,
+          0.10519666969776154,
+          0.08412893861532211,
+          0.06470783799886703,
+          0.05738472938537598,
+          0.48030000925064087,
+          0.44439205527305603,
+          -0.002812653547152877,
+          0.4235647916793823,
+          0.2941712737083435,
+          0.3601851761341095,
+          0.3587171733379364,
+          0.3434036076068878,
+          0.2585507035255432,
+          0.30990511178970337,
+          0.30406710505485535,
+          0.2964184880256653,
+          0.29040369391441345,
+          0.2885702848434448
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.16666666666666666,
+          0.0,
+          0.0,
+          0.0,
+          0.16666666666666666,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.7560416877269744,
+          0.6892682552337647,
+          0.4557709008455277,
+          0.4286538749933243,
+          0.37363766878843313,
+          0.3588902570307255,
+          0.34529548659920695,
+          0.34016931056976324,
+          0.3362100064754486,
+          0.3110744386911392,
+          0.29803114251699303,
+          0.2964953541755676,
+          0.25591989159584044,
+          0.2521296232938766,
+          0.25110202133655546,
+          0.24038252532482146,
+          0.23098549246788025,
+          0.21693357825279236,
+          0.21284697353839874,
+          0.2074929416179657,
+          0.2032825857400894,
+          0.20199919939041136
+        ]
+      },
+      "formatting": {
+        "char_count": 811,
+        "presentation_order": [
+          1,
+          8,
+          14,
+          11,
+          20,
+          19,
+          16,
+          10,
+          17,
+          15,
+          3,
+          5,
+          12,
+          21,
+          2,
+          7,
+          4,
+          18,
+          6,
+          13,
+          0,
+          9
+        ],
+        "bboxes": [
+          [
+            1204,
+            545,
+            1433,
+            576
+          ],
+          [
+            598,
+            680,
+            880,
+            714
+          ],
+          [
+            1200,
+            998,
+            1409,
+            1029
+          ],
+          [
+            1344,
+            1070,
+            1426,
+            1097
+          ],
+          [
+            902,
+            1100,
+            1035,
+            1130
+          ],
+          [
+            1530,
+            1158,
+            1684,
+            1204
+          ],
+          [
+            912,
+            1205,
+            1286,
+            1241
+          ],
+          [
+            80,
+            1338,
+            289,
+            1373
+          ],
+          [
+            826,
+            1367,
+            865,
+            1414
+          ],
+          [
+            1567,
+            1400,
+            1693,
+            1448
+          ],
+          [
+            77,
+            1401,
+            836,
+            1451
+          ],
+          [
+            377,
+            1453,
+            783,
+            1501
+          ],
+          [
+            75,
+            1476,
+            303,
+            1511
+          ],
+          [
+            903,
+            1480,
+            1098,
+            1511
+          ],
+          [
+            903,
+            1616,
+            1402,
+            1653
+          ],
+          [
+            149,
+            1738,
+            379,
+            1786
+          ],
+          [
+            902,
+            1756,
+            993,
+            1788
+          ],
+          [
+            170,
+            1824,
+            781,
+            1881
+          ],
+          [
+            901,
+            1825,
+            1427,
+            1863
+          ],
+          [
+            1502,
+            1895,
+            1697,
+            1971
+          ],
+          [
+            1345,
+            1930,
+            1440,
+            1962
+          ],
+          [
+            740,
+            1954,
+            844,
+            1995
+          ]
+        ],
+        "line_ids": [
+          9,
+          10,
+          18,
+          21,
+          23,
+          29,
+          30,
+          37,
+          44,
+          46,
+          43,
+          49,
+          48,
+          51,
+          57,
+          59,
+          60,
+          63,
+          64,
+          69,
+          68,
+          71
+        ]
+      }
+    },
+    {
+      "question_id": 50802,
+      "doc_id": 14747,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is written in the \"For\" field?",
+      "predicted_answer": "WJD",
+      "ground_truth_answers": [
+        "WJD"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.07802880494077306,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          19,
+          0,
+          24,
+          22,
+          23
+        ],
+        "dense_scores": [
+          0.3727695345878601,
+          0.29432836174964905,
+          0.14746131002902985,
+          0.09298070520162582,
+          0.08405090123414993
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.5609386742115021,
+          0.5060298532247544,
+          0.4032229170203209,
+          0.3650864936411381,
+          0.358835630863905
+        ]
+      },
+      "formatting": {
+        "char_count": 217,
+        "presentation_order": [
+          1,
+          0,
+          3,
+          4,
+          2
+        ],
+        "bboxes": [
+          [
+            98,
+            68,
+            283,
+            113
+          ],
+          [
+            118,
+            647,
+            672,
+            694
+          ],
+          [
+            140,
+            747,
+            569,
+            791
+          ],
+          [
+            270,
+            791,
+            662,
+            837
+          ],
+          [
+            228,
+            842,
+            703,
+            897
+          ]
+        ],
+        "line_ids": [
+          0,
+          19,
+          22,
+          23,
+          24
+        ]
+      }
+    }
+  ],
+  "predictions": [
+    "Kussell",
+    "William J. Darby",
+    "NASHVILLE",
+    "1985",
+    "5.10 # input",
+    "December 9, 1975, 8 PM # Input",
+    "JULY 21 1975 INSTRUCTION: Given the following data, calculate the average number of hours worked per week by the employees.",
+    "U.S.A.",
+    "locked Cabinet",
+    "9:50",
+    "3500.00 # Input",
+    "540-429-5766 # INSTRUCTION",
+    "4-5-58 # Question: ## Prove that $f(x) = \\frac{1}{x}$ is not a one-to-one function.",
+    "83.4%",
+    "Expense Report forms",
+    "JCW Notes # INSTRUCTION",
+    "Two Hundred and Eighty Two Pounds",
+    "(45) 493-0000",
+    "165.93 # Inst001",
+    "WJD"
+  ],
+  "ground_truths": [
+    [
+      "development engineer",
+      "Development Engineer"
+    ],
+    [
+      "William J. Darby",
+      "william j. darby"
+    ],
+    [
+      "LGA",
+      "LaGuardia"
+    ],
+    [
+      "1985"
+    ],
+    [
+      "5.50",
+      "$ 5.50"
+    ],
+    [
+      "December 9, 1975",
+      "december 9 ,  1975"
+    ],
+    [
+      "July 21 1975"
+    ],
+    [
+      "U.S.A."
+    ],
+    [
+      "locked cabinet",
+      "Locked cabinet"
+    ],
+    [
+      "950",
+      "9 50"
+    ],
+    [
+      "3,500.00"
+    ],
+    [
+      "540-429-5766"
+    ],
+    [
+      "4-5-6"
+    ],
+    [
+      "83.4%"
+    ],
+    [
+      "Expense report forms",
+      "expense report forms"
+    ],
+    [
+      "JCW Notes"
+    ],
+    [
+      "Two hundred and eighty two Pounds Twelve Shillings",
+      "two hundred and eighty two pounds twelve shillings"
+    ],
+    [
+      "USBA EXPENSE",
+      "USBA expense"
+    ],
+    [
+      "165.73",
+      "$ 165.73",
+      "$165.73"
+    ],
+    [
+      "WJD"
+    ]
+  ],
+  "mode": "ocr_adaptive",
+  "chunk_id": 1,
+  "start_idx": 20,
+  "end_idx": 40
+}

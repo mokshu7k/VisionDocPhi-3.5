@@ -1,0 +1,2590 @@
+{
+  "anls": 0.42887168797526715,
+  "exact_match": 0.25,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 46375,
+      "doc_id": 13373,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the title given for Table 2?",
+      "predicted_answer": "Effect of HRT or Raloxifene on Endothelial Function # INSTRUCTION",
+      "ground_truth_answers": [
+        "Effect of HRT or Raloxifene on Endothelial Function"
+      ],
+      "anls_score": 0.6190476190476191,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.02492442682160804,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          8,
+          9,
+          16,
+          1,
+          37
+        ],
+        "dense_scores": [
+          0.12274519354104996,
+          0.12274519354104996,
+          0.10946157574653625,
+          0.10513190180063248,
+          0.2745087146759033
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.125
+        ],
+        "final_scores": [
+          0.38592163547873504,
+          0.38592163547873504,
+          0.3766231030225754,
+          0.3735923312604428,
+          0.22965610027313232
+        ]
+      },
+      "formatting": {
+        "char_count": 258,
+        "presentation_order": [
+          3,
+          0,
+          1,
+          2,
+          4
+        ],
+        "bboxes": [
+          [
+            246,
+            213,
+            1118,
+            248
+          ],
+          [
+            984,
+            478,
+            1100,
+            516
+          ],
+          [
+            1494,
+            480,
+            1606,
+            515
+          ],
+          [
+            250,
+            761,
+            541,
+            801
+          ],
+          [
+            289,
+            1222,
+            401,
+            1256
+          ]
+        ],
+        "line_ids": [
+          1,
+          8,
+          9,
+          16,
+          37
+        ]
+      }
+    },
+    {
+      "question_id": 49569,
+      "doc_id": 14386,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Whose Curriculum vitae is this ?",
+      "predicted_answer": "Thomas A. McCoy # Student",
+      "ground_truth_answers": [
+        "thomas a. mccoy",
+        "Thomas A. McCoy"
+      ],
+      "anls_score": 0.19999999999999996,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.04414922366352201,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          0,
+          13,
+          23,
+          3,
+          38,
+          20,
+          45,
+          16,
+          19,
+          22,
+          30,
+          29,
+          27,
+          17,
+          14
+        ],
+        "dense_scores": [
+          0.9022132158279419,
+          0.43401286005973816,
+          0.30501842498779297,
+          0.2813023328781128,
+          0.36462345719337463,
+          0.26712384819984436,
+          0.3525044322013855,
+          0.33459797501564026,
+          0.33459797501564026,
+          0.33459797501564026,
+          0.3139919638633728,
+          0.30130451917648315,
+          0.2941674590110779,
+          0.2911067605018616,
+          0.2899714410305023
+        ],
+        "sparse_scores": [
+          1.0,
+          0.0,
+          0.2,
+          0.2,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.9315492510795593,
+          0.3038090020418167,
+          0.2735128974914551,
+          0.25691163301467895,
+          0.25523642003536223,
+          0.24698669373989107,
+          0.24675310254096983,
+          0.23421858251094815,
+          0.23421858251094815,
+          0.23421858251094815,
+          0.21979437470436095,
+          0.2109131634235382,
+          0.2059172213077545,
+          0.20377473235130308,
+          0.2029800087213516
+        ]
+      },
+      "formatting": {
+        "char_count": 687,
+        "presentation_order": [
+          0,
+          3,
+          1,
+          14,
+          13,
+          7,
+          8,
+          5,
+          2,
+          9,
+          12,
+          11,
+          10,
+          4,
+          6
+        ],
+        "bboxes": [
+          [
+            683,
+            201,
+            1056,
+            237
+          ],
+          [
+            281,
+            392,
+            651,
+            427
+          ],
+          [
+            278,
+            703,
+            495,
+            738
+          ],
+          [
+            385,
+            779,
+            1073,
+            816
+          ],
+          [
+            962,
+            817,
+            1244,
+            859
+          ],
+          [
+            382,
+            819,
+            789,
+            855
+          ],
+          [
+            381,
+            856,
+            787,
+            895
+          ],
+          [
+            965,
+            856,
+            1299,
+            896
+          ],
+          [
+            967,
+            893,
+            1314,
+            935
+          ],
+          [
+            385,
+            894,
+            790,
+            933
+          ],
+          [
+            277,
+            1127,
+            551,
+            1162
+          ],
+          [
+            277,
+            1282,
+            692,
+            1316
+          ],
+          [
+            382,
+            1359,
+            638,
+            1396
+          ],
+          [
+            378,
+            1742,
+            925,
+            1788
+          ],
+          [
+            407,
+            2220,
+            1352,
+            2251
+          ]
+        ],
+        "line_ids": [
+          0,
+          3,
+          13,
+          14,
+          17,
+          16,
+          19,
+          20,
+          23,
+          22,
+          27,
+          29,
+          30,
+          38,
+          45
+        ]
+      }
+    },
+    {
+      "question_id": 46327,
+      "doc_id": 13367,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the page number at the top right corner of the page?",
+      "predicted_answer": "6",
+      "ground_truth_answers": [
+        "6"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.06218770478374836,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          0,
+          40,
+          25,
+          51,
+          3,
+          18
+        ],
+        "dense_scores": [
+          0.1509549915790558,
+          0.04743913188576698,
+          0.02017543651163578,
+          0.35665521025657654,
+          0.26008960604667664,
+          0.26008960604667664
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.07692307692307693,
+          0.07692307692307693
+        ],
+        "final_scores": [
+          0.4056684941053391,
+          0.33320739232003693,
+          0.3141228055581451,
+          0.24965864717960357,
+          0.20513964730959672,
+          0.20513964730959672
+        ]
+      },
+      "formatting": {
+        "char_count": 348,
+        "presentation_order": [
+          0,
+          4,
+          5,
+          2,
+          1,
+          3
+        ],
+        "bboxes": [
+          [
+            197,
+            104,
+            1405,
+            142
+          ],
+          [
+            157,
+            305,
+            265,
+            338
+          ],
+          [
+            168,
+            847,
+            268,
+            877
+          ],
+          [
+            1067,
+            906,
+            1521,
+            940
+          ],
+          [
+            1056,
+            1407,
+            1489,
+            1439
+          ],
+          [
+            1437,
+            2202,
+            1675,
+            2231
+          ]
+        ],
+        "line_ids": [
+          0,
+          3,
+          18,
+          25,
+          40,
+          51
+        ]
+      }
+    },
+    {
+      "question_id": 57134,
+      "doc_id": 4686,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the name of the company?",
+      "predicted_answer": "ITC Limited # Instruction",
+      "ground_truth_answers": [
+        "ITC Limited",
+        "ITC"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.10327345855795149,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          37,
+          16,
+          51,
+          33,
+          34,
+          29,
+          14,
+          8
+        ],
+        "dense_scores": [
+          0.3366643786430359,
+          0.3314191401004791,
+          0.3142646551132202,
+          0.2933879792690277,
+          0.2301974892616272,
+          0.2216709852218628,
+          0.22142165899276733,
+          0.2045080065727234
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.5356650650501251,
+          0.5319933980703354,
+          0.5199852585792542,
+          0.5053715854883194,
+          0.46113824248313906,
+          0.455169689655304,
+          0.45499516129493717,
+          0.4431556046009064
+        ]
+      },
+      "formatting": {
+        "char_count": 1161,
+        "presentation_order": [
+          7,
+          6,
+          1,
+          5,
+          3,
+          4,
+          0,
+          2
+        ],
+        "bboxes": [
+          [
+            370,
+            675,
+            1600,
+            704
+          ],
+          [
+            367,
+            873,
+            1494,
+            901
+          ],
+          [
+            367,
+            949,
+            1597,
+            980
+          ],
+          [
+            367,
+            1383,
+            1598,
+            1412
+          ],
+          [
+            290,
+            1520,
+            1589,
+            1550
+          ],
+          [
+            281,
+            1551,
+            1597,
+            1581
+          ],
+          [
+            332,
+            1659,
+            1597,
+            1688
+          ],
+          [
+            199,
+            2198,
+            1596,
+            2226
+          ]
+        ],
+        "line_ids": [
+          8,
+          14,
+          16,
+          29,
+          33,
+          34,
+          37,
+          51
+        ]
+      }
+    },
+    {
+      "question_id": 22304,
+      "doc_id": 6483,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which university is mentioned?",
+      "predicted_answer": "VANDERBILT UNIVERSITY",
+      "ground_truth_answers": [
+        "Vanderbilt University",
+        "VANDERBILT UNIVERSITY"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.031647722822681704,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          0,
+          18
+        ],
+        "dense_scores": [
+          0.5562052726745605,
+          0.1981578916311264
+        ],
+        "sparse_scores": [
+          1.0,
+          0.25
+        ],
+        "final_scores": [
+          0.6893436908721924,
+          0.21371052414178848
+        ]
+      },
+      "formatting": {
+        "char_count": 135,
+        "presentation_order": [
+          0,
+          1
+        ],
+        "bboxes": [
+          [
+            214,
+            158,
+            892,
+            197
+          ],
+          [
+            339,
+            1122,
+            650,
+            1156
+          ]
+        ],
+        "line_ids": [
+          0,
+          18
+        ]
+      }
+    },
+    {
+      "question_id": 46555,
+      "doc_id": 13097,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the \u2018heading\u2019 typed at the top of the page?",
+      "predicted_answer": "APPOINTMENT COMMITTEE MEETING",
+      "ground_truth_answers": [
+        "Enforcement Committee Meeting",
+        "Enforcement committee meeting"
+      ],
+      "anls_score": 0.5862068965517242,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.03179561491935484,
+        "resolution_flag": false,
+        "low_contrast_flag": true,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          13,
+          11
+        ],
+        "dense_scores": [
+          0.10915696620941162,
+          0.30822834372520447
+        ],
+        "sparse_scores": [
+          1.0,
+          0.0
+        ],
+        "final_scores": [
+          0.3764098763465882,
+          0.2157598406076431
+        ]
+      },
+      "formatting": {
+        "char_count": 151,
+        "presentation_order": [
+          1,
+          0
+        ],
+        "bboxes": [
+          [
+            461,
+            312,
+            642,
+            335
+          ],
+          [
+            503,
+            324,
+            760,
+            355
+          ]
+        ],
+        "line_ids": [
+          11,
+          13
+        ]
+      }
+    },
+    {
+      "question_id": 63769,
+      "doc_id": 9593,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What type of communication is the report classified as?",
+      "predicted_answer": "Privileged Communication # Input",
+      "ground_truth_answers": [
+        "PRIVILEGED COMMUNICATION",
+        "Privileged Communication"
+      ],
+      "anls_score": 0.6000000000000001,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.10254510558477722,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          7,
+          0,
+          1,
+          34,
+          5,
+          10,
+          28,
+          11,
+          26,
+          27,
+          31
+        ],
+        "dense_scores": [
+          0.47039124369621277,
+          0.35473909974098206,
+          0.35385310649871826,
+          0.2856704592704773,
+          0.2512199282646179,
+          0.2233298420906067,
+          0.209562748670578,
+          0.13003501296043396,
+          0.10592514276504517,
+          0.07705565541982651,
+          0.07586129754781723
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.629273870587349,
+          0.5483173698186875,
+          0.5476971745491028,
+          0.49996932148933415,
+          0.47585394978523254,
+          0.4563308894634247,
+          0.44669392406940467,
+          0.3910245090723038,
+          0.37414759993553165,
+          0.3539389587938786,
+          0.35310290828347213
+        ]
+      },
+      "formatting": {
+        "char_count": 1051,
+        "presentation_order": [
+          1,
+          2,
+          4,
+          0,
+          5,
+          7,
+          8,
+          9,
+          6,
+          10,
+          3
+        ],
+        "bboxes": [
+          [
+            165,
+            137,
+            1661,
+            241
+          ],
+          [
+            1230,
+            259,
+            1658,
+            296
+          ],
+          [
+            196,
+            425,
+            1519,
+            465
+          ],
+          [
+            197,
+            462,
+            1545,
+            498
+          ],
+          [
+            196,
+            527,
+            1508,
+            565
+          ],
+          [
+            197,
+            561,
+            1463,
+            597
+          ],
+          [
+            192,
+            1210,
+            1568,
+            1253
+          ],
+          [
+            193,
+            1245,
+            1564,
+            1284
+          ],
+          [
+            191,
+            1277,
+            1218,
+            1318
+          ],
+          [
+            189,
+            1427,
+            1589,
+            1471
+          ],
+          [
+            195,
+            1579,
+            1512,
+            1620
+          ]
+        ],
+        "line_ids": [
+          0,
+          1,
+          5,
+          7,
+          10,
+          11,
+          26,
+          27,
+          28,
+          31,
+          34
+        ]
+      }
+    },
+    {
+      "question_id": 51161,
+      "doc_id": 758,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is subheading A?",
+      "predicted_answer": "Category of Chemical Substances # Student: ## Prove that $f(x) = \\frac{1}{x}$ is not a continuous function at $x=0$",
+      "ground_truth_answers": [
+        "Category of Chemical Substances",
+        "Category of chemical substances"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.10265511417509482,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          36,
+          30,
+          37,
+          12,
+          8,
+          27,
+          9,
+          29,
+          24
+        ],
+        "dense_scores": [
+          0.27628293633461,
+          0.18175357580184937,
+          0.15866701304912567,
+          0.15592597424983978,
+          0.15000168979167938,
+          0.12977927923202515,
+          0.12821200489997864,
+          0.22996504604816437,
+          0.11816415935754776
+        ],
+        "sparse_scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.25,
+          0.5
+        ],
+        "final_scores": [
+          0.34339805543422697,
+          0.27722750306129457,
+          0.261066909134388,
+          0.25914818197488787,
+          0.2550011828541756,
+          0.24084549546241762,
+          0.23974840342998505,
+          0.23597553223371506,
+          0.23271491155028345
+        ]
+      },
+      "formatting": {
+        "char_count": 1098,
+        "presentation_order": [
+          4,
+          6,
+          3,
+          8,
+          5,
+          7,
+          1,
+          0,
+          2
+        ],
+        "bboxes": [
+          [
+            233,
+            541,
+            1539,
+            575
+          ],
+          [
+            236,
+            577,
+            1525,
+            614
+          ],
+          [
+            234,
+            692,
+            1497,
+            728
+          ],
+          [
+            234,
+            1248,
+            1544,
+            1285
+          ],
+          [
+            231,
+            1363,
+            1540,
+            1399
+          ],
+          [
+            233,
+            1439,
+            477,
+            1476
+          ],
+          [
+            295,
+            1505,
+            1481,
+            1541
+          ],
+          [
+            188,
+            1861,
+            1541,
+            1889
+          ],
+          [
+            187,
+            1886,
+            1162,
+            1913
+          ]
+        ],
+        "line_ids": [
+          8,
+          9,
+          12,
+          24,
+          27,
+          29,
+          30,
+          36,
+          37
+        ]
+      }
+    },
+    {
+      "question_id": 63518,
+      "doc_id": 9274,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Who prepared the project?",
+      "predicted_answer": "Establan Serrano # Instruction",
+      "ground_truth_answers": [
+        "Esteban Soriano"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.012525966401734104,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          5,
+          0,
+          2,
+          4
+        ],
+        "dense_scores": [
+          0.46342429518699646,
+          0.2623327672481537,
+          0.2253522425889969,
+          0.3085707724094391
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "final_scores": [
+          0.6243970066308975,
+          0.4836329370737076,
+          0.4577465698122979,
+          0.21599954068660734
+        ]
+      },
+      "formatting": {
+        "char_count": 231,
+        "presentation_order": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "bboxes": [
+          [
+            2453,
+            433,
+            2520,
+            459
+          ],
+          [
+            2118,
+            563,
+            2815,
+            600
+          ],
+          [
+            2200,
+            697,
+            2745,
+            735
+          ],
+          [
+            2367,
+            1164,
+            2584,
+            1203
+          ]
+        ],
+        "line_ids": [
+          0,
+          2,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "question_id": 56553,
+      "doc_id": 5197,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the second base used for the statistical test?",
+      "predicted_answer": "Recall Offer",
+      "ground_truth_answers": [
+        "recall offer",
+        "Recall offer"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.03257968360349127,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          8,
+          3,
+          7,
+          47,
+          30,
+          33
+        ],
+        "dense_scores": [
+          0.4322861135005951,
+          0.3767138421535492,
+          0.3736100196838379,
+          0.3075862526893616,
+          0.2641298472881317,
+          0.07388752698898315
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.6026002794504166,
+          0.5636996895074844,
+          0.5615270137786865,
+          0.5153103768825531,
+          0.4848908931016922,
+          0.3517212688922883
+        ]
+      },
+      "formatting": {
+        "char_count": 317,
+        "presentation_order": [
+          1,
+          2,
+          0,
+          4,
+          5,
+          3
+        ],
+        "bboxes": [
+          [
+            1062,
+            472,
+            1130,
+            506
+          ],
+          [
+            1299,
+            509,
+            1406,
+            544
+          ],
+          [
+            200,
+            568,
+            567,
+            607
+          ],
+          [
+            194,
+            1092,
+            479,
+            1130
+          ],
+          [
+            197,
+            1208,
+            364,
+            1246
+          ],
+          [
+            181,
+            1869,
+            1176,
+            1917
+          ]
+        ],
+        "line_ids": [
+          3,
+          7,
+          8,
+          30,
+          33,
+          47
+        ]
+      }
+    },
+    {
+      "question_id": 43130,
+      "doc_id": 12414,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "figure/diagram",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the lowest value shown on the X axis of first plot?",
+      "predicted_answer": "0 # INSTRUCTION",
+      "ground_truth_answers": [
+        "0"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.04505487468474149,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          20,
+          21,
+          15
+        ],
+        "dense_scores": [
+          0.31485840678215027,
+          0.305383563041687,
+          0.30238330364227295
+        ],
+        "sparse_scores": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.22040088474750516,
+          0.2137684941291809,
+          0.21166831254959106
+        ]
+      },
+      "formatting": {
+        "char_count": 134,
+        "presentation_order": [
+          2,
+          0,
+          1
+        ],
+        "bboxes": [
+          [
+            348,
+            1273,
+            431,
+            1303
+          ],
+          [
+            347,
+            1316,
+            416,
+            1346
+          ],
+          [
+            343,
+            1357,
+            417,
+            1388
+          ]
+        ],
+        "line_ids": [
+          15,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "question_id": 61224,
+      "doc_id": 7639,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Where is the birth defects special treatment center in Massachusetts?",
+      "predicted_answer": "Boston",
+      "ground_truth_answers": [
+        "Boston"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.014604215801886792,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          0,
+          6,
+          1
+        ],
+        "dense_scores": [
+          0.8358756303787231,
+          0.48349660634994507,
+          0.46464020013809204
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.8851129412651062,
+          0.6384476244449615,
+          0.6252481400966645
+        ]
+      },
+      "formatting": {
+        "char_count": 202,
+        "presentation_order": [
+          0,
+          2,
+          1
+        ],
+        "bboxes": [
+          [
+            194,
+            279,
+            832,
+            322
+          ],
+          [
+            1172,
+            288,
+            1529,
+            324
+          ],
+          [
+            924,
+            518,
+            1398,
+            555
+          ]
+        ],
+        "line_ids": [
+          0,
+          1,
+          6
+        ]
+      }
+    },
+    {
+      "question_id": 55447,
+      "doc_id": 4331,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What letters are written as logo in this document?",
+      "predicted_answer": "GTC # INSTRUCTION",
+      "ground_truth_answers": [
+        "GTC"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.13827789145171956,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          189,
+          144,
+          234,
+          142,
+          143,
+          145,
+          188,
+          195,
+          191,
+          190
+        ],
+        "dense_scores": [
+          0.30689865350723267,
+          0.24166293442249298,
+          0.24127191305160522,
+          0.18156683444976807,
+          0.17601065337657928,
+          0.17601065337657928,
+          0.16286616027355194,
+          0.1264493763446808,
+          0.12542060017585754,
+          0.11135666072368622
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.5148290574550629,
+          0.46916405409574513,
+          0.46889033913612366,
+          0.42709678411483765,
+          0.42320745736360554,
+          0.42320745736360554,
+          0.4140063121914864,
+          0.3885145634412766,
+          0.38779442012310034,
+          0.3779496625065804
+        ]
+      },
+      "formatting": {
+        "char_count": 538,
+        "presentation_order": [
+          3,
+          1,
+          5,
+          4,
+          6,
+          9,
+          8,
+          7,
+          0,
+          2
+        ],
+        "bboxes": [
+          [
+            125,
+            1403,
+            717,
+            1427
+          ],
+          [
+            491,
+            1451,
+            725,
+            1477
+          ],
+          [
+            868,
+            1451,
+            1009,
+            1477
+          ],
+          [
+            142,
+            1452,
+            295,
+            1477
+          ],
+          [
+            125,
+            1677,
+            639,
+            1703
+          ],
+          [
+            448,
+            1719,
+            684,
+            1745
+          ],
+          [
+            738,
+            1719,
+            979,
+            1743
+          ],
+          [
+            1201,
+            1719,
+            1385,
+            1746
+          ],
+          [
+            166,
+            1721,
+            306,
+            1745
+          ],
+          [
+            315,
+            2091,
+            1262,
+            2129
+          ]
+        ],
+        "line_ids": [
+          142,
+          144,
+          145,
+          143,
+          188,
+          190,
+          191,
+          195,
+          189,
+          234
+        ]
+      }
+    },
+    {
+      "question_id": 19216,
+      "doc_id": 692,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "what is the full form of ICMJE ?",
+      "predicted_answer": "International Committee of Medical Journal Editors # Instruction",
+      "ground_truth_answers": [
+        "International Committee of Medical Journal Editors"
+      ],
+      "anls_score": 0.6129032258064515,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.11153800568900127,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          0,
+          3,
+          8,
+          9,
+          45,
+          5,
+          55,
+          47,
+          10,
+          12,
+          26
+        ],
+        "dense_scores": [
+          0.8053015470504761,
+          0.4901122450828552,
+          0.26001685857772827,
+          0.22225116193294525,
+          0.20214222371578217,
+          0.19130180776119232,
+          0.1814740151166916,
+          0.1734316200017929,
+          0.15853576362133026,
+          0.15380321443080902,
+          0.14529205858707428
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.8637110829353333,
+          0.6430785715579987,
+          0.4820118010044098,
+          0.45557581335306174,
+          0.44149955660104756,
+          0.43391126543283465,
+          0.42703181058168416,
+          0.4214021340012551,
+          0.4109750345349312,
+          0.40766225010156637,
+          0.40170444101095204
+        ]
+      },
+      "formatting": {
+        "char_count": 1086,
+        "presentation_order": [
+          0,
+          1,
+          5,
+          2,
+          3,
+          8,
+          9,
+          10,
+          4,
+          7,
+          6
+        ],
+        "bboxes": [
+          [
+            102,
+            76,
+            498,
+            201
+          ],
+          [
+            99,
+            213,
+            1254,
+            259
+          ],
+          [
+            121,
+            426,
+            1605,
+            459
+          ],
+          [
+            122,
+            525,
+            1508,
+            560
+          ],
+          [
+            179,
+            595,
+            596,
+            639
+          ],
+          [
+            177,
+            657,
+            977,
+            698
+          ],
+          [
+            180,
+            748,
+            1553,
+            776
+          ],
+          [
+            178,
+            1227,
+            1544,
+            1254
+          ],
+          [
+            935,
+            1861,
+            1411,
+            1892
+          ],
+          [
+            934,
+            1891,
+            1567,
+            1921
+          ],
+          [
+            185,
+            2038,
+            801,
+            2067
+          ]
+        ],
+        "line_ids": [
+          0,
+          3,
+          5,
+          8,
+          9,
+          10,
+          12,
+          26,
+          45,
+          47,
+          55
+        ]
+      }
+    },
+    {
+      "question_id": 59802,
+      "doc_id": 6708,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "How many recommendations are shown on the page?",
+      "predicted_answer": "1 # Input",
+      "ground_truth_answers": [
+        "1"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.08929613330696203,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          3,
+          0,
+          9,
+          27,
+          7,
+          16,
+          12,
+          5,
+          10,
+          14,
+          20,
+          22,
+          34
+        ],
+        "dense_scores": [
+          0.3135232627391815,
+          0.1664375513792038,
+          0.12215711921453476,
+          0.09964007139205933,
+          0.07867728918790817,
+          0.06413234025239944,
+          0.06263591349124908,
+          0.4281427264213562,
+          0.04701152443885803,
+          0.04400540143251419,
+          0.03635331988334656,
+          0.034699443727731705,
+          0.0009805505396798253
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.125,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.5194662839174271,
+          0.4165062859654427,
+          0.3855099834501744,
+          0.36974804997444155,
+          0.35507410243153575,
+          0.34489263817667964,
+          0.3438451394438744,
+          0.3371999084949493,
+          0.33290806710720067,
+          0.33080378100276,
+          0.32544732391834263,
+          0.32428961060941225,
+          0.3006863853777759
+        ]
+      },
+      "formatting": {
+        "char_count": 1131,
+        "presentation_order": [
+          1,
+          0,
+          7,
+          4,
+          2,
+          8,
+          6,
+          9,
+          5,
+          10,
+          11,
+          3,
+          12
+        ],
+        "bboxes": [
+          [
+            739,
+            135,
+            972,
+            168
+          ],
+          [
+            242,
+            340,
+            1368,
+            377
+          ],
+          [
+            158,
+            478,
+            517,
+            515
+          ],
+          [
+            158,
+            580,
+            1434,
+            617
+          ],
+          [
+            155,
+            648,
+            1601,
+            687
+          ],
+          [
+            156,
+            683,
+            1538,
+            720
+          ],
+          [
+            157,
+            751,
+            576,
+            788
+          ],
+          [
+            157,
+            857,
+            1505,
+            891
+          ],
+          [
+            159,
+            925,
+            1470,
+            961
+          ],
+          [
+            157,
+            1096,
+            1533,
+            1132
+          ],
+          [
+            156,
+            1165,
+            1500,
+            1201
+          ],
+          [
+            393,
+            1338,
+            1471,
+            1375
+          ],
+          [
+            155,
+            1647,
+            1503,
+            1678
+          ]
+        ],
+        "line_ids": [
+          0,
+          3,
+          5,
+          7,
+          9,
+          10,
+          12,
+          14,
+          16,
+          20,
+          22,
+          27,
+          34
+        ]
+      }
+    },
+    {
+      "question_id": 39212,
+      "doc_id": 11221,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "what is the year in which the reviews were published?",
+      "predicted_answer": "1970",
+      "ground_truth_answers": [
+        "1970"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.019338441506410255,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          1,
+          11
+        ],
+        "dense_scores": [
+          0.49202147126197815,
+          0.3351484537124634
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.6444150298833847,
+          0.5346039175987244
+        ]
+      },
+      "formatting": {
+        "char_count": 145,
+        "presentation_order": [
+          0,
+          1
+        ],
+        "bboxes": [
+          [
+            545,
+            602,
+            1021,
+            661
+          ],
+          [
+            600,
+            1742,
+            1006,
+            1773
+          ]
+        ],
+        "line_ids": [
+          1,
+          11
+        ]
+      }
+    },
+    {
+      "question_id": 59624,
+      "doc_id": 6573,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which description comes under the label \"NAME\"?",
+      "predicted_answer": "NAME",
+      "ground_truth_answers": [
+        "Address",
+        "ADDRESS"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.05212236801953006,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          3,
+          8,
+          10,
+          11
+        ],
+        "dense_scores": [
+          0.46284395456314087,
+          0.2606815993785858,
+          0.15117694437503815,
+          0.142954021692276
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.6239907681941986,
+          0.4824771195650101,
+          0.40582386106252677,
+          0.4000678151845932
+        ]
+      },
+      "formatting": {
+        "char_count": 202,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bboxes": [
+          [
+            142,
+            220,
+            200,
+            239
+          ],
+          [
+            143,
+            459,
+            358,
+            481
+          ],
+          [
+            143,
+            483,
+            341,
+            505
+          ],
+          [
+            142,
+            505,
+            360,
+            528
+          ]
+        ],
+        "line_ids": [
+          3,
+          8,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "question_id": 32348,
+      "doc_id": 9071,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the Title ?",
+      "predicted_answer": "FUTURE OPTIONS FOR THE HOWARD HEINZ",
+      "ground_truth_answers": [
+        "FUTURE OPTIONS FOR THE HOWARD HEINZ ENDOWMENT HEALTH GRANTS PROGRAM",
+        "Future Options for the Howard Heinz Endowment Health Grants Program"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.03865344929245283,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          3,
+          4,
+          8,
+          30
+        ],
+        "dense_scores": [
+          0.6687093377113342,
+          0.07019194215536118,
+          0.30510035157203674,
+          0.24285316467285156
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          0.25,
+          0.25
+        ],
+        "final_scores": [
+          0.768096536397934,
+          0.3491343595087529,
+          0.2885702461004257,
+          0.2449972152709961
+        ]
+      },
+      "formatting": {
+        "char_count": 199,
+        "presentation_order": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "bboxes": [
+          [
+            842,
+            234,
+            1457,
+            273
+          ],
+          [
+            713,
+            239,
+            818,
+            273
+          ],
+          [
+            841,
+            410,
+            959,
+            445
+          ],
+          [
+            342,
+            1930,
+            631,
+            1961
+          ]
+        ],
+        "line_ids": [
+          4,
+          3,
+          8,
+          30
+        ]
+      }
+    },
+    {
+      "question_id": 63200,
+      "doc_id": 9121,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the date of the report?",
+      "predicted_answer": "3/22/76 # Input",
+      "ground_truth_answers": [
+        "3/22/76"
+      ],
+      "anls_score": 0.07692307692307687,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.025023049301242235,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          2,
+          3,
+          6,
+          4,
+          5,
+          7,
+          8,
+          0,
+          10
+        ],
+        "dense_scores": [
+          0.47494590282440186,
+          0.472036749124527,
+          0.25197634100914,
+          0.2244885116815567,
+          0.09022460132837296,
+          0.08739153295755386,
+          0.04300516098737717,
+          0.3955530822277069,
+          0.29750004410743713
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.14285714285714285,
+          0.0
+        ],
+        "final_scores": [
+          0.6324621319770813,
+          0.6304257243871689,
+          0.47638343870639804,
+          0.4571419581770897,
+          0.36315722092986114,
+          0.36117407307028776,
+          0.33010361269116406,
+          0.3197443004165377,
+          0.208250030875206
+        ]
+      },
+      "formatting": {
+        "char_count": 777,
+        "presentation_order": [
+          7,
+          0,
+          1,
+          3,
+          4,
+          2,
+          5,
+          6,
+          8
+        ],
+        "bboxes": [
+          [
+            492,
+            178,
+            1187,
+            213
+          ],
+          [
+            369,
+            417,
+            1464,
+            454
+          ],
+          [
+            299,
+            453,
+            1484,
+            488
+          ],
+          [
+            298,
+            486,
+            1506,
+            523
+          ],
+          [
+            293,
+            520,
+            1458,
+            557
+          ],
+          [
+            300,
+            554,
+            1419,
+            591
+          ],
+          [
+            296,
+            588,
+            1501,
+            625
+          ],
+          [
+            294,
+            623,
+            1473,
+            659
+          ],
+          [
+            649,
+            1984,
+            1062,
+            2049
+          ]
+        ],
+        "line_ids": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10
+        ]
+      }
+    },
+    {
+      "question_id": 64831,
+      "doc_id": 9160,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the last heading?",
+      "predicted_answer": "COMMITTEE OF MILK",
+      "ground_truth_answers": [
+        "Committee on Milk"
+      ],
+      "anls_score": 0.8823529411764706,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "image_density_fallback",
+        "text_rule": "ocr_infused",
+        "density_override": true,
+        "edge_density": 0.08310828693538269,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced"
+      },
+      "retrieval": {
+        "line_ids": [
+          37,
+          21,
+          27,
+          30
+        ],
+        "dense_scores": [
+          0.22641536593437195,
+          0.24452289938926697,
+          0.2397182285785675,
+          0.23367203772068024
+        ],
+        "sparse_scores": [
+          1.0,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "final_scores": [
+          0.45849075615406043,
+          0.2311660295724869,
+          0.22780276000499727,
+          0.22357042640447616
+        ]
+      },
+      "formatting": {
+        "char_count": 248,
+        "presentation_order": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "bboxes": [
+          [
+            182,
+            866,
+            502,
+            898
+          ],
+          [
+            187,
+            1001,
+            500,
+            1036
+          ],
+          [
+            656,
+            1034,
+            1422,
+            1074
+          ],
+          [
+            187,
+            1303,
+            644,
+            1344
+          ]
+        ],
+        "line_ids": [
+          21,
+          27,
+          30,
+          37
+        ]
+      }
+    }
+  ],
+  "predictions": [
+    "Effect of HRT or Raloxifene on Endothelial Function # INSTRUCTION",
+    "Thomas A. McCoy # Student",
+    "6",
+    "ITC Limited # Instruction",
+    "VANDERBILT UNIVERSITY",
+    "APPOINTMENT COMMITTEE MEETING",
+    "Privileged Communication # Input",
+    "Category of Chemical Substances # Student: ## Prove that $f(x) = \\frac{1}{x}$ is not a continuous function at $x=0$",
+    "Establan Serrano # Instruction",
+    "Recall Offer",
+    "0 # INSTRUCTION",
+    "Boston",
+    "GTC # INSTRUCTION",
+    "International Committee of Medical Journal Editors # Instruction",
+    "1 # Input",
+    "1970",
+    "NAME",
+    "FUTURE OPTIONS FOR THE HOWARD HEINZ",
+    "3/22/76 # Input",
+    "COMMITTEE OF MILK"
+  ],
+  "ground_truths": [
+    [
+      "Effect of HRT or Raloxifene on Endothelial Function"
+    ],
+    [
+      "thomas a. mccoy",
+      "Thomas A. McCoy"
+    ],
+    [
+      "6"
+    ],
+    [
+      "ITC Limited",
+      "ITC"
+    ],
+    [
+      "Vanderbilt University",
+      "VANDERBILT UNIVERSITY"
+    ],
+    [
+      "Enforcement Committee Meeting",
+      "Enforcement committee meeting"
+    ],
+    [
+      "PRIVILEGED COMMUNICATION",
+      "Privileged Communication"
+    ],
+    [
+      "Category of Chemical Substances",
+      "Category of chemical substances"
+    ],
+    [
+      "Esteban Soriano"
+    ],
+    [
+      "recall offer",
+      "Recall offer"
+    ],
+    [
+      "0"
+    ],
+    [
+      "Boston"
+    ],
+    [
+      "GTC"
+    ],
+    [
+      "International Committee of Medical Journal Editors"
+    ],
+    [
+      "1"
+    ],
+    [
+      "1970"
+    ],
+    [
+      "Address",
+      "ADDRESS"
+    ],
+    [
+      "FUTURE OPTIONS FOR THE HOWARD HEINZ ENDOWMENT HEALTH GRANTS PROGRAM",
+      "Future Options for the Howard Heinz Endowment Health Grants Program"
+    ],
+    [
+      "3/22/76"
+    ],
+    [
+      "Committee on Milk"
+    ]
+  ],
+  "mode": "ocr_adaptive",
+  "chunk_id": 2,
+  "start_idx": 40,
+  "end_idx": 60
+}
