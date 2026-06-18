@@ -127,7 +127,19 @@ HYBRID_ALPHA = 0.7
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 NEIGHBOR_Y_GAP = 45
+COLUMN_X_PAD = 20
+Y_OVERLAP_TOLERANCE = 6
 ENABLE_CONTEXT_EXPANSION = True
+
+QUERY_STOPWORDS = frozenset({
+    "A", "AN", "AND", "ARE", "AT", "FOR", "IN", "IS", "OF", "ON",
+    "OR", "THE", "TO", "WAS", "WHAT", "WHICH", "WHO", "WHOM",
+})
+
+FIELD_LABEL_KEYWORDS = frozenset({
+    "COLLEGE", "NAME", "SPECIMEN", "TYPE", "ID", "NO", "DATE",
+    "ADDRESS", "PHONE", "EMAIL", "DEPARTMENT", "SCHOOL", "TITLE",
+})
 
 OCR_BOILERPLATE_DENYLIST = frozenset({
     "INSTRUCTION", "NOTICE", "USER",

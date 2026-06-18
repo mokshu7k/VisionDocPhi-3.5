@@ -8,21 +8,24 @@ import numpy as np
 
 from config.settings import (
     EMBEDDING_MODEL,
+    FIELD_LABEL_KEYWORDS,
     HYBRID_ALPHA,
     OCR_CACHE_DIR,
     OCR_MAX_CHARS,
     OCR_MAX_LINES,
     OCR_MIN_SCORE,
     OCR_TOP_K,
+    QUERY_STOPWORDS,
 )
+from src.agents.context_expander import is_label_only
 from src.agents.types import ScoredLine
 from src.data.ocr_loader import OcrLine
 
+EMBEDDING_CACHE_SUFFIX = "_w1"
 
 ALNUM_TOKEN_RE = re.compile(
     r"\d+(?:\.\d+)?|[A-Za-z0-9]+(?:[-_/][A-Za-z0-9]+)*"
 )
-LABEL_ONLY_RE = re.compile(r"^[\w\s/.-]{1,40}:\s*$")
 
 
 def extract_query_tokens(question: str) -> List[str]:
@@ -30,9 +33,15 @@ def extract_query_tokens(question: str) -> List[str]:
     normalized = []
     for t in tokens:
         n = t.upper().strip()
-        if len(n) >= 1:
+        if len(n) >= 1 and n not in QUERY_STOPWORDS:
             normalized.append(n)
     return normalized
+
+
+def _token_matches_line(token: str, line_upper: str) -> bool:
+    if token in FIELD_LABEL_KEYWORDS:
+        return bool(re.search(rf"\b{re.escape(token)}\b", line_upper))
+    return token in line_upper
 
 
 def sparse_match_score(question: str, line_text: str, tokens: List[str]) -> float:
@@ -41,14 +50,31 @@ def sparse_match_score(question: str, line_text: str, tokens: List[str]) -> floa
     line_upper = line_text.upper()
     matched = 0
     for token in tokens:
-        if token in line_upper:
+        if _token_matches_line(token, line_upper):
             matched += 1
     score = matched / len(tokens)
-    # Exact fragment boost for serial keys / codes
     for token in tokens:
-        if len(token) >= 3 and token in line_upper:
+        if len(token) >= 3 and _token_matches_line(token, line_upper):
             return 1.0
     return score
+
+
+def _windowed_texts(lines: List[OcrLine]) -> List[str]:
+    texts = []
+    for i, line in enumerate(lines):
+        parts = []
+        if i > 0:
+            parts.append(lines[i - 1].text)
+        parts.append(line.text)
+        if i < len(lines) - 1:
+            parts.append(lines[i + 1].text)
+        texts.append(" ".join(parts))
+    return texts
+
+
+def _sort_key(scored: ScoredLine) -> Tuple[float, int]:
+    label_boost = 1 if is_label_only(scored.text) else 0
+    return (scored.final_score, label_boost)
 
 
 class HybridRetrieverAgent:
@@ -76,7 +102,7 @@ class HybridRetrieverAgent:
     def _cache_path(self, ucsf_id: str, page_no: str) -> Optional[Path]:
         if not ucsf_id or not page_no:
             return None
-        return OCR_CACHE_DIR / f"{ucsf_id}_{page_no}.npz"
+        return OCR_CACHE_DIR / f"{ucsf_id}_{page_no}{EMBEDDING_CACHE_SUFFIX}.npz"
 
     def _load_line_embeddings_cache(
         self, ucsf_id: str, page_no: str, n_lines: int
@@ -113,7 +139,7 @@ class HybridRetrieverAgent:
     ) -> List[float]:
         if not lines:
             return []
-        texts = [line.text for line in lines]
+        texts = _windowed_texts(lines)
         self._load_encoder()
         if hasattr(self._encoder, "encode"):
             q_emb = self._encode_texts([question])[0]
@@ -138,7 +164,6 @@ class HybridRetrieverAgent:
                     scores.append(float(np.dot(q_emb, emb) / (q_norm * denom)))
             return scores
 
-        # TF-IDF fallback — fit on question + all lines jointly
         all_texts = [question] + texts
         matrix = self._encoder.fit_transform(all_texts).toarray()
         q_emb = matrix[0]
@@ -173,8 +198,6 @@ class HybridRetrieverAgent:
             sparse = sparse_match_score(question, line.text, tokens)
             dense = dense_scores[i] if i < len(dense_scores) else 0.0
             final = self.alpha * dense + (1 - self.alpha) * sparse
-            if LABEL_ONLY_RE.match(line.text.strip()):
-                final *= 0.5
             if final < OCR_MIN_SCORE:
                 continue
             scored.append(
@@ -188,16 +211,15 @@ class HybridRetrieverAgent:
                 )
             )
 
-        scored.sort(key=lambda s: s.final_score, reverse=True)
+        scored.sort(key=_sort_key, reverse=True)
         pool = scored[:OCR_TOP_K]
 
-        # Budget selection by relevance
         selected: List[ScoredLine] = []
         char_count = 0
         for line in pool:
             if len(selected) >= OCR_MAX_LINES:
                 break
-            line_len = len(line.text) + 30  # coord overhead
+            line_len = len(line.text) + 30
             if char_count + line_len > OCR_MAX_CHARS and selected:
                 break
             selected.append(line)
