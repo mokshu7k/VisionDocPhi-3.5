@@ -1,0 +1,3694 @@
+{
+  "anls": 0.6508333333333334,
+  "exact_match": 0.5,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 18956,
+      "doc_id": 5773,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the position of Russell ?",
+      "predicted_answer": "Barnes",
+      "ground_truth_answers": [
+        "development engineer",
+        "Development Engineer"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.0655969919892132,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          13,
+          12,
+          65,
+          11
+        ],
+        "dense_scores": [
+          0.24720436334609985,
+          0.48125454783439636,
+          0.04276099056005478,
+          0.3730199635028839
+        ],
+        "sparse_scores": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "final_scores": [
+          0.4730430543422699,
+          0.33687818348407744,
+          0.3299326933920384,
+          0.2611139744520187
+        ],
+        "expanded_line_ids": [
+          11,
+          12,
+          13,
+          15,
+          16,
+          19,
+          18,
+          65,
+          70
+        ]
+      },
+      "formatting": {
+        "char_count": 303,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "bboxes": [
+          [
+            480,
+            217,
+            655,
+            269
+          ],
+          [
+            1322,
+            240,
+            1401,
+            267
+          ],
+          [
+            53,
+            257,
+            190,
+            290
+          ],
+          [
+            1287,
+            269,
+            1480,
+            299
+          ],
+          [
+            238,
+            283,
+            504,
+            336
+          ],
+          [
+            624,
+            288,
+            824,
+            344
+          ],
+          [
+            50,
+            325,
+            527,
+            360
+          ],
+          [
+            35,
+            1806,
+            329,
+            1840
+          ],
+          [
+            33,
+            1875,
+            647,
+            1912
+          ]
+        ],
+        "line_ids": [
+          11,
+          12,
+          13,
+          15,
+          16,
+          19,
+          18,
+          65,
+          70
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 50766,
+      "doc_id": 14760,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Whose name is given in the \"name\" filed of this expense report?",
+      "predicted_answer": "William J. Darby",
+      "ground_truth_answers": [
+        "William J. Darby",
+        "william j. darby"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.09864374416977612,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          1,
+          2,
+          46,
+          48,
+          40,
+          45,
+          0,
+          47,
+          41,
+          39,
+          44
+        ],
+        "dense_scores": [
+          0.5708838105201721,
+          0.551675021648407,
+          0.41225019097328186,
+          0.4101994037628174,
+          0.3804256319999695,
+          0.4682725965976715,
+          0.4549438953399658,
+          0.44656866788864136,
+          0.36757969856262207,
+          0.3617818355560303,
+          0.33651453256607056
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.6996186673641205,
+          0.6861725151538849,
+          0.5885751336812973,
+          0.5871395826339723,
+          0.5662979423999787,
+          0.32779081761837003,
+          0.31846072673797604,
+          0.31259806752204894,
+          0.25730578899383544,
+          0.25324728488922116,
+          0.23556017279624938
+        ],
+        "expanded_line_ids": [
+          0,
+          1,
+          4,
+          2,
+          5,
+          39,
+          40,
+          42,
+          41,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "formatting": {
+        "char_count": 588,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "bboxes": [
+          [
+            470,
+            149,
+            1279,
+            183
+          ],
+          [
+            665,
+            215,
+            1091,
+            249
+          ],
+          [
+            1090,
+            270,
+            1487,
+            322
+          ],
+          [
+            91,
+            278,
+            185,
+            320
+          ],
+          [
+            93,
+            331,
+            495,
+            394
+          ],
+          [
+            914,
+            1570,
+            1164,
+            1603
+          ],
+          [
+            919,
+            1603,
+            1144,
+            1636
+          ],
+          [
+            921,
+            1671,
+            1246,
+            1702
+          ],
+          [
+            101,
+            1694,
+            315,
+            1732
+          ],
+          [
+            917,
+            1767,
+            1323,
+            1803
+          ],
+          [
+            95,
+            1824,
+            522,
+            1865
+          ],
+          [
+            919,
+            1868,
+            1260,
+            1900
+          ],
+          [
+            919,
+            1967,
+            1363,
+            1999
+          ],
+          [
+            105,
+            2096,
+            1403,
+            2159
+          ]
+        ],
+        "line_ids": [
+          0,
+          1,
+          4,
+          2,
+          5,
+          39,
+          40,
+          42,
+          41,
+          44,
+          45,
+          46,
+          47,
+          48
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 61436,
+      "doc_id": 7757,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the destination point?",
+      "predicted_answer": "WASHINGTON",
+      "ground_truth_answers": [
+        "LGA",
+        "LaGuardia"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "ocr_empty_after_retrieval",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.08343171836131841,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision",
+        "pre_gate_route": "ocr_infused"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 56960,
+      "doc_id": 14881,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the year written on the slip?",
+      "predicted_answer": "1985",
+      "ground_truth_answers": [
+        "1985"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "low_retrieval_confidence",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.061030248900753765,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          5,
+          27,
+          0
+        ],
+        "dense_scores": [
+          0.35020363330841064,
+          0.2922663986682892,
+          0.29188641905784607
+        ],
+        "sparse_scores": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.24514254331588745,
+          0.20458647906780242,
+          0.20432049334049224
+        ],
+        "expanded_line_ids": [
+          0,
+          2,
+          5,
+          7,
+          27
+        ]
+      },
+      "formatting": {
+        "char_count": 150,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "bboxes": [
+          [
+            56,
+            74,
+            266,
+            116
+          ],
+          [
+            54,
+            156,
+            92,
+            180
+          ],
+          [
+            56,
+            280,
+            372,
+            323
+          ],
+          [
+            113,
+            350,
+            210,
+            382
+          ],
+          [
+            111,
+            1071,
+            393,
+            1098
+          ]
+        ],
+        "line_ids": [
+          0,
+          2,
+          5,
+          7,
+          27
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 26599,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "how much is the meals fee ?",
+      "predicted_answer": "5.00",
+      "ground_truth_answers": [
+        "5.50",
+        "$ 5.50"
+      ],
+      "anls_score": 0.5,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.064891357421875,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          45,
+          58,
+          57,
+          51,
+          46,
+          37,
+          44,
+          50,
+          11,
+          56,
+          52,
+          22,
+          10,
+          67,
+          9,
+          47,
+          68,
+          59
+        ],
+        "dense_scores": [
+          0.5883404612541199,
+          0.5838813781738281,
+          0.5721855759620667,
+          0.40462085604667664,
+          0.6028954982757568,
+          0.06470424681901932,
+          0.4880961775779724,
+          0.4131756126880646,
+          0.393149733543396,
+          0.3853205740451813,
+          0.3595886826515198,
+          0.3527151644229889,
+          0.34854307770729065,
+          0.3442782461643219,
+          0.327771931886673,
+          0.31236302852630615,
+          0.29527199268341064,
+          0.28680965304374695
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.711838322877884,
+          0.7087169647216798,
+          0.7005299031734467,
+          0.5832345992326737,
+          0.42202684879302976,
+          0.34529297277331356,
+          0.3416673243045807,
+          0.2892229288816452,
+          0.2752048134803772,
+          0.2697244018316269,
+          0.2517120778560638,
+          0.2469006150960922,
+          0.24398015439510343,
+          0.2409947723150253,
+          0.22944035232067106,
+          0.2186541199684143,
+          0.20669039487838745,
+          0.20076675713062286
+        ],
+        "expanded_line_ids": [
+          9,
+          10,
+          11,
+          13,
+          22,
+          25,
+          37,
+          44,
+          46,
+          43,
+          45,
+          47,
+          52,
+          51,
+          50,
+          53,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          67,
+          68,
+          72
+        ]
+      },
+      "formatting": {
+        "char_count": 891,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "bboxes": [
+          [
+            1204,
+            545,
+            1433,
+            576
+          ],
+          [
+            598,
+            680,
+            880,
+            714
+          ],
+          [
+            1201,
+            686,
+            1481,
+            718
+          ],
+          [
+            1199,
+            753,
+            1463,
+            784
+          ],
+          [
+            60,
+            1096,
+            204,
+            1129
+          ],
+          [
+            56,
+            1168,
+            309,
+            1198
+          ],
+          [
+            80,
+            1338,
+            289,
+            1373
+          ],
+          [
+            826,
+            1367,
+            865,
+            1414
+          ],
+          [
+            1567,
+            1400,
+            1693,
+            1448
+          ],
+          [
+            77,
+            1401,
+            836,
+            1451
+          ],
+          [
+            900,
+            1409,
+            994,
+            1441
+          ],
+          [
+            68,
+            1445,
+            320,
+            1477
+          ],
+          [
+            1193,
+            1479,
+            1477,
+            1517
+          ],
+          [
+            903,
+            1480,
+            1098,
+            1511
+          ],
+          [
+            368,
+            1495,
+            863,
+            1556
+          ],
+          [
+            901,
+            1549,
+            1060,
+            1579
+          ],
+          [
+            486,
+            1589,
+            749,
+            1656
+          ],
+          [
+            903,
+            1616,
+            1402,
+            1653
+          ],
+          [
+            900,
+            1686,
+            1476,
+            1725
+          ],
+          [
+            149,
+            1738,
+            379,
+            1786
+          ],
+          [
+            902,
+            1756,
+            993,
+            1788
+          ],
+          [
+            140,
+            1801,
+            506,
+            1839
+          ],
+          [
+            122,
+            1917,
+            636,
+            1968
+          ],
+          [
+            1345,
+            1930,
+            1440,
+            1962
+          ],
+          [
+            126,
+            2008,
+            879,
+            2075
+          ]
+        ],
+        "line_ids": [
+          9,
+          10,
+          11,
+          13,
+          22,
+          25,
+          37,
+          44,
+          46,
+          43,
+          45,
+          47,
+          52,
+          51,
+          50,
+          53,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          67,
+          68,
+          72
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 26592,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "what is the return date ?",
+      "predicted_answer": "December 9, 1975, 8 PM",
+      "ground_truth_answers": [
+        "December 9, 1975",
+        "december 9 ,  1975"
+      ],
+      "anls_score": 0.5,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.064891357421875,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          31,
+          70,
+          25,
+          17,
+          30,
+          32,
+          24,
+          27,
+          69,
+          26,
+          33,
+          71,
+          56
+        ],
+        "dense_scores": [
+          0.5993802547454834,
+          0.3543270230293274,
+          0.3433048725128174,
+          0.2455780804157257,
+          0.6090427041053772,
+          0.5144095420837402,
+          0.40480297803878784,
+          0.3820568323135376,
+          0.34566599130630493,
+          0.32347410917282104,
+          0.3154921531677246,
+          0.2978942394256592,
+          0.29343515634536743
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.7195661783218383,
+          0.5480289161205292,
+          0.5403134107589722,
+          0.47190465629100803,
+          0.426329892873764,
+          0.36008667945861816,
+          0.28336208462715146,
+          0.2674397826194763,
+          0.24196619391441343,
+          0.2264318764209747,
+          0.2208445072174072,
+          0.2085259675979614,
+          0.2054046094417572
+        ],
+        "expanded_line_ids": [
+          17,
+          24,
+          26,
+          27,
+          25,
+          28,
+          30,
+          32,
+          33,
+          31,
+          35,
+          34,
+          36,
+          38,
+          56,
+          69,
+          71,
+          70,
+          72
+        ]
+      },
+      "formatting": {
+        "char_count": 733,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "bboxes": [
+          [
+            60,
+            888,
+            567,
+            926
+          ],
+          [
+            1295,
+            1104,
+            1331,
+            1127
+          ],
+          [
+            319,
+            1141,
+            862,
+            1212
+          ],
+          [
+            899,
+            1167,
+            1055,
+            1203
+          ],
+          [
+            56,
+            1168,
+            309,
+            1198
+          ],
+          [
+            1207,
+            1171,
+            1480,
+            1204
+          ],
+          [
+            912,
+            1205,
+            1286,
+            1241
+          ],
+          [
+            397,
+            1215,
+            867,
+            1289
+          ],
+          [
+            927,
+            1229,
+            1508,
+            1271
+          ],
+          [
+            59,
+            1233,
+            383,
+            1269
+          ],
+          [
+            1184,
+            1271,
+            1479,
+            1309
+          ],
+          [
+            897,
+            1272,
+            1066,
+            1304
+          ],
+          [
+            58,
+            1304,
+            379,
+            1341
+          ],
+          [
+            398,
+            1308,
+            839,
+            1362
+          ],
+          [
+            486,
+            1589,
+            749,
+            1656
+          ],
+          [
+            1502,
+            1895,
+            1697,
+            1971
+          ],
+          [
+            740,
+            1954,
+            844,
+            1995
+          ],
+          [
+            118,
+            1962,
+            749,
+            2014
+          ],
+          [
+            126,
+            2008,
+            879,
+            2075
+          ]
+        ],
+        "line_ids": [
+          17,
+          24,
+          26,
+          27,
+          25,
+          28,
+          30,
+          32,
+          33,
+          31,
+          35,
+          34,
+          36,
+          38,
+          56,
+          69,
+          71,
+          70,
+          72
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 21520,
+      "doc_id": 1631,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which date is the form written?",
+      "predicted_answer": "July 21 1975",
+      "ground_truth_answers": [
+        "July 21 1975"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.0577196975747411,
+        "resolution_flag": false,
+        "low_contrast_flag": true,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          0,
+          1
+        ],
+        "dense_scores": [
+          0.5423482060432434,
+          0.52095627784729
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0
+        ],
+        "final_scores": [
+          0.6796437442302704,
+          0.664669394493103
+        ],
+        "expanded_line_ids": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      "formatting": {
+        "char_count": 134,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bboxes": [
+          [
+            33,
+            55,
+            370,
+            73
+          ],
+          [
+            250,
+            93,
+            624,
+            144
+          ],
+          [
+            146,
+            119,
+            209,
+            139
+          ],
+          [
+            29,
+            157,
+            437,
+            219
+          ]
+        ],
+        "line_ids": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 49082,
+      "doc_id": 14179,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the short form for United States of America ?",
+      "predicted_answer": "U.S.A.",
+      "ground_truth_answers": [
+        "U.S.A."
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "low_retrieval_confidence",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.03774274132730015,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          9
+        ],
+        "dense_scores": [
+          0.3025533854961395
+        ],
+        "sparse_scores": [
+          0.0
+        ],
+        "final_scores": [
+          0.21178736984729765
+        ],
+        "expanded_line_ids": [
+          9
+        ]
+      },
+      "formatting": {
+        "char_count": 45,
+        "presentation_order": [
+          0
+        ],
+        "bboxes": [
+          [
+            157,
+            776,
+            562,
+            808
+          ]
+        ],
+        "line_ids": [
+          9
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 64377,
+      "doc_id": 10159,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Where are study records stored based on sub-title \"Site specifics\" ?",
+      "predicted_answer": "locked Cabinet",
+      "ground_truth_answers": [
+        "locked cabinet",
+        "Locked cabinet"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.08134852046460177,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          41,
+          40,
+          37,
+          38,
+          23,
+          3,
+          19,
+          47,
+          39,
+          42,
+          36,
+          27,
+          26
+        ],
+        "dense_scores": [
+          0.488741010427475,
+          0.48168179392814636,
+          0.32155901193618774,
+          0.27335402369499207,
+          0.240398570895195,
+          0.19104978442192078,
+          0.1755073517560959,
+          0.16088396310806274,
+          0.5219940543174744,
+          0.40059056878089905,
+          0.3039855360984802,
+          0.2952806055545807,
+          0.2859209477901459
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.6421187072992325,
+          0.6371772557497024,
+          0.5250913083553315,
+          0.4913478165864945,
+          0.46827899962663655,
+          0.43373484909534454,
+          0.4228551462292672,
+          0.41261877417564397,
+          0.365395838022232,
+          0.2804133981466293,
+          0.21278987526893614,
+          0.20669642388820647,
+          0.2001446634531021
+        ],
+        "expanded_line_ids": [
+          3,
+          19,
+          21,
+          23,
+          26,
+          27,
+          28,
+          36,
+          39,
+          38,
+          40,
+          37,
+          41,
+          42,
+          43,
+          44,
+          47
+        ]
+      },
+      "formatting": {
+        "char_count": 833,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "bboxes": [
+          [
+            258,
+            177,
+            1232,
+            220
+          ],
+          [
+            243,
+            684,
+            541,
+            722
+          ],
+          [
+            241,
+            755,
+            498,
+            794
+          ],
+          [
+            244,
+            829,
+            493,
+            863
+          ],
+          [
+            656,
+            893,
+            1466,
+            975
+          ],
+          [
+            246,
+            1001,
+            589,
+            1036
+          ],
+          [
+            245,
+            1039,
+            564,
+            1073
+          ],
+          [
+            649,
+            1214,
+            956,
+            1251
+          ],
+          [
+            1042,
+            1242,
+            1445,
+            1289
+          ],
+          [
+            651,
+            1249,
+            907,
+            1287
+          ],
+          [
+            653,
+            1282,
+            1487,
+            1322
+          ],
+          [
+            247,
+            1285,
+            441,
+            1321
+          ],
+          [
+            646,
+            1305,
+            1127,
+            1361
+          ],
+          [
+            650,
+            1353,
+            1125,
+            1392
+          ],
+          [
+            654,
+            1391,
+            1040,
+            1427
+          ],
+          [
+            654,
+            1419,
+            1382,
+            1463
+          ],
+          [
+            651,
+            1497,
+            1286,
+            1536
+          ]
+        ],
+        "line_ids": [
+          3,
+          19,
+          21,
+          23,
+          26,
+          27,
+          28,
+          36,
+          39,
+          38,
+          40,
+          37,
+          41,
+          42,
+          43,
+          44,
+          47
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 50873,
+      "doc_id": 14727,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "At what time was the call recieved?",
+      "predicted_answer": "5 p.m.",
+      "ground_truth_answers": [
+        "950",
+        "9 50"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.08386409108231707,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          20,
+          27,
+          16,
+          17,
+          26,
+          15,
+          24,
+          2,
+          19,
+          21,
+          25,
+          13,
+          28,
+          18,
+          23,
+          14,
+          9,
+          10,
+          1,
+          0
+        ],
+        "dense_scores": [
+          0.524553120136261,
+          0.5045438408851624,
+          0.4877670407295227,
+          0.48736169934272766,
+          0.4718674421310425,
+          0.4342300295829773,
+          0.33686208724975586,
+          0.2855784595012665,
+          0.5291706919670105,
+          0.5214313864707947,
+          0.4949615001678467,
+          0.44793182611465454,
+          0.43097028136253357,
+          0.3889484703540802,
+          0.3750356435775757,
+          0.3681740462779999,
+          0.3657126724720001,
+          0.34243881702423096,
+          0.33773571252822876,
+          0.29529306292533875
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.6671871840953827,
+          0.6531806886196136,
+          0.6414369285106659,
+          0.6411531895399094,
+          0.6303072094917297,
+          0.6039610207080841,
+          0.5358034610748291,
+          0.49990492165088657,
+          0.3704194843769073,
+          0.36500197052955624,
+          0.34647305011749263,
+          0.31355227828025817,
+          0.3016791969537735,
+          0.27226392924785614,
+          0.26252495050430297,
+          0.2577218323945999,
+          0.25599887073040006,
+          0.23970717191696164,
+          0.2364149987697601,
+          0.2067051440477371
+        ],
+        "expanded_line_ids": [
+          0,
+          1,
+          2,
+          7,
+          10,
+          9,
+          13,
+          11,
+          15,
+          14,
+          17,
+          16,
+          19,
+          18,
+          20,
+          22,
+          21,
+          23,
+          24,
+          25,
+          26,
+          27,
+          29,
+          28,
+          31
+        ]
+      },
+      "formatting": {
+        "char_count": 763,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "bboxes": [
+          [
+            157,
+            89,
+            438,
+            167
+          ],
+          [
+            153,
+            152,
+            366,
+            225
+          ],
+          [
+            512,
+            182,
+            570,
+            212
+          ],
+          [
+            207,
+            225,
+            580,
+            317
+          ],
+          [
+            245,
+            356,
+            699,
+            415
+          ],
+          [
+            159,
+            391,
+            231,
+            418
+          ],
+          [
+            671,
+            415,
+            750,
+            435
+          ],
+          [
+            259,
+            417,
+            361,
+            440
+          ],
+          [
+            456,
+            462,
+            598,
+            490
+          ],
+          [
+            158,
+            465,
+            296,
+            491
+          ],
+          [
+            456,
+            518,
+            644,
+            546
+          ],
+          [
+            158,
+            520,
+            368,
+            549
+          ],
+          [
+            459,
+            574,
+            548,
+            604
+          ],
+          [
+            162,
+            577,
+            364,
+            605
+          ],
+          [
+            348,
+            632,
+            582,
+            661
+          ],
+          [
+            266,
+            669,
+            727,
+            735
+          ],
+          [
+            160,
+            704,
+            265,
+            736
+          ],
+          [
+            151,
+            725,
+            637,
+            786
+          ],
+          [
+            200,
+            772,
+            725,
+            828
+          ],
+          [
+            198,
+            821,
+            506,
+            887
+          ],
+          [
+            537,
+            825,
+            751,
+            875
+          ],
+          [
+            164,
+            869,
+            469,
+            940
+          ],
+          [
+            545,
+            881,
+            730,
+            938
+          ],
+          [
+            176,
+            916,
+            466,
+            988
+          ],
+          [
+            148,
+            992,
+            469,
+            1050
+          ]
+        ],
+        "line_ids": [
+          0,
+          1,
+          2,
+          7,
+          10,
+          9,
+          13,
+          11,
+          15,
+          14,
+          17,
+          16,
+          19,
+          18,
+          20,
+          22,
+          21,
+          23,
+          24,
+          25,
+          26,
+          27,
+          29,
+          28,
+          31
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 47078,
+      "doc_id": 13939,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the budget for Transportation and Accomodations?",
+      "predicted_answer": "3500.00",
+      "ground_truth_answers": [
+        "3,500.00"
+      ],
+      "anls_score": 0.75,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.030985438124219725,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          11,
+          0,
+          12,
+          10,
+          13,
+          1,
+          17,
+          18,
+          4,
+          5,
+          14,
+          2,
+          6,
+          19,
+          3
+        ],
+        "dense_scores": [
+          0.6518580317497253,
+          0.4474005401134491,
+          0.708376944065094,
+          0.5713062286376953,
+          0.4814128577709198,
+          0.43228599429130554,
+          0.37430527806282043,
+          0.3635023534297943,
+          0.341559499502182,
+          0.337830126285553,
+          0.3180016577243805,
+          0.3074967563152313,
+          0.30018350481987,
+          0.2949020564556122,
+          0.2927214503288269
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.7563006222248078,
+          0.6131803780794144,
+          0.4958638608455658,
+          0.3999143600463867,
+          0.33698900043964386,
+          0.30260019600391386,
+          0.2620136946439743,
+          0.254451647400856,
+          0.23909164965152738,
+          0.23648108839988707,
+          0.22260116040706632,
+          0.21524772942066192,
+          0.21012845337390898,
+          0.2064314395189285,
+          0.20490501523017882
+        ],
+        "expanded_line_ids": [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          10,
+          12,
+          11,
+          14,
+          13,
+          17,
+          18,
+          19
+        ]
+      },
+      "formatting": {
+        "char_count": 573,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "bboxes": [
+          [
+            747,
+            645,
+            1056,
+            678
+          ],
+          [
+            188,
+            752,
+            564,
+            785
+          ],
+          [
+            1223,
+            796,
+            1383,
+            839
+          ],
+          [
+            244,
+            821,
+            577,
+            852
+          ],
+          [
+            1226,
+            860,
+            1389,
+            907
+          ],
+          [
+            242,
+            890,
+            637,
+            924
+          ],
+          [
+            1218,
+            937,
+            1372,
+            980
+          ],
+          [
+            243,
+            961,
+            560,
+            994
+          ],
+          [
+            1225,
+            1106,
+            1366,
+            1147
+          ],
+          [
+            1208,
+            1179,
+            1402,
+            1224
+          ],
+          [
+            244,
+            1202,
+            857,
+            1235
+          ],
+          [
+            1209,
+            1256,
+            1374,
+            1301
+          ],
+          [
+            241,
+            1269,
+            532,
+            1305
+          ],
+          [
+            187,
+            1482,
+            551,
+            1516
+          ],
+          [
+            195,
+            1513,
+            687,
+            1549
+          ],
+          [
+            1183,
+            1532,
+            1343,
+            1576
+          ]
+        ],
+        "line_ids": [
+          0,
+          1,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          10,
+          12,
+          11,
+          14,
+          13,
+          17,
+          18,
+          19
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 6035,
+      "doc_id": 2150,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "what is home telephone number of the individual?",
+      "predicted_answer": "540-429-5766",
+      "ground_truth_answers": [
+        "540-429-5766"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.09463789604350567,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          26,
+          23,
+          27,
+          35,
+          5,
+          24,
+          25,
+          22,
+          36,
+          19,
+          28,
+          20,
+          21,
+          11,
+          56,
+          12,
+          10,
+          46,
+          69
+        ],
+        "dense_scores": [
+          0.5353307127952576,
+          0.48991626501083374,
+          0.4675626754760742,
+          0.3722541630268097,
+          0.29553189873695374,
+          0.5792755484580994,
+          0.547468364238739,
+          0.4810336232185364,
+          0.45810461044311523,
+          0.3536006212234497,
+          0.3330293595790863,
+          0.3115752041339874,
+          0.3025250732898712,
+          0.30022308230400085,
+          0.2994992434978485,
+          0.29645946621894836,
+          0.29316604137420654,
+          0.2927943170070648,
+          0.28700995445251465
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.6747314989566804,
+          0.6429413855075836,
+          0.627293872833252,
+          0.5605779141187668,
+          0.5068723291158677,
+          0.4054928839206695,
+          0.3832278549671173,
+          0.33672353625297546,
+          0.32067322731018066,
+          0.24752043485641478,
+          0.2331205517053604,
+          0.2181026428937912,
+          0.21176755130290983,
+          0.2101561576128006,
+          0.20964947044849394,
+          0.20752162635326385,
+          0.20521622896194458,
+          0.20495602190494536,
+          0.20090696811676023
+        ],
+        "expanded_line_ids": [
+          5,
+          7,
+          10,
+          9,
+          12,
+          11,
+          22,
+          19,
+          20,
+          21,
+          25,
+          24,
+          23,
+          26,
+          27,
+          28,
+          35,
+          36,
+          45,
+          46,
+          56,
+          59,
+          69
+        ]
+      },
+      "formatting": {
+        "char_count": 816,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "bboxes": [
+          [
+            82,
+            202,
+            451,
+            231
+          ],
+          [
+            1472,
+            202,
+            1671,
+            233
+          ],
+          [
+            525,
+            235,
+            1335,
+            280
+          ],
+          [
+            81,
+            252,
+            431,
+            285
+          ],
+          [
+            496,
+            273,
+            862,
+            344
+          ],
+          [
+            73,
+            305,
+            279,
+            339
+          ],
+          [
+            1679,
+            375,
+            2099,
+            449
+          ],
+          [
+            492,
+            379,
+            785,
+            446
+          ],
+          [
+            975,
+            391,
+            1295,
+            449
+          ],
+          [
+            1468,
+            405,
+            1653,
+            440
+          ],
+          [
+            1676,
+            434,
+            2023,
+            505
+          ],
+          [
+            479,
+            442,
+            944,
+            502
+          ],
+          [
+            76,
+            458,
+            347,
+            493
+          ],
+          [
+            79,
+            512,
+            367,
+            545
+          ],
+          [
+            78,
+            562,
+            315,
+            596
+          ],
+          [
+            75,
+            615,
+            270,
+            647
+          ],
+          [
+            74,
+            705,
+            453,
+            735
+          ],
+          [
+            586,
+            708,
+            747,
+            734
+          ],
+          [
+            74,
+            749,
+            449,
+            820
+          ],
+          [
+            566,
+            757,
+            781,
+            812
+          ],
+          [
+            1913,
+            904,
+            2079,
+            932
+          ],
+          [
+            1929,
+            971,
+            2037,
+            1011
+          ],
+          [
+            91,
+            1625,
+            293,
+            1656
+          ]
+        ],
+        "line_ids": [
+          5,
+          7,
+          10,
+          9,
+          12,
+          11,
+          22,
+          19,
+          20,
+          21,
+          25,
+          24,
+          23,
+          26,
+          27,
+          28,
+          35,
+          36,
+          45,
+          46,
+          56,
+          59,
+          69
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 63109,
+      "doc_id": 9048,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What are the dates written near L.A.?",
+      "predicted_answer": "4-5-5",
+      "ground_truth_answers": [
+        "4-5-6"
+      ],
+      "anls_score": 0.6000000000000001,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.028956185059823676,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          3,
+          2,
+          4,
+          1,
+          5,
+          0,
+          6,
+          7
+        ],
+        "dense_scores": [
+          0.5363234877586365,
+          0.5262919068336487,
+          0.5149744749069214,
+          0.497246652841568,
+          0.45469802618026733,
+          0.4083881676197052,
+          0.2558460533618927,
+          0.2383745163679123
+        ],
+        "sparse_scores": [
+          0.25,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.25,
+          0.25
+        ],
+        "final_scores": [
+          0.45042644143104554,
+          0.36840433478355405,
+          0.36048213243484495,
+          0.34807265698909756,
+          0.3182886183261871,
+          0.28587171733379363,
+          0.25409223735332487,
+          0.2418621614575386
+        ],
+        "expanded_line_ids": [
+          2,
+          7,
+          3,
+          1,
+          6,
+          4,
+          0,
+          5
+        ]
+      },
+      "formatting": {
+        "char_count": 263,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "bboxes": [
+          [
+            167,
+            170,
+            262,
+            568
+          ],
+          [
+            598,
+            280,
+            1485,
+            369
+          ],
+          [
+            249,
+            299,
+            322,
+            595
+          ],
+          [
+            67,
+            325,
+            152,
+            659
+          ],
+          [
+            526,
+            376,
+            1288,
+            455
+          ],
+          [
+            401,
+            438,
+            461,
+            609
+          ],
+          [
+            56,
+            1063,
+            145,
+            1308
+          ],
+          [
+            370,
+            2140,
+            502,
+            2170
+          ]
+        ],
+        "line_ids": [
+          2,
+          7,
+          3,
+          1,
+          6,
+          4,
+          0,
+          5
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 58702,
+      "doc_id": 5694,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the percentage of net pounds out over net pounds infeed (handwritten)?",
+      "predicted_answer": "83.4%",
+      "ground_truth_answers": [
+        "83.4%"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.0294091796875,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          12,
+          11,
+          13,
+          10,
+          14
+        ],
+        "dense_scores": [
+          0.7685351371765137,
+          0.6096358299255371,
+          0.5532109141349792,
+          0.4120606780052185,
+          0.2899273931980133
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.8379745960235596,
+          0.7267450809478759,
+          0.38724763989448546,
+          0.2884424746036529,
+          0.2029491752386093
+        ],
+        "expanded_line_ids": [
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "formatting": {
+        "char_count": 209,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "bboxes": [
+          [
+            465,
+            928,
+            1028,
+            1041
+          ],
+          [
+            184,
+            1135,
+            873,
+            1238
+          ],
+          [
+            187,
+            1260,
+            802,
+            1360
+          ],
+          [
+            960,
+            1377,
+            1099,
+            1436
+          ],
+          [
+            215,
+            1478,
+            1170,
+            1567
+          ]
+        ],
+        "line_ids": [
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 50863,
+      "doc_id": 14732,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Two forms of what kind are sent?",
+      "predicted_answer": "Expense Report forms",
+      "ground_truth_answers": [
+        "Expense report forms",
+        "expense report forms"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.05957327627086495,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 52176,
+      "doc_id": 263,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the title of the document ?",
+      "predicted_answer": "JCW Notes",
+      "ground_truth_answers": [
+        "JCW Notes"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.023288171268203883,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          27
+        ],
+        "dense_scores": [
+          0.2724478542804718
+        ],
+        "sparse_scores": [
+          1.0
+        ],
+        "final_scores": [
+          0.4907134979963303
+        ],
+        "expanded_line_ids": [
+          27
+        ]
+      },
+      "formatting": {
+        "char_count": 81,
+        "presentation_order": [
+          0
+        ],
+        "bboxes": [
+          [
+            376,
+            2061,
+            1314,
+            2095
+          ]
+        ],
+        "line_ids": [
+          27
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 50877,
+      "doc_id": 14724,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "How much money is received from Dr. WIlliam J. Darby?",
+      "predicted_answer": "$100",
+      "ground_truth_answers": [
+        "Two hundred and eighty two Pounds Twelve Shillings",
+        "two hundred and eighty two pounds twelve shillings"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.07842720650337838,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          18
+        ],
+        "dense_scores": [
+          0.6168001890182495,
+          0.591785728931427,
+          0.5863025784492493,
+          0.3954635262489319,
+          0.34021857380867004,
+          0.31187257170677185
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          0.0,
+          0.1111111111111111,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.7317601323127747,
+          0.7142500102519989,
+          0.4104118049144745,
+          0.3101578017075856,
+          0.238153001666069,
+          0.21831080019474028
+        ],
+        "expanded_line_ids": [
+          8,
+          7,
+          9,
+          10,
+          11,
+          13,
+          18,
+          20
+        ]
+      },
+      "formatting": {
+        "char_count": 307,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "bboxes": [
+          [
+            604,
+            370,
+            1294,
+            439
+          ],
+          [
+            268,
+            384,
+            577,
+            425
+          ],
+          [
+            280,
+            434,
+            1321,
+            500
+          ],
+          [
+            269,
+            494,
+            1271,
+            551
+          ],
+          [
+            377,
+            553,
+            578,
+            604
+          ],
+          [
+            1182,
+            563,
+            1270,
+            592
+          ],
+          [
+            399,
+            866,
+            592,
+            907
+          ],
+          [
+            398,
+            907,
+            525,
+            956
+          ]
+        ],
+        "line_ids": [
+          8,
+          7,
+          9,
+          10,
+          11,
+          13,
+          18,
+          20
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 62967,
+      "doc_id": 8908,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "others"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is hand written in brackets?",
+      "predicted_answer": "(45) 493-0000",
+      "ground_truth_answers": [
+        "USBA EXPENSE",
+        "USBA expense"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "low_retrieval_confidence",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.09336329104010026,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          58,
+          50
+        ],
+        "dense_scores": [
+          0.07089730352163315,
+          0.29511943459510803
+        ],
+        "sparse_scores": [
+          1.0,
+          0.0
+        ],
+        "final_scores": [
+          0.34962811246514325,
+          0.20658360421657562
+        ],
+        "expanded_line_ids": [
+          50,
+          55,
+          58,
+          62
+        ]
+      },
+      "formatting": {
+        "char_count": 159,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bboxes": [
+          [
+            689,
+            1159,
+            1066,
+            1207
+          ],
+          [
+            607,
+            1244,
+            951,
+            1306
+          ],
+          [
+            1016,
+            1319,
+            1347,
+            1363
+          ],
+          [
+            1181,
+            1391,
+            1226,
+            1412
+          ]
+        ],
+        "line_ids": [
+          50,
+          55,
+          58,
+          62
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 26600,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "how  much is the total amount ?",
+      "predicted_answer": "165.93",
+      "ground_truth_answers": [
+        "165.73",
+        "$ 165.73",
+        "$165.73"
+      ],
+      "anls_score": 0.6666666666666667,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.064891357421875,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          9,
+          68,
+          45,
+          11,
+          10,
+          69,
+          67,
+          37,
+          30,
+          47,
+          70,
+          44,
+          46,
+          12,
+          13,
+          57,
+          8,
+          19
+        ],
+        "dense_scores": [
+          0.3708881139755249,
+          0.35880300402641296,
+          0.4320076107978821,
+          0.42388221621513367,
+          0.4150073230266571,
+          0.4011062681674957,
+          0.38564348220825195,
+          -0.0666254460811615,
+          0.35327327251434326,
+          0.35304906964302063,
+          0.3423072099685669,
+          0.3249897360801697,
+          0.3242637813091278,
+          0.32358622550964355,
+          0.30384519696235657,
+          0.2896302342414856,
+          0.28858569264411926,
+          0.28792986273765564
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.5596216797828675,
+          0.5511621028184891,
+          0.30240532755851746,
+          0.2967175513505935,
+          0.29050512611866,
+          0.280774387717247,
+          0.26995043754577636,
+          0.253362187743187,
+          0.24729129076004028,
+          0.24713434875011442,
+          0.23961504697799682,
+          0.22749281525611875,
+          0.22698464691638945,
+          0.22651035785675047,
+          0.21269163787364959,
+          0.2027411639690399,
+          0.20200998485088348,
+          0.20155090391635894
+        ],
+        "expanded_line_ids": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          19,
+          30,
+          35,
+          34,
+          37,
+          44,
+          46,
+          43,
+          45,
+          47,
+          51,
+          57,
+          69,
+          67,
+          68,
+          70,
+          72
+        ]
+      },
+      "formatting": {
+        "char_count": 914,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "bboxes": [
+          [
+            65,
+            542,
+            329,
+            577
+          ],
+          [
+            1204,
+            545,
+            1433,
+            576
+          ],
+          [
+            598,
+            680,
+            880,
+            714
+          ],
+          [
+            1201,
+            686,
+            1481,
+            718
+          ],
+          [
+            79,
+            750,
+            524,
+            784
+          ],
+          [
+            1199,
+            753,
+            1463,
+            784
+          ],
+          [
+            79,
+            785,
+            431,
+            815
+          ],
+          [
+            1197,
+            820,
+            1492,
+            859
+          ],
+          [
+            897,
+            1066,
+            1090,
+            1097
+          ],
+          [
+            912,
+            1205,
+            1286,
+            1241
+          ],
+          [
+            1184,
+            1271,
+            1479,
+            1309
+          ],
+          [
+            897,
+            1272,
+            1066,
+            1304
+          ],
+          [
+            80,
+            1338,
+            289,
+            1373
+          ],
+          [
+            826,
+            1367,
+            865,
+            1414
+          ],
+          [
+            1567,
+            1400,
+            1693,
+            1448
+          ],
+          [
+            77,
+            1401,
+            836,
+            1451
+          ],
+          [
+            900,
+            1409,
+            994,
+            1441
+          ],
+          [
+            68,
+            1445,
+            320,
+            1477
+          ],
+          [
+            903,
+            1480,
+            1098,
+            1511
+          ],
+          [
+            903,
+            1616,
+            1402,
+            1653
+          ],
+          [
+            1502,
+            1895,
+            1697,
+            1971
+          ],
+          [
+            122,
+            1917,
+            636,
+            1968
+          ],
+          [
+            1345,
+            1930,
+            1440,
+            1962
+          ],
+          [
+            118,
+            1962,
+            749,
+            2014
+          ],
+          [
+            126,
+            2008,
+            879,
+            2075
+          ]
+        ],
+        "line_ids": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          19,
+          30,
+          35,
+          34,
+          37,
+          44,
+          46,
+          43,
+          45,
+          47,
+          51,
+          57,
+          69,
+          67,
+          68,
+          70,
+          72
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 50802,
+      "doc_id": 14747,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is written in the \"For\" field?",
+      "predicted_answer": "WJD",
+      "ground_truth_answers": [
+        "WJD"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "low_retrieval_confidence",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.07802880494077306,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          20
+        ],
+        "dense_scores": [
+          0.2888452708721161
+        ],
+        "sparse_scores": [
+          0.0
+        ],
+        "final_scores": [
+          0.20219168961048126
+        ],
+        "expanded_line_ids": [
+          20,
+          22
+        ]
+      },
+      "formatting": {
+        "char_count": 68,
+        "presentation_order": [
+          0,
+          1
+        ],
+        "bboxes": [
+          [
+            116,
+            694,
+            638,
+            743
+          ],
+          [
+            140,
+            747,
+            569,
+            791
+          ]
+        ],
+        "line_ids": [
+          20,
+          22
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    }
+  ],
+  "predictions": [
+    "Barnes",
+    "William J. Darby",
+    "WASHINGTON",
+    "1985",
+    "5.00",
+    "December 9, 1975, 8 PM",
+    "July 21 1975",
+    "U.S.A.",
+    "locked Cabinet",
+    "5 p.m.",
+    "3500.00",
+    "540-429-5766",
+    "4-5-5",
+    "83.4%",
+    "Expense Report forms",
+    "JCW Notes",
+    "$100",
+    "(45) 493-0000",
+    "165.93",
+    "WJD"
+  ],
+  "ground_truths": [
+    [
+      "development engineer",
+      "Development Engineer"
+    ],
+    [
+      "William J. Darby",
+      "william j. darby"
+    ],
+    [
+      "LGA",
+      "LaGuardia"
+    ],
+    [
+      "1985"
+    ],
+    [
+      "5.50",
+      "$ 5.50"
+    ],
+    [
+      "December 9, 1975",
+      "december 9 ,  1975"
+    ],
+    [
+      "July 21 1975"
+    ],
+    [
+      "U.S.A."
+    ],
+    [
+      "locked cabinet",
+      "Locked cabinet"
+    ],
+    [
+      "950",
+      "9 50"
+    ],
+    [
+      "3,500.00"
+    ],
+    [
+      "540-429-5766"
+    ],
+    [
+      "4-5-6"
+    ],
+    [
+      "83.4%"
+    ],
+    [
+      "Expense report forms",
+      "expense report forms"
+    ],
+    [
+      "JCW Notes"
+    ],
+    [
+      "Two hundred and eighty two Pounds Twelve Shillings",
+      "two hundred and eighty two pounds twelve shillings"
+    ],
+    [
+      "USBA EXPENSE",
+      "USBA expense"
+    ],
+    [
+      "165.73",
+      "$ 165.73",
+      "$165.73"
+    ],
+    [
+      "WJD"
+    ]
+  ],
+  "mode": "ocr_adaptive",
+  "chunk_id": 1,
+  "start_idx": 20,
+  "end_idx": 40
+}

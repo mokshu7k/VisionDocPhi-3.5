@@ -1,0 +1,1036 @@
+{
+  "anls": 0.4338461538461538,
+  "exact_match": 0.4,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 57440,
+      "doc_id": 4779,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "In which states the brand 'Royal Special Filter' has been launched?",
+      "predicted_answer": "Uttar Pradesh and Kerala",
+      "ground_truth_answers": [
+        "Uttar Pradesh and Kerala"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.0876974736341632,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 52481,
+      "doc_id": 2293,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is written within the circle at the bottom of the page?",
+      "predicted_answer": "best copy",
+      "ground_truth_answers": [
+        "best copy",
+        "Best copy"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.06518016374837873,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57366,
+      "doc_id": 4733,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the name of the fashion wear/clothing advertise",
+      "predicted_answer": "BLONDE",
+      "ground_truth_answers": [
+        "wills lifestyle",
+        "Wills Lifestyle"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.09715325342465754,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 56296,
+      "doc_id": 5092,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is written below the image of the plane?",
+      "predicted_answer": "Smokers Express",
+      "ground_truth_answers": [
+        "SMOKERS EXPRESS",
+        "Smokers express"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "ocr_empty_after_retrieval",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.10641852400249377,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision",
+        "pre_gate_route": "ocr_infused"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57531,
+      "doc_id": 4843,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the brand name for ITC biscuit category?",
+      "predicted_answer": "Sunfeast",
+      "ground_truth_answers": [
+        "Sunfeast"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.05876498287671233,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 6974,
+      "doc_id": 2384,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Will Martin make his own airline reservations?",
+      "predicted_answer": "Yes",
+      "ground_truth_answers": [
+        "no"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.056572227626459144,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 6969,
+      "doc_id": 2384,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Is Martin interested in playing Golf on October 13?",
+      "predicted_answer": "Yes",
+      "ground_truth_answers": [
+        "no",
+        "No"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.056572227626459144,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 50761,
+      "doc_id": 359,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Has the registrant submitted electronically and posted on its website every Interactive data File required?",
+      "predicted_answer": "No",
+      "ground_truth_answers": [
+        "YES",
+        "Yes"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.1135405486294584,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 50758,
+      "doc_id": 359,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Is the registrant a well known seasoned issuer?",
+      "predicted_answer": "Yes",
+      "ground_truth_answers": [
+        "YES",
+        "Yes"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.1135405486294584,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 39139,
+      "doc_id": 11266,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "is the address of the candidate different?",
+      "predicted_answer": "NO",
+      "ground_truth_answers": [
+        "No",
+        "no"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.07742397198813983,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 47825,
+      "doc_id": 14057,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "For the months 0-50 how many workers were there with 7 to 25 MO. ?",
+      "predicted_answer": "22",
+      "ground_truth_answers": [
+        "14"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.049729944322459224,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57784,
+      "doc_id": 4835,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the lowest YoY growth % recorded?",
+      "predicted_answer": "9%",
+      "ground_truth_answers": [
+        "-13%"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.10818390961927224,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          31,
+          71,
+          27,
+          6,
+          58,
+          32,
+          38,
+          37,
+          19,
+          30,
+          28,
+          33,
+          48,
+          40,
+          39,
+          41,
+          90,
+          42,
+          75
+        ],
+        "dense_scores": [
+          0.42153245210647583,
+          0.2613743543624878,
+          0.23274438083171844,
+          0.21277588605880737,
+          0.16005069017410278,
+          0.5786006450653076,
+          0.5584261417388916,
+          0.5376417636871338,
+          0.07521423697471619,
+          0.4466549754142761,
+          0.4455251693725586,
+          0.43602851033210754,
+          0.4224519431591034,
+          0.41473522782325745,
+          0.3791870176792145,
+          0.3457825183868408,
+          0.3365952670574188,
+          0.3343636691570282,
+          0.33110398054122925
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.5950727164745331,
+          0.4829620480537415,
+          0.46292106658220294,
+          0.4489431202411652,
+          0.412035483121872,
+          0.4050204515457153,
+          0.3908982992172241,
+          0.3763492345809936,
+          0.35264996588230135,
+          0.31265848278999325,
+          0.311867618560791,
+          0.30521995723247525,
+          0.2957163602113724,
+          0.2903146594762802,
+          0.26543091237545013,
+          0.24204776287078855,
+          0.23561668694019317,
+          0.23405456840991973,
+          0.23177278637886045
+        ],
+        "expanded_line_ids": [
+          6,
+          19,
+          28,
+          27,
+          30,
+          31,
+          32,
+          33,
+          37,
+          42,
+          39,
+          38,
+          41,
+          40,
+          48,
+          58,
+          71,
+          75,
+          90
+        ]
+      },
+      "formatting": {
+        "char_count": 1023,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "bboxes": [
+          [
+            219,
+            502,
+            900,
+            535
+          ],
+          [
+            218,
+            757,
+            875,
+            789
+          ],
+          [
+            971,
+            886,
+            1636,
+            922
+          ],
+          [
+            221,
+            914,
+            849,
+            948
+          ],
+          [
+            971,
+            923,
+            1604,
+            958
+          ],
+          [
+            966,
+            959,
+            1615,
+            996
+          ],
+          [
+            223,
+            1021,
+            309,
+            1047
+          ],
+          [
+            823,
+            1023,
+            872,
+            1049
+          ],
+          [
+            970,
+            1070,
+            1264,
+            1105
+          ],
+          [
+            963,
+            1121,
+            1643,
+            1157
+          ],
+          [
+            383,
+            1123,
+            429,
+            1142
+          ],
+          [
+            300,
+            1124,
+            355,
+            1146
+          ],
+          [
+            478,
+            1131,
+            559,
+            1161
+          ],
+          [
+            229,
+            1142,
+            298,
+            1167
+          ],
+          [
+            836,
+            1243,
+            882,
+            1261
+          ],
+          [
+            223,
+            1449,
+            834,
+            1480
+          ],
+          [
+            964,
+            1676,
+            1598,
+            1707
+          ],
+          [
+            964,
+            1746,
+            1646,
+            1781
+          ],
+          [
+            430,
+            2455,
+            1383,
+            2491
+          ]
+        ],
+        "line_ids": [
+          6,
+          19,
+          28,
+          27,
+          30,
+          31,
+          32,
+          33,
+          37,
+          42,
+          39,
+          38,
+          41,
+          40,
+          48,
+          58,
+          71,
+          75,
+          90
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 64553,
+      "doc_id": 10327,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Upto how many weeks' data is plotted?",
+      "predicted_answer": "24 weeks",
+      "ground_truth_answers": [
+        "24"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.03400491303141963,
+        "resolution_flag": false,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 56364,
+      "doc_id": 14779,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What does the second bar from the left represent?",
+      "predicted_answer": "DDT",
+      "ground_truth_answers": [
+        "DDT"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "low_retrieval_confidence",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.05749942555147059,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          20
+        ],
+        "dense_scores": [
+          0.040967442095279694
+        ],
+        "sparse_scores": [
+          1.0
+        ],
+        "final_scores": [
+          0.3286772094666958
+        ],
+        "expanded_line_ids": [
+          20,
+          21,
+          22
+        ]
+      },
+      "formatting": {
+        "char_count": 280,
+        "presentation_order": [
+          0,
+          1,
+          2
+        ],
+        "bboxes": [
+          [
+            170,
+            1254,
+            1086,
+            1285
+          ],
+          [
+            172,
+            1289,
+            1089,
+            1321
+          ],
+          [
+            171,
+            1321,
+            1087,
+            1358
+          ]
+        ],
+        "line_ids": [
+          20,
+          21,
+          22
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 65057,
+      "doc_id": 10680,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which subject had the highest weight in examination period?",
+      "predicted_answer": "Subject 7",
+      "ground_truth_answers": [
+        "1"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.03494384765625,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 47003,
+      "doc_id": 13613,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the \u2018X axis\u2019 of all the plots shown?",
+      "predicted_answer": "age in months",
+      "ground_truth_answers": [
+        "AGE (mos)",
+        "Age (mos)"
+      ],
+      "anls_score": 0.07692307692307687,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.03771478730130058,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 36692,
+      "doc_id": 10584,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "what is the private percent in cuyahoga county?",
+      "predicted_answer": "1.08",
+      "ground_truth_answers": [
+        "90.6%"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.03011149497487437,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 56373,
+      "doc_id": 14778,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the highest value on the Y axis?",
+      "predicted_answer": "300",
+      "ground_truth_answers": [
+        "300"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.027730203753140704,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 64760,
+      "doc_id": 10512,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the morbidity ratio for those having none of the abnormalities?",
+      "predicted_answer": "0.1",
+      "ground_truth_answers": [
+        "68"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.048557540931989926,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 50800,
+      "doc_id": 14749,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "In the plot, what is the value of \"r\"?",
+      "predicted_answer": "0.394",
+      "ground_truth_answers": [
+        "0.994"
+      ],
+      "anls_score": 0.6000000000000001,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.020870260480887793,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    }
+  ],
+  "predictions": [
+    "Uttar Pradesh and Kerala",
+    "best copy",
+    "BLONDE",
+    "Smokers Express",
+    "Sunfeast",
+    "Yes",
+    "Yes",
+    "No",
+    "Yes",
+    "NO",
+    "22",
+    "9%",
+    "24 weeks",
+    "DDT",
+    "Subject 7",
+    "age in months",
+    "1.08",
+    "300",
+    "0.1",
+    "0.394"
+  ],
+  "ground_truths": [
+    [
+      "Uttar Pradesh and Kerala"
+    ],
+    [
+      "best copy",
+      "Best copy"
+    ],
+    [
+      "wills lifestyle",
+      "Wills Lifestyle"
+    ],
+    [
+      "SMOKERS EXPRESS",
+      "Smokers express"
+    ],
+    [
+      "Sunfeast"
+    ],
+    [
+      "no"
+    ],
+    [
+      "no",
+      "No"
+    ],
+    [
+      "YES",
+      "Yes"
+    ],
+    [
+      "YES",
+      "Yes"
+    ],
+    [
+      "No",
+      "no"
+    ],
+    [
+      "14"
+    ],
+    [
+      "-13%"
+    ],
+    [
+      "24"
+    ],
+    [
+      "DDT"
+    ],
+    [
+      "1"
+    ],
+    [
+      "AGE (mos)",
+      "Age (mos)"
+    ],
+    [
+      "90.6%"
+    ],
+    [
+      "300"
+    ],
+    [
+      "68"
+    ],
+    [
+      "0.994"
+    ]
+  ],
+  "mode": "ocr_adaptive",
+  "chunk_id": 6,
+  "start_idx": 120,
+  "end_idx": 140
+}

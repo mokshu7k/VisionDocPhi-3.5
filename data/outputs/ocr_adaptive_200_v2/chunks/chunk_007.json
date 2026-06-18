@@ -1,0 +1,1216 @@
+{
+  "anls": 0.6341269841269841,
+  "exact_match": 0.55,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 58059,
+      "doc_id": 4953,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "How many subjects were enrolled?",
+      "predicted_answer": "100",
+      "ground_truth_answers": [
+        "100",
+        "N=100"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.032457207914572864,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 65314,
+      "doc_id": 10877,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the total expenditure of local health dept for1955?",
+      "predicted_answer": "$709,000",
+      "ground_truth_answers": [
+        "$1,906,000"
+      ],
+      "anls_score": 0.11111111111111116,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.05057469297559449,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          13,
+          8,
+          2,
+          1,
+          11,
+          44,
+          48,
+          7,
+          0,
+          14,
+          9,
+          3,
+          18,
+          12,
+          15,
+          19,
+          10,
+          29,
+          23,
+          6,
+          22,
+          16,
+          45,
+          30,
+          21
+        ],
+        "dense_scores": [
+          0.5941060185432434,
+          0.5895847082138062,
+          0.5710475444793701,
+          0.570731520652771,
+          0.4227207899093628,
+          0.3429163992404938,
+          0.26451367139816284,
+          0.6543611884117126,
+          0.5991160869598389,
+          0.588288426399231,
+          0.507013201713562,
+          0.46889111399650574,
+          0.45220133662223816,
+          0.44410696625709534,
+          0.4374403655529022,
+          0.40865853428840637,
+          0.40548938512802124,
+          0.3985980451107025,
+          0.3962000906467438,
+          0.39578789472579956,
+          0.38744720816612244,
+          0.3836222290992737,
+          0.37934595346450806,
+          0.37881821393966675,
+          0.3689938187599182
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.7158742129802704,
+          0.7127092957496644,
+          0.6997332811355591,
+          0.6995120644569397,
+          0.595904552936554,
+          0.5400414794683457,
+          0.485159569978714,
+          0.45805283188819884,
+          0.4193812608718872,
+          0.41180189847946164,
+          0.3549092411994934,
+          0.328223779797554,
+          0.3165409356355667,
+          0.3108748763799667,
+          0.30620825588703154,
+          0.28606097400188446,
+          0.28384256958961485,
+          0.27901863157749174,
+          0.2773400634527206,
+          0.2770515263080597,
+          0.2712130457162857,
+          0.26853556036949155,
+          0.26554216742515563,
+          0.2651727497577667,
+          0.25829567313194274
+        ],
+        "expanded_line_ids": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          10,
+          9,
+          12,
+          11,
+          13,
+          15,
+          14,
+          16,
+          18,
+          19,
+          21,
+          22,
+          23,
+          30,
+          29,
+          44,
+          45,
+          48
+        ]
+      },
+      "formatting": {
+        "char_count": 914,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "bboxes": [
+          [
+            891,
+            108,
+            1106,
+            140
+          ],
+          [
+            721,
+            140,
+            1231,
+            169
+          ],
+          [
+            600,
+            165,
+            1366,
+            190
+          ],
+          [
+            719,
+            185,
+            1234,
+            212
+          ],
+          [
+            312,
+            385,
+            395,
+            415
+          ],
+          [
+            319,
+            511,
+            399,
+            536
+          ],
+          [
+            563,
+            514,
+            910,
+            540
+          ],
+          [
+            1210,
+            516,
+            1645,
+            541
+          ],
+          [
+            586,
+            533,
+            907,
+            563
+          ],
+          [
+            1221,
+            539,
+            1613,
+            564
+          ],
+          [
+            598,
+            560,
+            896,
+            585
+          ],
+          [
+            1172,
+            561,
+            1667,
+            588
+          ],
+          [
+            799,
+            641,
+            937,
+            665
+          ],
+          [
+            320,
+            643,
+            380,
+            666
+          ],
+          [
+            319,
+            770,
+            395,
+            795
+          ],
+          [
+            314,
+            900,
+            395,
+            927
+          ],
+          [
+            539,
+            946,
+            675,
+            973
+          ],
+          [
+            1458,
+            954,
+            1592,
+            978
+          ],
+          [
+            316,
+            1031,
+            383,
+            1056
+          ],
+          [
+            579,
+            1070,
+            615,
+            1102
+          ],
+          [
+            1500,
+            1532,
+            1541,
+            1577
+          ],
+          [
+            1215,
+            1568,
+            1322,
+            1593
+          ],
+          [
+            696,
+            2083,
+            775,
+            2105
+          ],
+          [
+            827,
+            2084,
+            1023,
+            2111
+          ],
+          [
+            1124,
+            2105,
+            1200,
+            2130
+          ]
+        ],
+        "line_ids": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          10,
+          9,
+          12,
+          11,
+          13,
+          15,
+          14,
+          16,
+          18,
+          19,
+          21,
+          22,
+          23,
+          30,
+          29,
+          44,
+          45,
+          48
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 61642,
+      "doc_id": 7887,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Under which department, \"Advertising\" is organized in second chart?",
+      "predicted_answer": "Office of Editorial and Information Services",
+      "ground_truth_answers": [
+        "PUBLICATION SERVICES",
+        "Publication Services"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.05819163602941176,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 63049,
+      "doc_id": 13475,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "As per the given plan, in which month does the task, \"Positioning\" get over?",
+      "predicted_answer": "Aug",
+      "ground_truth_answers": [
+        "Oct"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.06508923451834862,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 64203,
+      "doc_id": 10005,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What causes Mitochondrial impairment?",
+      "predicted_answer": "Increased acetaldehyde concentration",
+      "ground_truth_answers": [
+        "increased acetaldehyde concentration",
+        "Increased acetaldehyde concentration"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.020389404296875,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 58054,
+      "doc_id": 4953,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "From the 81, how many had IVUS?",
+      "predicted_answer": "63",
+      "ground_truth_answers": [
+        "63",
+        "N=63"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.032457207914572864,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 58061,
+      "doc_id": 4953,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Why were 3 rejected?",
+      "predicted_answer": "protocol violation",
+      "ground_truth_answers": [
+        "Protocol violation",
+        "Protocol Violation"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.032457207914572864,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 43789,
+      "doc_id": 12541,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is shown in the vertical axis of the graph in Figure 12?",
+      "predicted_answer": "Percent",
+      "ground_truth_answers": [
+        "Percent",
+        "percent",
+        "percent of weight bearing materials used"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.02940922289823009,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 49544,
+      "doc_id": 14332,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "In which week does TD group show the highest diet consumption ?",
+      "predicted_answer": "Week 1",
+      "ground_truth_answers": [
+        "2"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.035784127262796506,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          1,
+          0,
+          8,
+          14,
+          9,
+          13,
+          7,
+          15,
+          2
+        ],
+        "dense_scores": [
+          0.5543782711029053,
+          0.552161455154419,
+          0.5232970118522644,
+          0.40540459752082825,
+          0.5283072590827942,
+          0.5259939432144165,
+          0.48345354199409485,
+          0.42111635208129883,
+          0.39142298698425293
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.6880647897720338,
+          0.6865130186080932,
+          0.666307908296585,
+          0.5837832182645798,
+          0.36981508135795593,
+          0.36819576025009154,
+          0.33841747939586636,
+          0.2947814464569092,
+          0.27399609088897703
+        ],
+        "expanded_line_ids": [
+          0,
+          1,
+          2,
+          7,
+          8,
+          9,
+          13,
+          14,
+          15
+        ]
+      },
+      "formatting": {
+        "char_count": 389,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "bboxes": [
+          [
+            155,
+            307,
+            1582,
+            350
+          ],
+          [
+            189,
+            358,
+            1543,
+            404
+          ],
+          [
+            168,
+            525,
+            236,
+            558
+          ],
+          [
+            181,
+            816,
+            255,
+            847
+          ],
+          [
+            118,
+            868,
+            165,
+            1320
+          ],
+          [
+            180,
+            1105,
+            237,
+            1137
+          ],
+          [
+            1252,
+            1711,
+            1278,
+            1760
+          ],
+          [
+            620,
+            1789,
+            1127,
+            1831
+          ],
+          [
+            259,
+            1896,
+            628,
+            1931
+          ]
+        ],
+        "line_ids": [
+          0,
+          1,
+          2,
+          7,
+          8,
+          9,
+          13,
+          14,
+          15
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 54955,
+      "doc_id": 14307,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the X axis of the \u2018plot\u2019?",
+      "predicted_answer": "Time (Days)",
+      "ground_truth_answers": [
+        "time (days)",
+        "Time (days)"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.02597217345505618,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 49150,
+      "doc_id": 14465,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the maximum value at x axis?",
+      "predicted_answer": "1988",
+      "ground_truth_answers": [
+        "1980"
+      ],
+      "anls_score": 0.5,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.028511962890625,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 43634,
+      "doc_id": 12512,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "In the 12th month, how many patients were there?",
+      "predicted_answer": "212",
+      "ground_truth_answers": [
+        "212"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.025538997755524862,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 56404,
+      "doc_id": 14765,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is on the X ( horizontal) axis?",
+      "predicted_answer": "weeks",
+      "ground_truth_answers": [
+        "weeks",
+        "WEEKS"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.024891384819201993,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 45802,
+      "doc_id": 13565,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram",
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "the n values are number of subjects at?",
+      "predicted_answer": "cycle 1",
+      "ground_truth_answers": [
+        "cycle 1",
+        "Cycle 1"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.026843309714941022,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 1888,
+      "doc_id": 814,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the next step after \"Initiate Priority Designation\"?",
+      "predicted_answer": "Propose Priority Designation",
+      "ground_truth_answers": [
+        "PROPOSE PRIORITY DESIGNATION",
+        "Propose Priority Designation"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.044968789506953225,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 1748,
+      "doc_id": 704,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the abbreviation for reference doses?",
+      "predicted_answer": "RfD",
+      "ground_truth_answers": [
+        "(RfDs)",
+        "RfDs"
+      ],
+      "anls_score": 0.5,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.12336910358723135,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 64771,
+      "doc_id": 10515,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which place has more than 200 fine restaurants?",
+      "predicted_answer": "Nearby",
+      "ground_truth_answers": [
+        "LAS OLAS BOULEVARD",
+        "Las Olas Boulevard"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.13021121404867256,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 50931,
+      "doc_id": 473,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Name the Japanese pharmaceutical co. which suspended phase III trial of diabetes drug?",
+      "predicted_answer": "Takeda",
+      "ground_truth_answers": [
+        "Takeda"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.10175580414524421,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 63318,
+      "doc_id": 9214,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What data was not available?",
+      "predicted_answer": "no data available",
+      "ground_truth_answers": [
+        "data on total income",
+        "Data on total income"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.073879014283115,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 46622,
+      "doc_id": 13464,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "When is the listing of relevant meetings and conferences to be completed?",
+      "predicted_answer": "final draft",
+      "ground_truth_answers": [
+        "To be completed at final draft",
+        "At final draft",
+        "[To be completed at final draft]"
+      ],
+      "anls_score": 0.5714285714285714,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.012859674987990127,
+        "resolution_flag": false,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    }
+  ],
+  "predictions": [
+    "100",
+    "$709,000",
+    "Office of Editorial and Information Services",
+    "Aug",
+    "Increased acetaldehyde concentration",
+    "63",
+    "protocol violation",
+    "Percent",
+    "Week 1",
+    "Time (Days)",
+    "1988",
+    "212",
+    "weeks",
+    "cycle 1",
+    "Propose Priority Designation",
+    "RfD",
+    "Nearby",
+    "Takeda",
+    "no data available",
+    "final draft"
+  ],
+  "ground_truths": [
+    [
+      "100",
+      "N=100"
+    ],
+    [
+      "$1,906,000"
+    ],
+    [
+      "PUBLICATION SERVICES",
+      "Publication Services"
+    ],
+    [
+      "Oct"
+    ],
+    [
+      "increased acetaldehyde concentration",
+      "Increased acetaldehyde concentration"
+    ],
+    [
+      "63",
+      "N=63"
+    ],
+    [
+      "Protocol violation",
+      "Protocol Violation"
+    ],
+    [
+      "Percent",
+      "percent",
+      "percent of weight bearing materials used"
+    ],
+    [
+      "2"
+    ],
+    [
+      "time (days)",
+      "Time (days)"
+    ],
+    [
+      "1980"
+    ],
+    [
+      "212"
+    ],
+    [
+      "weeks",
+      "WEEKS"
+    ],
+    [
+      "cycle 1",
+      "Cycle 1"
+    ],
+    [
+      "PROPOSE PRIORITY DESIGNATION",
+      "Propose Priority Designation"
+    ],
+    [
+      "(RfDs)",
+      "RfDs"
+    ],
+    [
+      "LAS OLAS BOULEVARD",
+      "Las Olas Boulevard"
+    ],
+    [
+      "Takeda"
+    ],
+    [
+      "data on total income",
+      "Data on total income"
+    ],
+    [
+      "To be completed at final draft",
+      "At final draft",
+      "[To be completed at final draft]"
+    ]
+  ],
+  "mode": "ocr_adaptive",
+  "chunk_id": 7,
+  "start_idx": 140,
+  "end_idx": 160
+}

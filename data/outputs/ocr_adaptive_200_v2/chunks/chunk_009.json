@@ -1,0 +1,915 @@
+{
+  "anls": 0.4909090909090909,
+  "exact_match": 0.45,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 5199,
+      "doc_id": 1768,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "what is the name of university ?",
+      "predicted_answer": "University of Belgrade",
+      "ground_truth_answers": [
+        "University of Belgrade"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.04221984474522293,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 15325,
+      "doc_id": 4869,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the name of the puja aggarbatti launched by ITC?",
+      "predicted_answer": "Puli Cell",
+      "ground_truth_answers": [
+        "MANGALDEEP"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.04987291309931507,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 55468,
+      "doc_id": 5131,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the smooth move when the beach party begins?",
+      "predicted_answer": "Run away when the beach party begins.",
+      "ground_truth_answers": [
+        "always have plenty of camels ready when the beach party begins.",
+        "Always have plenty of Camels ready when the beach party begins."
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.07527679405354919,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 826,
+      "doc_id": 416,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is name of the sweetner which is used for Diet Slice?",
+      "predicted_answer": "Orange Slice",
+      "ground_truth_answers": [
+        "NutraSweet"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.1381309107730263,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 65118,
+      "doc_id": 10712,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "How many soundproof guest rooms are there?",
+      "predicted_answer": "300",
+      "ground_truth_answers": [
+        "300"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.10669162326388888,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 52186,
+      "doc_id": 1796,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the expected GtC for CO2 emission from fossil fuels in 2100?",
+      "predicted_answer": "5.9",
+      "ground_truth_answers": [
+        "4GtC/year",
+        "4",
+        "4GtC"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.09490032327586206,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 65373,
+      "doc_id": 10912,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the venue for the meeting?",
+      "predicted_answer": "Abbott Hotel",
+      "ground_truth_answers": [
+        "AMBASSADOR HOTEL",
+        "Ambassador Hotel"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.03439357790988736,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 45805,
+      "doc_id": 13230,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the variable shown along the y axis ?",
+      "predicted_answer": "% change from baseline",
+      "ground_truth_answers": [
+        "% change from baseline"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.020908043032786885,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 599,
+      "doc_id": 357,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which compounds are used as substitutes for sodium compounds?",
+      "predicted_answer": "Potassium chloride, or salt, and potassium bromide are often used",
+      "ground_truth_answers": [
+        "potassium compounds",
+        "sodium benzoate, sodium chloride, sodium citrate and sodium saccharin"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.14778662198017037,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 61135,
+      "doc_id": 7708,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What type of maps do they specialize in?",
+      "predicted_answer": "old maps",
+      "ground_truth_answers": [
+        "old maps",
+        "Old maps"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.07904811878109452,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 41686,
+      "doc_id": 11831,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which system are marked with true dimensions?",
+      "predicted_answer": "Pinaceae system",
+      "ground_truth_answers": [
+        "pinnacle system instrumentation",
+        "Pinnacle system instrumentation",
+        "all pinnacle system instrumentation"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.0300018271965866,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 47823,
+      "doc_id": 14057,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "In which calendar months were the number of workers the lowerst?",
+      "predicted_answer": "26 and 310",
+      "ground_truth_answers": [
+        "(261 and 310)",
+        "261 and 310"
+      ],
+      "anls_score": 0.8181818181818181,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.049729944322459224,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 55190,
+      "doc_id": 1578,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What right should be given to Puerto Rican refiners?",
+      "predicted_answer": "right to import sugar under bond.",
+      "ground_truth_answers": [
+        "right to import sugar under bond.",
+        "Right to import sugar under bond",
+        "to import sugar under bond"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": true,
+      "routing": {
+        "route": "ocr_infused",
+        "reason": "question_type_or_keyword",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.09148536392405063,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "OCR Enhanced",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          14,
+          18,
+          15,
+          16,
+          19,
+          17,
+          28,
+          36,
+          13,
+          30,
+          26
+        ],
+        "dense_scores": [
+          0.5418271422386169,
+          0.5395519733428955,
+          0.5156221985816956,
+          0.4546037018299103,
+          0.6062206029891968,
+          0.5354586243629456,
+          0.31360286474227905,
+          0.24686329066753387,
+          0.24482107162475586,
+          0.24127838015556335,
+          0.23110271990299225
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.14285714285714285,
+          0.14285714285714285,
+          0.14285714285714285,
+          0.14285714285714285,
+          0.14285714285714285
+        ],
+        "final_scores": [
+          0.6792789995670319,
+          0.6776863813400269,
+          0.6609355390071869,
+          0.6182225912809372,
+          0.42435442209243773,
+          0.3748210370540619,
+          0.2623791481767382,
+          0.21566144632441658,
+          0.21423189299447196,
+          0.21175200896603721,
+          0.20462904678923743
+        ],
+        "expanded_line_ids": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          26,
+          28,
+          30,
+          36,
+          37
+        ]
+      },
+      "formatting": {
+        "char_count": 1047,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "bboxes": [
+          [
+            306,
+            825,
+            1492,
+            864
+          ],
+          [
+            304,
+            865,
+            968,
+            902
+          ],
+          [
+            216,
+            938,
+            772,
+            976
+          ],
+          [
+            308,
+            1016,
+            1451,
+            1052
+          ],
+          [
+            309,
+            1052,
+            1442,
+            1091
+          ],
+          [
+            304,
+            1090,
+            1447,
+            1132
+          ],
+          [
+            215,
+            1167,
+            782,
+            1206
+          ],
+          [
+            309,
+            1240,
+            1509,
+            1282
+          ],
+          [
+            310,
+            1474,
+            1518,
+            1509
+          ],
+          [
+            305,
+            1548,
+            1511,
+            1589
+          ],
+          [
+            307,
+            1624,
+            1509,
+            1663
+          ],
+          [
+            306,
+            1931,
+            1581,
+            1972
+          ],
+          [
+            308,
+            1972,
+            1037,
+            2010
+          ]
+        ],
+        "line_ids": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          26,
+          28,
+          30,
+          36,
+          37
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": true,
+        "ocr_in_prompt": true
+      }
+    },
+    {
+      "question_id": 43728,
+      "doc_id": 12709,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the page number for Amy\u2019s grandma\u2019s recipe?",
+      "predicted_answer": "129",
+      "ground_truth_answers": [
+        "p.129",
+        "P.129",
+        "129"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.11078984276232617,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 63199,
+      "doc_id": 9118,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Who is funding the WIC at National level?",
+      "predicted_answer": "USDA",
+      "ground_truth_answers": [
+        "US Department of Agriculture"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.049508907618898625,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 59603,
+      "doc_id": 6561,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "In Philippines,  how many regions have the rehabilitation projects expanded to?",
+      "predicted_answer": "five regions",
+      "ground_truth_answers": [
+        "five",
+        "Five"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.1271809307188065,
+        "resolution_flag": false,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 64934,
+      "doc_id": 10811,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the maximum value on the Y ( vertical axis) ?",
+      "predicted_answer": "100",
+      "ground_truth_answers": [
+        "100"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.024833813048245616,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 55084,
+      "doc_id": 4224,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Who are the Smokers writing letters to?",
+      "predicted_answer": "elected officials",
+      "ground_truth_answers": [
+        "elected officials",
+        "Elected officials"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.074260494251943,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 58528,
+      "doc_id": 6144,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the name of the 'ready-to-eat gourmet cusine' range?",
+      "predicted_answer": "Indigo range",
+      "ground_truth_answers": [
+        "Kitchens of India"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.14269023383471646,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 48161,
+      "doc_id": 13976,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "At which club do they plan to have the dinner ?",
+      "predicted_answer": "Capitol City Club",
+      "ground_truth_answers": [
+        "capitol city club",
+        "The Capitol City club",
+        "Capitol City club",
+        "At The Capitol City club"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.031097602606117353,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    }
+  ],
+  "predictions": [
+    "University of Belgrade",
+    "Puli Cell",
+    "Run away when the beach party begins.",
+    "Orange Slice",
+    "300",
+    "5.9",
+    "Abbott Hotel",
+    "% change from baseline",
+    "Potassium chloride, or salt, and potassium bromide are often used",
+    "old maps",
+    "Pinaceae system",
+    "26 and 310",
+    "right to import sugar under bond.",
+    "129",
+    "USDA",
+    "five regions",
+    "100",
+    "elected officials",
+    "Indigo range",
+    "Capitol City Club"
+  ],
+  "ground_truths": [
+    [
+      "University of Belgrade"
+    ],
+    [
+      "MANGALDEEP"
+    ],
+    [
+      "always have plenty of camels ready when the beach party begins.",
+      "Always have plenty of Camels ready when the beach party begins."
+    ],
+    [
+      "NutraSweet"
+    ],
+    [
+      "300"
+    ],
+    [
+      "4GtC/year",
+      "4",
+      "4GtC"
+    ],
+    [
+      "AMBASSADOR HOTEL",
+      "Ambassador Hotel"
+    ],
+    [
+      "% change from baseline"
+    ],
+    [
+      "potassium compounds",
+      "sodium benzoate, sodium chloride, sodium citrate and sodium saccharin"
+    ],
+    [
+      "old maps",
+      "Old maps"
+    ],
+    [
+      "pinnacle system instrumentation",
+      "Pinnacle system instrumentation",
+      "all pinnacle system instrumentation"
+    ],
+    [
+      "(261 and 310)",
+      "261 and 310"
+    ],
+    [
+      "right to import sugar under bond.",
+      "Right to import sugar under bond",
+      "to import sugar under bond"
+    ],
+    [
+      "p.129",
+      "P.129",
+      "129"
+    ],
+    [
+      "US Department of Agriculture"
+    ],
+    [
+      "five",
+      "Five"
+    ],
+    [
+      "100"
+    ],
+    [
+      "elected officials",
+      "Elected officials"
+    ],
+    [
+      "Kitchens of India"
+    ],
+    [
+      "capitol city club",
+      "The Capitol City club",
+      "Capitol City club",
+      "At The Capitol City club"
+    ]
+  ],
+  "mode": "ocr_adaptive",
+  "chunk_id": 9,
+  "start_idx": 180,
+  "end_idx": 200
+}

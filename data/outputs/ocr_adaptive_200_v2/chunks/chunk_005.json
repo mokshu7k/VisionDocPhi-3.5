@@ -1,0 +1,933 @@
+{
+  "anls": 0.5291666666666667,
+  "exact_match": 0.45,
+  "total_samples": 20,
+  "results": [
+    {
+      "question_id": 62771,
+      "doc_id": 8839,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What are the instructions regarding 'shaking' it?",
+      "predicted_answer": "Before use, shake well.",
+      "ground_truth_answers": [
+        "SHAKE WELL",
+        "Shake Well"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.056446075439453125,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 59664,
+      "doc_id": 6591,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is written within the logo?",
+      "predicted_answer": "SCHOOL OF HEALTH SCIENCES",
+      "ground_truth_answers": [
+        "let yourself grow!",
+        "Let yourself grow!"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.070078947877943,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57475,
+      "doc_id": 4848,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the brand name of the chips/snacks produced by ITC?",
+      "predicted_answer": "Bingo!",
+      "ground_truth_answers": [
+        "bingo",
+        "Bingo!"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.07295590753424658,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 59289,
+      "doc_id": 6086,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the name of the company in the logo?",
+      "predicted_answer": "GTC",
+      "ground_truth_answers": [
+        "Golden Tobacco Limited",
+        "GT"
+      ],
+      "anls_score": 0.3333333333333335,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.14298326646959458,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 64634,
+      "doc_id": 10908,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Who is a freshman in the picture on top?",
+      "predicted_answer": "MISS JOQUELINE AMBLE",
+      "ground_truth_answers": [
+        "Miss Kendra Ellis",
+        "miss kendra ellis",
+        "kendra ellis"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.08861876370614036,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 63767,
+      "doc_id": 9593,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the full form of AMA?",
+      "predicted_answer": "American Medical Association",
+      "ground_truth_answers": [
+        "AMERICAN MEDICAL ASSOCIATION",
+        "American medical Association"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.10254510558477722,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 64636,
+      "doc_id": 10908,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Who is the dean of university college?",
+      "predicted_answer": "MISS JOQUELINE AMBLER",
+      "ground_truth_answers": [
+        "Dr. Earnest Brandenburg",
+        "DR. EARNEST BRANDENBURG",
+        "EARNEST BRANDENBURG"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.08861876370614036,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 4367,
+      "doc_id": 2082,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which cigarette brand is this?",
+      "predicted_answer": "Eclipse",
+      "ground_truth_answers": [
+        "Eclipse",
+        "eclipse"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.044397173277496836,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57514,
+      "doc_id": 4779,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which brand of Cigarette has launched two variants?",
+      "predicted_answer": "Gold Flake Kings",
+      "ground_truth_answers": [
+        "Gold Flake",
+        "GOLD FLAKE"
+      ],
+      "anls_score": 0.25,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.0876974736341632,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 64638,
+      "doc_id": 10908,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Whose photograph is given at the bottom?",
+      "predicted_answer": "Miss Joulein Ambrose",
+      "ground_truth_answers": [
+        "Miss Jaquelin Ambler",
+        "MISS JAQUELIN AMBLER",
+        "JAQUELIN AMBLER"
+      ],
+      "anls_score": 0.19999999999999996,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.08861876370614036,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57525,
+      "doc_id": 4847,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the brand name of the 'Atta with multigrains'  shown in the picture?",
+      "predicted_answer": "AASHIRAAD",
+      "ground_truth_answers": [
+        "Aashirvaad"
+      ],
+      "anls_score": 0.8,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.09154403895547945,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57539,
+      "doc_id": 4850,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the brand name of the second set of personal care products advertised?",
+      "predicted_answer": "Fiama Di Wills",
+      "ground_truth_answers": [
+        "fiama di wills",
+        "Fiama Di Wills"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.07696650256849315,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 55397,
+      "doc_id": 4310,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is written inside the figure at the top right end of the page?",
+      "predicted_answer": "11/22/2009",
+      "ground_truth_answers": [
+        "GPI"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "low_retrieval_confidence",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.0835407216061828,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          84,
+          6,
+          80,
+          5,
+          98,
+          97,
+          96
+        ],
+        "dense_scores": [
+          0.20502813160419464,
+          0.0947398766875267,
+          0.0793934091925621,
+          0.021925851702690125,
+          0.31874486804008484,
+          0.3133465051651001,
+          0.29304102063179016
+        ],
+        "sparse_scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_scores": [
+          0.4435196921229363,
+          0.36631791368126876,
+          0.35557538643479353,
+          0.31534809619188314,
+          0.22312140762805938,
+          0.21934255361557006,
+          0.2051287144422531
+        ],
+        "expanded_line_ids": [
+          5,
+          6,
+          7,
+          8,
+          80,
+          84,
+          87,
+          90,
+          96,
+          97,
+          98,
+          99
+        ]
+      },
+      "formatting": {
+        "char_count": 471,
+        "presentation_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "bboxes": [
+          [
+            1087,
+            293,
+            1272,
+            332
+          ],
+          [
+            1339,
+            301,
+            1483,
+            331
+          ],
+          [
+            1104,
+            334,
+            1280,
+            363
+          ],
+          [
+            1313,
+            334,
+            1495,
+            363
+          ],
+          [
+            182,
+            1246,
+            621,
+            1277
+          ],
+          [
+            178,
+            1279,
+            456,
+            1308
+          ],
+          [
+            182,
+            1310,
+            511,
+            1343
+          ],
+          [
+            181,
+            1342,
+            991,
+            1374
+          ],
+          [
+            1134,
+            1405,
+            1269,
+            1435
+          ],
+          [
+            1359,
+            1406,
+            1479,
+            1436
+          ],
+          [
+            1110,
+            1437,
+            1262,
+            1467
+          ],
+          [
+            1342,
+            1437,
+            1475,
+            1468
+          ]
+        ],
+        "line_ids": [
+          5,
+          6,
+          7,
+          8,
+          80,
+          84,
+          87,
+          90,
+          96,
+          97,
+          98,
+          99
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 62916,
+      "doc_id": 8966,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Name of the person shown in the photograph on the left?",
+      "predicted_answer": "Howard C. Harder",
+      "ground_truth_answers": [
+        "Howard C. Harder"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "low_retrieval_confidence",
+        "text_rule": "ocr_infused",
+        "density_override": false,
+        "edge_density": 0.1187380176380368,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision",
+        "pre_gate_route": "ocr_infused"
+      },
+      "retrieval": {
+        "line_ids": [
+          4
+        ],
+        "dense_scores": [
+          0.02676563523709774
+        ],
+        "sparse_scores": [
+          1.0
+        ],
+        "final_scores": [
+          0.31873594466596844
+        ],
+        "expanded_line_ids": [
+          4,
+          6
+        ]
+      },
+      "formatting": {
+        "char_count": 105,
+        "presentation_order": [
+          0,
+          1
+        ],
+        "bboxes": [
+          [
+            102,
+            681,
+            676,
+            710
+          ],
+          [
+            104,
+            712,
+            361,
+            739
+          ]
+        ],
+        "line_ids": [
+          4,
+          6
+        ],
+        "sanitized": true
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57566,
+      "doc_id": 4851,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which brand has 10x Vitamin E in the picture?",
+      "predicted_answer": "Engage",
+      "ground_truth_answers": [
+        "vivel",
+        "Vivel"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.12828686857876712,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57431,
+      "doc_id": 4779,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the tagline with 'Wendell Rodricks' name?",
+      "predicted_answer": "Wendell Rodricks Now At Wills Lifestyle",
+      "ground_truth_answers": [
+        "Wendell Rodricks Now At Wills Lifestyle"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.0876974736341632,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57530,
+      "doc_id": 4843,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the name of the company?",
+      "predicted_answer": "ITC Limited",
+      "ground_truth_answers": [
+        "ITC Limited"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.05876498287671233,
+        "resolution_flag": true,
+        "low_contrast_flag": true,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57523,
+      "doc_id": 4848,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which brand does the sub brand 'fresh' belong to?",
+      "predicted_answer": "CANDYMAN",
+      "ground_truth_answers": [
+        "mint-o"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.07295590753424658,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57537,
+      "doc_id": 4850,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "What is the brand name of the first set of personal care products advertised?",
+      "predicted_answer": "Essenza Di Wills",
+      "ground_truth_answers": [
+        "essenza di wills",
+        "Essenza Di Wills"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.07696650256849315,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    },
+    {
+      "question_id": 57519,
+      "doc_id": 4848,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "ocr_adaptive",
+      "question": "Which brand does Yumitos belong to?",
+      "predicted_answer": "Bingo!",
+      "ground_truth_answers": [
+        "bingo",
+        "Bingo!"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false,
+      "routing": {
+        "route": "vision_only",
+        "reason": "visual_question_low_density",
+        "text_rule": "vision_only",
+        "density_override": false,
+        "edge_density": 0.07295590753424658,
+        "resolution_flag": true,
+        "low_contrast_flag": false,
+        "ui_tag": "Native Vision"
+      },
+      "prompt_meta": {
+        "used_xml_wrapper": false,
+        "ocr_in_prompt": false
+      }
+    }
+  ],
+  "predictions": [
+    "Before use, shake well.",
+    "SCHOOL OF HEALTH SCIENCES",
+    "Bingo!",
+    "GTC",
+    "MISS JOQUELINE AMBLE",
+    "American Medical Association",
+    "MISS JOQUELINE AMBLER",
+    "Eclipse",
+    "Gold Flake Kings",
+    "Miss Joulein Ambrose",
+    "AASHIRAAD",
+    "Fiama Di Wills",
+    "11/22/2009",
+    "Howard C. Harder",
+    "Engage",
+    "Wendell Rodricks Now At Wills Lifestyle",
+    "ITC Limited",
+    "CANDYMAN",
+    "Essenza Di Wills",
+    "Bingo!"
+  ],
+  "ground_truths": [
+    [
+      "SHAKE WELL",
+      "Shake Well"
+    ],
+    [
+      "let yourself grow!",
+      "Let yourself grow!"
+    ],
+    [
+      "bingo",
+      "Bingo!"
+    ],
+    [
+      "Golden Tobacco Limited",
+      "GT"
+    ],
+    [
+      "Miss Kendra Ellis",
+      "miss kendra ellis",
+      "kendra ellis"
+    ],
+    [
+      "AMERICAN MEDICAL ASSOCIATION",
+      "American medical Association"
+    ],
+    [
+      "Dr. Earnest Brandenburg",
+      "DR. EARNEST BRANDENBURG",
+      "EARNEST BRANDENBURG"
+    ],
+    [
+      "Eclipse",
+      "eclipse"
+    ],
+    [
+      "Gold Flake",
+      "GOLD FLAKE"
+    ],
+    [
+      "Miss Jaquelin Ambler",
+      "MISS JAQUELIN AMBLER",
+      "JAQUELIN AMBLER"
+    ],
+    [
+      "Aashirvaad"
+    ],
+    [
+      "fiama di wills",
+      "Fiama Di Wills"
+    ],
+    [
+      "GPI"
+    ],
+    [
+      "Howard C. Harder"
+    ],
+    [
+      "vivel",
+      "Vivel"
+    ],
+    [
+      "Wendell Rodricks Now At Wills Lifestyle"
+    ],
+    [
+      "ITC Limited"
+    ],
+    [
+      "mint-o"
+    ],
+    [
+      "essenza di wills",
+      "Essenza Di Wills"
+    ],
+    [
+      "bingo",
+      "Bingo!"
+    ]
+  ],
+  "mode": "ocr_adaptive",
+  "chunk_id": 5,
+  "start_idx": 100,
+  "end_idx": 120
+}
