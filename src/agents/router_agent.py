@@ -4,7 +4,7 @@ from typing import List
 
 from PIL import Image
 
-from config.settings import LAYOUT_HEAVY_TYPES, LAYOUT_KEYWORDS
+from config.settings import LAYOUT_HEAVY_TYPES, LAYOUT_KEYWORDS, OCR_CAUTIOUS_TYPES
 from src.agents.image_density import analyze_image_density
 from src.agents.types import RoutingDecision
 from src.data.ocr_loader import ocr_available
@@ -12,6 +12,13 @@ from src.data.ocr_loader import ocr_available
 
 def _text_route(question: str, question_types: List[str]) -> str:
     q_lower = question.lower()
+    types_set = set(question_types)
+
+    if types_set & OCR_CAUTIOUS_TYPES:
+        if any(kw in q_lower for kw in LAYOUT_KEYWORDS):
+            return "ocr_infused"
+        return "vision_only"
+
     if any(t in LAYOUT_HEAVY_TYPES for t in question_types):
         return "ocr_infused"
     if any(kw in q_lower for kw in LAYOUT_KEYWORDS):

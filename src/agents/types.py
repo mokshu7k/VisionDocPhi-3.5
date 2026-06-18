@@ -14,9 +14,10 @@ class RoutingDecision:
     resolution_flag: bool = False
     low_contrast_flag: bool = False
     ui_tag: str = ""
+    pre_gate_route: str = ""
 
     def to_dict(self) -> Dict[str, Any]:
-        return {
+        out = {
             "route": self.route,
             "reason": self.reason,
             "text_rule": self.text_rule,
@@ -26,6 +27,9 @@ class RoutingDecision:
             "low_contrast_flag": self.low_contrast_flag,
             "ui_tag": self.ui_tag,
         }
+        if self.pre_gate_route:
+            out["pre_gate_route"] = self.pre_gate_route
+        return out
 
 
 @dataclass
@@ -45,6 +49,7 @@ class FormattedSnippet:
     bboxes: List[List[int]]
     char_count: int
     presentation_order: List[int] = field(default_factory=list)
+    sanitized: bool = False
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -52,6 +57,7 @@ class FormattedSnippet:
             "presentation_order": self.presentation_order,
             "bboxes": self.bboxes,
             "line_ids": self.line_ids,
+            "sanitized": self.sanitized,
         }
 
 
@@ -63,6 +69,7 @@ class PipelineResult:
     formatting: Optional[Dict[str, Any]] = None
     used_ocr: bool = False
     ocr_snippet: Optional[str] = None
+    prompt_meta: Optional[Dict[str, Any]] = None
 
     def to_audit_dict(self) -> Dict[str, Any]:
         out: Dict[str, Any] = {
@@ -75,4 +82,6 @@ class PipelineResult:
             out["retrieval"] = self.retrieval
         if self.formatting:
             out["formatting"] = self.formatting
+        if self.prompt_meta:
+            out["prompt_meta"] = self.prompt_meta
         return out

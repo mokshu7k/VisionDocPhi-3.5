@@ -48,6 +48,12 @@ def main():
     )
     parser.add_argument("--resume", action="store_true", default=True)
     parser.add_argument("--no-resume", action="store_true")
+    parser.add_argument(
+        "--version",
+        type=str,
+        default="",
+        help="Output dir suffix (e.g. v2 -> ocr_adaptive_200_v2)",
+    )
 
     args = parser.parse_args()
     resume = not args.no_resume
@@ -69,6 +75,7 @@ def main():
         chunk_size=args.chunk_size,
         split=args.split,
         resume=resume,
+        version=args.version,
     )
 
     if results:

@@ -35,11 +35,13 @@ class ChunkedEvaluator:
         subset_file: Optional[str] = None,
         chunk_size: int = CHUNK_SIZE,
         split: str = "val",
+        version: str = "",
     ):
         self.mode = MODE_ALIASES.get(mode, mode)
         self.subset_file = Path(subset_file or EVAL_SUBSET_FILE)
         self.chunk_size = chunk_size
         self.split = split
+        self.version = version
 
         if split == "val":
             self.annotations_file = str(VAL_ANNOTATIONS)
@@ -49,7 +51,7 @@ class ChunkedEvaluator:
             raise ValueError(f"Unknown split: {split}")
 
         self.image_dir = str(IMAGES_DIR)
-        self.output_dir = get_mode_output_dir(self.mode)
+        self.output_dir = get_mode_output_dir(self.mode, version=self.version)
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
         self.chunks_dir = self.output_dir / "chunks"
@@ -217,12 +219,14 @@ def run_chunked_evaluation(
     chunk_size: int = CHUNK_SIZE,
     split: str = "val",
     resume: bool = True,
+    version: str = "",
 ) -> Dict[str, Any]:
     evaluator = ChunkedEvaluator(
         mode=mode,
         subset_file=subset_file,
         chunk_size=chunk_size,
         split=split,
+        version=version,
     )
     return evaluator.run(resume=resume)
 

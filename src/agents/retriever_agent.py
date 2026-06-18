@@ -22,6 +22,7 @@ from src.data.ocr_loader import OcrLine
 ALNUM_TOKEN_RE = re.compile(
     r"\d+(?:\.\d+)?|[A-Za-z0-9]+(?:[-_/][A-Za-z0-9]+)*"
 )
+LABEL_ONLY_RE = re.compile(r"^[\w\s/.-]{1,40}:\s*$")
 
 
 def extract_query_tokens(question: str) -> List[str]:
@@ -172,6 +173,8 @@ class HybridRetrieverAgent:
             sparse = sparse_match_score(question, line.text, tokens)
             dense = dense_scores[i] if i < len(dense_scores) else 0.0
             final = self.alpha * dense + (1 - self.alpha) * sparse
+            if LABEL_ONLY_RE.match(line.text.strip()):
+                final *= 0.5
             if final < OCR_MIN_SCORE:
                 continue
             scored.append(

@@ -67,8 +67,13 @@ def routing_breakdown(adaptive_rows: list) -> dict:
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--adaptive-version", type=str, default="")
+    args = parser.parse_args()
+
     baseline_dir = get_mode_output_dir("baseline")
-    adaptive_dir = get_mode_output_dir("ocr_adaptive")
+    adaptive_dir = get_mode_output_dir("ocr_adaptive", version=args.adaptive_version)
 
     baseline_data = load_merged(baseline_dir)
     adaptive_data = load_merged(adaptive_dir)

@@ -114,16 +114,31 @@ LAYOUT_HEAVY_TYPES = frozenset({
 VISUAL_HEAVY_TYPES = frozenset({
     "figure/diagram", "Image/Photo", "Yes/No", "free_text",
 })
+OCR_CAUTIOUS_TYPES = frozenset({
+    "figure/diagram", "free_text",
+})
 
 OCR_MAX_CHARS = 1200
 OCR_MAX_LINES = 25
 OCR_MIN_SCORE = 0.20
 OCR_TOP_K = 40
+OCR_GATE_MIN_SCORE = 0.45
 HYBRID_ALPHA = 0.7
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
+NEIGHBOR_Y_GAP = 45
+ENABLE_CONTEXT_EXPANSION = True
+
+OCR_BOILERPLATE_DENYLIST = frozenset({
+    "INSTRUCTION", "NOTICE", "USER",
+})
+
+DOCVQA_MAX_NEW_TOKENS = 20
+DOCVQA_STOP_STRINGS = ["\n", "#", "<|user|>", "<|end|>", "<document_ocr_context>"]
+
 DENSITY_EDGE_THRESHOLD = 0.12
 DENSITY_EDGE_MID = 0.08
+DENSITY_EDGE_VERY_HIGH = 0.18
 DENSITY_RESOLUTION_THRESHOLD = 2000
 DENSITY_CONTRAST_THRESHOLD = 35.0
 DENSITY_ANALYSIS_MAX_DIM = 1024
@@ -141,14 +156,15 @@ ENABLE_CHUNKED_MODE = False
 RESUME_FROM_CHECKPOINT = True
 
 
-def get_mode_output_dir(mode: str) -> Path:
+def get_mode_output_dir(mode: str, version: str = "") -> Path:
     """Return output directory for baseline or ocr_adaptive evaluation."""
     mode_key = mode.replace("vision_only", "baseline")
+    suffix = f"_{version}" if version else ""
     if mode_key == "baseline":
-        return OUTPUT_DIR / "baseline_200"
+        return OUTPUT_DIR / f"baseline_200{suffix}"
     if mode_key in ("ocr_adaptive", "adaptive"):
-        return OUTPUT_DIR / "ocr_adaptive_200"
-    return OUTPUT_DIR / f"{mode_key}_200"
+        return OUTPUT_DIR / f"ocr_adaptive_200{suffix}"
+    return OUTPUT_DIR / f"{mode_key}_200{suffix}"
 
 # ============================================================================
 # LOGGING CONFIGURATION

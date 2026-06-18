@@ -11,6 +11,7 @@ from config.settings import (
     DENSITY_CONTRAST_THRESHOLD,
     DENSITY_EDGE_MID,
     DENSITY_EDGE_THRESHOLD,
+    DENSITY_EDGE_VERY_HIGH,
     DENSITY_RESOLUTION_THRESHOLD,
 )
 
@@ -76,9 +77,15 @@ def analyze_image_density(image: Image.Image) -> DensityReport:
     edge_density = _canny_edge_density(arr)
 
     density_override = (
-        edge_density > DENSITY_EDGE_THRESHOLD
-        or (resolution_flag and edge_density > DENSITY_EDGE_MID)
-        or (low_contrast_flag and edge_density > DENSITY_EDGE_MID)
+        edge_density > DENSITY_EDGE_VERY_HIGH
+        or (
+            edge_density > DENSITY_EDGE_THRESHOLD
+            and low_contrast_flag
+        )
+        or (
+            low_contrast_flag
+            and edge_density > DENSITY_EDGE_MID
+        )
     )
 
     return DensityReport(

@@ -60,13 +60,13 @@ def _disabled_flash_attn_check(cls, config, *args, **kwargs):
 PreTrainedModel._check_and_enable_flash_attn_2 = _disabled_flash_attn_check
 
 # Now it is safe to import the model classes
-from transformers import AutoModelForCausalLM, AutoProcessor, AutoConfig
+from transformers import AutoModelForCausalLM, AutoProcessor, AutoConfig, StoppingCriteria, StoppingCriteriaList
 
 from config.settings import (
     MODEL_NAME, DEVICE, TORCH_DTYPE, ATTN_IMPLEMENTATION, 
     MAX_NEW_TOKENS, TEMPERATURE,
     USE_GRADIENT_CHECKPOINTING, LOW_CPU_MEM_USAGE, MEMORY_CLEANUP_INTERVAL,
-    USE_8BIT_QUANTIZATION
+    USE_8BIT_QUANTIZATION, DOCVQA_MAX_NEW_TOKENS, DOCVQA_STOP_STRINGS,
 )
 from src.utils.metrics import calculate_metrics, anls_score
 from src.agents.pipeline import AgenticDocVQAPipeline
@@ -84,6 +84,26 @@ MODE_ALIASES = {
     "ocr_adaptive": InferenceMode.OCR_ADAPTIVE,
     "adaptive": InferenceMode.OCR_ADAPTIVE,
 }
+
+OCR_DISCLAIMER = (
+    "OCR hints (may be incomplete; prefer the image if hints lack the answer):\n"
+)
+
+
+class StopStringCriteria(StoppingCriteria):
+    """Stop generation when any stop string appears in newly decoded text."""
+
+    def __init__(self, tokenizer, stop_strings, prompt_length: int):
+        self.tokenizer = tokenizer
+        self.stop_strings = stop_strings
+        self.prompt_length = prompt_length
+
+    def __call__(self, input_ids, scores, **kwargs):
+        new_tokens = input_ids[0][self.prompt_length:]
+        if new_tokens.numel() == 0:
+            return False
+        decoded = self.tokenizer.decode(new_tokens, skip_special_tokens=False)
+        return any(stop in decoded for stop in self.stop_strings)
 
 
 class DocVQAInference:
@@ -245,7 +265,12 @@ class DocVQAInference:
     def _build_prompt(self, question: str, ocr_snippets: str = None) -> str:
         ocr_block = ""
         if ocr_snippets:
-            ocr_block = f"{ocr_snippets}\n"
+            ocr_block = (
+                f"<document_ocr_context>\n"
+                f"{OCR_DISCLAIMER}"
+                f"{ocr_snippets}\n"
+                f"</document_ocr_context>\n"
+            )
         return (
             f"<|user|>\n<|image_1|>\n"
             f"Answer briefly with only the exact value or phrase from the document. "
@@ -274,7 +299,7 @@ class DocVQAInference:
             Generated answer string
         """
         if max_length is None:
-            max_length = MAX_NEW_TOKENS
+            max_length = DOCVQA_MAX_NEW_TOKENS
         
         effective_mode = MODE_ALIASES.get(mode or self.mode, mode or self.mode)
         prompt = self._build_prompt(
@@ -303,6 +328,14 @@ class DocVQAInference:
             
             # Step 3: Generate tokens
             try:
+                prompt_len = inputs["input_ids"].shape[1]
+                stop_criteria = StoppingCriteriaList([
+                    StopStringCriteria(
+                        self.processor.tokenizer,
+                        DOCVQA_STOP_STRINGS,
+                        prompt_len,
+                    )
+                ])
                 with torch.no_grad():
                     output_ids = self.model.generate(
                         **inputs,
@@ -310,6 +343,7 @@ class DocVQAInference:
                         do_sample=False,
                         use_cache=False,
                         pad_token_id=self.processor.tokenizer.eos_token_id,
+                        stopping_criteria=stop_criteria,
                     )
             except Exception as gen_error:
                 print(f"❌ Generation error: {gen_error}")
@@ -368,9 +402,11 @@ class DocVQAInference:
                 answer = response_lines[0]
                 
             # If the model hallucinates "Here is..." or "Instruction..." on the same line, try to split by those markers
-            for marker in [" Here is ", " Instruction ", " Article:", " Summary:", " Here is a task"]:
+            for marker in [" Here is ", " Instruction ", " Article:", " Summary:", " Here is a task", "# INSTRUCTION"]:
                 if marker in answer:
                     answer = answer.split(marker)[0].strip()
+            if "#" in answer:
+                answer = answer.split("#")[0].strip()
             
             # Remove common filler phrases if they dominate the start
             filler_phrases = [
@@ -477,6 +513,8 @@ class DocVQAInference:
                             result_row['retrieval'] = audit['retrieval']
                         if audit.get('formatting'):
                             result_row['formatting'] = audit['formatting']
+                        if audit.get('prompt_meta'):
+                            result_row['prompt_meta'] = audit['prompt_meta']
 
                     results.append(result_row)
                     predictions.append(predicted_answer)
