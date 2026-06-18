@@ -1,0 +1,69 @@
+{
+  "overall": {
+    "baseline_mean_anls": 0.5060110249719839,
+    "adaptive_mean_anls": 0.658079208373326,
+    "delta": 0.1520681834013421,
+    "sample_count": 200
+  },
+  "by_cohort": {
+    "baseline": {
+      "layout_heavy": 0.5680202686202687,
+      "visual_heavy": 0.44400178132369916
+    },
+    "adaptive": {
+      "layout_heavy": 0.7699425770308124,
+      "visual_heavy": 0.5462158397158398
+    }
+  },
+  "by_question_type": {
+    "baseline": {
+      "form": 0.603207671957672,
+      "handwritten": 0.5211038961038962,
+      "Yes/No": 0.5,
+      "layout": 0.5706493506493507,
+      "figure/diagram": 0.4353259643582224,
+      "table/list": 0.37643467643467643,
+      "others": 0.9555555555555555,
+      "free_text": 0.45747955747955743,
+      "Image/Photo": 0.5327397260273973
+    },
+    "adaptive": {
+      "form": 0.7896825396825397,
+      "handwritten": 0.6825757575757576,
+      "Yes/No": 0.5,
+      "layout": 0.7998472116119175,
+      "figure/diagram": 0.584071484071484,
+      "table/list": 0.7714285714285715,
+      "others": 0.8,
+      "free_text": 0.554045214045214,
+      "Image/Photo": 0.5833333333333334
+    }
+  },
+  "wins": {
+    "baseline": 6,
+    "adaptive": 46,
+    "tie": 148
+  },
+  "routing_breakdown": {
+    "question_type_or_keyword": {
+      "count": 84,
+      "mean_anls": 0.7560563114134543
+    },
+    "image_density_fallback": {
+      "count": 3,
+      "mean_anls": 0.6666666666666666
+    },
+    "low_retrieval_confidence": {
+      "count": 11,
+      "mean_anls": 0.7012987012987013
+    },
+    "ocr_empty_after_retrieval": {
+      "count": 6,
+      "mean_anls": 0.6470588235294118
+    },
+    "visual_question_low_density": {
+      "count": 96,
+      "mean_anls": 0.5678174256299257
+    }
+  }
+}

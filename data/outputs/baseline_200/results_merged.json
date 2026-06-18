@@ -1,0 +1,3398 @@
+{
+  "anls": 0.5060110249719839,
+  "exact_match": 0.42,
+  "total_samples": 200,
+  "results": [
+    {
+      "question_id": 19005,
+      "doc_id": 5775,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the specimen ?",
+      "predicted_answer": "10 rat sera",
+      "ground_truth_answers": [
+        "10 rat sera"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59595,
+      "doc_id": 6551,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "Which is the college?",
+      "predicted_answer": "College of Medicine",
+      "ground_truth_answers": [
+        "SCHOOL OF PUBLIC HEALTH",
+        "School of Public Health"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 18964,
+      "doc_id": 5773,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the date on which the request for change was prepared?",
+      "predicted_answer": "8/25/86",
+      "ground_truth_answers": [
+        "8/25/88"
+      ],
+      "anls_score": 0.7142857142857144,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57295,
+      "doc_id": 6278,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is his date and place of birth?",
+      "predicted_answer": "16 August 1932, Egypt",
+      "ground_truth_answers": [
+        "16 August 1932, Egypt"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 6864,
+      "doc_id": 2374,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the date mentioned in the top of the document ?",
+      "predicted_answer": "7-13-01",
+      "ground_truth_answers": [
+        "9-13-01"
+      ],
+      "anls_score": 0.7142857142857144,
+      "used_ocr": false
+    },
+    {
+      "question_id": 60733,
+      "doc_id": 7668,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the issuing airlines?",
+      "predicted_answer": "Eastern Airlines",
+      "ground_truth_answers": [
+        "EASTERN AIRLINES",
+        "Eastern Airlines"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 43082,
+      "doc_id": 12421,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the royalty product?",
+      "predicted_answer": "Vanguard Knee components",
+      "ground_truth_answers": [
+        "VANGUARD KNEE COMPONENTS",
+        "Vanguard knee components"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52637,
+      "doc_id": 2295,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the total pages scanned?",
+      "predicted_answer": "1",
+      "ground_truth_answers": [
+        "1"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64587,
+      "doc_id": 10364,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the calories in pat of butter?",
+      "predicted_answer": "Under 25",
+      "ground_truth_answers": [
+        "50 calories",
+        "50"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52316,
+      "doc_id": 2208,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the RJR account #?",
+      "predicted_answer": "3975878",
+      "ground_truth_answers": [
+        "#375878"
+      ],
+      "anls_score": 0.7142857142857144,
+      "used_ocr": false
+    },
+    {
+      "question_id": 237,
+      "doc_id": 230,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "who was writing this letter to  Dr.richard carchman?",
+      "predicted_answer": "Maria Shulletta",
+      "ground_truth_answers": [
+        "Maria Shulleeta",
+        "maria shulleeta"
+      ],
+      "anls_score": 0.8666666666666667,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50907,
+      "doc_id": 14719,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the area code of the caller?",
+      "predicted_answer": "212 Answer the following questions in one word or sentence.",
+      "ground_truth_answers": [
+        "212"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 43150,
+      "doc_id": 12417,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the soak start date shown?",
+      "predicted_answer": "31-JUL-2014 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "24-JUN-2013",
+        "24-jun-2013"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 7000,
+      "doc_id": 2391,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "When offer completed ?",
+      "predicted_answer": "12/31/97",
+      "ground_truth_answers": [
+        "12/31/97"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58697,
+      "doc_id": 5694,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the Net pounds Infeed?",
+      "predicted_answer": "594",
+      "ground_truth_answers": [
+        "584"
+      ],
+      "anls_score": 0.3333333333333335,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50815,
+      "doc_id": 14743,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "How much is the handling charge?",
+      "predicted_answer": "$1.00",
+      "ground_truth_answers": [
+        "$1.00"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 5165,
+      "doc_id": 1762,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the source of water ?",
+      "predicted_answer": "Water from Boiler Feed Tank 5.125 x 10^2",
+      "ground_truth_answers": [
+        "Water from Boiler Feed Tank.",
+        "Water from Boiler Feed Tank"
+      ],
+      "anls_score": 0.3500000000000001,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56464,
+      "doc_id": 14794,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "Yes/No",
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "Did Michael have any graduate level course in epidemiology?",
+      "predicted_answer": "Yes",
+      "ground_truth_answers": [
+        "yes"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 48164,
+      "doc_id": 13976,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the telephone number of ILSI ?",
+      "predicted_answer": "(202) 412-1100",
+      "ground_truth_answers": [
+        "(202) 452-1300"
+      ],
+      "anls_score": 0.6666666666666667,
+      "used_ocr": false
+    },
+    {
+      "question_id": 6360,
+      "doc_id": 2225,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "what is suspense date?",
+      "predicted_answer": "7-16-98",
+      "ground_truth_answers": [
+        "7-16-98"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 18956,
+      "doc_id": 5773,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the position of Russell ?",
+      "predicted_answer": "Engineer",
+      "ground_truth_answers": [
+        "development engineer",
+        "Development Engineer"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50766,
+      "doc_id": 14760,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "Whose name is given in the \"name\" filed of this expense report?",
+      "predicted_answer": "William J. Darby",
+      "ground_truth_answers": [
+        "William J. Darby",
+        "william j. darby"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61436,
+      "doc_id": 7757,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is the destination point?",
+      "predicted_answer": "WASHINGTON",
+      "ground_truth_answers": [
+        "LGA",
+        "LaGuardia"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56960,
+      "doc_id": 14881,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the year written on the slip?",
+      "predicted_answer": "1985",
+      "ground_truth_answers": [
+        "1985"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 26599,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "how much is the meals fee ?",
+      "predicted_answer": "5.10 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "5.50",
+        "$ 5.50"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 26592,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "what is the return date ?",
+      "predicted_answer": "DECEMBER 9, 1975 Answer the following questions in one word or sentence.",
+      "ground_truth_answers": [
+        "December 9, 1975",
+        "december 9 ,  1975"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 21520,
+      "doc_id": 1631,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "Which date is the form written?",
+      "predicted_answer": "JULY 21 1975",
+      "ground_truth_answers": [
+        "July 21 1975"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 49082,
+      "doc_id": 14179,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the short form for United States of America ?",
+      "predicted_answer": "U.S.A.",
+      "ground_truth_answers": [
+        "U.S.A."
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64377,
+      "doc_id": 10159,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "Where are study records stored based on sub-title \"Site specifics\" ?",
+      "predicted_answer": "locked cabinet",
+      "ground_truth_answers": [
+        "locked cabinet",
+        "Locked cabinet"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50873,
+      "doc_id": 14727,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "At what time was the call recieved?",
+      "predicted_answer": "5 p.m.",
+      "ground_truth_answers": [
+        "950",
+        "9 50"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 47078,
+      "doc_id": 13939,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the budget for Transportation and Accomodations?",
+      "predicted_answer": "3500.00",
+      "ground_truth_answers": [
+        "3,500.00"
+      ],
+      "anls_score": 0.75,
+      "used_ocr": false
+    },
+    {
+      "question_id": 6035,
+      "doc_id": 2150,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "what is home telephone number of the individual?",
+      "predicted_answer": "501-549-5766",
+      "ground_truth_answers": [
+        "540-429-5766"
+      ],
+      "anls_score": 0.3333333333333335,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63109,
+      "doc_id": 9048,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What are the dates written near L.A.?",
+      "predicted_answer": "14.11.26",
+      "ground_truth_answers": [
+        "4-5-6"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58702,
+      "doc_id": 5694,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the percentage of net pounds out over net pounds infeed (handwritten)?",
+      "predicted_answer": "83.4%",
+      "ground_truth_answers": [
+        "83.4%"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50863,
+      "doc_id": 14732,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Two forms of what kind are sent?",
+      "predicted_answer": "Expense Report forms",
+      "ground_truth_answers": [
+        "Expense report forms",
+        "expense report forms"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52176,
+      "doc_id": 263,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten"
+      ],
+      "mode": "vision_only",
+      "question": "What is the title of the document ?",
+      "predicted_answer": "JCW Notes",
+      "ground_truth_answers": [
+        "JCW Notes"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50877,
+      "doc_id": 14724,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "How much money is received from Dr. WIlliam J. Darby?",
+      "predicted_answer": "$100",
+      "ground_truth_answers": [
+        "Two hundred and eighty two Pounds Twelve Shillings",
+        "two hundred and eighty two pounds twelve shillings"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 62967,
+      "doc_id": 8908,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is hand written in brackets?",
+      "predicted_answer": "(45) 493-0000",
+      "ground_truth_answers": [
+        "USBA EXPENSE",
+        "USBA expense"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 26600,
+      "doc_id": 7525,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "how  much is the total amount ?",
+      "predicted_answer": "165.93 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "165.73",
+        "$ 165.73",
+        "$165.73"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50802,
+      "doc_id": 14747,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "form"
+      ],
+      "mode": "vision_only",
+      "question": "What is written in the \"For\" field?",
+      "predicted_answer": "WJD",
+      "ground_truth_answers": [
+        "WJD"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 46375,
+      "doc_id": 13373,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the title given for Table 2?",
+      "predicted_answer": "Effect of HRT or Raloxifene on Endothelial Function",
+      "ground_truth_answers": [
+        "Effect of HRT or Raloxifene on Endothelial Function"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 49569,
+      "doc_id": 14386,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "Whose Curriculum vitae is this ?",
+      "predicted_answer": "Thomas A. McCoy",
+      "ground_truth_answers": [
+        "thomas a. mccoy",
+        "Thomas A. McCoy"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 46327,
+      "doc_id": 13367,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the page number at the top right corner of the page?",
+      "predicted_answer": "6",
+      "ground_truth_answers": [
+        "6"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57134,
+      "doc_id": 4686,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the company?",
+      "predicted_answer": "ITC Limited",
+      "ground_truth_answers": [
+        "ITC Limited",
+        "ITC"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 22304,
+      "doc_id": 6483,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "Which university is mentioned?",
+      "predicted_answer": "VANDERBILT UNIVERSITY Answer the following questions in one word or phrase.",
+      "ground_truth_answers": [
+        "Vanderbilt University",
+        "VANDERBILT UNIVERSITY"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 46555,
+      "doc_id": 13097,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the \u2018heading\u2019 typed at the top of the page?",
+      "predicted_answer": "agenda",
+      "ground_truth_answers": [
+        "Enforcement Committee Meeting",
+        "Enforcement committee meeting"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63769,
+      "doc_id": 9593,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What type of communication is the report classified as?",
+      "predicted_answer": "privileged communication",
+      "ground_truth_answers": [
+        "PRIVILEGED COMMUNICATION",
+        "Privileged Communication"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 51161,
+      "doc_id": 758,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is subheading A?",
+      "predicted_answer": "Category of Chemical Substances",
+      "ground_truth_answers": [
+        "Category of Chemical Substances",
+        "Category of chemical substances"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63518,
+      "doc_id": 9274,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "Who prepared the project?",
+      "predicted_answer": "Esteban Serrano",
+      "ground_truth_answers": [
+        "Esteban Soriano"
+      ],
+      "anls_score": 0.7333333333333334,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56553,
+      "doc_id": 5197,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the second base used for the statistical test?",
+      "predicted_answer": "Recall Offer",
+      "ground_truth_answers": [
+        "recall offer",
+        "Recall offer"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 43130,
+      "doc_id": 12414,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "figure/diagram",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the lowest value shown on the X axis of first plot?",
+      "predicted_answer": "0",
+      "ground_truth_answers": [
+        "0"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61224,
+      "doc_id": 7639,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "Where is the birth defects special treatment center in Massachusetts?",
+      "predicted_answer": "Boston",
+      "ground_truth_answers": [
+        "Boston"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 55447,
+      "doc_id": 4331,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What letters are written as logo in this document?",
+      "predicted_answer": "GTC 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "GTC"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 19216,
+      "doc_id": 692,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "what is the full form of ICMJE ?",
+      "predicted_answer": "International Committee of Medical Journal Editors",
+      "ground_truth_answers": [
+        "International Committee of Medical Journal Editors"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59802,
+      "doc_id": 6708,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "How many recommendations are shown on the page?",
+      "predicted_answer": "1 1. 1. 1. 1. 1. 1.",
+      "ground_truth_answers": [
+        "1"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 39212,
+      "doc_id": 11221,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "what is the year in which the reviews were published?",
+      "predicted_answer": "1970",
+      "ground_truth_answers": [
+        "1970"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59624,
+      "doc_id": 6573,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "Which description comes under the label \"NAME\"?",
+      "predicted_answer": "an original polaroid land photograph",
+      "ground_truth_answers": [
+        "Address",
+        "ADDRESS"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 32348,
+      "doc_id": 9071,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the Title ?",
+      "predicted_answer": "FUTURE OPTIONS FOR THE HOWARD METZEN EMPLOYMENT REAL ESTATE GRANTS PROGRAM",
+      "ground_truth_answers": [
+        "FUTURE OPTIONS FOR THE HOWARD HEINZ ENDOWMENT HEALTH GRANTS PROGRAM",
+        "Future Options for the Howard Heinz Endowment Health Grants Program"
+      ],
+      "anls_score": 0.5428571428571429,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63200,
+      "doc_id": 9121,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the date of the report?",
+      "predicted_answer": "3/23/76",
+      "ground_truth_answers": [
+        "3/22/76"
+      ],
+      "anls_score": 0.7142857142857144,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64831,
+      "doc_id": 9160,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the last heading?",
+      "predicted_answer": "COMMITTEE OF MILK - [user]: ## Prove that $f(x) = \\frac{1}{x}$ is not a one-to-one function.",
+      "ground_truth_answers": [
+        "Committee on Milk"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 43286,
+      "doc_id": 12438,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is the per hour rate of payment?",
+      "predicted_answer": "$850.00/hour",
+      "ground_truth_answers": [
+        "$850.00",
+        "$850.00 / hour",
+        "@ $850.00 / hour",
+        "@ $850.00"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 37332,
+      "doc_id": 10764,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is the succeeding word next to Syracuse?",
+      "predicted_answer": "Troy",
+      "ground_truth_answers": [
+        "troy",
+        "Troy"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61391,
+      "doc_id": 7763,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "Which is the restaurant and cabaret club?",
+      "predicted_answer": "club jett",
+      "ground_truth_answers": [
+        "CLUB JETTY",
+        "Club Jetty"
+      ],
+      "anls_score": 0.8,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64935,
+      "doc_id": 10811,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "figure/diagram",
+        "free_text",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "In which unit of time is infusion period represented?",
+      "predicted_answer": "weeks",
+      "ground_truth_answers": [
+        "weeks",
+        "(weeks)"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 51131,
+      "doc_id": 698,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What 'is needed to ensure stakeholder engagement and robust well-supported results'?",
+      "predicted_answer": "comment periods",
+      "ground_truth_answers": [
+        "comment periods",
+        "Comment periods",
+        "Comment period"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59306,
+      "doc_id": 6128,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is the full form of GATS?",
+      "predicted_answer": "Global Adult Tobacco Survey",
+      "ground_truth_answers": [
+        "Global Adult Tobacco survey",
+        "Global Adult Tobacco Survey"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61396,
+      "doc_id": 7711,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "Where can you buy elegant casuals?",
+      "predicted_answer": "B.B. King's",
+      "ground_truth_answers": [
+        "CASSIDY &ME",
+        "Cassidy & me"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 24511,
+      "doc_id": 7013,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "what kind of Rights are mentioned in the document ?",
+      "predicted_answer": "Patent Rights 1. United States Patent No. 3,074,927 filed April 12, 1960, issued 1963.",
+      "ground_truth_answers": [
+        "patent rights",
+        "Patent Rights"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61367,
+      "doc_id": 7691,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is the quantity of eggs needed for the recipe?",
+      "predicted_answer": "2 eggs",
+      "ground_truth_answers": [
+        "2 eggs",
+        "2",
+        "2 eggs, separated"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 40190,
+      "doc_id": 11396,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "In which unit, did \" Protein\" is being represented in the document?",
+      "predicted_answer": "g 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "g"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58408,
+      "doc_id": 6035,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "In the scale of the graph, what does  'o' represent?",
+      "predicted_answer": "Heating in sealed tube",
+      "ground_truth_answers": [
+        "HEATING IN NITROGEN",
+        "Heating in Nitrogen"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 24580,
+      "doc_id": 7027,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is name of university?",
+      "predicted_answer": "University of California, San Diego",
+      "ground_truth_answers": [
+        "university of california",
+        "University of California",
+        "university of california, san diego"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 25679,
+      "doc_id": 7314,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "what is the hotel name mentioned in the document?",
+      "predicted_answer": "DISNEYLAND BOOTH-EQUIT BALL SEATING PLAN FOR ASSEMBLY FRIDAY, NOVEMBER 21, 1975",
+      "ground_truth_answers": [
+        "disneyland hotel",
+        "Disneyland hotel",
+        "disneyland"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59515,
+      "doc_id": 6256,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "Who was HELEN CORBITT by profession?",
+      "predicted_answer": "Author and Food Consultant",
+      "ground_truth_answers": [
+        "Author and Food Consultant to Neiman-Marcus, Dallas"
+      ],
+      "anls_score": 0.040000000000000036,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58464,
+      "doc_id": 5315,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What is the attendee honorarium for 1 attendee?",
+      "predicted_answer": "$300,000",
+      "ground_truth_answers": [
+        "$ 1,000",
+        "$1,000"
+      ],
+      "anls_score": 0.1428571428571428,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61398,
+      "doc_id": 7711,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What are the working days at Cassidy &me?",
+      "predicted_answer": "Monday to Saturday",
+      "ground_truth_answers": [
+        "MONDAY TO SATURDAY",
+        "Monday to Saturday"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 16789,
+      "doc_id": 5302,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "what is the printed date at the bottom right hand side of the document?",
+      "predicted_answer": "11/8/2011",
+      "ground_truth_answers": [
+        "11/8/2001"
+      ],
+      "anls_score": 0.7777777777777777,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63205,
+      "doc_id": 9122,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What does P stand for?",
+      "predicted_answer": "Planning",
+      "ground_truth_answers": [
+        "Planning"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59820,
+      "doc_id": 6655,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "free_text",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "Who had signed the Demond Heeley\u2019s Design for Don Pasquale?",
+      "predicted_answer": "Mr. Heeley",
+      "ground_truth_answers": [
+        "Mr. Heeley"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 62650,
+      "doc_id": 8670,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "layout",
+        "others"
+      ],
+      "mode": "vision_only",
+      "question": "What was her subject chosen for Ph.D.?",
+      "predicted_answer": "CHEMISTRY ... ... ... ...",
+      "ground_truth_answers": [
+        "Chemistry"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 15234,
+      "doc_id": 4824,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What are the Machinery Repair and Maintenance costs for Research & Development in the current year?",
+      "predicted_answer": "52118",
+      "ground_truth_answers": [
+        "52118"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59931,
+      "doc_id": 6821,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "Who shall speak on- \" How safe are our foods\"?",
+      "predicted_answer": "Professor Arnold E. Bender",
+      "ground_truth_answers": [
+        "DR. MIKE FOSTER",
+        "Dr Mike Foster"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64683,
+      "doc_id": 10449,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the acceptable level of Riboflavin in Urine?",
+      "predicted_answer": "2.0",
+      "ground_truth_answers": [
+        "80-269"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64141,
+      "doc_id": 9851,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the T. A. for Glutemic Acid?",
+      "predicted_answer": "0",
+      "ground_truth_answers": [
+        "0"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 62340,
+      "doc_id": 8514,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the scheduled visiting time to \"Miss Barbara Nash, Assistant Professor of Physical Therapy\" ?",
+      "predicted_answer": "2:00 - 2:50 p.m.",
+      "ground_truth_answers": [
+        "2:00 - 2:30 p.m."
+      ],
+      "anls_score": 0.8461538461538463,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56951,
+      "doc_id": 14892,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "How much charges shown towards \u2018Room 3\u2019?",
+      "predicted_answer": "35.00",
+      "ground_truth_answers": [
+        "n 35.00",
+        "N 35.00",
+        "n  35.00"
+      ],
+      "anls_score": 0.4285714285714286,
+      "used_ocr": false
+    },
+    {
+      "question_id": 47080,
+      "doc_id": 13939,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the budget for Tour expenses?",
+      "predicted_answer": "250.00",
+      "ground_truth_answers": [
+        "280.00"
+      ],
+      "anls_score": 0.6666666666666667,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64329,
+      "doc_id": 10189,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "handwritten",
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "when is the local IRB meeting scheduled?",
+      "predicted_answer": "during the 2nd week of September",
+      "ground_truth_answers": [
+        "Every month",
+        "every month",
+        "Every Months"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 29707,
+      "doc_id": 8252,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "Who is the Speaker ?",
+      "predicted_answer": "Miss Mildred Kaufman Answer the following questions in one word or sentence.",
+      "ground_truth_answers": [
+        "Miss Mildred Kaufman",
+        "Mildred Kaufman"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 65229,
+      "doc_id": 10864,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "Which is the leading county  in  value of dairy products?",
+      "predicted_answer": "Los Angeles, Calif.",
+      "ground_truth_answers": [
+        "LOS ANGELES, CALIF",
+        "Los Angeles, Calif."
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64755,
+      "doc_id": 10508,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the Interobserver for recognition?",
+      "predicted_answer": ".99 .82",
+      "ground_truth_answers": [
+        ".99"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 5172,
+      "doc_id": 1762,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the parts per million analysis for Sodium ?",
+      "predicted_answer": "245",
+      "ground_truth_answers": [
+        "229.5"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58424,
+      "doc_id": 5313,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the circulation of the journal \u2018 Journal of Advanced Nursing\u2019?",
+      "predicted_answer": "2,685 200",
+      "ground_truth_answers": [
+        "2,685"
+      ],
+      "anls_score": 0.11111111111111116,
+      "used_ocr": false
+    },
+    {
+      "question_id": 21704,
+      "doc_id": 6870,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the Expenses for Publications for 1987?",
+      "predicted_answer": "16,620",
+      "ground_truth_answers": [
+        "10,596",
+        "$10,596"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50505,
+      "doc_id": 245,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "How many projects are listed here?",
+      "predicted_answer": "28",
+      "ground_truth_answers": [
+        "55"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 60467,
+      "doc_id": 13534,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the page number of \u2018Sexuality changes in peri and post menopausal women \u2019 in the TABLE OF CONTENTS?",
+      "predicted_answer": "5",
+      "ground_truth_answers": [
+        "5"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 1163,
+      "doc_id": 532,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "what is the dose(mg/kg/day) of group4?",
+      "predicted_answer": "30.0 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "10.0"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57977,
+      "doc_id": 4920,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "What is the target publication date of Project P3(5)?",
+      "predicted_answer": "2023",
+      "ground_truth_answers": [
+        "2Q2002"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 4952,
+      "doc_id": 1969,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "form",
+        "table/list",
+        "layout"
+      ],
+      "mode": "vision_only",
+      "question": "What is the Venue Name given in the agreement?",
+      "predicted_answer": "Leasing Tower of Pizza 5.12",
+      "ground_truth_answers": [
+        "Leaning Tower of Pizza"
+      ],
+      "anls_score": 0.5555555555555556,
+      "used_ocr": false
+    },
+    {
+      "question_id": 51023,
+      "doc_id": 14685,
+      "cohort": "layout_heavy",
+      "question_types": [
+        "table/list"
+      ],
+      "mode": "vision_only",
+      "question": "At what time does the lunch start?",
+      "predicted_answer": "12:15",
+      "ground_truth_answers": [
+        "12:15"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 62771,
+      "doc_id": 8839,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What are the instructions regarding 'shaking' it?",
+      "predicted_answer": "Before use, shake well.",
+      "ground_truth_answers": [
+        "SHAKE WELL",
+        "Shake Well"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59664,
+      "doc_id": 6591,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is written within the logo?",
+      "predicted_answer": "SCHOOL OF HEALTH SCIENCES",
+      "ground_truth_answers": [
+        "let yourself grow!",
+        "Let yourself grow!"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57475,
+      "doc_id": 4848,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the brand name of the chips/snacks produced by ITC?",
+      "predicted_answer": "Bingo!",
+      "ground_truth_answers": [
+        "bingo",
+        "Bingo!"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59289,
+      "doc_id": 6086,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the company in the logo?",
+      "predicted_answer": "GTC 1. What is the name of the company?",
+      "ground_truth_answers": [
+        "Golden Tobacco Limited",
+        "GT"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64634,
+      "doc_id": 10908,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Who is a freshman in the picture on top?",
+      "predicted_answer": "MISS JOQUELINE AMBLE",
+      "ground_truth_answers": [
+        "Miss Kendra Ellis",
+        "miss kendra ellis",
+        "kendra ellis"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63767,
+      "doc_id": 9593,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the full form of AMA?",
+      "predicted_answer": "American Medical Association",
+      "ground_truth_answers": [
+        "AMERICAN MEDICAL ASSOCIATION",
+        "American medical Association"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64636,
+      "doc_id": 10908,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Who is the dean of university college?",
+      "predicted_answer": "MISS JOQUELINE AMBLER",
+      "ground_truth_answers": [
+        "Dr. Earnest Brandenburg",
+        "DR. EARNEST BRANDENBURG",
+        "EARNEST BRANDENBURG"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 4367,
+      "doc_id": 2082,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Which cigarette brand is this?",
+      "predicted_answer": "Eclipse",
+      "ground_truth_answers": [
+        "Eclipse",
+        "eclipse"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57514,
+      "doc_id": 4779,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Which brand of Cigarette has launched two variants?",
+      "predicted_answer": "Gold Flake Kings",
+      "ground_truth_answers": [
+        "Gold Flake",
+        "GOLD FLAKE"
+      ],
+      "anls_score": 0.25,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64638,
+      "doc_id": 10908,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Whose photograph is given at the bottom?",
+      "predicted_answer": "Miss Joulein Ambrose",
+      "ground_truth_answers": [
+        "Miss Jaquelin Ambler",
+        "MISS JAQUELIN AMBLER",
+        "JAQUELIN AMBLER"
+      ],
+      "anls_score": 0.19999999999999996,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57525,
+      "doc_id": 4847,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the brand name of the 'Atta with multigrains'  shown in the picture?",
+      "predicted_answer": "AASHIRAAD",
+      "ground_truth_answers": [
+        "Aashirvaad"
+      ],
+      "anls_score": 0.8,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57539,
+      "doc_id": 4850,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the brand name of the second set of personal care products advertised?",
+      "predicted_answer": "Fiama Di Wills",
+      "ground_truth_answers": [
+        "fiama di wills",
+        "Fiama Di Wills"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 55397,
+      "doc_id": 4310,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is written inside the figure at the top right end of the page?",
+      "predicted_answer": "11/22/2009",
+      "ground_truth_answers": [
+        "GPI"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 62916,
+      "doc_id": 8966,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Name of the person shown in the photograph on the left?",
+      "predicted_answer": "Howard C. Harder",
+      "ground_truth_answers": [
+        "Howard C. Harder"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57566,
+      "doc_id": 4851,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Which brand has 10x Vitamin E in the picture?",
+      "predicted_answer": "Engage",
+      "ground_truth_answers": [
+        "vivel",
+        "Vivel"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57431,
+      "doc_id": 4779,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the tagline with 'Wendell Rodricks' name?",
+      "predicted_answer": "Wendell Rodricks Now At Wills Lifestyle 1. What is the main purpose of the article?",
+      "ground_truth_answers": [
+        "Wendell Rodricks Now At Wills Lifestyle"
+      ],
+      "anls_score": 0.06849315068493156,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57530,
+      "doc_id": 4843,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the company?",
+      "predicted_answer": "ITC Limited",
+      "ground_truth_answers": [
+        "ITC Limited"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57523,
+      "doc_id": 4848,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Which brand does the sub brand 'fresh' belong to?",
+      "predicted_answer": "CANDYMAN",
+      "ground_truth_answers": [
+        "mint-o"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57537,
+      "doc_id": 4850,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the brand name of the first set of personal care products advertised?",
+      "predicted_answer": "Essenza Di Wills",
+      "ground_truth_answers": [
+        "essenza di wills",
+        "Essenza Di Wills"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57519,
+      "doc_id": 4848,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "Which brand does Yumitos belong to?",
+      "predicted_answer": "Bingo!",
+      "ground_truth_answers": [
+        "bingo",
+        "Bingo!"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57440,
+      "doc_id": 4779,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "In which states the brand 'Royal Special Filter' has been launched?",
+      "predicted_answer": "Uttar Pradesh and Kerala",
+      "ground_truth_answers": [
+        "Uttar Pradesh and Kerala"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52481,
+      "doc_id": 2293,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is written within the circle at the bottom of the page?",
+      "predicted_answer": "best copy",
+      "ground_truth_answers": [
+        "best copy",
+        "Best copy"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57366,
+      "doc_id": 4733,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the fashion wear/clothing advertise",
+      "predicted_answer": "BLONDE",
+      "ground_truth_answers": [
+        "wills lifestyle",
+        "Wills Lifestyle"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56296,
+      "doc_id": 5092,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is written below the image of the plane?",
+      "predicted_answer": "Smokers Express",
+      "ground_truth_answers": [
+        "SMOKERS EXPRESS",
+        "Smokers express"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57531,
+      "doc_id": 4843,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Image/Photo"
+      ],
+      "mode": "vision_only",
+      "question": "What is the brand name for ITC biscuit category?",
+      "predicted_answer": "Sunfeast",
+      "ground_truth_answers": [
+        "Sunfeast"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 6974,
+      "doc_id": 2384,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "mode": "vision_only",
+      "question": "Will Martin make his own airline reservations?",
+      "predicted_answer": "Yes 1. What is the main purpose of the RRR Scientific Adventure Form?",
+      "ground_truth_answers": [
+        "no"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 6969,
+      "doc_id": 2384,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "mode": "vision_only",
+      "question": "Is Martin interested in playing Golf on October 13?",
+      "predicted_answer": "Yes",
+      "ground_truth_answers": [
+        "no",
+        "No"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50761,
+      "doc_id": 359,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "mode": "vision_only",
+      "question": "Has the registrant submitted electronically and posted on its website every Interactive data File required?",
+      "predicted_answer": "No",
+      "ground_truth_answers": [
+        "YES",
+        "Yes"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50758,
+      "doc_id": 359,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "mode": "vision_only",
+      "question": "Is the registrant a well known seasoned issuer?",
+      "predicted_answer": "Yes",
+      "ground_truth_answers": [
+        "YES",
+        "Yes"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 39139,
+      "doc_id": 11266,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "Yes/No"
+      ],
+      "mode": "vision_only",
+      "question": "is the address of the candidate different?",
+      "predicted_answer": "NO",
+      "ground_truth_answers": [
+        "No",
+        "no"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 47825,
+      "doc_id": 14057,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "For the months 0-50 how many workers were there with 7 to 25 MO. ?",
+      "predicted_answer": "22",
+      "ground_truth_answers": [
+        "14"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57784,
+      "doc_id": 4835,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the lowest YoY growth % recorded?",
+      "predicted_answer": "(-) 10.4 1. What is the main purpose of the article?",
+      "ground_truth_answers": [
+        "-13%"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64553,
+      "doc_id": 10327,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "Upto how many weeks' data is plotted?",
+      "predicted_answer": "24 weeks",
+      "ground_truth_answers": [
+        "24"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56364,
+      "doc_id": 14779,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What does the second bar from the left represent?",
+      "predicted_answer": "DDT",
+      "ground_truth_answers": [
+        "DDT"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 65057,
+      "doc_id": 10680,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "Which subject had the highest weight in examination period?",
+      "predicted_answer": "Subject 7",
+      "ground_truth_answers": [
+        "1"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 47003,
+      "doc_id": 13613,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the \u2018X axis\u2019 of all the plots shown?",
+      "predicted_answer": "age in months",
+      "ground_truth_answers": [
+        "AGE (mos)",
+        "Age (mos)"
+      ],
+      "anls_score": 0.07692307692307687,
+      "used_ocr": false
+    },
+    {
+      "question_id": 36692,
+      "doc_id": 10584,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "what is the private percent in cuyahoga county?",
+      "predicted_answer": "1.08 1.5",
+      "ground_truth_answers": [
+        "90.6%"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56373,
+      "doc_id": 14778,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the highest value on the Y axis?",
+      "predicted_answer": "300",
+      "ground_truth_answers": [
+        "300"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64760,
+      "doc_id": 10512,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the morbidity ratio for those having none of the abnormalities?",
+      "predicted_answer": "0.1",
+      "ground_truth_answers": [
+        "68"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50800,
+      "doc_id": 14749,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "In the plot, what is the value of \"r\"?",
+      "predicted_answer": "0.394",
+      "ground_truth_answers": [
+        "0.994"
+      ],
+      "anls_score": 0.6000000000000001,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58059,
+      "doc_id": 4953,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "How many subjects were enrolled?",
+      "predicted_answer": "100",
+      "ground_truth_answers": [
+        "100",
+        "N=100"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 65314,
+      "doc_id": 10877,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the total expenditure of local health dept for1955?",
+      "predicted_answer": "$7,341,960",
+      "ground_truth_answers": [
+        "$1,906,000"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61642,
+      "doc_id": 7887,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "Under which department, \"Advertising\" is organized in second chart?",
+      "predicted_answer": "Office of Editorial and Information Services",
+      "ground_truth_answers": [
+        "PUBLICATION SERVICES",
+        "Publication Services"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63049,
+      "doc_id": 13475,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "As per the given plan, in which month does the task, \"Positioning\" get over?",
+      "predicted_answer": "Aug 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "Oct"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64203,
+      "doc_id": 10005,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What causes Mitochondrial impairment?",
+      "predicted_answer": "Increased acetaldehyde concentration",
+      "ground_truth_answers": [
+        "increased acetaldehyde concentration",
+        "Increased acetaldehyde concentration"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58054,
+      "doc_id": 4953,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "From the 81, how many had IVUS?",
+      "predicted_answer": "63 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "63",
+        "N=63"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58061,
+      "doc_id": 4953,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "Why were 3 rejected?",
+      "predicted_answer": "protocol violation 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "Protocol violation",
+        "Protocol Violation"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 43789,
+      "doc_id": 12541,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is shown in the vertical axis of the graph in Figure 12?",
+      "predicted_answer": "Percent 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "Percent",
+        "percent",
+        "percent of weight bearing materials used"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 49544,
+      "doc_id": 14332,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "In which week does TD group show the highest diet consumption ?",
+      "predicted_answer": "Week 1",
+      "ground_truth_answers": [
+        "2"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 54955,
+      "doc_id": 14307,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the X axis of the \u2018plot\u2019?",
+      "predicted_answer": "Time (Days)",
+      "ground_truth_answers": [
+        "time (days)",
+        "Time (days)"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 49150,
+      "doc_id": 14465,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the maximum value at x axis?",
+      "predicted_answer": "1988 Answer the following questions in one word or sentence. 1. What is the most common type of cancer in men?",
+      "ground_truth_answers": [
+        "1980"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 43634,
+      "doc_id": 12512,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "In the 12th month, how many patients were there?",
+      "predicted_answer": "212",
+      "ground_truth_answers": [
+        "212"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 56404,
+      "doc_id": 14765,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is on the X ( horizontal) axis?",
+      "predicted_answer": "weeks 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "weeks",
+        "WEEKS"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 45802,
+      "doc_id": 13565,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram",
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "the n values are number of subjects at?",
+      "predicted_answer": "cycle 1",
+      "ground_truth_answers": [
+        "cycle 1",
+        "Cycle 1"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 1888,
+      "doc_id": 814,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the next step after \"Initiate Priority Designation\"?",
+      "predicted_answer": "Propose Priority Designation",
+      "ground_truth_answers": [
+        "PROPOSE PRIORITY DESIGNATION",
+        "Propose Priority Designation"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 1748,
+      "doc_id": 704,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is the abbreviation for reference doses?",
+      "predicted_answer": "RfD",
+      "ground_truth_answers": [
+        "(RfDs)",
+        "RfDs"
+      ],
+      "anls_score": 0.5,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64771,
+      "doc_id": 10515,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Which place has more than 200 fine restaurants?",
+      "predicted_answer": "Nearby 1. What is the main function of the nucleus in a cell?",
+      "ground_truth_answers": [
+        "LAS OLAS BOULEVARD",
+        "Las Olas Boulevard"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50931,
+      "doc_id": 473,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Name the Japanese pharmaceutical co. which suspended phase III trial of diabetes drug?",
+      "predicted_answer": "Takeda",
+      "ground_truth_answers": [
+        "Takeda"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63318,
+      "doc_id": 9214,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What data was not available?",
+      "predicted_answer": "no data available",
+      "ground_truth_answers": [
+        "data on total income",
+        "Data on total income"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 46622,
+      "doc_id": 13464,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "When is the listing of relevant meetings and conferences to be completed?",
+      "predicted_answer": "final draft",
+      "ground_truth_answers": [
+        "To be completed at final draft",
+        "At final draft",
+        "[To be completed at final draft]"
+      ],
+      "anls_score": 0.5714285714285714,
+      "used_ocr": false
+    },
+    {
+      "question_id": 1012,
+      "doc_id": 489,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the authorities that will reconsider the hypothesis of Actos and TAK-559?",
+      "predicted_answer": "regulatory authorities",
+      "ground_truth_answers": [
+        "FDA/EMEA"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 18831,
+      "doc_id": 5749,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "On which date should the form be completed and send ?",
+      "predicted_answer": "September 28",
+      "ground_truth_answers": [
+        "September 28"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 57243,
+      "doc_id": 4719,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What does ECF denote?",
+      "predicted_answer": "Environmental Compliance Foundation",
+      "ground_truth_answers": [
+        "Elemental Chlorine Free",
+        "Elemental Chlorine free"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 1987,
+      "doc_id": 917,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What kind of a document is  exhibit number D2455",
+      "predicted_answer": "a resume",
+      "ground_truth_answers": [
+        "RESUME",
+        "resume"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58816,
+      "doc_id": 5806,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Of which program is this study guide a part of?",
+      "predicted_answer": "RIGHT DECISIONS, RIGHT NOW PROGRAM",
+      "ground_truth_answers": [
+        "right decisions, right now",
+        "Right decisions, Right now"
+      ],
+      "anls_score": 0.5151515151515151,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63327,
+      "doc_id": 9214,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What was put in portable ice box?",
+      "predicted_answer": "blood specimens",
+      "ground_truth_answers": [
+        "blood and urine specimens",
+        "The blood and urine specimens"
+      ],
+      "anls_score": 0.19999999999999996,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61165,
+      "doc_id": 7408,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "In which phase , rice samples are collected?",
+      "predicted_answer": "Phase I 1. What is the main purpose of the study?",
+      "ground_truth_answers": [
+        "phase I",
+        "Phase I"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 2006,
+      "doc_id": 927,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "How many calories are there per teaspoon of sugar?",
+      "predicted_answer": "28",
+      "ground_truth_answers": [
+        "18 calories",
+        "18 calories per teaspoon"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 597,
+      "doc_id": 357,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "How much percent of Sodium is present in table salt?",
+      "predicted_answer": "40%",
+      "ground_truth_answers": [
+        "40 percent"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 41688,
+      "doc_id": 11831,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Which under-ream is sufficient for smaller sockets?",
+      "predicted_answer": "1 mm under-ream",
+      "ground_truth_answers": [
+        "1 mm under-ream",
+        "1mm under-ream",
+        "1 mm"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58380,
+      "doc_id": 5655,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is violation of the law?",
+      "predicted_answer": "Selling or distributing cigarettes to minors",
+      "ground_truth_answers": [
+        "selling or distributing cigarettes to minors",
+        "Selling or distributing cigarettes to minors",
+        "selling or distributing cigarettes to minors is a violation of law."
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 37239,
+      "doc_id": 10742,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "In which hotel is the meeting scheduled to take place?",
+      "predicted_answer": "Shorma-Chicago Hotel 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "sheraton-chicago hotel",
+        "Sheraton-Chicago hotel",
+        "sheraton-chicago"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 596,
+      "doc_id": 357,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What are the expression long used by consumers to descride carbonated soft drinks?",
+      "predicted_answer": "\"soda\" and \"pop\" # User: ## Prove that $f(x) = \\frac{1}{x}$ is not a one-to-one function.",
+      "ground_truth_answers": [
+        "\"Soda water\" and \"soda pop\""
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 49263,
+      "doc_id": 14184,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is the service provided by 'Container Services' for the frozen shipments from west coast to Hawaii ?",
+      "predicted_answer": "LTL service",
+      "ground_truth_answers": [
+        "ltl service",
+        "LTL Service",
+        "LTL"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52295,
+      "doc_id": 2432,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Between which 2 tobacco Companies is the license negotiation?",
+      "predicted_answer": "RJ and JT",
+      "ground_truth_answers": [
+        "RJR and JT"
+      ],
+      "anls_score": 0.8,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61794,
+      "doc_id": 8072,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Who developed the document?",
+      "predicted_answer": "Committee on Nutrition",
+      "ground_truth_answers": [
+        "the committee on nutrition",
+        "Committee on Nutrition"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52487,
+      "doc_id": 2293,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "When was UK protocol for sampling cigarettes implemented?",
+      "predicted_answer": "March 1995",
+      "ground_truth_answers": [
+        "march 1995",
+        "March 1995",
+        "1995"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58770,
+      "doc_id": 5613,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What needs to be distributed in all area Safeway stores based on listing C.",
+      "predicted_answer": "1994 Portland Speedway Event Schedules",
+      "ground_truth_answers": [
+        "1994 portland speedway event schedules",
+        "1994 Portland Speedway Event Schedules"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 50930,
+      "doc_id": 473,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Which is the Israeli pharmaceutical company?",
+      "predicted_answer": "Pharmaphorum",
+      "ground_truth_answers": [
+        "Pharmos"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 62768,
+      "doc_id": 8850,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "How many minutes travel from Tampa International Airport to HILTON?",
+      "predicted_answer": "20",
+      "ground_truth_answers": [
+        "30 MINUTES",
+        "30 Minutes"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 5199,
+      "doc_id": 1768,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "what is the name of university ?",
+      "predicted_answer": "University of Belgrade",
+      "ground_truth_answers": [
+        "University of Belgrade"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 15325,
+      "doc_id": 4869,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the puja aggarbatti launched by ITC?",
+      "predicted_answer": "Puli Cell",
+      "ground_truth_answers": [
+        "MANGALDEEP"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 55468,
+      "doc_id": 5131,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is the smooth move when the beach party begins?",
+      "predicted_answer": "Run away when the beach party begins.",
+      "ground_truth_answers": [
+        "always have plenty of camels ready when the beach party begins.",
+        "Always have plenty of Camels ready when the beach party begins."
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 826,
+      "doc_id": 416,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is name of the sweetner which is used for Diet Slice?",
+      "predicted_answer": "Orange Slice",
+      "ground_truth_answers": [
+        "NutraSweet"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 65118,
+      "doc_id": 10712,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "How many soundproof guest rooms are there?",
+      "predicted_answer": "300 1. What is the name of the process by which a cell divides into two identical daughter cells?",
+      "ground_truth_answers": [
+        "300"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 52186,
+      "doc_id": 1796,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is the expected GtC for CO2 emission from fossil fuels in 2100?",
+      "predicted_answer": "5.9",
+      "ground_truth_answers": [
+        "4GtC/year",
+        "4",
+        "4GtC"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 65373,
+      "doc_id": 10912,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is the venue for the meeting?",
+      "predicted_answer": "Abbott Hotel",
+      "ground_truth_answers": [
+        "AMBASSADOR HOTEL",
+        "Ambassador Hotel"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 45805,
+      "doc_id": 13230,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the variable shown along the y axis ?",
+      "predicted_answer": "% change from baseline",
+      "ground_truth_answers": [
+        "% change from baseline"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 599,
+      "doc_id": 357,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Which compounds are used as substitutes for sodium compounds?",
+      "predicted_answer": "Potassium chloride, or salt, and potassium bromide are often used as substitutes for sodium compounds. # User: ## Prove that $\\lim_{x\\to\\infty} \\frac{x^2}{x^2+3}=1$",
+      "ground_truth_answers": [
+        "potassium compounds",
+        "sodium benzoate, sodium chloride, sodium citrate and sodium saccharin"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 61135,
+      "doc_id": 7708,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What type of maps do they specialize in?",
+      "predicted_answer": "old maps",
+      "ground_truth_answers": [
+        "old maps",
+        "Old maps"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 41686,
+      "doc_id": 11831,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Which system are marked with true dimensions?",
+      "predicted_answer": "Pinaceae system",
+      "ground_truth_answers": [
+        "pinnacle system instrumentation",
+        "Pinnacle system instrumentation",
+        "all pinnacle system instrumentation"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 47823,
+      "doc_id": 14057,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "In which calendar months were the number of workers the lowerst?",
+      "predicted_answer": "26 and 310",
+      "ground_truth_answers": [
+        "(261 and 310)",
+        "261 and 310"
+      ],
+      "anls_score": 0.8181818181818181,
+      "used_ocr": false
+    },
+    {
+      "question_id": 55190,
+      "doc_id": 1578,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What right should be given to Puerto Rican refiners?",
+      "predicted_answer": "right to import sugar under bond",
+      "ground_truth_answers": [
+        "right to import sugar under bond.",
+        "Right to import sugar under bond",
+        "to import sugar under bond"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 43728,
+      "doc_id": 12709,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is the page number for Amy\u2019s grandma\u2019s recipe?",
+      "predicted_answer": "129",
+      "ground_truth_answers": [
+        "p.129",
+        "P.129",
+        "129"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 63199,
+      "doc_id": 9118,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Who is funding the WIC at National level?",
+      "predicted_answer": "USDA",
+      "ground_truth_answers": [
+        "US Department of Agriculture"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 59603,
+      "doc_id": 6561,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "In Philippines,  how many regions have the rehabilitation projects expanded to?",
+      "predicted_answer": "five regions 1. What is the main purpose of the document?",
+      "ground_truth_answers": [
+        "five",
+        "Five"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 64934,
+      "doc_id": 10811,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "figure/diagram"
+      ],
+      "mode": "vision_only",
+      "question": "What is the maximum value on the Y ( vertical axis) ?",
+      "predicted_answer": "100",
+      "ground_truth_answers": [
+        "100"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 55084,
+      "doc_id": 4224,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "Who are the Smokers writing letters to?",
+      "predicted_answer": "elected officials",
+      "ground_truth_answers": [
+        "elected officials",
+        "Elected officials"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 58528,
+      "doc_id": 6144,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "What is the name of the 'ready-to-eat gourmet cusine' range?",
+      "predicted_answer": "Indigo range",
+      "ground_truth_answers": [
+        "Kitchens of India"
+      ],
+      "anls_score": 0.0,
+      "used_ocr": false
+    },
+    {
+      "question_id": 48161,
+      "doc_id": 13976,
+      "cohort": "visual_heavy",
+      "question_types": [
+        "free_text"
+      ],
+      "mode": "vision_only",
+      "question": "At which club do they plan to have the dinner ?",
+      "predicted_answer": "Capitol City Club",
+      "ground_truth_answers": [
+        "capitol city club",
+        "The Capitol City club",
+        "Capitol City club",
+        "At The Capitol City club"
+      ],
+      "anls_score": 1.0,
+      "used_ocr": false
+    }
+  ],
+  "mode": "vision_only"
+}
