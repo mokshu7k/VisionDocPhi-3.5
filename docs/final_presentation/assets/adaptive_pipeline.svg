@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#2d65a4" /></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="70" y="210" width="200" height="90" rx="14" fill="#f4f7fa" stroke="#2d65a4" stroke-width="3"/>
+<text x="170.0" y="243.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">Image +</text>
+<text x="170.0" y="268.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">Question + OCR</text>
+<rect x="350" y="210" width="180" height="90" rx="14" fill="#fff5e6" stroke="#dd852f" stroke-width="3"/>
+<text x="440.0" y="255.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">1 Router</text>
+<rect x="610" y="210" width="210" height="90" rx="14" fill="#eef8f6" stroke="#27897f" stroke-width="3"/>
+<text x="715.0" y="243.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">2 Hybrid</text>
+<text x="715.0" y="268.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">Retrieval</text>
+<rect x="900" y="210" width="210" height="90" rx="14" fill="#eef8f6" stroke="#27897f" stroke-width="3"/>
+<text x="1005.0" y="243.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">3 Spatial</text>
+<text x="1005.0" y="268.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">Expansion</text>
+<rect x="1190" y="210" width="180" height="90" rx="14" fill="#eef8f6" stroke="#27897f" stroke-width="3"/>
+<text x="1280.0" y="255.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">4 Formatter</text>
+<rect x="1190" y="390" width="180" height="90" rx="14" fill="#fff5e6" stroke="#dd852f" stroke-width="3"/>
+<text x="1280.0" y="423.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">5 Quality</text>
+<text x="1280.0" y="448.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">Gate</text>
+<rect x="675" y="420" width="265" height="115" rx="14" fill="#eef4ff" stroke="#2d65a4" stroke-width="3"/>
+<text x="807.5" y="465.5" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">Phi-3.5-Vision</text>
+<text x="807.5" y="490.5" text-anchor="middle" font-family="Segoe UI, Arial" font-size="21" font-weight="600" fill="#1c222a">(image always primary)</text>
+<line x1="270" y1="255" x2="350" y2="255" stroke="#2d65a4" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="530" y1="255" x2="610" y2="255" stroke="#2d65a4" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="570.0" y="247.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" fill="#5e6975">OCR path</text>
+<line x1="820" y1="255" x2="900" y2="255" stroke="#2d65a4" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1110" y1="255" x2="1190" y2="255" stroke="#2d65a4" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1280" y1="300" x2="1280" y2="390" stroke="#2d65a4" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1190" y1="435" x2="940" y2="475" stroke="#2d65a4" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="1065.0" y="447.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" fill="#5e6975">accept</text>
+<line x1="440" y1="300" x2="720" y2="420" stroke="#2d65a4" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="580.0" y="352.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" fill="#5e6975">vision only</text>
+<line x1="715" y1="300" x2="760" y2="420" stroke="#2d65a4" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="737.5" y="352.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" fill="#5e6975">no match</text>
+<line x1="1280" y1="480" x2="940" y2="500" stroke="#2d65a4" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="1110.0" y="482.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" fill="#5e6975">reject</text>
+<line x1="1280" y1="390" x2="940" y2="455" stroke="#2d65a4" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="1110.0" y="414.5" text-anchor="middle" font-family="Segoe UI, Arial" font-size="18" fill="#5e6975">empty</text>
+<text x="70" y="70" font-family="Segoe UI, Arial" font-size="24" font-weight="700" fill="#1c304a">Adaptive Pipeline: Five Stages with Safe Fallback</text>
+</svg>
