@@ -1068,7 +1068,49 @@ Format: **Q → Ideal Answer → Why asked → Bad answer**
 
 ---
 
-# SECTION 12: MONDAY INTERVIEW CRASH COURSE
+# SECTION 12: EVAL HARNESS (resume expansion — ship this)
+
+## What you built
+
+A production-style **DocVQA evaluation harness** on top of the paired 200-sample baseline vs OCR-adaptive results. It does not retrain the model; it makes your system gains *measurable and diagnosable*.
+
+**Commands**
+
+```bash
+python scripts/run_harness.py --adaptive-version v2
+python scripts/run_harness.py --dry-run
+python scripts/run_harness.py --latency-smoke 10   # needs data + GPU/runtime
+```
+
+**Artifacts:** `data/outputs/harness/report.json` and `report.md`
+
+## Resume-ready third bullet
+
+> Built a DocVQA evaluation harness with failure taxonomy (field-selection / OCR-noise / refusal), paired ANLS+EM cohort reporting, and latency profiling for vision-only vs OCR-adaptive Phi-3.5-Vision routes.
+
+## Five talking points
+
+1. **Why a harness:** Accuracy deltas alone don’t tell you *what* broke. Taxonomy + paired shifts answer “where adaptive still fails” and “what to fix next.”
+2. **Labels (rule-based, not a classifier):** `correct` (ANLS ≥ 0.5), `refusal_empty`, `ocr_noise` (boilerplate/hijack or OCR copy of wrong span), `field_selection` (plausible wrong field on layout/OCR path), `other`.
+3. **Paired design:** Same 200 questions for baseline and adaptive — report includes win/tie counts and baseline→adaptive label shifts (e.g. `field_selection→correct`).
+4. **Latency:** `evaluate()` records `latency_ms` and `ocr_prep_ms`. Historical merged JSON may lack timings; use `--latency-smoke N` or note that VLM generation dominates (~tens of seconds/sample on T4) while OCR prep is CPU-side.
+5. **Prioritization story:** If adaptive residual errors are mostly `field_selection`, improve retrieval/expansion; if `ocr_noise`, tighten sanitizer/gate; if visual `other`, keep routing conservative.
+
+## Failure-case walkthrough (use live harness examples)
+
+Open `data/outputs/harness/report.md` → **Example adaptive failures**. Pick one `field_selection` or `ocr_noise` row and say:
+
+> “Adaptive ANLS is still below 0.5 here. The taxonomy tags it as field-selection / OCR-noise. Baseline may have been wrong too, or OCR injected a nearby wrong span. Next fix is retrieval/gate, not a bigger model.”
+
+Classic project example (date): predicted `8/25/15` vs GT `8/25/88` — wrong OCR digit; gate checks confidence, not OCR truth → taxonomy `field_selection` (or `ocr_noise` if snippet matching applies).
+
+## Interview one-liner
+
+> “Beyond adaptive OCR RAG, I built an evaluation harness that classifies DocVQA failures, reports paired ANLS/EM by cohort and route, and profiles latency so we can quantify accuracy–cost tradeoffs of the OCR path.”
+
+---
+
+# SECTION 13: MONDAY INTERVIEW CRASH COURSE
 
 ## CRITICAL (memorize tonight — 80% of interview)
 
@@ -1085,31 +1127,32 @@ Format: **Q → Ideal Answer → Why asked → Bad answer**
 11. **Why not fine-tune yet:** prompt gave +0.152 with zero retrain risk
 12. **Layout vs visual cohort:** eval labels from dataset, not image classifier
 13. **Enterprise value:** document QA at fraction of API cost
+14. **Eval harness:** taxonomy (field-selection / OCR-noise / refusal) + paired ANLS/EM + latency (Section 12)
 
 ## IMPORTANT (review tomorrow — 15%)
 
-14. Routing 7 outcomes and when each triggers
-15. Image density override (edge + contrast thresholds)
-16. Spatial expansion three rules
-17. Quality gate three checks
-18. Phi-3.5-Vision architecture (image tokens + LLM)
-19. Bounding box role in prompt
-20. Paired evaluation design (same 200 questions)
-21. How you'd fine-tune with QLoRA if asked
-22. Insurance document assistant architecture
-23. Latency: VLM dominates, precompute OCR at ingest
-24. 148 ties interpretation
-25. V1 → V2 improvements (stopwords, label penalty, windows)
+15. Routing 7 outcomes and when each triggers
+16. Image density override (edge + contrast thresholds)
+17. Spatial expansion three rules
+18. Quality gate three checks
+19. Phi-3.5-Vision architecture (image tokens + LLM)
+20. Bounding box role in prompt
+21. Paired evaluation design (same 200 questions)
+22. How you'd fine-tune with QLoRA if asked
+23. Insurance document assistant architecture
+24. Latency: VLM dominates, precompute OCR at ingest
+25. 148 ties interpretation
+26. V1 → V2 improvements (stopwords, label penalty, windows)
 
 ## OPTIONAL (if time — 5%)
 
-26. LayoutLM comparison
-27. vLLM / TensorRT serving
-28. Bootstrap significance testing
-29. Multi-page extension design
-30. Synthetic data generation details
-31. Full 50-question bank deep review
-32. GAT-LSTM / financial RAG crossover stories
+27. LayoutLM comparison
+28. vLLM / TensorRT serving
+29. Bootstrap significance testing
+30. Multi-page extension design
+31. Synthetic data generation details
+32. Full 50-question bank deep review
+33. GAT-LSTM / financial RAG crossover stories
 
 ---
 

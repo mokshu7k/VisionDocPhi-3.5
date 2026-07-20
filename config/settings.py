@@ -178,6 +178,11 @@ def get_mode_output_dir(mode: str, version: str = "") -> Path:
         return OUTPUT_DIR / f"ocr_adaptive_200{suffix}"
     return OUTPUT_DIR / f"{mode_key}_200{suffix}"
 
+
+# Eval harness output (taxonomy + paired ANLS/EM + latency reports)
+HARNESS_DIR = OUTPUT_DIR / "harness"
+HARNESS_DIR.mkdir(parents=True, exist_ok=True)
+
 # ============================================================================
 # LOGGING CONFIGURATION
 # ============================================================================

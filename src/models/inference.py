@@ -7,6 +7,7 @@ No OCR data or training is used - pure vision-language inference.
 import os
 import sys
 import gc
+import time
 import types
 import importlib
 import importlib
@@ -471,8 +472,11 @@ class DocVQAInference:
                     ocr_snippet = None
                     pipeline_result = None
                     used_ocr = False
+                    ocr_prep_ms = None
+                    sample_t0 = time.perf_counter()
 
                     if effective_mode == InferenceMode.OCR_ADAPTIVE and self.agent_pipeline:
+                        prep_t0 = time.perf_counter()
                         pipeline_result = self.agent_pipeline.prepare(
                             image=image,
                             question=question,
@@ -480,6 +484,7 @@ class DocVQAInference:
                             ucsf_id=sample.get('ucsf_document_id', ''),
                             page_no=str(sample.get('ucsf_document_page_no', '')),
                         )
+                        ocr_prep_ms = (time.perf_counter() - prep_t0) * 1000.0
                         used_ocr = pipeline_result.used_ocr
                         ocr_snippet = pipeline_result.ocr_snippet
 
@@ -489,6 +494,7 @@ class DocVQAInference:
                         ocr_snippets=ocr_snippet,
                         mode=effective_mode,
                     )
+                    latency_ms = (time.perf_counter() - sample_t0) * 1000.0
 
                     anls = anls_score([predicted_answer], ground_truth_answers)
 
@@ -503,7 +509,10 @@ class DocVQAInference:
                         'ground_truth_answers': ground_truth_answers,
                         'anls_score': anls,
                         'used_ocr': used_ocr,
+                        'latency_ms': latency_ms,
                     }
+                    if ocr_prep_ms is not None:
+                        result_row['ocr_prep_ms'] = ocr_prep_ms
 
                     if pipeline_result:
                         audit = pipeline_result.to_audit_dict()

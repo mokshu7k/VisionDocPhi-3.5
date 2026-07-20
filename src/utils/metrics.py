@@ -4,9 +4,11 @@ Evaluation Metrics for Document VQA
 Metrics:
 - ANLS (Average Normalized Levenshtein Similarity)
 - Exact Match
+- Latency percentiles (for eval harness)
 """
-from typing import List, Union
+from typing import Dict, List, Sequence, Union
 from difflib import SequenceMatcher
+import math
 import re
 import string
 
@@ -164,6 +166,37 @@ def exact_match(predictions: List[str], ground_truth: List[str]) -> bool:
             return True
     
     return False
+
+
+def latency_percentiles(times_ms: Sequence[float]) -> Dict[str, float]:
+    """
+    Compute mean and percentile latency statistics.
+
+    Args:
+        times_ms: Per-sample latencies in milliseconds.
+
+    Returns:
+        Dict with mean, p50, p90, p95 (0.0 if empty).
+    """
+    if not times_ms:
+        return {"mean": 0.0, "p50": 0.0, "p90": 0.0, "p95": 0.0}
+
+    values = sorted(float(t) for t in times_ms)
+    n = len(values)
+
+    def _percentile(p: float) -> float:
+        if n == 1:
+            return values[0]
+        # Nearest-rank style on sorted list
+        rank = max(0, min(n - 1, int(math.ceil(p / 100.0 * n)) - 1))
+        return values[rank]
+
+    return {
+        "mean": sum(values) / n,
+        "p50": _percentile(50),
+        "p90": _percentile(90),
+        "p95": _percentile(95),
+    }
 
 
 def calculate_metrics(all_predictions: List[str], all_ground_truths: List[List[str]]) -> dict:

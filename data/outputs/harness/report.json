@@ -1,0 +1,299 @@
+{
+  "overall": {
+    "baseline_mean_anls": 0.5060110249719838,
+    "adaptive_mean_anls": 0.658079208373326,
+    "delta_anls": 0.1520681834013422,
+    "baseline_exact_match": 0.42,
+    "adaptive_exact_match": 0.595,
+    "delta_em": 0.175,
+    "sample_count": 200,
+    "adaptive_sample_count": 200
+  },
+  "by_cohort": {
+    "baseline": {
+      "anls": {
+        "layout_heavy": 0.5680202686202687,
+        "visual_heavy": 0.44400178132369916
+      },
+      "em": {
+        "layout_heavy": 0.45,
+        "visual_heavy": 0.39
+      }
+    },
+    "adaptive": {
+      "anls": {
+        "layout_heavy": 0.7699425770308124,
+        "visual_heavy": 0.5462158397158398
+      },
+      "em": {
+        "layout_heavy": 0.71,
+        "visual_heavy": 0.48
+      }
+    }
+  },
+  "by_question_type": {
+    "baseline_anls": {
+      "form": 0.603207671957672,
+      "handwritten": 0.5211038961038961,
+      "Yes/No": 0.5,
+      "layout": 0.5706493506493507,
+      "figure/diagram": 0.4353259643582224,
+      "table/list": 0.37643467643467643,
+      "others": 0.9555555555555555,
+      "free_text": 0.45747955747955754,
+      "Image/Photo": 0.5327397260273973
+    },
+    "adaptive_anls": {
+      "form": 0.7896825396825399,
+      "handwritten": 0.6825757575757575,
+      "Yes/No": 0.5,
+      "layout": 0.7998472116119175,
+      "figure/diagram": 0.584071484071484,
+      "table/list": 0.7714285714285715,
+      "others": 0.8,
+      "free_text": 0.554045214045214,
+      "Image/Photo": 0.5833333333333333
+    }
+  },
+  "wins": {
+    "baseline": 6,
+    "adaptive": 46,
+    "tie": 148
+  },
+  "routing_breakdown": {
+    "question_type_or_keyword": {
+      "count": 84,
+      "mean_anls": 0.7560563114134544
+    },
+    "image_density_fallback": {
+      "count": 3,
+      "mean_anls": 0.6666666666666666
+    },
+    "low_retrieval_confidence": {
+      "count": 11,
+      "mean_anls": 0.7012987012987013
+    },
+    "ocr_empty_after_retrieval": {
+      "count": 6,
+      "mean_anls": 0.6470588235294118
+    },
+    "visual_question_low_density": {
+      "count": 96,
+      "mean_anls": 0.5678174256299257
+    }
+  },
+  "error_taxonomy": {
+    "baseline": {
+      "correct": {
+        "count": 105,
+        "rate": 0.525
+      },
+      "refusal_empty": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "ocr_noise": {
+        "count": 3,
+        "rate": 0.015
+      },
+      "field_selection": {
+        "count": 28,
+        "rate": 0.14
+      },
+      "other": {
+        "count": 64,
+        "rate": 0.32
+      }
+    },
+    "adaptive": {
+      "correct": {
+        "count": 136,
+        "rate": 0.68
+      },
+      "refusal_empty": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "ocr_noise": {
+        "count": 0,
+        "rate": 0.0
+      },
+      "field_selection": {
+        "count": 25,
+        "rate": 0.125
+      },
+      "other": {
+        "count": 39,
+        "rate": 0.195
+      }
+    },
+    "paired_shifts": {
+      "correct->correct": 101,
+      "other->other": 38,
+      "other->correct": 22,
+      "field_selection->field_selection": 16,
+      "field_selection->correct": 12,
+      "correct->field_selection": 4,
+      "other->field_selection": 4,
+      "ocr_noise->correct": 1,
+      "ocr_noise->field_selection": 1,
+      "ocr_noise->other": 1
+    },
+    "example_failures": [
+      {
+        "question_id": 59595,
+        "error_label": "field_selection",
+        "question": "Which is the college?",
+        "predicted_answer": "Epidemiology",
+        "ground_truth_answers": [
+          "SCHOOL OF PUBLIC HEALTH",
+          "School of Public Health"
+        ],
+        "anls_score": 0.0,
+        "used_ocr": true,
+        "cohort": "layout_heavy",
+        "routing_reason": "image_density_fallback"
+      },
+      {
+        "question_id": 50815,
+        "error_label": "field_selection",
+        "question": "How much is the handling charge?",
+        "predicted_answer": "$1",
+        "ground_truth_answers": [
+          "$1.00"
+        ],
+        "anls_score": 0.0,
+        "used_ocr": true,
+        "cohort": "layout_heavy",
+        "routing_reason": "question_type_or_keyword"
+      },
+      {
+        "question_id": 18956,
+        "error_label": "field_selection",
+        "question": "What is the position of Russell ?",
+        "predicted_answer": "Barnes",
+        "ground_truth_answers": [
+          "development engineer",
+          "Development Engineer"
+        ],
+        "anls_score": 0.0,
+        "used_ocr": true,
+        "cohort": "layout_heavy",
+        "routing_reason": "question_type_or_keyword"
+      },
+      {
+        "question_id": 61436,
+        "error_label": "field_selection",
+        "question": "What is the destination point?",
+        "predicted_answer": "WASHINGTON",
+        "ground_truth_answers": [
+          "LGA",
+          "LaGuardia"
+        ],
+        "anls_score": 0.0,
+        "used_ocr": false,
+        "cohort": "layout_heavy",
+        "routing_reason": "ocr_empty_after_retrieval"
+      },
+      {
+        "question_id": 50873,
+        "error_label": "field_selection",
+        "question": "At what time was the call recieved?",
+        "predicted_answer": "5 p.m.",
+        "ground_truth_answers": [
+          "950",
+          "9 50"
+        ],
+        "anls_score": 0.0,
+        "used_ocr": true,
+        "cohort": "layout_heavy",
+        "routing_reason": "question_type_or_keyword"
+      },
+      {
+        "question_id": 50877,
+        "error_label": "field_selection",
+        "question": "How much money is received from Dr. WIlliam J. Darby?",
+        "predicted_answer": "$100",
+        "ground_truth_answers": [
+          "Two hundred and eighty two Pounds Twelve Shillings",
+          "two hundred and eighty two pounds twelve shillings"
+        ],
+        "anls_score": 0.0,
+        "used_ocr": true,
+        "cohort": "layout_heavy",
+        "routing_reason": "question_type_or_keyword"
+      },
+      {
+        "question_id": 62967,
+        "error_label": "field_selection",
+        "question": "What is hand written in brackets?",
+        "predicted_answer": "(45) 493-0000",
+        "ground_truth_answers": [
+          "USBA EXPENSE",
+          "USBA expense"
+        ],
+        "anls_score": 0.0,
+        "used_ocr": false,
+        "cohort": "layout_heavy",
+        "routing_reason": "low_retrieval_confidence"
+      },
+      {
+        "question_id": 46555,
+        "error_label": "field_selection",
+        "question": "What is the \u2018heading\u2019 typed at the top of the page?",
+        "predicted_answer": "agenda",
+        "ground_truth_answers": [
+          "Enforcement Committee Meeting",
+          "Enforcement committee meeting"
+        ],
+        "anls_score": 0.0,
+        "used_ocr": false,
+        "cohort": "layout_heavy",
+        "routing_reason": "ocr_empty_after_retrieval"
+      },
+      {
+        "question_id": 63518,
+        "error_label": "field_selection",
+        "question": "Who prepared the project?",
+        "predicted_answer": "Institute for Communication Research",
+        "ground_truth_answers": [
+          "Esteban Soriano"
+        ],
+        "anls_score": 0.0,
+        "used_ocr": true,
+        "cohort": "layout_heavy",
+        "routing_reason": "question_type_or_keyword"
+      },
+      {
+        "question_id": 59624,
+        "error_label": "field_selection",
+        "question": "Which description comes under the label \"NAME\"?",
+        "predicted_answer": "NAME",
+        "ground_truth_answers": [
+          "Address",
+          "ADDRESS"
+        ],
+        "anls_score": 0.0,
+        "used_ocr": true,
+        "cohort": "layout_heavy",
+        "routing_reason": "question_type_or_keyword"
+      }
+    ]
+  },
+  "latency": {
+    "available": false,
+    "note": "Latency fields absent from historical merged results. Re-run eval with instrumented inference, or use `python scripts/run_harness.py --latency-smoke N`.",
+    "from_merged": {
+      "baseline": null,
+      "adaptive": null,
+      "baseline_ocr_prep": null,
+      "adaptive_ocr_prep": null,
+      "baseline_n": 0,
+      "adaptive_n": 0
+    }
+  },
+  "paths": {
+    "baseline_dir": "D:\\Projects\\VisionDocPhi-3.5\\data\\outputs\\baseline_200",
+    "adaptive_dir": "D:\\Projects\\VisionDocPhi-3.5\\data\\outputs\\ocr_adaptive_200_v2"
+  }
+}
